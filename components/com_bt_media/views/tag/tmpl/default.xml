@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_BT_MEDIA_TAG_VIEW" option="View">
+        <message>COM_BT_MEDIA_TAG_VIEW_DESC</message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request" addfieldpath="/administrator/components/com_bt_media/models/fields">
+            <!--<field type="asset" name="asset" path="administrator/components/com_bt_media/assets/" />-->
+            <field
+                name="tags"
+                type="tags"
+                label="COM_BT_MEDIA_TAGS_SELECT_LABEL"
+                description="COM_BT_MEDIA_TAGS_SELECT_DESC"
+                required="true"
+                />
+        </fieldset>
+    </fields>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="theme" type="vthemes"
+            path="components/com_bt_media/themes"
+                   label="COM_BT_MEDIA_MEDIA_SELECT_THEME_LABEL" 
+                   description="COM_BT_MEDIA_MEDIA_SELECT_THEME_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+            </field>
+            <field name="show_media_type"
+                   type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_MEDIA_TYPE_LABEL"
+                   description="COM_BT_MEDIA_OPTION_SHOW_MEDIA_TYPE_DESC"
+            >
+                <option value="">All</option>
+                <option value="image">Images</option>
+                <option value="video">Videos</option>
+            </field>
+            <field name="show_list_limit_item"
+                   type="text"
+                   label="COM_BT_MEDIA_OPTION_SHOW_LIMIT_ITEM_LABEL"
+                   description="COM_BT_MEDIA_OPTION_SHOW_LIMIT_ITEM_DESC"
+            >
+            </field>
+            <field name="show_ordering"
+                   type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_ORDER_BY_LABEL"
+                   description="COM_BT_MEDIA_OPTION_SHOW_ORDER_BY_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="ordering">Default - Ordering</option>
+                <option value="name">Title</option>
+                <option value="created_date">Created date</option>
+                <option value="hits">Hits</option>
+                <option value="featured">Featured</option>
+                <option value="media_type">Media type</option>
+				<option value="rating">Rating</option>
+            </field>
+            <field name="order_type"
+                   type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_ORDER_TYPE_LABEL"
+                   description="COM_BT_MEDIA_OPTION_SHOW_ORDER_TYPE_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="ASC">ASC</option>
+                <option value="DESC">DESC</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

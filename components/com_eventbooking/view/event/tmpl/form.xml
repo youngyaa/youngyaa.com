@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Submit Event">
+		<message>
+			Display Form which allow users to submit an event
+		</message>
+	</layout>
+	<state>
+		<name>Submit Event</name>
+		<description>Display Form which allow users to submit an event</description>		
+	</state>
+</metadata>

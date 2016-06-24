@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	version="1.7.0" 
+	type="plugin" 
+	group="content" 
+	method="upgrade">
+	<name>Content - BT Social Share</name>
+	<author>BowThemes.com</author>
+	<creationDate>Oct 2011</creationDate>
+	<copyright>Copyright (C) 2012 BowThemes.com. All rights reserved.</copyright>
+	<authorEmail>support@BowThemes.com</authorEmail>
+	<authorUrl>http://www.BowThemes.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.3.5</version>
+	<description><![CDATA[
+		<div class="bt_description">
+			<h3>BT Social Share Plugin Version 2.3.5</h3>			
+			<a href="http://bowthemes.com" target="_blank"><img src="../plugins/content/bt_socialshare/admin/images/bt-social-share.png"></a>
+			<p>BT Social Share plugin adds all major Social Networks into your Joomla articles. Plugin can be published at various locations in content, with 2 options display top or bottom of article. Plugin has backend settings where you can customise it. You can enable/disable each social network individually or show or hide them on specific sections, categories, individual articles or specific menus. 
+			</p>
+			<br clear="both" />
+			<h3>Integrating External Code</h3>
+			 <pre style="width:500px;height:150px;">&lt;?php 
+	JPluginHelper::importPlugin('content');
+	$share = plgContentBt_socialshare::socialButtons();
+	echo $share['script']; // Required
+	echo $share['buttons']; // Social button
+	echo $share['recommend']; // Recommendation bar
+	echo $share['comment']; // facebook comment box
+?&gt;</pre>
+			<br clear="both" />
+	
+			<h3>Features</h3>
+			<ul class="list-style">
+				<li>Facebook Share</li>
+				<li>Facebook Recommendations Bar</li>
+				<li>Facebook Like (Send button)</li>
+				<li>Facebook Comment(Auto width)</li>
+				<li>Twitter Oficial Button</li>
+				<li>TweetMe</li>
+				<li>LinkedIn Share</li>
+				<li>Google +1</li>
+				<li>StumbleUpon</li>
+				<li>Digg</li>
+				<li>Position display in content options (Top/bottom/left/right)</li>
+				<li>Option to display different for the various Joomla layouts (Archived Articles, Single Article, Category Blog and Featured Articles)</li>
+				<li>Support K2 Component</li>
+			
+			</ul>
+			<h3>UPgrade versions</h3>
+			<p>
+				Your current versions is 2.3.5. <a target="_blank" href="http://bowthemes.com/bt-social-plugin.html">Find our latest versions now</a>
+			</p>
+			<h3>Userful links</h3>
+			<ul>
+				<li><a target="_blank" href="http://bowthemes.com/bt-social-plugin.html">Video tutorials</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/forums/12-bt-social-sharing-plugin/">Report bug</a></li>
+				<li><a target="_blank" href="http://bowthemes.com/forums/12-bt-social-sharing-plugin/">Forum support</a></li>
+			</ul>
+			<h3>About bow themes & copyright</h3>	
+			<p>
+				Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization
+			</p>
+			Copyright (C) 2012 BowThemes	
+
+		</div>
+		<style>
+			.bt_description{
+				text-align: left;
+			}
+			.bt_description h3{
+				text-transform: uppercase;
+				margin: 20px 0px 10px 0px;
+			}
+			.bt_description img{
+				float:left;
+				margin:5px 10px 5px 0px;
+			}
+			.bt_description p,.bt_description li{
+				padding: 5px 5px 5px 30px;	
+				list-style: none outside none;		
+			}
+			
+			.bt_description ul.list-style li{
+				background:url(../plugins/content/bt_socialshare/admin/images/tick.png) 0px 6px no-repeat;
+				padding-left:30px;
+				line-height:15px;
+			}
+		</style>
+	]]>	</description>
+	<files>
+		<filename plugin="bt_socialshare">bt_socialshare.php</filename>
+		<filename>sendmail.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>assets</folder>
+		<folder>admin</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="FACEBOOK_TITLE" label="FACEBOOK_TITLE" >
+				<field type="spacer" name="FACEBOOK_SHARE"  />		
+				<field name="facebook_share_button" 
+					type="radio" 
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_SHARE_BUTTON_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_SHARE_BUTTON_DESC" >
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_share_button_type" 
+					type="list" 
+					default="" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_SHARE_BUTTON_TYPE_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_SHARE_BUTTON_TYPE_DESC" >
+					<option value="link">Link</option>
+					<option value="icon_link">Icon Link</option>
+					<option value="button">Button</option>
+					<option value="button_count">Button Count</option>
+					<option value="box_count">Box Count</option>
+					<option value="">Share Image</option>
+				</field>
+				<field type="spacer" name="FACEBOOK_LIKE"  />	
+				<field name="facebook_like" 
+					type="radio"
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_LIKE_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_LIKE_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_sendbutton" 
+					type="radio"
+					class="btn-group"
+					default="0" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_SENDBUTTON_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_SENDBUTTON_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_like_type" type="list" default="button_count" label="PLG_BT_SOCIALSHARE_FB_LIKE_TYPE" description="PLG_BT_SOCIALSHARE_FB_LIKE_TYPE_DESC" >
+					<option value="standard">PLG_BT_SOCIALSHARE_FB_LIKE_STANDARD</option>
+				   <option value="box_count">PLG_BT_SOCIALSHARE_FB_LIKE_BOX_COUNT</option>
+				   <option value="button_count">PLG_BT_SOCIALSHARE_FB_LIKE_BUTTON_COUNT</option>
+				</field>
+				<field name="facebook_like_width" type="text" default="70"  label="PLG_BT_SOCIALSHARE_FB_LIKE_WIDTH" description="PLG_BT_SOCIALSHARE_FB_LIKE_WIDTH_DESC" />
+				<field name="facebook_showface" 
+					type="radio"
+					class="btn-group"
+					default="1" 
+					label="Show faces" 
+					description="Specifies whether to display profile photos below the button (standard layout only) ">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_like_font" type="list" default="arial" label="PLG_BT_SOCIALSHARE_FB_LIKE_FONT_LABEL" description="PLG_BT_SOCIALSHARE_FB_LIKE_FONT_DESC">
+					<option value="arial">Arial</option>
+					<option value="lucida grande">Lucida Grande</option>
+					<option value="segoe ui">Segoe Ui</option>
+					<option value="tahoma">Tahoma</option>
+					<option value="trebuchet ms">Trebuchet Ms</option>
+					<option value="verdana">Verdana</option>
+				</field>
+				<field name="facebook_like_color" type="list" default="light" label="PLG_BT_SOCIALSHARE_FB_LIKE_COLOR_LABEL" description="PLG_BT_SOCIALSHARE_FB_LIKE_COLOR_DESC">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+				<field name="facebook_like_action" type="list" default="like" label="Verb to display" description="The verb to display on the button. Options: 'like', 'recommend' " >
+					<option value="like">Like</option>
+				   <option value="recommend">Recommend</option>
+				</field>
+				<field type="spacer" name="FACEBOOK_COMMENT"  />	
+				<field name="facebook_comment" 
+					type="radio"
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_COMMENT_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_COMMENT_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_comment_numberpost" type="text" default="5" label="PLG_BT_SOCIALSHARE_FB_CM_NUMBER_POST" description="PLG_BT_SOCIALSHARE_FB_CM_NUMBER_POST_DESC" />
+				<field name="facebook_comment_width" type="text" default="auto" label="PLG_BT_SOCIALSHARE_FB_CM_WIDTH" description="PLG_BT_SOCIALSHARE_FB_CM_WIDTH_DESC" />
+				<field name="facebook_comment_color_schema" 
+					type="list"
+					default="light" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_COMMENT_COLOR_SCHEME_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_COMMENT_COLOR_SCHEME_DESC">
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</field>
+				
+				<field name="show_cm_count" type="radio" class="btn-group" default="1" label="PLG_BT_SOCIALSHARE_FB_CM_COUNT" description="PLG_BT_SOCIALSHARE_FB_CM_COUNT_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				
+				
+				<field name="mail_to" type="text" default="" label="PLG_BT_SOCIALSHARE_MAIL_TO" description="PLG_BT_SOCIALSHARE_MAIL_TO_DESC" />
+				<field name="mail_subject" type="text" default="New comment at &quot;[TITLE]&quot;" label="PLG_BT_SOCIALSHARE_MAIL_SUBJECT" description="PLG_BT_SOCIALSHARE_MAIL_SUBJECT_DESC" />
+				<field name="mail_message" type="text" default="Please check here: [LINK]" label="PLG_BT_SOCIALSHARE_MAIL_MESSAGE" description="PLG_BT_SOCIALSHARE_MAIL_MESSAGE_DESC" />
+				<field type="spacer" name="FACEBOOK_RECOMMENDATION"  />	
+				<field name="facebook_recommendation" 
+					type="radio"
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_trigger" 
+					type="list"
+					default="onvisible" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_TRIGGER_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_TRIGGER_DESC">
+					<option value="onvisible">Onvisible</option>
+					<option value="X%">X%</option>
+					<option value="manual">Manual</option>
+				</field>
+				<field name="facebook_recommendation_time" type="text" default="30" label="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_TIME_LABEL" description="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_TIME_DESC" />
+				<field name="num_recommendations" type="text" default="2" label="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_NUM_LABEL" description="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_NUM_DESC" />
+				<field name="facebook_recommendation_side" 
+					type="list"
+					default="right" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_SIDE_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_RECOMMENDATION_SIDE_DESC">
+					<option value="right">Right</option>
+					<option value="left">Left</option>
+				</field>
+				<field type="spacer" name="FACEBOOK_ADVANCED" />	
+				<field name="facebook_html5" 
+					type="radio"
+					class="btn-group"
+					default="0" 
+					label="PLG_BT_SOCIALSHARE_FACEBOOK_HTML5_LABEL" 
+					description="PLG_BT_SOCIALSHARE_FACEBOOK_HTML5_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="facebook_api_id" type="text" default="" label="PLG_BT_SOCIALSHARE_FB_API_ID" description="PLG_BT_SOCIALSHARE_FB_API_ID_DESC" />
+				<field name="facebook_admins" type="text" default="" label="PLG_BT_SOCIALSHARE_FB_ADMINS_LABEL" description="PLG_BT_SOCIALSHARE_FB_ADMINS_DESC" />
+				<field type="spacer" label="PLG_BT_SOCIALSHARE_FB_MANAGE_APP" />
+				<field type="spacer" label="PLG_BT_SOCIALSHARE_FB_MANAGE_COMMENTS" />
+				<field type="spacer" label="PLG_BT_SOCIALSHARE_FB_DEBUGER" />
+				</fieldset>
+			<fieldset name="TWITTER_TITLE" label="TWITTER_TITLE">
+				<field name="twitter" 
+					type="radio" 
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_SHOW_TWITTER_BUTTON" 
+					description="PLG_BT_SOCIALSHARE_SHOW_TWITTER_BUTTON_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="twitter_name" type="text" default="BowThemes"  label="PLG_BT_SOCIALSHARE_TWITTER_NAME" description="PLG_BT_SOCIALSHARE_TWITTER_NAME_DESC" />
+				<field name="twitter_counter" type="list" default="horizontal" label="PLG_BT_SOCIALSHARE_TWITTER_COUNTER" description="PLG_BT_SOCIALSHARE_TWITTER_COUNTER_DESC" >
+				   <option value="none">PLG_BT_SOCIALSHARE_HIDE</option>
+				   <option value="vertical">PLG_BT_SOCIALSHARE_TWITTER_VERTICAL</option>
+				   <option value="horizontal">PLG_BT_SOCIALSHARE_TWITTER_HORIZONTAL</option>
+				</field>
+				<field name="twitter_size" type="list" default="medium" label="PLG_BT_SOCIALSHARE_TWITTER_SIZE_LABEL" description="PLG_BT_SOCIALSHARE_TWITTER_SIZE_DESC">
+					<option  value="medium">Medium</option>
+					<option value="large">Large</option>
+				</field>
+				<field name="twitter_width" type="text" default="80" label="PLG_BT_SOCIALSHARE_TWITTER_WIDTH_LABEL" description="PLG_BT_SOCIALSHARE_TWITTER_WIDTH_BUTTON" />
+				
+			</fieldset>
+			<fieldset name="LINKEDIN_TITLE" label="LINKEDIN_TITLE">	
+				<field name="linkedin" 
+					type="radio" 
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_SHOW_LINKEDIN_BUTTON" 
+					description="PLG_BT_SOCIALSHARE_SHOW_LINKEDIN_BUTTON_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="linkedIn_type" type="list" default="right" label="PLG_BT_SOCIALSHARE_LINKEDIN_TYPE" description="PLG_BT_SOCIALSHARE_LINKEDIN_TYPE_DESC" >
+				   <option value="none">PLG_BT_SOCIALSHARE_LINKEDIN_COUNTER_NONE</option>
+				   <option value="top">PLG_BT_SOCIALSHARE_LINKEDIN_COUNTER_TOP</option>
+				   <option value="right">PLG_BT_SOCIALSHARE_LINKEDIN_COUNTER_RIGHT</option>
+				</field> 
+				<field name="linkedIn_showzero" type="radio" default="0" class="btn-group" label="PLG_BT_SOCIALSHARE_LINKEDIN_SHOWZERO_LABEL" description="PLG_BT_SOCIALSHARE_LINKEDIN_SHOWZERO_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field> 	
+			</fieldset>
+			<fieldset name="GOOGLEPLUS_TITLE" label="GOOGLEPLUS_TITLE">	
+				<field name="google_plus" 
+					type="radio" 
+					class="btn-group"
+					default="1" 
+					label="PLG_BT_SOCIALSHARE_SHOW_GOOGLE_PLUS_BUTTON" 
+					description="PLG_BT_SOCIALSHARE_GOOGLE_PLUS_BUTTON_DESC">
+					<option value="1">PLG_BT_SOCIALSHARE_YES</option>
+					<option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="google_plus_annotation" 
+					type="list" 
+					default="bubble" 
+					label="PLG_BT_SOCIALSHARE_SHOW_GOOGLE_PLUS_ANNOTATION" 
+					description="PLG_BT_SOCIALSHARE_SHOW_GOOGLE_PLUS_ANNOTATION_DESC">
+					<option value="bubble">Bubble</option>
+					<option value="inline">Inline</option>
+					<option value="vertical-bubble">Vertical-Bubble</option>
+					<option value="none">None</option>								
+				</field>
+				<field name="google_plus_width" type="text" label="PLG_BT_SOCIALSHARE_GOOGLEPLUS_WIDTH_LABEL" description="PLG_BT_SOCIALSHARE_GOOGLEPLUS_WIDTH_DESC"/>
+				<field name="google_plus_type" 
+					type="list"
+					default="20" 
+					label="PLG_BT_SOCIALSHARE_SHOW_GOOGLE_PLUS_TYPE" 
+					description="PLG_BT_SOCIALSHARE_SHOW_GOOGLE_PLUS_TYPE_DESC">
+					<option value="15">Small (15px)</option>
+					<option value="20">Medium (20px)</option>
+					<option value="24">Standard (24px)</option>
+				</field>
+				<field name="google_plus_use_html5" type="radio" default="0" class="btn-group" label="PLG_BT_SOCIALSHARE_GOOGLEPLUS_HTML5_LABEL" description="PLG_BT_SOCIALSHARE_GOOGLEPLUS_HTML5_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="google_plus_asynchronous" type="radio" default="0" class="btn-group" label="PLG_BT_SOCIALSHARE_GOOGLEPLUS_ASYNCHRONOUS_LABEL" description="PLG_BT_SOCIALSHARE_GOOGLEPLUS_ASYNCHRONOUS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="google_plus_parse_tags" type="list" default="onload" label="PLG_BT_SOCIALSHARE_GOOGLEPLUS_PARSE_TAGS_LABEL" description="PLG_BT_SOCIALSHARE_GOOGLEPLUS_PARSE_TAGS_DESC">
+					<option value="onload">Default(onload)</option>
+					<option value="explicit">Explicit</option>
+				</field>	
+			</fieldset>
+			<fieldset name="STUMBLE_TITLE" label="STUMBLE_TITLE">
+				<field name="stumble" class="btn-group" type="radio" default="0" label="PLG_BT_SOCIALSHARE_STUMBLE_BUTTON" description="PLG_BT_SOCIALSHARE_STUMBLE_BUTTON_DESC" >
+				   <option value="1">PLG_BT_SOCIALSHARE_YES</option>
+				   <option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>  
+				<field name="stumble_type" type="list" default="1" label="PLG_BT_SOCIALSHARE_STUMBLE_TYPE" description="PLG_BT_SOCIALSHARE_STUMBLE_TYPE_DESC" >
+				   <option value="1">PLG_BT_SOCIALSHARE_STUMBLE_STYLE1</option>
+				   <option value="2">PLG_BT_SOCIALSHARE_STUMBLE_STYLE2</option>
+				   <option value="3">PLG_BT_SOCIALSHARE_STUMBLE_STYLE3</option>
+				   <option value="4">PLG_BT_SOCIALSHARE_STUMBLE_STYLE4</option>
+				   <option value="5">PLG_BT_SOCIALSHARE_STUMBLE_STYLE5</option>
+				   <option value="6">PLG_BT_SOCIALSHARE_STUMBLE_STYLE6</option>
+				</field>  
+			</fieldset>
+			<fieldset name="DIGG_TITLE" label="DIGG_TITLE">
+				<field name="digg" class="btn-group" type="radio" default="0" label="PLG_BT_SOCIALSHARE_DIGG_BUTTON" description="PLG_BT_SOCIALSHARE_DIGG_BUTTON_DESC" >
+				   <option value="1">PLG_BT_SOCIALSHARE_YES</option>
+				   <option value="0">PLG_BT_SOCIALSHARE_NO</option>
+				</field>
+				<field name="digg_type" type="list" default="DiggCompact" label="PLG_BT_SOCIALSHARE_DIGG_TYPE" description="PLG_BT_SOCIALSHARE_DIGG_TYPE_DESC" >
+			   <option value="DiggWide">PLG_BT_SOCIALSHARE_DIGG_WIDE</option>
+			   <option value="DiggMedium">PLG_BT_SOCIALSHARE_DIGG_MEDIUM</option>
+			   <option value="DiggCompact">PLG_BT_SOCIALSHARE_DIGG_COMPACT</option>
+			   <option value="DiggIcon">PLG_BT_SOCIALSHARE_DIGG_ICON</option>
+			</field>	
+			</fieldset>
+			<fieldset name="ADVANCED_TITLE" label="ADVANCED_TITLE">
+				<field name="button-pretext" type="text" label="PLG_BT_SOCIALSHARE_BUTTON_PRETEXT" description="PLG_BT_SOCIALSHARE_BUTTON_PRETEXT_DESC"/>
+				<field name="comment-pretext" type="text" label="PLG_BT_SOCIALSHARE_COMMENT_PRETEXT" description="PLG_BT_SOCIALSHARE_COMMENT_PRETEXT_DESC"/>
+				<field	name="show_plugin_in"
+					type="list"
+					extension="com_content"
+					multiple="true"
+					size="4"
+					default="article"
+					label="PLG_BT_SOCIALSHARE_DISPLAY_PLUGIN_IN" 
+					description="PLG_BT_SOCIALSHARE_DISPLAY_PLUGIN_IN_DESC" >
+					<option value="all">PLG_BT_SOCIALSHARE_ALL_PAGE</option>
+					<option value="article">PLG_BT_SOCIALSHARE_ARTICLE_PAGE</option>
+					<option value="featured">PLG_BT_SOCIALSHARE_FEATURED_PAGE</option>
+					<option value="category">PLG_BT_SOCIALSHARE_CATEGORY_PAGE</option>
+					<option value="archive">PLG_BT_SOCIALSHARE_ARCHIVE_PAGE</option>		
+				</field>
+				<field name="positions" 
+					type="list" 
+					multiple="true"
+					default="above" 
+					label="PLG_BT_SOCIALSHARE_JL_POSITION" 
+					description="PLG_BT_SOCIALSHARE_POSITION_DESC">
+					<option value="image">PLG_BT_SOCIALSHARE_IMAGES</option>
+					<option value="left">PLG_BT_SOCIALSHARE_LEFT</option>
+					<option value="right">PLG_BT_SOCIALSHARE_RIGHT</option>
+					<option value="above">PLG_BT_SOCIALSHARE_ABOVE</option>
+					<option value="below">PLG_BT_SOCIALSHARE_BELOW</option>
+				</field>
+				<field name="k2-positions" 
+					type="list" 
+					multiple="true"
+					default="after-title" 
+					label="PLG_BT_SOCIALSHARE_K2_POSITION" 
+					description="PLG_BT_SOCIALSHARE_POSITION_DESC">
+					<option value="after-title">PLG_BT_SOCIALSHARE_AFTER_TITLE</option>
+					<option value="image">PLG_BT_SOCIALSHARE_IMAGES</option>
+					<option value="left">PLG_BT_SOCIALSHARE_LEFT</option>
+					<option value="right">PLG_BT_SOCIALSHARE_RIGHT</option>
+					<option value="above">PLG_BT_SOCIALSHARE_ABOVE</option>
+					<option value="below">PLG_BT_SOCIALSHARE_BELOW</option>
+					<option value="comment-block">PLG_BT_SOCIALSHARE_BEFORE_COMMENT_BLOCK</option>
+				</field>
+				
+				<field name="og_meta" type="radio" default="1" class="btn-group" label="PLG_BT_SOCIALSHARE_OG_META_LABEL" description="PLG_BT_SOCIALSHARE_OG_META_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="og_title" type="radio" default="0" class="btn-group" label="PLG_BT_SOCIALSHARE_OG_META_TITLE_LABEL" description="PLG_BT_SOCIALSHARE_OG_META_TITLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field type="spacer" name="PLUGIN_EXCLUDING" />
+				<field	name="excluding_categories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					label="PLG_BT_SOCIALSHARE_EXCLUDE_CATEGORIES" 
+					description="PLG_BT_SOCIALSHARE_EXCLUDE_CATEGORIES_DESC" >
+				</field>
+
+				<field name="excluding_article" type="text" 
+					default="" 
+					label="PLG_BT_SOCIALSHARE_EXCLUDE_ARTICLE_ID" 
+					description="PLG_BT_SOCIALSHARE_EXCLUDE_ARTICLE_ID_DESC" />
+				<field name="excluding_k2_category" type="k2multicategories" extension="k2multicategories" class="source_k2_category"
+                      default="" size="10" multiple="multiple" label="PLG_BT_SOCIALSHARE_EXCLUDE_K2_CATEGORIES_LABEL"
+                      description="PLG_BT_SOCIALSHARE_EXCLUDE_K2_CATEGORIES_DESC" />
+                 <field name="excluding_k2_article" type="text" 
+					default="" 
+					label="PLG_BT_SOCIALSHARE_EXCLUDE_K2_ARTICLE_ID" 
+					description="PLG_BT_SOCIALSHARE_EXCLUDE_K2_ARTICLE_ID_DESC"  />
+					
+				<field type="spacer" name="FACEBOOK_COMMENT_EXCLUDING" />
+				<field	name="fb_excluding_categories"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					label="PLG_BT_SOCIALSHARE_EXCLUDE_CATEGORIES" 
+					description="PLG_BT_SOCIALSHARE_EXCLUDE_CATEGORIES_DESC" >
+				</field>
+
+				<field name="fb_excluding_article" type="text" 
+					default="" 
+					label="PLG_BT_SOCIALSHARE_EXCLUDE_ARTICLE_ID" 
+					description="PLG_BT_SOCIALSHARE_EXCLUDE_ARTICLE_ID_DESC" />
+				<field name="fb_excluding_k2_category" type="k2multicategories" extension="k2multicategories" class="source_k2_category"
+                      default="" size="10" multiple="multiple" label="PLG_BT_SOCIALSHARE_EXCLUDE_K2_CATEGORIES_LABEL"
+                      description="PLG_BT_SOCIALSHARE_EXCLUDE_K2_CATEGORIES_DESC" />
+                 <field name="fb_excluding_k2_article" type="text" 
+					default="" 
+					label="PLG_BT_SOCIALSHARE_EXCLUDE_K2_ARTICLE_ID" 
+					description="PLG_BT_SOCIALSHARE_EXCLUDE_K2_ARTICLE_ID_DESC"  />
+					
+				<field addfieldpath="plugins/content/bt_socialshare/admin/formfield" type="asset" name="asset" path="plugins/content/bt_socialshare/admin/" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,118 @@
+.docs-section {
+  margin-bottom: 48px;
+}
+.docs-section .page-header {
+  border-bottom: 0;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+.docs-section .page-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+}
+.docs-section h2.sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 24px;
+}
+.docs-section .dropdown-menu {
+  border: 0;
+  padding: 12px 0;
+}
+.docs-section .dropdown-menu li {
+  padding: 0 12px;
+}
+.example-type h1,
+.example-type h2,
+.example-type h3,
+.example-type h4,
+.example-type h5,
+.example-type h6 {
+  margin: 24px 0;
+}
+.example-colors .swatch-item {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  background: #333333;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+@media (min-width: 1200px) {
+  .example-colors .swatch-item {
+    min-height: 123px;
+  }
+}
+.example-colors .swatch-item dl {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  margin: 0;
+}
+.example-colors .color-brand-primary {
+  background: #2cd664;
+}
+.example-colors .color-brand-secondary {
+  background: #0082d5;
+}
+.example-colors .color-brand-success {
+  background: #5cb85c;
+}
+.example-colors .color-brand-danger {
+  background: #d9534f;
+}
+.example-colors .color-brand-warning {
+  background: #f0ad4e;
+}
+.example-colors .color-brand-info {
+  background: #5bc0de;
+}
+.example-colors .color-gray-darker {
+  background: #222222;
+}
+.example-colors .color-gray-dark {
+  background: #333333;
+}
+.example-colors .color-gray {
+  background: #555555;
+}
+.example-colors .color-gray-light {
+  background: #999999;
+  color: #333333;
+}
+.example-colors .color-gray-lighter {
+  background: #e0e0e0;
+  color: #333333;
+}
+.example-colors .color-gray-lightest {
+  background: #f7f7f7;
+  color: #333333;
+}
+.example-inputs .btn,
+.example-inputs .form-control {
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.example-inputs ul {
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .example-inputs ul li {
+    float: right;
+    width: 30%;
+    padding-left: 24px;
+  }
+}
+.example-button .btn {
+  margin: 0 0 10px 10px;
+}
+@media screen and (min-width: 768px) {
+  .example-button .btn {
+    width: 30%;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="eventbooking" method="upgrade">
+	<name>Events Booking - Invoice Generator</name>
+	<author>Tuan Pham Ngoc</author>
+	<creationDate>Feb 2014</creationDate>
+	<author>Tuan Pham Ngoc</author>
+  	<authorEmail>contact@joomdonation.com</authorEmail>
+  	<authorUrl>http://www.joomdonation.com</authorUrl>
+  	<copyright>Copyright (C) 2012 Ossolution Team</copyright>
+  	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>  				
+	<version>2.0.4</version>
+	<description>This plugin will generate an unique, auto-increment invoice number in for each registrant</description>
+	<files>
+		<filename plugin="invoice">invoice.php</filename>
+		<filename>index.html</filename>
+	</files>		
+</extension>

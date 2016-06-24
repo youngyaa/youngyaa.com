@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.1" client="site" method="upgrade">
+	<name>JA Masshead</name>
+	<author>JoomlArt.com</author>
+	<creationDate>27 March 2015</creationDate>
+	<copyright>J.O.O.M Solutions Co., Ltd.</copyright>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details.
+	</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>2.6.1</version>
+	<description>
+		<![CDATA[
+		<div align="left">		
+			<h1>JA Masshead Module for Joomla 2.5 & 3.3</h1>
+			<div style='font-weight: normal'>
+			<p>Please refer to the backend settings of the demo template quickstart for usage examples and also refer to <a target='_blank' href='http://www.joomlart.com/forums/showthread.php?64198'>General Userguide</a> for details.</strong></p>
+			<p><span style='color: #ff6600;'><strong>Features:</strong></span></p>
+			JA Masshead Module displays masshead title like the JoomlArt masshead. Title and description can be specifically configured for any pages.
+			<p><strong><span style='color: #ff0000;'>Usage Instruction:</span><br /></strong></p>
+			<strong>The configuration field use 2 formats:</strong> <br />
+				<ul>
+					<li>Format 1: <code>[Masshead option="com_name" view="view_name" layout="layout_name" task="task_name" id="id" title="Title" ]Description here[/Masshead]</code></li>
+      				<li>Format 2: <code>[Masshead Itemid="page_id_1,page_id_2,..." title="Title" ]Description here[/Masshead]</code></li>
+				</ul>
+			<br />
+			<strong>If configuration field is empty:</strong>	
+				<ul>
+					<li>If this is an article view: use the Article title as Masshead title, Article metadesc as masshead description</li>
+      				<li>If not: use the Page title as Mass title.</li>
+      				<li>If no value for Title & Description, use default value.</li>
+				</ul>
+			<br />	
+			<strong>If configuration field is updated:</strong><br /> 
+				<ol>
+					<li>Use that value</li>
+					<li>Support multiple configs, each config on a line; eg: <br />
+						<code>
+						[Masshead option="com_name1" view="view_name1" layout="layout_name1" task="task_name1" id="id1" title="Title1" ]Description 1 here[/Masshead]<br />
+						[Masshead option="com_name2" view="view_name1" layout="layout_name2" task="task_name2" id="id2" title="Title2" ]Description 2 here[/Masshead]<br />
+						[Masshead Itemid="page_id1_1,page_id1_2,..." title="Title page 1" ]Description page 1 here[/Masshead]<br />
+						[Masshead Itemid="page_id2_1,page_id2_2,..." title="Title page 2" ]Description page 2 here[/Masshead]
+						</code>
+					</li>
+					<li>If config sets multiple conditions, then the module will prefer to the first condition only and ignore the rest.</li>
+				</ol>
+			<br />
+			<strong>Use extra paramaters:</strong><br /> 				
+			<ol>
+				<li>Extra parameters can put in config as <b>name="value"</b> and access through variables <b>$masshead['params']['name']</b> by overwritting module layout in the template</li>
+				<li>Eg: <br ?>
+					<code>[Masshead Itemid="page_id" title="Title" <span style="color:red">background="image url"</span>]Description[/Masshead]</code>
+				<br />
+				Access the param background: <br />
+				<code>
+					&lt;div class=&quot;jamasshead&quot; <span style="color:red">&lt;?php if(isset($masshead['params']['background'])): ?&gt;</span> style=&quot;background-image: url(<span style="color:red">&lt;?php echo $masshead['params']['background'] ?&gt;</span>)&quot; <span style="color:red">&lt;?php endif; ?&gt;</span>&gt;
+				</code>
+				</li>
+			</ol>
+			
+			<p><strong><span style='color: #ff0000;'>Upgrade Method:</span><br /></strong></p>
+				<ol><li>You can install new version directly over this version. Uninstallation is not required. </li>
+				<li>Backup any customized files before upgrading.</li></ol>
+			<p><span style='color: #008000;'><strong>Links:</strong></span></p>
+			  <ul><li><a target='_blank' href='http://update.joomlart.com/'>Updates &amp; Versions</a></li><li><a target='_blank' href='http://www.joomlart.com/forums/showthread.php?64198'>General Userguide</a></li></ul>			
+			<p>Copyright 2004 - 2014 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_jamasshead">mod_jamasshead.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>asset</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jamasshead.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params" 
+			addfieldpath="/modules/mod_jamasshead/asset/elements">
+			<fieldset 
+				name="basic" >
+				<field name="default-title" 
+					type="text" 
+					default="" 
+					size="45"
+					filter="raw" 
+					label="DEFAULT_TITLE" 
+					description="DEFAULT_TITLE_DESC" />
+
+				<field name="default-description" 
+					type="textarea" 
+					cols="60"
+					rows="4" 
+					default="" 
+					filter="raw" 
+					label="DEFAULT_DESCRIPTION"
+					description="DEFAULT_DESCRIPTION_DESC" />
+					
+				<field name="config" 
+					type="textarea" 
+					cols="60" 
+					rows="8"
+					default="" 
+					filter="raw" 
+					label="CONFIG" 
+					description="CONFIG_DESC" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field type="japanel" path="/modules/mod_jamasshead/asset/elements/" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

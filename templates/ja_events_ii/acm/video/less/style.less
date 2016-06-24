@@ -1,0 +1,180 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// ----------------------------------------
+// VIDEO STYLE
+// ----------------------------------------
+.acm-video {
+  &.style-1 {
+    overflow: hidden;
+
+    .video-wrapper {
+      height: 0;
+      padding-bottom: 56.25%;
+      padding-top: 0;
+      position: relative;
+      background-color: @black;
+
+      img {
+        max-width: 100%;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        background: -webkit-linear-gradient(200deg, @brand-primary, @brand-secondary); 
+        background: -o-linear-gradient(200deg, @brand-primary, @brand-secondary); 
+        background: -moz-linear-gradient(200deg, @brand-primary, @brand-secondary); 
+        background: linear-gradient(200deg, @brand-primary, @brand-secondary); 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        .opacity(0.6);
+        .transition(all 0.5s);
+      }
+
+      &:hover {
+        &:before {
+          background: -webkit-linear-gradient(-200deg, @brand-primary, @brand-secondary); 
+          background: -o-linear-gradient(-200deg, @brand-primary, @brand-secondary); 
+          background: -moz-linear-gradient(-200deg, @brand-primary, @brand-secondary); 
+          background: linear-gradient(-200deg, @brand-primary, @brand-secondary);
+          .opacity(0.9);
+        }
+      }
+
+      &.playing {
+        &:before {
+          .opacity(0);
+          display: none;
+        }
+
+        .btn-play {
+          display: none;
+        }
+      }
+    }
+
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .video-player {
+      padding: 0;
+      margin-top: 0;
+      margin-left: 0;
+      width: 100%;
+
+      @media (min-width: (@screen-sm-min)) {
+        margin-top: 60px;
+        margin-left: -60px;
+        width: ((@container-sm - @grid-gutter-width)/12)*5 + 59px;
+      }
+
+      @media (min-width: (@screen-md-min)) {
+        margin-top: 60px;
+        margin-left: -60px;
+        width: ((@container-md - @grid-gutter-width)/12)*5 + 59px;
+      }
+
+      @media (min-width: (@screen-lg-min)) {
+        margin-top: 60px;
+        margin-left: -60px;
+        width: ((@container-lg - @grid-gutter-width)/12)*5 + 59px;
+      }
+      
+      @media (min-width: (@screen-lg-min + @main-container-spacing*2)) {
+        margin-top: 60px;
+        margin-left: -60px;
+        width: ((@container-lg + @main-container-spacing - @grid-gutter-width)/12)*5 + 59px;
+      }
+
+      .btn-rounded {
+        border-radius: 50%;
+        height: 72px;
+        line-height: 82px;
+        padding: 0 !important;
+        width: 72px;
+        border-width: 3px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        border: 2px solid @white;
+        color: @white;
+        margin-top: -36px;
+        margin-left: -36px;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        .fa {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .video-content {
+      background: @t3-section-dark-background;
+      background-image: url("../../@{t3-image-path}/bg-trans.png");
+      color: @gray-light;
+      font-size: @font-size-base;
+      padding: 60px 120px 60px 60px;
+      height: 280px + 120px;
+      position: relative;
+      overflow: hidden;
+
+      @media (min-width: @screen-lg-min) {
+        padding: 60px (@main-container-spacing/2 + 60px) 60px @main-container-spacing/2;
+        height: 280px + 120px;
+        font-size: 20px;
+      }
+
+      @media (max-width: @screen-xs-max) {
+        height: auto !important;
+        padding: @t3-global-padding @grid-gutter-width/2;
+      }
+
+      .video-heading {
+        font-size: 20px;
+        margin-top: 0;
+        font-weight: @font-weight-normal;
+
+        @media (min-width: @screen-lg-min) {
+          margin-top: @t3-global-margin*2;
+        }
+      }
+
+      .btn {
+        margin-top: @t3-global-margin;
+
+        @media (min-width: @screen-lg-min) {
+          margin-top: @t3-global-margin*2;
+        }
+
+        @media (max-width: @screen-xs-max) {
+          display: block;
+          .text-overflow();
+        }
+
+        i {
+          margin-left: @grid-gutter-width/4;
+        }
+      }
+    }
+  }
+}

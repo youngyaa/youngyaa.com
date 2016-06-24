@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fields addfieldpath="/administrator/components/com_easyfrontendseo/models/fields">
+        <fieldset name="component">
+            <field type="krdonationcodecheck" />
+            <field name="krtitle_settings" type="krtitle" label="COM_EASYFRONTENDSEO_USEPLUGINSETTINGS" />
+        </fieldset>
+        <fieldset name="donation">
+            <field type="krdonationcodecheck" name="donation" />
+            <field name="donation_code" type="text" default="" size="40" label="KR_DONATION_CODE" description="KR_DONATION_CODEDESC" />
+        </fieldset>
+        <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+            <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" validate="rules"	filter="rules" component="com_easyfrontendseo" section="component" />
+        </fieldset>
+    </fields>
+</config>

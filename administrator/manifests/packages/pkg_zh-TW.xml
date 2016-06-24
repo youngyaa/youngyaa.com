@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.5" method="upgrade">
+  <name>中文(繁體．台灣)完整語言包</name>
+  <packagename>zh-TW</packagename>
+  <version>3.5.0.1</version>
+  <creationDate>2016-03-24</creationDate>
+  <author>Joomla! Taiwan User Community</author>
+  <authorEmail>eddy@joomla.com.tw</authorEmail>
+  <authorUrl>www.joomla.org.tw</authorUrl>
+  <copyright>Copyright (C) 2005 - 2015 Open Source Matters  All rights reserved.</copyright>
+   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+   <url></url>
+  <description>
+      <![CDATA[
+      <h3>Joomla! 3.5.0v1 中文(繁體．台灣)完整語言包</h3>
+      <h3>Joomla! 3.5.0v1 Traditional Chinese (Taiwan) Language Package</h3>
+      ]]>
+   </description>
+  <files>
+        <file type="language" client="site" id="zh-TW">site_zh-TW.zip</file>
+        <file type="language" client="administrator" id="zh-TW">admin_zh-TW.zip</file>
+  </files>
+  <updateservers>
+    <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist_3.xml</server>
+  </updateservers>
+</extension>

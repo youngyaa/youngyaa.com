@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Members List">
+		<message>
+			Display Members from one selected plan or all subscription plans
+		</message>
+        <fields name="request">
+            <fieldset name="request"
+                      addfieldpath="/administrator/components/com_osmembership/model/fields">
+                <field name="id" type="osmplan" size="3" default="0" label="Select Plan" description="Select plan which you want to display members. If you don't select a plan, members from all plans will be displayed" />
+            </fieldset>
+        </fields>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="show_plan" type="list" label="Show Plan Column" default="1">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="show_subscription_date" type="list" label="Show Subscription Date Column" default="1">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="sort_by" type="list" label="Sort By" default="tbl.created_date">
+                    <option value="first_name">First Name</option>
+                    <option value="last_name">Last Name</option>
+                    <option value="organization">Organization</option>
+                    <option value="address">Address</option>
+                    <option value="address2">Address2</option>
+                    <option value="city">City</option>
+                    <option value="state">State</option>
+                    <option value="zip">Zip</option>
+                    <option value="country">Country</option>
+                    <option value="phone">Phone</option>
+                    <option value="fax">Fax</option>
+                    <option value="email">Email</option>
+                    <option value="tbl.created_date">Register Date</option>
+                </field>
+                <field name="sort_direction" type="list" label="Sort Direction" default="">
+                    <option value="">ASC</option>
+                    <option value="DESC">DESC</option>
+                </field>
+            </fieldset>
+        </fields>
+	</layout>		
+</metadata>

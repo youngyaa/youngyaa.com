@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>User - Membership Pro</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Sept 2015</creationDate>
+	<version>2.0.7</version>
+	<description>This plugin is used to add users to a subscription plan (usually a free plan) when they sign up via Joomla core.</description>
+	<files>
+		<filename plugin="osmembership">osmembership.php</filename>
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_osmembership/model/fields">
+				<field name="plan_id" type="osmplan" size="3" default="0" label="Select Plan" description="Select Plan which you want users to subscribed to automatically when they sign up for a Joomla account" />
+                <field name="handle_login_redirect" type="radio" label="Handle Login Redirect" default="0" description="If set to Yes, when active subscribers login, they will be redirected to the Login Redirect Menu ID selected for the plan they signed up for">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

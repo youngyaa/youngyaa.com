@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Location Layout">
+        <message>
+            Displays a list of events from a location
+        </message>
+    </layout>
+    <state>
+        <name>Location Layout</name>
+        <description>Displays a list of events from a category</description>
+        <fields name="request">
+            <fieldset name="request"
+                      addfieldpath="/administrator/components/com_eventbooking/elements">
+                <field name="location_id" type="eblocation" size="3" default="0" label="Select Location"
+                       description="Choose the Location which you want to display events"/>
+            </fieldset>
+        </fields>
+    </state>
+</metadata>

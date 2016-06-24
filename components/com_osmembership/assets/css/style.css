@@ -1,0 +1,438 @@
+/*--------Global style-------------*/
+.osm-container {
+    text-align: left;
+    padding: 10px 0;
+}
+
+.osm-container img {
+    border: 0 none;
+    float: left !important;
+    margin: 0 10px 0 0;
+}
+
+.osm-container h1, .osm-container h2 {
+    width: auto;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    float: none;
+}
+
+h1.osm-page-title {
+    margin: 0 0 10px 0 !important;
+}
+
+.osm-container .osm-item-wrapper {
+    margin-bottom: 20px;
+}
+
+.osm-container .osm-item-heading-box {
+    border-radius: 5px 5px 0 0;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 4px 8px 4px;
+    margin: 0;
+    background: #f2f2f2 url(../images/background.png) repeat-x 0 0;
+    border: 1px solid #DBDEE1;
+}
+
+.osm-container .osm-item-heading-box h2 {
+    margin: 0;
+}
+
+.osm-container h2.osm-item-title {
+    margin: 6px 0 !important;
+}
+
+.osm-container .osm-item-description {
+    background: #fff;
+    border-radius: 0 0 7px 7px;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #DBDEE1;
+    border-left: 1px solid #DBDEE1;
+    border-right: 1px solid #DBDEE1;
+}
+
+.osm-container .osm-item-wrapper img {
+    margin: 0 10px 0 0 !important;
+    padding: 0 !important;
+}
+
+.osm-container img.osm-thumb-left {
+    margin: 0 15px 0 0 !important;
+    float: left !important;
+    max-width: 120px;
+}
+
+.osm-container img.osm-thumb-right {
+    margin: 0 0 0 15px !important;
+    float: right !important;
+}
+
+/* ---------- Category styles --------------------------------------- */
+.osm-container .osm-plan-properties {
+    width: 290px;
+    background: #ECF4FB;
+    padding: 5px 5px 5px 10px;
+    margin: 0 5px 5px;
+    float: right;
+}
+
+td.osm-plan-property-label {
+    width: 110px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* ---------- Taskbar styles ---------------------------------------- */
+.osm-taskbar {
+    padding: 0 0 6px 0;
+    margin: 0 0 6px 0;
+    list-style-type: none;
+}
+
+.osm-taskbar ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.osm-taskbar li {
+    float: left !important;
+    list-style-type: none !important;
+    background-image: none !important;
+    padding: 0 5px 0 0 !important;
+    margin: 0.5em 0 2px 0 !important;
+}
+
+.osm-taskbar li a:link, .osm-taskbar li a:visited, .osm-taskbar li a:hover {
+    text-decoration: none;
+}
+
+.osm-taskbar li a:hover {
+
+}
+
+/**Plan detail style**/
+#osm-plan {
+    padding: 0 15px 15px 15px;
+}
+
+#osm-plan-details {
+    padding: 10px 0;
+}
+
+#osm-plan h1.osm-page-title {
+    margin: 0 0 10px 0 !important;
+}
+
+.title_cell {
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+.field_cell {
+
+}
+
+.heading {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span.error {
+    color: red;
+}
+
+.col_container {
+    min-height: 150px;
+}
+
+table.os_table td.title_cell {
+    width: 25%;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+/*** Css for dispalying inputbox td **/
+table.os_table td.field_cell {
+    padding-top: 5px;
+}
+
+/*** Css for display '*' next to required field ***/
+.required {
+    padding-left: 5px;
+    color: red;
+}
+
+span.star {
+    color: red;
+}
+
+.invalid, .error {
+    color: red;
+}
+
+#restricted_info {
+    background-color: #83CC00;
+    min-height: 40px;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.text-error {
+    color: #B94A48;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.inline-display {
+    display: inline;
+}
+
+.explain-text {
+    margin-left: 10px;
+}
+
+#ajax-loading-animation {
+    vertical-align: bottom;
+}
+
+form.form-horizontal .control-label, form.form-horizontal .control-label label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/**Form CSSS**/
+
+form.form-horizontal ul, form.form-horizontal ul {
+    list-style: none;
+}
+
+form.form-horizontal ul li label, form.form-horizontal ul li label {
+    display: inline;
+}
+
+.table td.right, th.right {
+    text-align: right;
+}
+
+.table td.left, th.right {
+    text-align: left;
+}
+
+/**Pricing table*/
+#osm-plans-list-columns .osm-pricing-table {
+    padding: 0;
+	margin: 0 0 25px 0;
+    width: auto;
+}
+
+.osm-pricing-table .osm-plan {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f3f3f3;
+    -moz-box-shadow: 0 0 6px 2px #b0b2ab;
+    -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+    box-shadow: 0 0 6px 2px #b0b2ab;
+    position: relative;
+}
+
+.osm-pricing-table .osm-plan:hover {
+    -moz-box-shadow: 0 0 12px 3px #b0b2ab;
+    -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+    box-shadow: 0 0 12px 3px #b0b2ab;
+}
+
+.osm-pricing-table .osm-plan .osm-plan-short-description {
+    padding: 10px;
+}
+
+.osm-pricing-table .osm-plan-recommended {
+    transition: all 0.25s ease 0s;
+    overflow: hidden;
+}
+
+.osm-pricing-table .osm-plan .osm-plan-header {
+    padding: 10px 50px;
+    color: #fff;
+	display: block;
+    background-color: #363948;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.osm-pricing-table .osm-plan .osm-plan-header h2 {
+    color: #fff !important;
+    font-size: 22px;
+    line-height: normal;
+    margin: 0 !important;
+    text-transform: uppercase;
+}
+
+.osm-pricing-table .osm-plan .osm-plan-header span.osm-plan-price {
+    font-size: 20px;
+}
+
+.osm-plan-price {
+    background: #27ae60;
+    color: #fff;
+    padding: 20px 0 10px;
+}
+
+.osm-plan-recommended .osm-plan-price {
+    background: #eb5e4c;
+}
+
+.osm-plan-price .price {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+    position: relative;
+}
+
+.osm-plan-price .price span {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: normal;
+}
+
+.osm-plan-price .price sup {
+    font-size: 1.5rem;
+    left: -12px;
+    position: absolute;
+    top: 12px;
+}
+
+.osm-pricing-table .osm-plan ul {
+    list-style: none;
+    margin: -10px;
+	padding: 0;
+}
+
+.osm-pricing-table .osm-plan ul.osm-signup-container {
+    padding: 10px;
+	margin: 0;
+}
+
+.osm-pricing-table .osm-plan ul li.plan-feature {
+    padding: 15px 10px;
+    border-top: 1px solid #c5c8c0;
+}
+
+.osm-pricing-table .osm-plan ul li:nth-child(2n+1).plan-feature {
+    background: #fff;
+}
+
+.osm-pricing-table .btn-singup {
+    padding: 8px 25px;
+    font-size: 18px;
+}
+
+.osm-pricing-table .osm-plan-recommended .plan-recommended {
+    background: #27ae60;
+    border-radius: 0 0 4px 4px;
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    left: -35px;
+    line-height: 22px;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.05);
+    top: 18px;
+    transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+    width: 130px;
+}
+
+.osm-container .form-group .radio, .osm-container .form-group .checkbox {
+    min-height: 1px !important;
+}
+
+.osm-container .form-group input.radio, .osm-container .form-group input.checkbox, .osm-container .form-group select {
+    display: inline-block !important;
+}
+
+.osm-container .form-group select,
+.osm-container .form-group textarea,
+.osm-container .form-group input[type="text"],
+.osm-container .form-group input[type="password"],
+.osm-container .form-group input[type="datetime"],
+.osm-container .form-group input[type="datetime-local"],
+.osm-container .form-group input[type="date"],
+.osm-container .form-group input[type="month"],
+.osm-container .form-group input[type="time"],
+.osm-container .form-group input[type="week"],
+.osm-container .form-group input[type="number"],
+.osm-container .form-group input[type="email"],
+.osm-container .form-group input[type="url"],
+.osm-container .form-group input[type="search"],
+.osm-container .form-group input[type="tel"],
+.osm-container .form-group input[type="color"] {
+    width: 210px !important;
+}
+
+.osm-container .form-group input[type="text"].input-mini,
+.osm-container .form-group select.input-mini,
+.osm-container .form-group textarea.input-mini {
+    width: 60px !important;
+}
+
+.osm-container .form-group input[type="text"].input-small,
+.osm-container .form-group select.input-small,
+.osm-container .form-group textarea.input-small {
+    width: 90px !important;
+}
+
+.osm-container .form-group input[type="text"].input-medium,
+.osm-container .form-group select.input-medium,
+.osm-container .form-group textarea.input-medium
+{
+    width: 150px !important;
+}
+
+.osm-container .form-group input[type="text"].input-large,
+.osm-container .form-group select.input-large,
+.osm-container .form-group textarea.input-large
+{
+    width: 210px !important;
+}
+
+.osm-container .form-group input[type="text"].input-xlarge,
+.osm-container .form-group select.input-xlarge,
+.osm-container .form-group textarea.input-xlarge
+{
+    width: 270px !important;
+}
+
+.osm-container .form-group input[type="text"].input-xxlarge,
+.osm-container .form-group select.input-xxlarge,
+.osm-container .form-group textarea.input-xxlarge
+{
+    width: 530px !important;
+}
+
+div#osm-plans-list-columns div.row.osm-pricing-table .osm-plan
+{
+	margin: 0 -15px;
+}
+.osm-active-plans-list
+{
+}
+
+.osm-active-plans-list li
+{
+	margin-top: 5px;
+}

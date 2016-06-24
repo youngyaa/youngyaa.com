@@ -1,0 +1,524 @@
+@charset "utf-8";
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    clear: both
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis
+}
+
+.btn {
+    -moz-user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap
+}
+
+a {
+    color: #259;
+    text-decoration: none
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: inherit;
+    font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", SimHei, Tahoma, sans-serif;
+    font-weight: 500;
+    line-height: 1.1
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.7
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+.input-text {
+    width: 328px;
+    height: 34px;
+    border: 1px solid #c6c9cc;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333
+}
+
+.w186 {
+    width: 168px
+}
+
+.checkImg {
+    border: 1px solid #c6c9cc;
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    padding-left: 10px;
+    right: 5px;
+    top: 3px;
+    width: 80px;
+    z-index: 4
+}
+
+.verification {
+    border: 1px solid #c6c9cc;
+    background-color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 34px;
+    margin-left: 15px;
+    right: 5px;
+    top: 3px;
+    width: 88px;
+    z-index: 4;
+    float: left
+}
+
+.getCode {
+    border: 1px solid #c6c9cc;
+    background-color: #fff;
+    text-align: center;
+    color: #5c5c5c;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 140px;
+    float: right;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-family: SimSum;
+    border-radius: 2px
+}
+
+.submit_raffle {
+    background-color: #fd9b27;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    width: 338px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-family: SimSum
+}
+
+.form-err {
+    color: #f00;
+    line-height: 1.7
+}
+
+.prize_person {
+    font-family: SimSum;
+    color: #555;
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 15px
+}
+
+.prize_person span {
+    color: #e90000
+}
+
+.prizeError {
+    color: #e84c3d;
+    display: none;
+    left: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px
+}
+
+.error {
+    border: solid 1px #ff4f00
+}
+
+.form-error {
+    color: #e84c3d;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 100%
+}
+
+.scrollText {
+    width: 260px;
+    float: left;
+    overflow: hidden
+}
+
+.scrollText ul li {
+    float: left;
+    padding-right: 10px
+}
+
+.scrollText ul:after {
+    content: '';
+    clear: both;
+    display: table
+}
+
+.fl {
+    float: left
+}
+
+.text {
+    display: inline;
+    float: left
+}
+
+.changeVcode {
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 40px;
+    float: right;
+    height: 32px;
+    line-height: 16px;
+    font-size: 12px;
+    font-family: SimSum
+}
+
+.index-adv, .index-adv2 {
+    background-color: #bbebf2;
+    text-align: center;
+    width: 100%
+}
+
+.mt30p {
+    margin-top: 30px
+}
+
+.mt40p {
+    margin-top: 40px
+}
+
+.mr30p {
+    margin-right: 30px
+}
+
+.pull-left {
+    float: left
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.container_wrap {
+    background: #ebeae6;
+    width: 960px;
+    height: 540px;
+    position: absolute
+}
+
+.zhuanpan {
+    padding-top: 40px;
+    padding-left: 80px;
+    position: absolute
+}
+
+.zhuanpan ul {
+    position: absolute;
+    background: url('../img/zhuanpan.png');
+    background-size: cover;
+    width: 385px;
+    height: 361px;
+    padding-top: 23px
+}
+
+.zhuanpan ul li {
+    position: relative;
+    width: 300px;
+    height: 338px;
+    margin-left: 43px;
+    display: none
+}
+
+.zhuanpan ul .libao {
+    background: url('../img/libao.png');
+    background-size: cover
+}
+
+.zhuanpan ul .mobile_shell {
+    background: url('../img/mobile_shell.png');
+    background-size: cover
+}
+
+.zhuanpan ul .note {
+    background: url('../img/note.png');
+    background-size: cover
+}
+
+.zhuanpan ul .better {
+    background: url('../img/better.png');
+    background-size: cover
+}
+
+.zhuanpan ul .quan {
+    background: url('../img/quan.png');
+    background-size: cover
+}
+
+.zhuanpan ul .tshirt {
+    background: url('../img/tshirt.png');
+    background-size: cover
+}
+
+.rule {
+    font-family: SimSum;
+    color: #555;
+    font-size: 11.57px;
+    padding-left: 105px;
+    position: absolute;
+    top: 430px
+}
+
+.choujiang {
+    z-index: 2;
+    position: relative;
+    top: 200px;
+    left: 228px;
+    cursor: pointer;
+    display: block
+}
+
+.have_choujiang {
+    z-index: 2;
+    position: relative;
+    top: 200px;
+    left: 228px;
+    display: none
+}
+
+.container_left {
+    float: left;
+    width: 530px
+}
+
+.container_right {
+    float: left;
+    width: 340px
+}
+
+.tips {
+    width: 208px;
+    height: 88px;
+    border: 1px solid #3c2a0b;
+    border-radius: 20px;
+    background-color: rgba(60, 42, 11, 0.8);
+    filter: progid: DXImageTransform.Microsoft.Alpha(opacity=80);
+    background-color: #3c2a0b;
+    opacity: .8;
+    position: relative;
+    top: 110px;
+    left: 160px;
+    z-index: 4;
+    display: none
+}
+
+.tips .tips_close {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+.tips .tips_content {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 28px
+}
+
+.reward {
+    color: #fff;
+    left: 0;
+    padding-top: 45px;
+    width: 360px
+}
+
+.reward .wish {
+    font-size: 30px;
+    color: #fa3a3c;
+    text-align: center;
+    font-family: Microsoft YaHei
+}
+
+.reward .wish_content {
+    font-size: 20px;
+    color: #433a3a;
+    text-align: center;
+    font-family: Microsoft YaHei
+}
+
+.reward .wish_img {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px
+}
+
+.reward .wish_time {
+    font-family: SimSum;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.reward .submit_login {
+    border: 1px solid #fd9b27;
+    border-radius: 2px;
+    background-color: #fd9b27;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    width: 338px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-family: SimSum;
+    margin-top: 70px
+}
+
+.reward_wenshu {
+    color: #fff;
+    left: 0;
+    padding-top: 45px;
+    width: 360px
+}
+
+.reward_wenshu .wenshu {
+    font-size: 30px;
+    color: #fa3a3c;
+    text-align: center;
+    font-family: Microsoft YaHei
+}
+
+.reward_wenshu .wenshu_content {
+    font-size: 20px;
+    color: #433a3a;
+    text-align: center;
+    font-family: Microsoft YaHei
+}
+
+.reward_wenshu .wenshu_img {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px
+}
+
+.reward_wenshu .wenshu_time {
+    font-family: SimSum;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.reward_wenshu .wenshu_link {
+    font-size: 14px;
+    color: #259;
+    text-align: center;
+    font-family: Microsoft YaHei;
+    margin-top: 5px
+}
+
+.reward_wenshu .wenshu_link a {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.reward_wenshu .submit_login {
+    border: 1px solid #fd9b27;
+    border-radius: 2px;
+    background-color: #fd9b27;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    width: 338px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    font-family: SimSum;
+    margin-top: 40px
+}
+
+.label-key {
+    color: #ccc;
+    cursor: text;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1.42857;
+    left: 0;
+    padding: 8px 1px 6px 11px;
+    position: absolute;
+    top: 0;
+    width: 160px
+}
+
+.reward_change {
+    font-size: 14px;
+    color: #555;
+    float: right;
+    padding: 5px 0
+}
+
+.reward_change span {
+    color: #2099e2;
+    cursor: pointer
+}
+
+.container_reward_login {
+    color: #fff;
+    left: 0;
+    padding-top: 40px;
+    width: 340px;
+    z-index: 2
+}
+
+.container_reward_login .reward_title {
+    font-family: Microsoft YaHei;
+    color: #fa3a3c;
+    font-size: 23.34px;
+    padding-top: 100px
+}
+
+.reward_login1 {
+    cursor: pointer;
+    color: #2099e2
+}
+
+.checkReward {
+    cursor: pointer;
+    color: #2099e2
+}

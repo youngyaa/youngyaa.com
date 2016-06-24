@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="finder" method="upgrade">
+	<name>Smart Search - BT Media Gallery</name>
+	<author>BowThemes</author>
+	<creationDate>Aug 2013</creationDate>
+	<copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://www.bowthemes.com</authorUrl>
+	<version>1.0.1</version>
+	<description>PLG_FINDER_BT_MEDIA_DESCRIPTION</description>
+	<files>
+		<file plugin="bt_media">bt_media.php</file>
+    	<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_finder_bt_media.ini</language>		
+	</languages>
+</extension>

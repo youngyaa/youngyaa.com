@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="component"
+              label="COM_BT_MEDIA_COMPONENT_CONFIG_LABEL"
+              description="COM_BT_MEDIA_COMPONENT_DESC">
+
+        <field name="file_save"
+               class="textbox"
+               type="text"
+               label="COM_BT_MEDIA_PATH_SAVE_LABEL"
+               description="COM_BT_MEDIA_PATH_SAVE_DESC"
+               default="images/bt_media"
+               size="60"/>
+        
+        <field name="file_upload_type"
+               class="textbox"
+               type="list"
+               label="COM_BT_MEDIA_FILE_UPLOAD_TYPE_LABEL"
+               description="COM_BT_MEDIA_FILE_UPLOAD_TYPE_DESC"
+               default="flash">
+            <option value="basic">Simple upload</option>
+            <option value="flash">Flash upload</option>
+            <option value="html5">HTML5</option>
+        </field>
+        
+        <field type="spacer" label="VOTING SYSTEM:" />
+        <field name="allow_voting" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CONFIG_ALLOW_VOTING_LABEL" description="COM_BT_MEDIA_CONFIG_ALLOW_VOTING_DESC"
+               default="1">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field name="allow_guest_vote" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CONFIG_ALLOW_GUEST_VOTE_LABEL" description="COM_BT_MEDIA_CONFIG_ALLOW_GUEST_VOTE_DESC"
+               default="0">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field type="spacer" label="COMMENT SYSTEM:" />
+        <field name="allow_comment" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CONFIG_ALLOW_COMMENT_LABEL" description="COM_BT_MEDIA_CONFIG_ALLOW_COMMENT_DESC"
+               default="1">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field type="spacer" label="SHARING SYSTEM:" />
+        <field name="allow_social_share" type="radio" class="btn-group bt_control" 
+               label="COM_BT_MEDIA_CONFIG_SHOW_SOCIAL_SHARE_LABEL" description="COM_BT_MEDIA_CONFIG_SHOW_SOCIAL_SHARE_DESC"
+               default="1">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+
+        <field type="spacer" label="API KEYS:" />
+        <field
+            class="textbox"
+            name="flickr_api"
+            type="text"
+            label="COM_BT_MEDIA_FLICKR_API_LABEL"
+            description="COM_BT_MEDIA_FLICKR_API_DESC"/>
+        <field
+                class="textbox"
+                name="google_api"
+                type="text"
+                label="COM_BT_MEDIA_GOOGLE_API_LABEL"
+                description="COM_BT_MEDIA_GOOGLE_API_DESC"/>
+        <field class="textbox" name="vimeo_client_id" type="text" label="COM_BT_MEDIA_VIMEO_CLIENT_ID_LABEL" description="COM_BT_MEDIA_VIMEO_CLIENT_ID_DESC"/>
+        <field class="textbox" name="vimeo_client_secret" type="text" label="COM_BT_MEDIA_VIMEO_CLIENT_SECRET_LABEL" description="COM_BT_MEDIA_VIMEO_CLIENT_SECRET_DESC"/>
+
+    </fieldset>
+        
+    <fieldset name="com_display_options" addfieldpath="/administrator/components/com_bt_media/models/fields"
+              label="COM_BT_MEDIA_COMPONENT_OPTIONS_LABEL"
+              description="COM_BT_MEDIA_COMPONENT_OPTIONS_DESC">
+        <field 
+            type="spacer" 
+            label="Theme Options"/>
+                
+        <field name="theme"
+               type="vthemes"
+               path="components/com_bt_media/themes"
+               class="textbox"
+               label="COM_BT_MEDIA_MEDIA_SELECT_THEME_LABEL"
+               description="COM_BT_MEDIA_MEDIA_SELECT_THEME_DESC"
+               default="default">
+        </field>
+            
+            
+        <field 
+            type="spacer" 
+            label="Media Options"/>
+
+        <field name="media_show_width"
+               type="text"
+               class="textbox"
+               label="COM_BT_MEDIA_MEDIA_SHOW_WIDTH_LABEL"
+               description="COM_BT_MEDIA_MEDIA_SHOW_WIDTH_DESC"
+               default="700"/>
+        
+        <field name="media_show_height"
+               type="text"
+               class="textbox"
+               label="COM_BT_MEDIA_MEDIA_SHOW_HEIGHT_LABEL"
+               description="COM_BT_MEDIA_MEDIA_SHOW_HEIGHT_DESC"
+               default="450"/>
+        <field name="show_filter_bar" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_FILTER_BAR_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_FILTER_BAR_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_sub_media"
+               type="radio"
+               class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_SUB_ITEMS_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_SUB_ITEMS_DESC"
+               default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_name"
+               type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_TITLE_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_TITLE_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_description"
+               type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_DESCRIPTION_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_DESCRIPTION_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_category" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_CATEGORY_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_CATEGORY_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="show_created_by" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_CREATE_BY_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_CREATE_BY_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_hits" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_HITS_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_HITS_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_tags" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_SHOW_TAGS_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_TAGS_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="show_list_limit_item"
+               type="text"
+               label="COM_BT_MEDIA_OPTION_SHOW_LIMIT_ITEM_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_LIMIT_ITEM_DESC"
+               default=""
+        >
+        </field>
+        <field name="show_ordering"
+               type="list"
+               label="COM_BT_MEDIA_OPTION_SHOW_ORDER_BY_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_ORDER_BY_DESC"
+               default="ordering"
+        >
+            <option value="ordering">Default - Ordering</option>
+            <option value="name">Title</option>
+            <option value="created_date">Created date</option>
+            <option value="hits">Hits</option>
+            <option value="featured">Featured</option>
+            <option value="media_type">Media type</option>
+            <option value="rating">Rating</option>
+        </field>
+        <field name="order_type"
+               type="list"
+               label="COM_BT_MEDIA_OPTION_SHOW_ORDER_TYPE_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_ORDER_TYPE_DESC"
+               default="ASC"
+        >
+            <option value="ASC">ASC</option>
+            <option value="DESC">DESC</option>
+        </field>
+            
+            
+        <field 
+            type="spacer" 
+            label="Category Options"/>
+            
+            
+        <field name="cat_cat_info" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_CAT_SHOW_CATEGORY_INFO_LABEL" description="COM_BT_MEDIA_OPTION_CAT_SHOW_CATEGORY_INFO_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_show_name" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_CAT_SHOW_TITLE_LABEL" description="COM_BT_MEDIA_OPTION_CAT_SHOW_TITLE_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_show_description" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_CAT_SHOW_DESCRIPTION_LABEL" description="COM_BT_MEDIA_OPTION_CAT_SHOW_DESCRIPTION_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_show_created_by" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_CAT_SHOW_CREATE_BY_LABEL" description="COM_BT_MEDIA_OPTION_CAT_SHOW_CREATE_BY_DESC"
+               default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_show_hits" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_CAT_SHOW_HITS_LABEL" description="COM_BT_MEDIA_OPTION_CAT_SHOW_HITS_DESC"
+               default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_show_parent" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_OPTION_CAT_SHOW_PARENT_LABEL" 
+               description="COM_BT_MEDIA_OPTION_CAT_SHOW_PARENT_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_show_child" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CAT_OPTION_SHOW_CHILD_LABEL" description="COM_BT_MEDIA_OPTION_CAT_SHOW_CHILD_DESC"
+               default="1"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+            
+        <field name="cat_ordering"
+               type="list"
+               label="COM_BT_MEDIA_OPTION_SHOW_ORDER_BY_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_ORDER_BY_DESC"
+               default="ordering"
+        >
+            <option value="ordering">Default - Ordering</option>
+            <option value="name">Title</option>
+            <option value="created_date">Created date</option>
+            <option value="hits">Hits</option>
+            <option value="item_type">Media type</option>
+        </field>
+        <field name="cat_order_type"
+               type="list"
+               label="COM_BT_MEDIA_OPTION_SHOW_ORDER_TYPE_LABEL"
+               description="COM_BT_MEDIA_OPTION_SHOW_ORDER_TYPE_DESC"
+               default="ASC"
+        >
+            <option value="ASC">ASC</option>
+            <option value="DESC">DESC</option>
+        </field>
+        
+    </fieldset>
+        
+    <fieldset name="image_config"
+              label="COM_BT_MEDIA_IMAGE_CONFIG_LABEL"
+              description="COM_BT_MEDIA_IMAGE_CONFIG_DESC">
+        
+        <field
+            class="textbox image-process"
+            name="large_image_process_type"
+            type="list"
+            label="COM_BT_MEDIA_LARGE_IMAGE_PROCESS_LABEL"
+            description="COM_BT_MEDIA_LARGE_IMAGE_PROCESS_DESC"
+            default="crop"
+        >
+            <option value="none">COM_BT_MEDIA_IMAGE_PROCESS_NONE</option>
+            <option value="crop">COM_BT_MEDIA_IMAGE_PROCESS_CROP</option>
+            <option value="resize">COM_BT_MEDIA_IMAGE_PROCESS_RESIZE</option>
+            <option value="fixedwidth">COM_BT_MEDIA_IMAGE_PROCESS_FIXED_WIDTH</option>
+            <option value="fixedheight">COM_BT_MEDIA_IMAGE_PROCESS_FIXED_HEIGHT</option>
+            <option value="resizekeepratio">COM_BT_MEDIA_IMAGE_PROCESS_RESIZE_KEEP_RATIO</option>
+        </field>
+        
+        <field
+            class="textbox image-process"
+            name="thumb_image_process_type"
+            type="list"
+            label="COM_BT_MEDIA_THUMB_IMAGE_PROCESS_LABEL"
+            description="COM_BT_MEDIA_THUMB_IMAGE_PROCESS_DESC"
+            default="crop"
+        >
+            <option value="none">COM_BT_MEDIA_IMAGE_PROCESS_NONE</option>
+            <option value="crop">COM_BT_MEDIA_IMAGE_PROCESS_CROP</option>
+            <option value="resize">COM_BT_MEDIA_IMAGE_PROCESS_RESIZE</option>
+            <option value="fixedwidth">COM_BT_MEDIA_IMAGE_PROCESS_FIXED_WIDTH</option>
+            <option value="fixedheight">COM_BT_MEDIA_IMAGE_PROCESS_FIXED_HEIGHT</option>
+            <option value="resizekeepratio">COM_BT_MEDIA_IMAGE_PROCESS_RESIZE_KEEP_RATIO</option>
+        </field>
+        
+        
+        <field
+            class="textbox"
+            name="image_crop_position"
+            type="list"
+            label="COM_BT_MEDIA_IMAGE_PROCESS_CROP_POSITION_LABEL"
+            description="COM_BT_MEDIA_IMAGE_PROCESS_CROP_POSITION_DESC"
+            default="crop_center"
+        >
+            <option value="crop_center">COM_BT_MEDIA_IMAGE_CROP_CENTER</option>
+            <option value="crop_top_left">COM_BT_MEDIA_IMAGE_CROP_TOP_LEFT</option>
+            <option value="crop_top_middle">COM_BT_MEDIA_IMAGE_CROP_TOP_MIDDLE</option>
+            <option value="crop_top_right">COM_BT_MEDIA_IMAGE_CROP_TOP_RIGHT</option>
+            <option value="crop_buttom_left">COM_BT_MEDIA_IMAGE_CROP_BUTTOM_LEFT</option>
+            <option value="crop_buttom_middle">COM_BT_MEDIA_IMAGE_CROP_BUTTOM_MIDDLE</option>
+            <option value="crop_buttom_right">COM_BT_MEDIA_IMAGE_CROP_BUTTOM_RIGHT</option>
+        </field>
+        
+        <field 
+            class="textbox"
+            name="image_quality"
+            type="text"
+            label="COM_BT_MEDIA_IMAGE_QUALITY_LABEL"
+            description="COM_BT_MEDIA_IMAGE_QUALITY_DESC"
+            default="100"/>
+            
+        <field 
+            class="textbox image-process crop"
+            name="image_width"
+            type="text"
+            label="COM_BT_MEDIA_IMAGE_WIDTH_LABEL"
+            description="COM_BT_MEDIA_IMAGE_WIDTH_DESC"
+            default="700"/>
+        
+        <field 
+            class="textbox image-process crop"
+            name="image_height"
+            type="text"
+            label="COM_BT_MEDIA_IMAGE_HEIGHT_LABEL"
+            description="COM_BT_MEDIA_IMAGE_HEIGHT_DESC"
+            default="450"/>
+         
+        <field 
+            class="textbox"
+            name="thumb_image_width"
+            type="text"
+            default="200"
+            label="COM_BT_MEDIA_THUMB_IMAGE_WIDTH_LABEL"
+            description="COM_BT_MEDIA_THUMB_IMAGE_WIDTH_DESC"/>
+        
+        <field 
+            class="textbox"
+            name="thumb_image_height"
+            type="text"
+            default="130"
+            label="COM_BT_MEDIA_THUMB_IMAGE_HEIGHT_LABEL"
+            description="COM_BT_MEDIA_THUMB_IMAGE_HEIGHT_DESC"/>
+        
+        <field type="spacer" label="WATERMARK SYSTEM:" />
+        <field name="wm-enabled" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CONFIG_WM_ENABLED_LABEL" description="COM_BT_MEDIA_CONFIG_WM_ENABLED_DESC"
+               default="0">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="wm-categories" type="categoryfield" multiple="multiple"
+               default="all" label="COM_BT_MEDIA_CONFIG_WM_CATEGORY_LABEL"
+               description="COM_BT_MEDIA_CONFIG_WM_CATEGORY_DESC">
+            <option value="all">JALL</option>
+        </field>
+        <field name="wm-thumb" type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CONFIG_WM_THUMB_LABEL" description="COM_BT_MEDIA_CONFIG_WM_THUMB_DESC"
+               default="1">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="wm-type" type="list" class="bt_control"
+               label="COM_BT_MEDIA_CONFIG_WM_TYPE_LABEL" description="COM_BT_MEDIA_CONFIG_WM_TYPE_DESC"
+               default="img">
+            <option value="msg">COM_BT_MEDIA_CONFIG_WM_TYPE_TEXT</option>
+            <option value="img">COM_BT_MEDIA_CONFIG_WM_TYPE_IMAGE</option>
+        </field>
+        <field name="wm-text" type="text" size="20" default="©bowthemes.com" class="wm_type_msg"
+               label="COM_BT_MEDIA_CONFIG_WM_TEXT_LABEL" description="COM_BT_MEDIA_CONFIG_WM_TEXT_DESC" />
+        <field name="wm-image" type="media" class="wm_type_img"
+               label="COM_BT_MEDIA_CONFIG_WM_IMAGE_LABEL" description="COM_BT_MEDIA_CONFIG_WM_IMAGE_DESC" />
+        <field name="wm-font" type="list" class="wm_type_msg"
+               label="COM_BT_MEDIA_CONFIG_WM_FONT_LABEL" description="COM_BT_MEDIA_CONFIG_WM_FONT_DESC"
+               default="tahoma">
+            <option value="arial">Arial</option>
+            <option value="tahoma">Tahoma</option>
+            <option value="times">Times New Roman</option>
+            <option value="verdana">Verdana</option>
+        </field>
+        <field name="wm-fcolor" type="text" size="20" default="ffffff" class="bt_color wm_type_msg"
+               label="COM_BT_MEDIA_CONFIG_WM_FCOLOR_LABEL" description="COM_BT_MEDIA_CONFIG_WM_FCOLOR_DESC" />
+        <field name="wm-fsize" type="text" size="20" default="11" class="wm_type_msg"
+               label="COM_BT_MEDIA_CONFIG_WM_FSIZE_LABEL" description="COM_BT_MEDIA_CONFIG_WM_FSIZE_DESC" />
+        <field name="wm-bg" type="radio" class="btn-group wm_type_msg" label="COM_BT_MEDIA_CONFIG_WM_BG_LABEL"
+               description="COM_BT_MEDIA_CONFIG_WM_BG_DESC" default="1">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="wm-bgcolor" type="text" size="20" default="000000" class="bt_color wm_type_msg"
+               label="COM_BT_MEDIA_CONFIG_WM_BGCOLOR_LABEL" description="COM_BT_MEDIA_CONFIG_WM_BGCOLOR_DESC" />
+        <field name="wm-position" type="list"
+               label="COM_BT_MEDIA_CONFIG_WM_POSITION_LABEL" description="COM_BT_MEDIA_CONFIG_WM_POSITION_DESC"
+               default="br">
+            <option value="tl">COM_BT_MEDIA_CONFIG_WM_POSITION_TOP_LEFT
+            </option>
+            <option value="tr">COM_BT_MEDIA_CONFIG_WM_POSITION_TOP_RIGHT
+            </option>
+            <option value="bl">COM_BT_MEDIA_CONFIG_WM_POSITION_BOTTOM_LEFT
+            </option>
+            <option value="br">COM_BT_MEDIA_CONFIG_WM_POSITION_BOTTOM_RIGHT
+            </option>
+            <option value="c">COM_BT_MEDIA_CONFIG_WM_POSITION_CENTER
+            </option>
+        </field>
+        <field name="wm-padding" type="text" size="20" default="4"
+               label="COM_BT_MEDIA_CONFIG_WM_PADDING_LABEL" description="COM_BT_MEDIA_CONFIG_WM_PADDING_DESC" />
+        <field name="wm-opacity" type="text" size="20" default="70"
+               label="COM_BT_MEDIA_CONFIG_WM_OPACITY_LABEL" description="COM_BT_MEDIA_CONFIG_WM_OPACITY_DESC" />
+        <field name="wm-rotate" type="text" size="20" default="0"
+               label="COM_BT_MEDIA_CONFIG_WM_ROTATE_LABEL" description="COM_BT_MEDIA_CONFIG_WM_ROTATE_DESC" />
+        <field name="wm-factor" type="text" default="1" label="COM_BT_MEDIA_CONFIG_WM_FACTOR_LABEL" description="COM_BT_MEDIA_CONFIG_WM_FACTOR_DESC"/>
+        <field name="wm-thumbnail-factor" type="text" default="0.5" label="COM_BT_MEDIA_CONFIG_WM_THUMBNAIL_FACTOR_LABEL" description="COM_BT_MEDIA_CONFIG_WM_THUMBNAIL_FACTOR_DESC"/>
+        <field type="asset" name="asset" path="administrator/components/com_bt_media/assets/" />
+    </fieldset>
+    <fieldset name="fancybox_config"
+              label="COM_BT_MEDIA_FANCYBOX_CONFIG_LABEL"
+              description="COM_BT_MEDIA_FANCYBOX_CONFIG_DESC">
+        
+        <field name="op_open_effect"
+               class="textbox"
+               type="list"
+               label="COM_BT_MEDIA_OPEN_EFFECT_LABEL"
+               description="COM_BT_MEDIA_OPEN_EFFECT_DESC"
+               default="fade">
+            <option value="none">None</option>
+            <option value="fade">Fade</option>
+            <option value="elastic">Elastic</option>
+        </field>
+        <field name="op_close_effect"
+               class="textbox"
+               type="list"
+               label="COM_BT_MEDIA_CLOSE_EFFECT_LABEL"
+               description="COM_BT_MEDIA_CLOSE_EFFECT_DESC"
+               default="fade">
+            <option value="none">None</option>
+            <option value="fade">Fade</option>
+            <option value="elastic">Elastic</option>
+        </field>
+		
+        <field name="op_next_prev_effect"
+               class="textbox"
+               type="list"
+               label="COM_BT_MEDIA_NEXT_PREV_EFFECT_LABEL"
+               description="COM_BT_MEDIA_NEXT_PREV_EFFECT_DESC"
+               default="fade">
+            <option value="none">None</option>
+            <option value="fade">Fade</option>
+            <option value="elastic">Elastic</option>
+        </field>
+        
+        <field name="op_aspect_ratio"
+               type="radio" class="btn-group"
+               label="COM_BT_MEDIA_ASPECT_RATIO_LABEL"
+               description="COM_BT_MEDIA_ASPECT_RATIO_DESC"
+               default="1">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="op_auto_play"
+               type="radio" class="btn-group"
+               label="COM_BT_MEDIA_AUTO_PLAY_LABEL"
+               description="COM_BT_MEDIA_AUTO_PLAY_DESC"
+               default="0">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        <field name="op_play_speed"
+               class="textbox"
+               type="text"
+               label="COM_BT_MEDIA_PLAY_SPEED_LABEL"
+               description="COM_BT_MEDIA_PLAY_SPEED_DESC"
+               default="3"/>
+        <field name="op_padding"
+               class="textbox"
+               type="text"
+               label="COM_BT_MEDIA_PADDING_LABEL"
+               description="COM_BT_MEDIA_PADDING_DESC"
+               default="15"/>
+        <field name="op_margin"
+               class="textbox"
+               type="text"
+               label="COM_BT_MEDIA_MARGIN_LABEL"
+               description="COM_BT_MEDIA_MARGIN_DESC"
+               default="20"/>
+        <field name="op_close_btn"
+               type="radio" class="btn-group"
+               label="COM_BT_MEDIA_CLOSE_BTN_LABEL"
+               description="COM_BT_MEDIA_CLOSE_BTN_DESC"
+               default="1">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+    </fieldset>
+    <fieldset name="permissions"
+              label="JCONFIG_PERMISSIONS_LABEL"
+              description="JCONFIG_PERMISSIONS_DESC"
+    >
+        <field
+            name="rules"
+            type="rules"
+            label="JFIELD_RULES_LABEL"
+            filter="rules"
+            validate="rules"
+            component="com_bt_media"
+            section="component" />
+    </fieldset>
+        
+</config>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+       <field name="title" type="text"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_TITLE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_TITLE" required="true"  /> 
+       <field name="description" type="editor"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_DESRIPTION"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_DESRIPTION" 
+                 required="true"  />
+       <field name="rules" type="editor"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_EVENTRULES"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_EVENTRULES"
+             /> 
+       <field name="startdate" type="DateTime" class="inputbox"
+         required="true" 
+        
+         default="0000-00-00" 
+        
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_STARTDATE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_STARTDATE" 
+        filter="safehtml" /> 
+       <field name="enddate" type="DateTime" class="inputbox"
+         required="true" 
+        
+         default="0000-00-00" 
+        
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_ENDDATE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_ENDDATE" 
+        filter="safehtml" /> 
+
+	</fieldset>
+
+</form>

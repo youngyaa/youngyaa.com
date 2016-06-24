@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_BT_MEDIA_ITEM_VIEW" option="View">
+        <message><![CDATA[COM_BT_MEDIA_ITEM_VIEW_DESC]]></message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request" addfieldpath="/administrator/components/com_bt_media/models/fields">
+            <field
+                name="id"
+                type="modal_media"
+                label="COM_BT_MEDIA_ITEM_SELECT_LABEL"
+                description="COM_BT_MEDIA_ITEM_SELECT_DESC"
+                required="true"
+            />
+        </fieldset>
+    </fields>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="theme" type="vthemes"
+            path="components/com_bt_media/themes"
+                   label="COM_BT_MEDIA_MEDIA_SELECT_THEME_LABEL" 
+                   description="COM_BT_MEDIA_MEDIA_SELECT_THEME_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

@@ -1,0 +1,197 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// -------------------------------
+// TEAMS STYLE 1
+// -------------------------------
+.acm-teams {
+  background-color: @body-bg;
+
+  .style-2 {
+    overflow: hidden;
+
+    // Tablet view
+    @media (max-width: @screen-sm-max) {
+      > .row:after {
+        display: inline!important;
+      }
+    }
+
+    &.full-width {
+      .row {
+        margin: 0;
+      }
+    }
+
+    .team-items-head {
+      padding: @t3-global-padding (@grid-gutter-width / 2);
+      text-align: center;
+
+      @media (min-width: (@screen-lg-min + @main-container-spacing*2)) {
+        padding: @t3-global-padding @main-container-spacing (@t3-global-padding * 3);
+      }
+
+      h3 {
+        font-size: @font-size-large * 3;
+        margin: 0 0 @t3-global-margin;
+      }
+
+      .block-intro {
+        font-size: @font-size-large;
+        line-height: 1.6;
+      }
+    }
+
+    .team-items-footer {
+      background: @yellow;
+      color: @white;
+      padding: @t3-global-padding @grid-gutter-width/2;
+      text-align: center;
+
+      a {
+        font-weight: @font-weight-bold;
+        color: @white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        &:hover, &:focus, &:active {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .item {
+      text-align: left;
+      margin-bottom: @t3-global-margin * 2;
+      position: relative;
+      overflow: hidden;
+      .transition(transform 0.35s ease 0s);
+
+      .item-inner {
+        background-color: @white;
+        border-bottom: 1px solid @t3-border-color;
+        position: relative;
+        text-align: left;
+        .transition(all 0.35s);
+
+        &:hover {
+          border-color: @brand-primary;
+          transform: translateY(-56px);
+        }
+      }
+
+      // Member image
+      .member-image {
+        margin-bottom: @t3-global-margin;
+        overflow: hidden;
+
+        img {
+          display: block;
+          max-width: 100%;
+          position: relative;
+          .opacity(0.8);
+          .transition(opacity 0.35s ease 0s);
+        }
+      }
+
+      .member-info {
+        padding: @t3-global-padding @t3-global-padding 0;
+        overflow: hidden;
+      }
+
+      // Member name
+      h4 {
+        font-size: @font-size-h3 - 2;
+        font-weight: @font-weight-bold;
+        margin: 0 0 5px;
+        line-height: 32px;
+
+        @media (min-width: (@screen-md-min)) {
+        }
+
+        @media (min-width: (@screen-lg-min + @main-container-spacing*2)) {
+        }
+
+        span {
+          font-weight: @font-weight-normal;
+        }
+      }
+
+      // Member title
+      .member-title {
+        color: @gray-light;
+        font-size: @font-size-base - 1;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin-bottom: @t3-global-margin / 2;
+        text-transform: uppercase;
+      }
+
+      // Member description
+      .member-desc {
+        margin-bottom: 48px;
+      }
+
+      // Member Links
+      .member-links {
+        background-color: lighten(@gray-lightest,5%);
+        border-top: 1px solid lighten(@t3-border-color, 5%);
+        box-sizing: border-box;
+        height: 0;
+        overflow: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0 @t3-global-padding;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        .transition(all 0.35s ease 0s);
+
+        @media (min-width: (@screen-md-min)) {
+        }
+
+        li {
+          display: inline-block;
+          margin: 12px 0;
+
+          a {
+            color: @gray-light;
+            display: block;
+            font-size: 16px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            width: 24px;
+
+            &:hover, &:focus, &:active {
+              color: @brand-primary;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        z-index: 2;
+
+        h4 {
+          .opacity(1);
+        }
+
+        .member-image img {
+          .opacity(1);
+        }
+
+        .member-links {
+          height: 56px;
+        }
+
+
+      }
+    }
+  }
+}
+
+
+// FIX BUG IE 8
+// ------------
+.ie8 {}

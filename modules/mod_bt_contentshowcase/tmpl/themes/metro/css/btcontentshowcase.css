@@ -1,0 +1,122 @@
+﻿/*  */
+.metro-layout .wrapper{
+  width: auto;
+  overflow: hidden;
+  margin: auto;
+}
+.metro{
+  width: auto;
+  height: auto;
+  position: relative;
+} 
+.metro-slider{
+	position: relative;
+}
+.metro-slide{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute; top: 0px; left: 0px;
+}
+.metro-item{
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.metro-iten .flipper{
+	width: 100%;
+	height: 100%;
+}
+.metro-item .mi-front,
+.metro-item .mi-back{
+  width: 100%; height: 100%;
+  position: absolute;
+  z-index: 20;
+  backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.metro-item .mi-back{
+	background-color: #bb1d48;
+	color: #ffffff;
+	z-index: 10;
+	font-family: "Open Sans", Tahoma, Arial;
+}
+.metro-item .mi-back-container{
+	padding: 10px;
+}
+.metro-item .mi-back .top{
+	margin-bottom: 5px;
+}
+.metro-item .bt-date{
+	width: 60px; height: 65px; 
+	float: left;
+	
+	margin-right: 25px;
+}
+.metro-item .bt-day{
+	display: block;
+	font-size: 50px;
+	line-height: 50px;
+	vertical-align: top;
+}
+.metro-item .bt-month{
+	font-size: 16px;
+}
+.metro-item .bt-title{
+	font-size: 16px;
+	float: left;
+}
+.metro-item .mi-back .bottom{
+	height: 24px;
+	font-size: 12px;
+	line-height: 34px;
+	clear:both;
+}
+
+
+
+
+
+
+
+
+
+/* front pane, placed above back */
+.metro-item.flip .mi-front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.metro-item.flip  .mi-back {
+	transform: rotateY(180deg);
+}
+
+.metro-item.flipped .mi-back {
+
+		transform: rotateY(0deg);
+}
+
+.metro-item.flipped .mi-front 	{
+	transform: rotateY(180deg);
+}
+
+
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search" method="upgrade">
+	<name>plg_search_bt_media</name>
+	<creationDate>Aug 2013</creationDate>
+	<author>Bowthemes</author>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://www.bowthemes.com</authorUrl>
+	<copyright>Copyright © 2011 Bow Themes</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Plugin search for BT Media Gallery component</description>
+	<files>
+		<filename plugin="bt_media">bt_media.php</filename>
+		<folder>language</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_search_bt_media.ini</language>
+		<language tag="en-GB">language/en-GB.plg_search_bt_media.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="PLG_SEARCH_BT_MEDIA_FIELD_SEARCHLIMIT_DESC"
+					label="PLG_SEARCH_BT_MEDIA_FIELD_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

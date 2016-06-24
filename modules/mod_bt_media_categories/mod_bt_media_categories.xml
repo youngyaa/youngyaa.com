@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>BT Media Categories</name>
+    <author>BowThemes</author>
+    <creationDate>Aug 2013</creationDate>
+    <copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@bowthems.com</authorEmail>
+    <authorUrl>http://bowthemes.com</authorUrl>
+    <version>1.0.2</version>
+    <description>MOD_BT_MEDIA_CATEGORIES_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_bt_media_categories">mod_bt_media_categories.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_bt_media_categories.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_bt_media_categories.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset addfieldpath="/administrator/components/com_bt_media/models/fields"
+                      name="basic">
+                <field name="catid" type="categoryfield" class="inputbox"
+                       default="0" label="MOD_BT_MEDIA_CATEGORY_LABEL"
+                       description="MOD_BT_MEDIA_CATEGORY_DESC">
+                    <option value="0">MOD_BT_MEDIA_CATEGORY_ROOT</option>
+                </field>
+                <field name="show_sub" type="list" default="1"
+                       label="MOD_BT_MEDIA_CATEGORIES_SHOW_SUB_LABEL" 
+                       description="MOD_BT_MEDIA_CATEGORIES_SHOW_SUB_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="show_item_count" type="list" default="0"
+                       label="MOD_BT_MEDIA_CATEGORIES_SHOW_ITEM_COUNT_LABEL" 
+                       description="MOD_BT_MEDIA_CATEGORIES_SHOW_ITEM_COUNT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="order" type="list" default="id_asc" label="MOD_BT_MEDIA_CATEGORIES_ORDER_LABEL"
+                       description="MOD_BT_MEDIA_CATEGORIES_ORDER_DESC">
+                    <option value="id ASC">ID ASC</option>
+                    <option value="id DESC">ID DESC</option>
+                    <option value="name ASC">Title ASC</option>
+                    <option value="name DESC">Title DESC</option>
+                    <option value="hits ASC">Hits ASC</option>
+                    <option value="hits DESC">Hits DESC</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static" />
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

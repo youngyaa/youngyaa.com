@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_bt_media</name>
+    <creationDate>2013-08-01</creationDate>
+    <copyright>Copyright (C) 2013 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>BowThemes</author>
+    <authorEmail>support@bowthems.com</authorEmail>
+    <authorUrl>http://bowthemes.com</authorUrl>
+    <version>1.3</version>
+    <description>
+	<![CDATA[
+	<div class="com-description">
+			<h3>BT Media Gallery Version 1.3</h3>			
+			<a href="http://bowthemes.com" target="_blank"><img src="components/com_bt_media/assets/icon/bt_media.png"></a>
+			<p>BT Media Gallery is full-featured multimedia component for Joomla. This extension connects easily with your YouTube, Vimeo, Flickr and Picasa account to get video and images files by some clicks. It's hard to resist its beautiful Fancybox style (currently use for Facebook) and its friendly User engagement system (ratings, comments, social media sharing). Let's display your digital gallery like a PRO!
+			</p>
+			<br clear="both" />
+			<h3>Features</h3>
+			<ul class="list-style">
+				<li>Various media source: get images and videos from your computer folder and media content hosting (Flickr, Picasa, Youtube and Vimeo).</li>
+				<li>Category management: Able to arrange media files by categories.</li>
+				<li>Smart Tag Manager: automatically get tags while embedding YouTube and Vimeo files.</li>
+				<li>User engagement system: allows user for rating, commenting as well as social sharing.</li>
+				<li>Uploading features: Supports upload by Flash and HTML 5.</li>
+				<li>Multiple layout: Able to display media by selected template layout. It's easy to edit template follow your needs</li>
+				<li>Useful supported extensions: add-media-to-article plugin, Xmap, Smart Search...</li>
+				<li>Multiple image processing method.</li>
+				<li>Compatible with Joomla version 2.5 and 3.x</li>
+				<li>Cross browser support: IE7+, Firefox 10+, Safari 3+, Chrome 8+, Opera 9+</li>
+				<li>Detailed user guide and outstanding support (email, ticket, forum).</li>
+			</ul>
+      </div>
+	   <style>
+            .com-description{
+                    text-align: left;
+            }
+            .com-description h3{
+                    text-transform: uppercase;
+                    margin: 20px 0px 10px 0px;
+            }
+            .com-description img{
+                    float:left;
+                    margin:5px 5px 5px 0px;
+            }
+            .com-description p,.com-description li{
+                    list-style: none outside none;
+                    padding: 5px 5px 5px 20px;				
+            }
+
+            .com-description ul.list-style li{
+                    background:url(components/com_bt_media/assets/images/li-image.png) 0px 6px no-repeat;
+                    padding-left:30px;
+                    line-height:15px;
+            }
+        </style>
+			]]>
+    </description>
+    
+    <scriptfile>script.php</scriptfile>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update> 
+        <schemas> 
+            <schemapath type="mysql">sql/updates</schemapath> 
+        </schemas> 
+    </update>
+	
+    <files folder="component/site">
+        <filename>index.html</filename>
+        <filename>bt_media.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>themes</folder>
+        <folder>models</folder>
+        <folder>sef_ext</folder>
+        <folder>controllers</folder>
+        <folder>language</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="component/site">
+        <language tag="en-GB">language/en-GB.com_bt_media.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_bt_media/assets/icon/s_bt_media.png" >COM_BT_MEDIA</menu>
+        <submenu>
+            <menu link="option=com_bt_media&amp;view=controlpanel" view="controlpanel" img="components/com_bt_media/assets/icon/s_bt_media.png" alt="Bt_media/ControlPanel">COM_BT_MEDIA_MENU_CPANEL_TITLE</menu>
+            <menu link="option=com_bt_media&amp;view=categories" view="categories" img="components/com_bt_media/assets/icon/s_category-manager.png" alt="Bt_media/Categorys">COM_BT_MEDIA_MENU_CATEGORYS_TITLE</menu>
+            <menu link="option=com_bt_media&amp;view=list" view="list" img="components/com_bt_media/assets/icon/s_media-manager.png" alt="Bt_media/List">COM_BT_MEDIA_MENU_MEDIASMANAGEMENT_TITLE</menu>
+            <menu link="option=com_bt_media&amp;view=tags" view="tags" img="components/com_bt_media/assets/icon/s_tags-manager.png" alt="Bt_media/Tags">COM_BT_MEDIA_MENU_TAG_TITLE</menu>
+        </submenu>
+        <files folder="component/administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>bt_media.php</filename>
+            <folder>controllers</folder>
+            <folder>lib</folder>
+            <folder>assets</folder>
+            <folder>language</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="component/administrator">
+            <language tag="en-GB">language/en-GB.com_bt_media.ini
+            </language>
+            <language tag="en-GB">language/en-GB.com_bt_media.sys.ini
+            </language>
+        </languages>
+    </administration>
+	<modules folder="modules">
+		<module folder="mod_bt_media_categories" module="mod_bt_media_categories" client="site" />
+		<module folder="mod_bt_media_gallery" module="mod_bt_media_gallery" client="site" />
+		<module folder="mod_bt_media_tags_list" module="mod_bt_media_tags_list" client="site" />		
+	</modules>
+	<plugins folder="plugins">
+		<plugin folder="plg_finder_com_bt_media" plugin="bt_media" group="finder" />
+		<plugin folder="plg_search_com_bt_media" plugin="bt_media" group="search" />
+		<plugin folder="plg_xmap_com_bt_media" plugin="com_bt_media" group="xmap" />
+		<plugin folder="plg_bt_socialshare" plugin="bt_socialshare" group="content" />
+		<plugin folder="plg_bt_media_display" plugin="bt_media_display" group="content" />
+		<plugin folder="plg_bt_media_button" plugin="bt_media_button" group="editors-xtd" />		
+	</plugins>
+</extension>

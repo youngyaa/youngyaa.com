@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="osmembership" method="upgrade">
+	<name>OS Membership PHP Script</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.7</version>
+	<description>This plugin allow running PHP script (including Joomla code) in Membership Pro when subscription stored, active or expired</description>
+	<files>
+		<filename plugin="script">script.php</filename>
+		<filename>index.html</filename>
+	</files>			
+</extension>

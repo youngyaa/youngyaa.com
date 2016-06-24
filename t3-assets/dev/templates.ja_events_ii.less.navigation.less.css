@@ -1,0 +1,196 @@
+.dropdown-menu .divider {
+  background: #ffffff;
+  margin: 0;
+  height: auto;
+  overflow: inherit;
+}
+.dropdown-menu .divider span {
+  color: #777777;
+  display: block;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+.dropdown-menu .divider span:hover,
+.dropdown-menu .divider span:focus {
+  color: #ff0763;
+}
+.dropdown-menu > li > a {
+  padding: 5px 20px;
+}
+.dropdown-header {
+  padding: 3px 20px;
+  font-size: 14px;
+}
+.dropdown-header a {
+  color: #333333;
+}
+.dropdown-submenu > a:after {
+  border-left-color: #777777;
+}
+.dropdown-submenu:hover > a:after {
+  border-left-color: #262626;
+}
+.nav > li > .separator {
+  position: relative;
+  display: block;
+  padding: 5px 15px;
+  line-height: 24px;
+}
+@media (min-width: 992px) {
+  .nav > li > .separator {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .nav > li > span {
+    padding: 5px 15px;
+    display: inline-block;
+  }
+}
+.nav-tabs > li.open > a,
+.nav-tabs > li.open > a:hover,
+.nav-tabs > li.open > a:focus,
+.nav-tabs > li.open > a:active {
+  background: #ffffff;
+  border-color: #e0e0e0 #e0e0e0 transparent #e0e0e0;
+  color: #555555;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background: #ffffff;
+}
+.nav-tabs > li .dropdown-menu > li.open > a,
+.nav-tabs > li .dropdown-menu > li.active > a,
+.nav-tabs > li .dropdown-menu > li.open > a:hover,
+.nav-tabs > li .dropdown-menu > li.active > a:hover,
+.nav-tabs > li .dropdown-menu > li.open > a:focus,
+.nav-tabs > li .dropdown-menu > li.active > a:focus,
+.nav-tabs > li .dropdown-menu > li.open > a:active,
+.nav-tabs > li .dropdown-menu > li.active > a:active {
+  background: transparent;
+  color: #ff0763;
+}
+.tab-content {
+  border: 1px solid #e0e0e0;
+  border-top: 0;
+  padding: 24px;
+}
+.nav .caret {
+  border-top-color: #ff0763;
+  border-bottom-color: #ff0763;
+}
+.nav a:hover .caret {
+  border-top-color: #b90045;
+  border-bottom-color: #b90045;
+}
+.t3-navhelper {
+  background: #d7d9db;
+  border-top: 1px solid #e0e0e0;
+  color: #555555;
+  padding: 5px 0;
+}
+.breadcrumb {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+}
+.breadcrumb > .active {
+  color: #999999;
+}
+.breadcrumb > .active + li:before {
+  content: "";
+  padding: 0;
+}
+.breadcrumb > .active .hasTooltip {
+  padding-right: 12px;
+}
+.breadcrumb .divider {
+  display: none;
+}
+.pagination-wrap .pagination > li:first-child > a,
+.pagination-wrap .pagination > li:first-child > span,
+.pagination-wrap .pagination > li:last-child > a,
+.pagination-wrap .pagination > li:last-child > span {
+  border-radius: 0;
+}
+.pagination > li > a,
+.pagination > li > span {
+  border-radius: 0;
+  color: #777777;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-right: 12px;
+  padding: 12px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .pagination > li > a,
+  .pagination > li > span {
+    margin-bottom: 12px;
+  }
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: #222222;
+  border-color: #222222;
+  color: #ffffff;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  font-weight: 700;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #b3b3b3;
+  border-color: #e0e0e0;
+}
+.pagination {
+  display: block;
+}
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+.pagination:after {
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .pagination {
+    float: left;
+  }
+}
+.pagination .pagination {
+  display: inline-block;
+}
+.counter {
+  color: #555555;
+  display: inline-block;
+  line-height: 1;
+  margin-top: 24px;
+  padding: 12px 15px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .counter {
+    float: right;
+  }
+}

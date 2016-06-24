@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+    <name>Content - BT Media Display</name>
+    <author>BowThemes</author>
+    <creationDate>April 2013</creationDate>
+    <copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@bowthems.com</authorEmail>
+    <authorUrl>http://bowthemes.com</authorUrl>
+    <version>1.0.1</version>
+    <description>PLG_CONTENT_BT_MEDIA_PREPARE_CONTENT_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="bt_media_display">bt_media_display.php</filename>
+        <folder>language</folder>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB.plg_content_bt_media_display.ini</language>
+        <language tag="en-GB">language/en-GB.plg_content_bt_media_display.sys.ini</language>
+    </languages>
+</extension>

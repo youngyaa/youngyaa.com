@@ -1,0 +1,111 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// ------------------------------------
+// FEATURES INTRO STYLE 10
+// ------------------------------------
+.acm-features {
+	&.style-1 {
+    text-align: center;
+
+    &.full-width {
+      .row {
+        margin: 0;
+      }
+
+      .features-item {
+        padding: @t3-global-margin*2 @grid-gutter-width/2;
+
+        @media (min-width: (@screen-lg-min + @main-container-spacing*2)) {
+          padding: @t3-global-margin*5 @grid-gutter-width*5.5;
+        }
+      }
+
+      .features-image {
+        padding: 0;
+      }
+    }
+
+    // features description
+    .features-description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .features-content {
+      margin: 0 auto;
+      background: none;
+      padding: 0;
+  
+      @media (min-width: @screen-sm) {
+        width: 65%;
+
+        &.features-content-right,
+        &.features-content-left {
+          width: 100%;
+        }
+      }
+
+      h3 {
+        font-size: @font-size-h1;
+        margin-bottom: @t3-global-margin;
+      }
+
+      &.features-content-left {
+        text-align: left;
+
+        p {
+          padding-right: 0;
+        }
+
+        .features-image {
+        	margin-bottom: (@t3-global-margin * 2);
+
+          // Control screen desktop
+          @media screen and (min-width: @screen-md-min) {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &.features-content-right {
+        text-align: left;
+
+        p {
+          padding-left: 0;
+
+          @media screen and (max-width: @screen-md) {
+            padding: 0;
+          }
+        }
+
+        .features-image {
+        	margin-bottom: (@t3-global-margin * 2);
+
+          // Control screen desktop
+          @media screen and (min-width: @screen-md-min) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .features-image {
+      margin-bottom: @t3-global-margin*2;
+
+      > img {
+        width: 100%;
+      }
+    }
+
+    .features-item > p {
+    }
+
+    .features-item > .btn {
+      margin-top: @t3-global-margin;
+    }
+  }
+}
+
+

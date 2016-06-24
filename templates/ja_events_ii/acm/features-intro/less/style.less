@@ -1,0 +1,94 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// FEATURES INTRO
+// ------------------------------------
+.acm-features {
+  .features-item {
+    display: table;
+    .clearfix();
+
+    > div {
+      display: table-cell;
+      float: none !important;
+      vertical-align: middle;
+    }
+  }
+
+  .features-img {
+    img {
+      max-width: 100%;
+    }
+  }
+  
+  .features-content {
+    background: @white;
+    padding: @t3-global-padding;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  &.content-left {
+    .features-img {
+    }
+
+    .features-content {
+      text-align: right;
+    }
+  }
+
+  &.content-right {
+    .features-img {
+      text-align: right;
+    }
+
+    .features-content {
+    }
+  }
+
+  &.content-top {
+    display: block;
+
+    > div {
+      display: block;
+    }
+
+    .features-img {
+      float: none;
+      margin: 0 auto;
+    }
+
+    .features-content {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+
+  &.style-dark {
+    p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    h3 a {
+      color: @white;
+
+      &:hover, &:focus, &:active {
+        color: @brand-primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Import Style Less
+// --------------------------
+@import "style-1.less"; // Import file style-1.less
+@import "style-2.less"; // Import file style-2.less

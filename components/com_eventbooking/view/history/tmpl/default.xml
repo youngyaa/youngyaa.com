@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Registration History">
+		<message>
+			Display List Of Events which the current user registered
+		</message>
+	</layout>
+	<state>
+		<name>Registration History</name>
+		<description>Display List Of Events which the current user registered</description>
+		<params></params>						
+	</state>
+</metadata>

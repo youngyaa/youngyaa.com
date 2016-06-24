@@ -1,0 +1,85 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA System Google Map plugin for Joomla 2.5 & J3.4
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com
+ * ------------------------------------------------------------------------
+ */
+@charset "utf-8";
+
+/* CSS Document */
+.map-container {
+	margin: 10px 0px;
+	padding: 0;
+}
+
+.map-container img {
+	max-width:none !important;
+}
+
+.map-streeview {
+	height: 200px;
+}
+
+.map-route {
+	height: 200px;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.map-popup-container {
+	display: none;
+}
+
+.map-popup-body {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.map-popup {
+	
+}
+
+.map-popup-route {
+	height: 10px;
+}
+
+.map-open-link {
+	text-align: left;
+}
+
+.map-alert-on {
+	color: #FF0000;
+	display: block;
+	text-align: center;
+}
+
+.map-preview-container {
+	width: 420px;
+	height: 10px;
+	overflow: hidden;
+}
+
+.map-alert-off {
+	display: none;
+}
+
+#ja-widget-map .ja-usersetting-options {
+	margin-bottom: 10px;
+}
+
+#ja-widget-map form.ja-usersetting-form {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#ja-widget-map a.ja-usersetting-loadform {
+	right: 20px;
+}
+#ja-widget-map img{
+	max-width: none;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Subscription Form">
+		<message>
+			Display Form which allows users to subscribe for a subscription plan
+		</message>
+	</layout>	
+	<fields name="request">			
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_osmembership/model/fields">
+			<field name="id" type="osmplan" size="3" default="0" label="Select Plan" description="Select Plan which you want users to subscribe for" />
+		</fieldset>	
+	</fields>
+</metadata>

@@ -1,0 +1,444 @@
+.acm-teams .team-items:before,
+.acm-teams .team-items:after {
+  content: " ";
+  display: table;
+}
+.acm-teams .team-items:after {
+  clear: both;
+}
+.acm-teams .team-items .item {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .acm-teams .team-items .item {
+    width: 100% !important;
+  }
+}
+.acm-teams .team-items .item .img-intro {
+  position: relative;
+  overflow: hidden;
+}
+.acm-teams .team-items .item .img-intro p {
+  bottom: 0;
+  background-color: rgba(33, 91, 166, 0.7);
+  color: #ffffff;
+  font-size: 18px;
+  left: 0;
+  margin-bottom: 0;
+  position: absolute;
+  padding: 24px;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -webkit-transition: 600ms;
+  -o-transition: 600ms;
+  transition: 600ms;
+}
+@media screen and (max-width: 1199px) {
+  .acm-teams .team-items .item .img-intro p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .acm-teams .team-items .item .img-intro p {
+    display: none;
+  }
+}
+.acm-teams .team-items .item:hover .img-intro p {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+.acm-teams .team-items img {
+  height: auto;
+  width: 100%;
+}
+.acm-teams .team-items .info {
+  color: #ffffff;
+  padding: 24px 0;
+  text-align: center;
+}
+.acm-teams .team-items .info h4 {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 480px) {
+  .acm-teams .team-items .info h4 {
+    font-size: 14px;
+  }
+}
+.acm-teams .team-items .info p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.t3-section-bg .acm-teams,
+.bg-dark .acm-teams {
+  background: none;
+}
+.acm-teams .style-1 {
+  overflow: hidden;
+}
+.acm-teams .style-1.full-width .row {
+  margin: 0;
+}
+.acm-teams .style-1.full-width .item {
+  padding: 0;
+}
+.acm-teams .style-1 .team-items-head {
+  padding: 72px 20px;
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-1 .team-items-head {
+    padding: 72px 200px;
+  }
+}
+.acm-teams .style-1 .team-items-head h3 {
+  margin: 0;
+  color: #ffffff;
+}
+.acm-teams .style-1 .team-items-footer {
+  background: #fcb82f;
+  color: #ffffff;
+  padding: 48px 20px;
+  text-align: center;
+  font-size: 18px;
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+.acm-teams .style-1 .team-items-footer:hover {
+  background: #00f3d7;
+  color: #333333;
+}
+.acm-teams .style-1 .team-items-footer:hover a {
+  color: #333333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.acm-teams .style-1 .team-items-footer a {
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 350ms;
+  -o-transition: all 350ms;
+  transition: all 350ms;
+}
+.acm-teams .style-1 .team-items-footer a:hover,
+.acm-teams .style-1 .team-items-footer a:focus,
+.acm-teams .style-1 .team-items-footer a:active {
+  text-decoration: none;
+}
+.acm-teams .style-1 .item {
+  text-align: center;
+  position: relative;
+  transform: translateY(0);
+  -webkit-transition: transform 0.35s ease 0s;
+  -o-transition: transform 0.35s ease 0s;
+  transition: transform 0.35s ease 0s;
+}
+.acm-teams .style-1 .item .item-inner {
+  position: relative;
+  background: #1c1c24;
+  text-align: center;
+}
+.acm-teams .style-1 .item .member-image {
+  overflow: hidden;
+}
+.acm-teams .style-1 .item .member-image img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  -webkit-transition: opacity 0.35s ease 0s;
+  -o-transition: opacity 0.35s ease 0s;
+  transition: opacity 0.35s ease 0s;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.acm-teams .style-1 .item .mask {
+  height: 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 0.35s ease 0s;
+  -o-transition: all 0.35s ease 0s;
+  transition: all 0.35s ease 0s;
+}
+.acm-teams .style-1 .item .mask:before,
+.acm-teams .style-1 .item .mask:after {
+  content: " ";
+  display: table;
+}
+.acm-teams .style-1 .item .mask:after {
+  clear: both;
+}
+.acm-teams .style-1 .item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #333333;
+  line-height: 32px;
+  float: none;
+  text-align: center;
+  text-transform: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s ease 0s;
+  -o-transition: opacity 0.35s ease 0s;
+  transition: opacity 0.35s ease 0s;
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-1 .item h4 {
+    float: left;
+    text-align: left;
+  }
+}
+.acm-teams .style-1 .item h4 span {
+  color: #999999;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-1 .item h4 span {
+    text-align: left;
+  }
+}
+.acm-teams .style-1 .item .member-title {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.acm-teams .style-1 .item .member-desc {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.acm-teams .style-1 .item .member-links {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  float: none;
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-1 .item .member-links {
+    float: right;
+    text-align: right;
+  }
+}
+.acm-teams .style-1 .item .member-links li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.acm-teams .style-1 .item .member-links li a {
+  background: #e0e0e0;
+  border-radius: 16px;
+  color: #555555;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  width: 32px;
+}
+.acm-teams .style-1 .item .member-links li a:hover,
+.acm-teams .style-1 .item .member-links li a:focus,
+.acm-teams .style-1 .item .member-links li a:active {
+  background: #0082d5;
+  color: #ffffff;
+}
+.acm-teams .style-1 .item:hover {
+  z-index: 2;
+  transform: translateY(-150px);
+  -webkit-transform: translateY(-150px);
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-1 .item:hover {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+  }
+}
+.acm-teams .style-1 .item:hover h4 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.acm-teams .style-1 .item:hover .mask {
+  height: 150px;
+  padding: 24px;
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-1 .item:hover .mask {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 100px;
+  }
+}
+.acm-teams .style-1 .item:hover .member-image img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.acm-teams {
+  background-color: #f5f6fa;
+}
+.acm-teams .style-2 {
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .acm-teams .style-2 > .row:after {
+    display: inline !important;
+  }
+}
+.acm-teams .style-2.full-width .row {
+  margin: 0;
+}
+.acm-teams .style-2 .team-items-head {
+  padding: 24px 20px;
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .acm-teams .style-2 .team-items-head {
+    padding: 24px 200px 72px;
+  }
+}
+.acm-teams .style-2 .team-items-head h3 {
+  font-size: 54px;
+  margin: 0 0 24px;
+}
+.acm-teams .style-2 .team-items-head .block-intro {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.acm-teams .style-2 .team-items-footer {
+  background: #fcb82f;
+  color: #ffffff;
+  padding: 24px 20px;
+  text-align: center;
+}
+.acm-teams .style-2 .team-items-footer a {
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.acm-teams .style-2 .team-items-footer a:hover,
+.acm-teams .style-2 .team-items-footer a:focus,
+.acm-teams .style-2 .team-items-footer a:active {
+  text-decoration: none;
+}
+.acm-teams .style-2 .item {
+  text-align: left;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: transform 0.35s ease 0s;
+  -o-transition: transform 0.35s ease 0s;
+  transition: transform 0.35s ease 0s;
+}
+.acm-teams .style-2 .item .item-inner {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  text-align: left;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.acm-teams .style-2 .item .item-inner:hover {
+  border-color: #0082d5;
+  transform: translateY(-56px);
+}
+.acm-teams .style-2 .item .member-image {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.acm-teams .style-2 .item .member-image img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -webkit-transition: opacity 0.35s ease 0s;
+  -o-transition: opacity 0.35s ease 0s;
+  transition: opacity 0.35s ease 0s;
+}
+.acm-teams .style-2 .item .member-info {
+  padding: 24px 24px 0;
+  overflow: hidden;
+}
+.acm-teams .style-2 .item h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  line-height: 32px;
+}
+.acm-teams .style-2 .item h4 span {
+  font-weight: 400;
+}
+.acm-teams .style-2 .item .member-title {
+  color: #999999;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  position: relative;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.acm-teams .style-2 .item .member-desc {
+  margin-bottom: 48px;
+}
+.acm-teams .style-2 .item .member-links {
+  background-color: #ffffff;
+  border-top: 1px solid #ededed;
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 0.35s ease 0s;
+  -o-transition: all 0.35s ease 0s;
+  transition: all 0.35s ease 0s;
+}
+.acm-teams .style-2 .item .member-links li {
+  display: inline-block;
+  margin: 12px 0;
+}
+.acm-teams .style-2 .item .member-links li a {
+  color: #999999;
+  display: block;
+  font-size: 16px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  width: 24px;
+}
+.acm-teams .style-2 .item .member-links li a:hover,
+.acm-teams .style-2 .item .member-links li a:focus,
+.acm-teams .style-2 .item .member-links li a:active {
+  color: #0082d5;
+}
+.acm-teams .style-2 .item:hover {
+  z-index: 2;
+}
+.acm-teams .style-2 .item:hover h4 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.acm-teams .style-2 .item:hover .member-image img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.acm-teams .style-2 .item:hover .member-links {
+  height: 56px;
+}

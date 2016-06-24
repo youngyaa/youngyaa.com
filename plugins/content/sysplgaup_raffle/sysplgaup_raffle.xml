@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Content - AlphaUserPoints - Raffle</name>
+	<author>Bernard Gilly</author>
+	<creationDate>2014 June 19</creationDate>
+	<copyright>Copyright (C) 2008-2015 Bernard Gilly. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>www.alphaplug.com</authorEmail>
+	<authorUrl>www.alphaplug.com</authorUrl>
+	<version>1.9.1</version>
+	<description>This plugin for AlphaUserPoints allows your users to sign-up for a raffle.</description>
+	<files>
+		<filename plugin="sysplgaup_raffle">sysplgaup_raffle.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

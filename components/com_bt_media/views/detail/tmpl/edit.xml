@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_BT_MEDIA_FE_MEDIA_FORM" option="View">
+        <message>
+                        <![CDATA[COM_BT_MEDIA_MEDIA_FORM_DES]]>
+        </message>
+    </layout>
+</metadata>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="attribs">
+    <fieldset name="extra-fields_1" label="TPL_GROUP_EXTRA_FIELDS_LABEL" description="" group="extrafields">
+			<field name="link_1" type="text" label="TPL_TIME_EVENT" description="TPL_TIME_EVENT_DESC" size="40" filter="RAW"/>
+			<field name="link_2" type="text" label="TPL_DATE_EVENT" description="TPL_DATE_EVENT_DESC" size="40" filter="RAW"/>
+			<field name="link_3" type="text" label="TPL_LOCATIONS_EVENT" description="TPL_LOCATIONS_EVENT_DESC" size="40" filter="RAW"/>
+			<field name="link_4" type="textarea" label="TPL_LOCATIONS_MAP" description="TPL_LINK_MAP_DESC" filter="RAW"/>
+    </fieldset>
+</fields>
+</form>

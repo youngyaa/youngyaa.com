@@ -1,0 +1,754 @@
+.techjoomla-bootstrap [class*=" icon-"],
+.techjoomla-bootstrap [class^="icon-"] {
+  background-image: none;
+}
+.techjoomla-bootstrap .row-fluid {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.techjoomla-bootstrap .row-fluid:before,
+.techjoomla-bootstrap .row-fluid:after {
+  content: " ";
+  display: table;
+}
+.techjoomla-bootstrap .row-fluid:after {
+  clear: both;
+}
+.techjoomla-bootstrap .row-fluid > .row-fluid {
+  margin-right: 0;
+  margin-left: 0;
+}
+.btn .icon-unpublish,
+.btn .icon-publish {
+  display: none;
+}
+.componentheading {
+  padding-bottom: 11px;
+  margin: 0 0 24px;
+  border-bottom: 1px solid none;
+}
+.com_jticketing .row .chzn-container {
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .com_jticketing .row .chzn-container {
+    width: 100% !important;
+  }
+}
+.com_jticketing .jticketing-filter {
+  background: #ffffff;
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 48px;
+}
+.com_jticketing .jticketing-filter:before,
+.com_jticketing .jticketing-filter:after {
+  content: " ";
+  display: table;
+}
+.com_jticketing .jticketing-filter:after {
+  clear: both;
+}
+@media (max-width: 767px) {
+  .com_jticketing .jticketing-filter #search {
+    margin-bottom: 24px;
+  }
+}
+.com_jticketing #all.row-fluid .jticketing-filter .btn-group {
+  margin-bottom: 0;
+}
+.com_jticketing #jticket_pc_es_app_my_products {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+@media (min-width: 768px) {
+  .com_jticketing #jticket_pc_es_app_my_products {
+    height: auto !important;
+  }
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticket_pin_item_jticket_pc_es_app_my_products {
+  margin: 0 0 40px !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  position: static !important;
+  float: right;
+  width: 100% !important;
+}
+@media (min-width: 768px) {
+  .com_jticketing #jticket_pc_es_app_my_products .jticket_pin_item_jticket_pc_es_app_my_products {
+    width: 50% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .com_jticketing #jticket_pc_es_app_my_products .jticket_pin_item_jticket_pc_es_app_my_products {
+    width: 33.333% !important;
+  }
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_pin_layout_element {
+  background: #ffffff;
+  border: 0;
+  box-shadow: 0 -2px 0 #e0e0e0 inset;
+  padding: 24px;
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_pin_layout_image {
+  margin: -24px -24px 24px;
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_pin_layout_desc {
+  margin: 0;
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_pin_layout_desc h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_pin_layout_btns {
+  margin-top: 24px;
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_pin_layout_btns .btn {
+  border: 0;
+  border-radius: 25px;
+  height: 33px;
+  line-height: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.com_jticketing #jticket_pc_es_app_my_products .jticketing_place {
+  color: #777777;
+}
+.com_jticketing #jticket_pc_es_app_my_products dl {
+  margin: 24px -24px 0;
+  color: #777777;
+}
+.com_jticketing #jticket_pc_es_app_my_products dl dd {
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 6px;
+  padding: 0 24px 6px;
+}
+.com_jticketing #jticket_pc_es_app_my_products dl dd:first-child {
+  border-top: 1px solid #ededed;
+  padding-top: 6px;
+}
+.com_jticketing #jticket_pc_es_app_my_products dl strong {
+  display: block;
+  font-weight: 500;
+}
+.com_jticketing #jticket_pc_es_app_my_products dl strong i {
+  color: #999999;
+  margin-left: 5px;
+}
+.com_jticketing #jticket_pc_es_app_my_products dl span {
+  display: inline-block;
+  padding-right: 20px;
+}
+.com_jticketing #jticket_pc_es_app_my_products h4 a {
+  color: #2b2a2f;
+}
+.com_jticketing #jticket_pc_es_app_my_products h4 a:hover,
+.com_jticketing #jticket_pc_es_app_my_products h4 a:focus,
+.com_jticketing #jticket_pc_es_app_my_products h4 a:active {
+  color: #005389;
+  text-decoration: none;
+}
+.com_jticketing .jticketing-sidebar .jticketing-sidebar-block {
+  background: #ffffff;
+  padding: 24px;
+  margin-bottom: 48px;
+}
+.com_jticketing .jticketing-sidebar .jticketing-sidebar-block h3 {
+  background: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0 0 12px 0;
+  padding: 0 0 10px 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .com_jticketing .jticketing-sidebar .jticketing-sidebar-block h3 {
+    margin-bottom: 24px;
+  }
+}
+.com_jticketing .jticketing-sidebar .jticketing-sidebar-block .chzn-container {
+  margin-bottom: 12px;
+}
+.com_jticketing .com_jticketing_list_style_none {
+  padding: 0;
+}
+.com_jticketing .com_jticketing_list_style_none li {
+  border-bottom: 1px dotted #e0e0e0;
+  padding: 0 0 10px;
+  font-weight: 400;
+  background: none !important;
+}
+.com_jticketing .com_jticketing_list_style_none li a:before {
+  display: inline-block;
+  content: "\f274";
+  color: #999999;
+  font-family: FontAwesome;
+  margin-left: 5px;
+  font-weight: 400;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.com_jticketing .com_jticketing_list_style_none li a,
+.com_jticketing .com_jticketing_list_style_none li a:hover,
+.com_jticketing .com_jticketing_list_style_none li a:focus,
+.com_jticketing .com_jticketing_list_style_none li a:active {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: #333333 !important;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.com_jticketing .com_jticketing_list_style_none li a:hover,
+.com_jticketing .com_jticketing_list_style_none li a:focus,
+.com_jticketing .com_jticketing_list_style_none li a:active {
+  color: #005389 !important;
+}
+.com_jticketing .com_jticketing_list_style_none li a:hover:before,
+.com_jticketing .com_jticketing_list_style_none li a:focus:before,
+.com_jticketing .com_jticketing_list_style_none li a:active:before {
+  color: #005389;
+}
+.com_jticketing .com_jticketing_list_style_none li + li {
+  margin-top: 12px;
+}
+.com_jticketing #eventform1 .nav-tabs,
+.com_jticketing .jticketing-event-detail .nav-tabs {
+  margin-top: 24px;
+}
+.com_jticketing #eventform1 .tab-content,
+.com_jticketing .jticketing-event-detail .tab-content {
+  background: #ffffff;
+  padding-bottom: 0;
+}
+.com_jticketing #eventform1 .accordion-heading,
+.com_jticketing .jticketing-event-detail .accordion-heading {
+  padding: 12px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 -24px;
+}
+.com_jticketing #eventform1 .accordion-body,
+.com_jticketing .jticketing-event-detail .accordion-body {
+  padding: 24px 0;
+}
+.com_jticketing #eventform1 #jticketing-event-map .row-fluid,
+.com_jticketing .jticketing-event-detail #jticketing-event-map .row-fluid {
+  margin: 24px 0 0;
+}
+.com_jticketing #eventform1 .well .table-responsive td,
+.com_jticketing .jticketing-event-detail .well .table-responsive td {
+  border: 0;
+}
+.com_jticketing #eventform1 .well dl,
+.com_jticketing .jticketing-event-detail .well dl {
+  margin-bottom: 0;
+}
+.com_jticketing #eventform1 .well dl dd,
+.com_jticketing .jticketing-event-detail .well dl dd {
+  margin-bottom: 12px;
+}
+.com_jticketing #eventform1 .jticketing-event-image,
+.com_jticketing .jticketing-event-detail .jticketing-event-image {
+  margin: 0 0 24px;
+}
+.com_jticketing #eventform1 .jticketing-event-image img,
+.com_jticketing .jticketing-event-detail .jticketing-event-image img {
+  max-width: 100%;
+  border: 0;
+}
+.com_jticketing #eventform1 #jform_image + .alert,
+.com_jticketing .jticketing-event-detail #jform_image + .alert {
+  margin-top: 24px;
+}
+.com_jticketing #eventform1 .jticketing_container,
+.com_jticketing .jticketing-event-detail .jticketing_container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 991px) {
+  .com_jticketing #eventform1 #details .row > .span8,
+  .com_jticketing .jticketing-event-detail #details .row > .span8,
+  .com_jticketing #eventform1 #details .row > .span4,
+  .com_jticketing .jticketing-event-detail #details .row > .span4 {
+    width: 100%;
+  }
+}
+.com_jticketing .jticketing-form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.com_jticketing .jticketing-form .tab-content {
+  background: #ffffff;
+}
+.com_jticketing .jticketing-form #event-info-tab .table-responsive {
+  clear: both;
+  margin: 0;
+  padding: 0 20px;
+}
+.com_jticketing .jticketing-form .jticketing_steps_parent {
+  margin-right: 0;
+  margin-left: 0;
+}
+.com_jticketing .jticketing-form .jticketing_steps_parent .jticketing-steps-ol .badge {
+  background: #0082d5;
+}
+.com_jticketing .jticketing-form .jticketing_steps_parent .jticketing-steps-ol .active {
+  color: #0082d5;
+}
+.com_jticketing .jticketing-form .jticketing_steps_parent .jticketing-steps-ol .active .badge {
+  background: #0082d5;
+}
+.com_jticketing .jticketing-form .jticketing_steps_parent .jticketing-steps-ol .complete {
+  color: #999999;
+}
+.com_jticketing .jticketing-form .jticketing_steps_parent .jticketing-steps-ol .complete .badge {
+  background: #999999;
+}
+.com_jticketing .jticketing-form #step_payment_info:before,
+.com_jticketing .jticketing-form #step_payment_info:after {
+  content: " ";
+  display: table;
+}
+.com_jticketing .jticketing-form #step_payment_info:after {
+  clear: both;
+}
+.com_jticketing .jticketing-form #payment-info > .row-fluid {
+  margin: 0;
+}
+.com_jticketing .jticketing-form #payment-info label.radio,
+.com_jticketing .jticketing-form #payment-info label.radiobtn {
+  padding-right: 30px;
+}
+.com_jticketing.view-orders.layout-order .row-fluid {
+  margin-right: 0;
+  margin-left: 0;
+}
+.com_jticketing.view-orders.layout-order [class*="span"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.com_jticketing.view-orders.layout-order .alert.span12,
+.com_jticketing.view-orders.layout-order .span12.well {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.com_jticketing.view-orders.layout-order #printDiv .span8 > .span4 {
+  padding-right: 0;
+}
+.com_jticketing.view-orders.layout-order #printDiv .span8 + div {
+  position: relative;
+  min-height: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media (min-width: 992px) {
+  .com_jticketing.view-orders.layout-order #printDiv .span8 + div {
+    float: right;
+    width: 33.33333333%;
+  }
+}
+.com_jticketing.view-orders.layout-order #printDiv .img-polaroid.com_jticketing_image_w98pc {
+  padding-left: 40px;
+  border: 0;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+.com_jticketing.view-orders.layout-order #printDiv h3 {
+  margin-top: 0;
+}
+.com_jticketing #all.row-fluid .table-responsive.order {
+  margin: 24px 0 0;
+  clear: both;
+}
+.com_jticketing #all.row-fluid .table.table-striped.table-hover {
+  background: #ffffff;
+}
+.com_jticketing #all.row-fluid .btn-group,
+.com_jticketing #all.row-fluid .btn-toolbar {
+  margin-bottom: 24px;
+}
+.com_jticketing #all.row-fluid .form-actions {
+  background: none;
+  padding: 0;
+}
+.com_jticketing.view-orders.layout-my .techjoomla-bootstrap #all.row-fluid {
+  margin-right: 0;
+  margin-left: 0;
+}
+.com_jticketing #jticketing_events {
+  background-color: #ffffff;
+  padding-top: 24px;
+}
+.com_jticketing #jticketing_events:before,
+.com_jticketing #jticketing_events:after {
+  content: " ";
+  display: table;
+}
+.com_jticketing #jticketing_events:after {
+  clear: both;
+}
+.com_jticketing #jticketing_events .table-striped.table-bordered.table-hover {
+  background: #ffffff;
+}
+.com_jticketing #jticketing_events .hr-condensed {
+  display: none;
+}
+.com_jticketing #jticketing_events table tr {
+  background-color: transparent;
+}
+.com_jticketing #jticketing_events table th {
+  background-color: #333333;
+  border: 1px solid #404040;
+  border-bottom: 0;
+  font-size: 12px;
+  padding: 12px;
+  text-transform: uppercase;
+}
+.com_jticketing #jticketing_events table th a {
+  color: #ffffff;
+}
+.com_jticketing #jticketing_events table th a:hover,
+.com_jticketing #jticketing_events table th a:focus,
+.com_jticketing #jticketing_events table th a:active {
+  color: #005389;
+}
+.com_jticketing #jticketing_events table tbody td {
+  padding: 12px;
+}
+.com_jticketing #jticketing_events table tbody td.small {
+  font-size: 14px;
+}
+.com_jticketing #jticketing_events table tbody td a:hover,
+.com_jticketing #jticketing_events table tbody td a:focus,
+.com_jticketing #jticketing_events table tbody td a:active {
+  color: #005389;
+}
+.com_jticketing #jticketing_events .pagination {
+  margin-top: 0;
+}
+.com_jticketing #jticketing_events .pagination .counter {
+  margin: 0;
+  padding: 0;
+}
+.com_jticketing.view-mytickets .techjoomla-bootstrap #all.row-fluid {
+  margin-right: 0;
+  margin-left: 0;
+}
+.com_jticketing.view-mypayouts .techjoomla-bootstrap #all.row-fluid {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (max-width: 991px) {
+  .com_jticketing .jticketing-form-actions .chzn-container {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .com_jticketing .form-actions .btn {
+    margin-bottom: 12px;
+  }
+}
+.com_jticketing .chzn-container-single .chzn-single {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.com_jticketing .chzn-container .chzn-drop {
+  border-radius: 0;
+  border-color: #e0e0e0;
+}
+.t3-content div.techjoomla-bootstrap {
+  background-color: #ffffff;
+  padding: 24px;
+}
+.t3-content div.techjoomla-bootstrap #all .table-responsive {
+  margin-bottom: 0;
+}
+.t3-content div.techjoomla-bootstrap #all .table-responsive th,
+.t3-content div.techjoomla-bootstrap #all .table-responsive td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+}
+.t3-content div.techjoomla-bootstrap #all .table-responsive th:first-child,
+.t3-content div.techjoomla-bootstrap #all .table-responsive td:first-child {
+  width: 20%;
+}
+.t3-content div.techjoomla-bootstrap #all .table-responsive th {
+  background-color: #333333;
+  border: 1px solid #404040;
+  border-bottom: 0;
+  color: #999999;
+  font-weight: normal;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.t3-content div.techjoomla-bootstrap #all .table-responsive th a {
+  color: #ffffff;
+}
+.t3-content div.techjoomla-bootstrap .alert.span6 {
+  border-radius: 0;
+  width: 100%;
+}
+.jticketing-events.owl-carousel {
+  padding: 0;
+  width: auto;
+  margin: 0 -20px;
+}
+.jticketing-events.owl-carousel .owl-wrapper-outer {
+  padding-bottom: 96px;
+  padding-top: 4px;
+}
+@media (max-width: 767px) {
+  .jticketing-events.owl-carousel .owl-wrapper-outer {
+    padding-bottom: 24px;
+  }
+}
+.jticketing-events.owl-carousel .owl-controls {
+  position: absolute;
+  left: 20px;
+  top: -50px;
+  margin-top: 0;
+}
+.jticketing-events.owl-carousel .owl-controls .owl-buttons div {
+  background: none;
+  border: 2px solid #333333;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+}
+.jticketing-events .item {
+  height: auto;
+  border: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.jticketing-events .item .inner {
+  color: #777777;
+  background: #ffffff;
+  padding: 24px;
+  border-bottom: 1px solid #e0e0e0;
+  transition-delay: 0s;
+  transition-duration: 0.15s;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.15s;
+  -webkit-transition-property: transform, box-shadow;
+  -webkit-transition-timing-function: ease-in-out;
+}
+.jticketing-events .item .inner:hover {
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+}
+.jticketing-events .item .inner .jticketing-event-image {
+  margin: -24px -24px 24px !important;
+  float: none !important;
+  display: block;
+}
+.jticketing-events .item .inner .jticketing-event-image img {
+  max-width: 100%;
+  width: 100%;
+}
+.jticketing-events .item .inner .ticket-table {
+  margin: 12px 0;
+}
+.jticketing-events .item .inner .ticket-table table {
+  margin-bottom: 0;
+}
+.jticketing-events .item .inner dl {
+  margin-bottom: 0;
+}
+.jticketing-events .item .inner dl dd {
+  margin-bottom: 12px;
+}
+.jticketing-events .item .inner dl strong {
+  display: block;
+}
+.jticketing-events .item .inner h4 a {
+  color: #2b2a2f;
+}
+.jticketing-events .item .inner h4 a:hover,
+.jticketing-events .item .inner h4 a:focus,
+.jticketing-events .item .inner h4 a:active {
+  color: #005389;
+  text-decoration: none;
+}
+.jticketing-events .item .inner span {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.jticketing-events .item .inner span[class^="icon-"],
+.jticketing-events .item .inner span[class*=" icon-"] {
+  margin-left: 12px;
+}
+.jticketing-events .item .inner .mod_events_latest_content {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.jticketing-events .item.mod_events_latest_firstrow_lg {
+  clear: both;
+}
+.bg-dark.pt-x2.pb-0 .jticketing-events.owl-carousel {
+  padding: 44px 0 0;
+  margin-bottom: -192px;
+  width: auto;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+@media (min-width: 1200px) {
+  .bg-dark.pt-x2.pb-0 .jticketing-events.owl-carousel {
+    padding: 92px 0 0;
+  }
+}
+.bg-dark.pt-x2.pb-0 .jticketing-events.owl-carousel .owl-wrapper-outer {
+  padding-bottom: 96px;
+  padding-top: 4px;
+}
+.bg-dark.pt-x2.pb-0 .jticketing-events.owl-carousel .owl-controls {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  margin-top: 0;
+}
+.bg-dark.pt-x2.pb-0 .jticketing-events.owl-carousel .owl-controls .owl-buttons div {
+  background: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  line-height: 32px;
+}
+.com_jticketing .jtcalendarForm .cal-month-box,
+.com_jticketing .jtcalendarForm .cal-year-box,
+.com_jticketing .jtcalendarForm .cal-week-box {
+  border-left: 0;
+}
+.com_jticketing .jtcalendarForm .btn-group {
+  display: block;
+}
+.com_jticketing .jtcalendarForm .input-group-btn {
+  width: 100%;
+}
+.com_jticketing .jtcalendarForm #month_button {
+  width: auto;
+  font-size: 11px;
+}
+.com_jticketing .jtcalendarForm .input-group-btn {
+  background-color: #f7f7f7 !important;
+  border: 0;
+}
+.com_jticketing .jtcalendarForm .cal-row-head {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.com_jticketing .jtcalendarForm .cal-events-num {
+  border-radius: 0;
+  margin: 0 0 1px 1px;
+}
+.com_jticketing .jtcalendarForm .cal-month-day {
+  height: 42px;
+}
+.com_jticketing .jtcalendarForm .cal-month-box [class*="cal-cell"] {
+  min-height: 1px;
+}
+.tj-list-group {
+  padding: 0 20px;
+}
+.tj-list-group ul {
+  padding: 0;
+}
+.tj-list-group li {
+  border: none;
+  padding: 0;
+  font-weight: 400;
+  background: none !important;
+}
+.tj-list-group li a:before {
+  display: inline-block;
+  content: "\f274";
+  color: #999999;
+  font-family: FontAwesome;
+  margin-left: 5px;
+  font-weight: 400;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.tj-list-group li a,
+.tj-list-group li a:hover,
+.tj-list-group li a:focus,
+.tj-list-group li a:active {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: #333333 !important;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+.tj-list-group li a:hover,
+.tj-list-group li a:focus,
+.tj-list-group li a:active {
+  color: #005389 !important;
+}
+.tj-list-group li a:hover:before,
+.tj-list-group li a:focus:before,
+.tj-list-group li a:active:before {
+  color: #005389;
+}
+.tj-list-group li + li {
+  margin-top: 12px;
+}
+.cModule.cEvent-Extra .app-box-header {
+  display: none;
+}
+.cModule.cEvent-Extra .hr-condensed {
+  margin: 12px 0;
+}
+.jt-offset {
+  padding-right: 12px;
+  padding-left: 0;
+}
+.JTICKETING_WRAPPER_CLASS #all {
+  margin: 0;
+}
+.JTICKETING_WRAPPER_CLASS #all .btn-toolbar.pull-right {
+  display: block;
+  margin: 0;
+  padding: 0 0 24px 0;
+  width: 100%;
+}
+.JTICKETING_WRAPPER_CLASS #all .btn-toolbar.pull-right .col-lg-3 {
+  float: left;
+  display: inline-block;
+  padding: 0;
+  width: auto;
+}
+.JTICKETING_WRAPPER_CLASS #no-more-tables a.modal {
+  z-index: 2;
+}
+.jticketing-wrapper .btn-toolbar.pull-right {
+  padding: 0 0 24px 0;
+}

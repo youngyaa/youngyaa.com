@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+	<scripts>
+    <file>js/owl-carousel/owl.carousel.js</file>
+		<file>js/script.js</file>
+		<file>js/jquery.inview.js</file>
+		<file>js/jquery.inview.min.js</file>
+	</scripts>
+	
+	<stylesheets>
+		<file>//fonts.googleapis.com/css?family=Roboto:400,500,700,300</file>
+		<file>fonts/font-awesome/css/font-awesome.min.css</file>
+		<file>fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css</file>
+		<file>js/owl-carousel/owl.carousel.css</file>
+		<file>js/owl-carousel/owl.theme.css</file>
+	</stylesheets>
+	
+</assets>

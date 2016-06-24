@@ -1,0 +1,160 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+//
+// DEMO TYPOGRAPHY
+// --------------------------------------------------------
+// Used for Typography Page. Removed if you don't want it :)
+
+.docs-section {
+  margin-bottom: @t3-global-margin * 2;
+
+  .page-header {
+    border-bottom: 0;
+    margin-bottom: @t3-global-margin;
+    padding-bottom: 0;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: @gray-darker;
+    }
+  }
+
+  h2.sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: @gray-darker;
+    margin-bottom: @t3-global-margin;
+  }
+
+  .dropdown-menu {
+    border: 0;
+    padding: @t3-global-padding/2 0 ;
+
+    li {
+      padding: 0 (@t3-global-padding / 2);
+    }
+  }
+}
+
+
+// Core Typo
+// ----------------
+.example-type {
+  h1,h2,h3,h4,h5,h6 {
+    margin: @t3-global-margin 0;
+  }
+}
+
+
+// Color Swatches
+// ----------------
+.example-colors {
+  .swatch-item {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    background: @gray-dark;
+    color: @white;
+    margin-bottom: @t3-global-margin;
+
+    @media (min-width: @screen-lg) {
+      min-height: 123px;
+    }
+
+    dl {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      margin: 0;
+    }
+  }
+  // The colors
+  .color-brand-primary {
+    background: @brand-primary;
+  }
+  .color-brand-secondary {
+    background: @brand-secondary;
+  }
+  .color-brand-success {
+    background: @brand-success;
+  }
+  .color-brand-danger {
+    background: @brand-danger;
+  }
+  .color-brand-warning {
+    background: @brand-warning;
+  }
+  .color-brand-info {
+    background: @brand-info;
+  }
+  // TGrayscale Levels
+  .color-gray-darker {
+    background: @gray-darker;
+  }
+  .color-gray-dark {
+    background: @gray-dark;
+  }
+  .color-gray {
+    background: @gray;
+  }
+  .color-gray-light {
+    background: @gray-light;
+    color: @gray-dark;
+  }
+  .color-gray-lighter {
+    background: @gray-lighter;
+    color: @gray-dark;
+  }
+  .color-gray-lightest {
+    background: @gray-lightest;
+    color: @gray-dark;
+  }
+}
+
+
+// Forms
+// ----------------
+.example-inputs {
+  .btn,
+  .form-control {
+    box-shadow: none;
+    width: 100%;
+    margin-bottom: @t3-global-margin;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+
+      // Left align the logo on  Tablets / Desktop
+      @media screen and (min-width: @screen-sm) {
+        float: left;
+        width: 30%;
+        padding-right: @t3-global-padding;
+      }
+    }
+  }
+}
+
+
+// Button
+// ----------------
+.example-button {
+  .btn {
+    margin: 0 10px 10px 0;
+		@media screen and (min-width: @screen-sm) {
+			width: 30%;
+		}
+  }
+}

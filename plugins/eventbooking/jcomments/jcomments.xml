@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="eventbooking" method="upgrade">
+	<name>Eventbooking - Jcomments plugin</name>
+	<author>Tuan Pham Ngoc</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>2.0.4</version>
+	<description></description>
+	<files>
+		<filename plugin="jcomments">jcomments.php</filename>
+	</files>
+	<params />
+	<config />		
+</extension>

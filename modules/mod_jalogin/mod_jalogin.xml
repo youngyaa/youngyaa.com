@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>JA Login</name>
+	<author>JoomlArt.com</author>
+	<creationDate>6 January 2016</creationDate>
+	<copyright>J.O.O.M Solutions Co., Ltd.</copyright>
+	<license>GNU/GPL V3 </license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>2.6.6</version>
+	<description>
+	 <![CDATA[
+	 	<style type="text/css">
+	 		.mod-desc li{				
+				margin-left:10px;
+				padding-left:12px;
+			}
+			.mod-desc p{
+				margin:15px 0;
+			}
+	 	</style>
+	 	<span style="color: #008000;"><strong>JA Login Module for Joomla! 2.5 & 3.3</strong></span><br />
+	 	<p><img alt="JA Login Module" src="http://static.joomlart.com/images/stories/extensions/joomla/jaec_ja_login_mod.png" /></p>
+		<div style='font-weight:normal'>
+	 	JA login module is alternate login module for Joomla!, so that CSS overrides can be made for the same, without affecting the default Joomla login module.
+	 	
+		<p><strong><span style="color: #ff0000;">Upgrade Methods:</span><br /></strong></p>
+		<ul>
+			<li>You can install new version directly over this version. Uninstallation is not required. Backup any customized files before upgrading. OR</li>
+			<li>Use <strong><a href="http://extensions.joomla.org/extensions/core-enhancements/installers/12077" target="_blank">JA Extensions Manager</a></strong> Component for easy upgrades and rollbacks. <strong><a href="http://www.youtube.com/user/JoomlArt#p/c/BC9B0C0BFE98657E/2/mNAuJRmifG8" target="_blank">Watch Video..</a></strong></li>
+		</ul>
+		
+		<p><span style="color: #008000;"><strong>Links:</strong></span></p>
+		<ul><li><a target='_blank' href='http://update.joomlart.com/'>Updates &amp; Versions</a></li><li><a target='_blank' href='http://www.joomlart.com/forums/showthread.php?52050'>General Userguide</a></li></ul>
+		<p></p>
+		<p>Copyright 2004 - 2016 <a href="http://www.joomlart.com/" title="Visit Joomlart.com!">JoomlArt.com</a>.</p>
+		</div>
+	 ]]>
+	</description>
+	<files>
+		<filename module="mod_jalogin">mod_jalogin.php</filename>
+		<filename module="mod_jalogin">helper.php</filename>
+		<filename module="mod_jalogin">index.html</filename>
+		<folder module="mod_jalogin">tmpl</folder>
+		<folder module="mod_jalogin">assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jalogin.ini</language>
+	</languages>
+	<config>
+		<fields name="params"  addfieldpath="/modules/mod_jalogin/assets/elements">
+			<fieldset 
+				name="basic">
+				<field type="japanel" path="modules/mod_jalogin/assets/elements/" />
+				<field 
+					name="group" 
+					type="japanel" 
+					function="depend"
+					hidden="true">
+						<option for="greeting" value="1" hideRow="true">name</option>						
+				</field>				
+				
+				<field 
+					name="pretext" 
+					type="textarea" 
+					cols="35" 
+					rows="4"
+					default="" 
+					label="PRE_TEXT" 
+					description="PARAMPRETEXT" />
+				
+				<field 
+					name="posttext" 
+					type="textarea" 
+					cols="35" 
+					rows="4"
+					label="POST_TEXT" 
+					description="PARAMPOSTTEXT" />
+				
+				<field 
+					name="greeting" 
+					type="radio" 
+					class="btn-group"
+					default="1" 
+					label="GREETING"
+					description="GREETING_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+				</field>
+				
+				<field 
+					name="name" 
+					type="list" 
+					default="0" 
+					label="NAME_USERNAME"
+					description="NAME_USERNAME_DESC">
+						<option value="0">Username</option>
+						<option value="1">Name</option>
+				</field>
+				<field 
+					name="show_register_form" 
+					type="radio"
+					class="btn-group"					
+					default="1" 
+					label="SHOW_REGISTER_FORM"
+					description="SHOW_REGISTER_FORM_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field type="spacer" hr="false" label="URL_OPTIONS" />
+				<field 
+					name="usesecure" 
+					type="radio" 
+					class="btn-group"
+					default="0"
+					label="ENCRYPT_LOGIN_FORM" 
+					description="ENCRYT_LOGIN_FORM_DESC">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+				</field>	
+				
+				<field 
+					name="login" 
+					type="menuitem" 
+					disable="separator"
+					label="LOGIN_REDIRECTION_URL" 
+					description="PARAMLOGINREDIRECTURL"
+					state="1">
+					<option
+						value="">JDEFAULT</option>
+				</field>
+				
+				<field 
+					name="logout" 
+					type="menuitem" 
+					disable="separator"
+					label="LOGOUT_REDIRECTION_URL" 
+					description="PARAMLOGOUTREDIRECTURL"
+					state="1">
+					<option
+						value="">JDEFAULT</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">		
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />		
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

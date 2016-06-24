@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" method="upgrade" group="editors-xtd">
+	<name>Button - BT Media Gallery</name>
+	<author>BowThemes</author>
+	<creationDate>April 2013</creationDate>
+	<copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@bowthems.com</authorEmail>
+	<authorUrl>http://bowthemes.com</authorUrl>
+	<version>1.0.1</version>
+	<description>Displays a button to make it possible to insert image or gallery get from BT Media Gallery component' links into an Article. Displays a popup allowing you to choose the single item or list items</description>
+	<files>
+		<filename plugin="bt_media_button">bt_media_button.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_editors-xtd_bt_media_button.ini</language>
+		<language tag="en-GB">language/en-GB.plg_editors-xtd_bt_media_button.sys.ini</language>
+	</languages>
+</extension>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Up-coming Events Default Layout">
+		<message>
+			Displays a list of up-coming events using default layout
+		</message>
+	</layout>
+	<state>
+		<name>Up-coming Events Default Layout</name>
+		<description>Displays a list of up-coming events using default layout</description>		
+		<fields name="request">			
+			<fieldset name="request"
+				addfieldpath="/administrator/components/com_eventbooking/elements">
+				<field name="id" type="ebcategory" size="3" default="0" label="Select Category" description="Choose the category which you want to display events" />
+			</fieldset>	
+		</fields>			
+	</state>
+</metadata>

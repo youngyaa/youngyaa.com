@@ -1,0 +1,72 @@
+/*general style*/
+.bt-social-share{
+	border: 1px solid #CAD4E7;
+	border-radius: 2px;
+	background:#eeeeee;
+	padding:3px 0px 2px 4px;
+	margin:5px 0;
+	line-height:100%;
+	display:inline-block;
+}
+.bt-social-share-button {
+	float:left;
+	margin-right:5px;
+}
+.bt-social-share img.fb-share{
+	margin:1px 0 0 0;
+	border:none;
+	padding:0;
+	cursor:pointer;
+}
+.bt-pretext{
+	line-height:19px;
+	font-weight:bold;
+	float:left;
+	margin-right:5px;
+}
+.bt_facebook_comment{
+	padding: 5px 0;
+}
+
+
+/*style for left position*/
+.bt-social-share-left{
+float: left;
+margin-right: 10px;
+width: 85px;
+padding:0 8px 8px;
+}
+.bt-social-share-left .bt-social-share-button{
+	margin-top: 8px;	
+}
+
+/*style for right position*/
+.bt-social-share-right{
+float: right;
+margin-left: 10px;
+width: 85px;
+padding:0 8px 8px;
+}
+.bt-social-share-right .bt-social-share-button{
+	margin-top: 8px;	
+}
+
+/*style for top position*/
+.bt-social-share-above{
+
+}
+
+/*style for bottom position*/
+.bt-social-share-below{
+
+}
+
+/*style for above image position*/
+.bt-social-share-image{
+	margin:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+	border-radius: 0;
+}
+

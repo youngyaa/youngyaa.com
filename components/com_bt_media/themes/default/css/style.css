@@ -1,0 +1,367 @@
+/* 
+    Document   : style
+    Created on : Mar 18, 2013, 9:56:21 AM
+    Author     : YANGGE
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.item-title {
+    font-weight: bold;
+    line-height: 1.4;
+    padding: 5px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cat-image{
+    float: left;
+    margin-right: 11px;
+}
+.category-information .cat-title{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    padding: 5px 0;
+    text-transform: uppercase;	
+    display: inline-block;
+    float: left;
+}
+
+a.view-box{
+    display:inline-block;
+    margin-bottom: 2px;
+}
+
+.item-view {
+    text-align: left;
+    font-size: 13px;
+}
+.item-view .item-view-title {
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 7px;
+}
+.item-view .item-detail .item-description{
+    border-bottom: solid 1px #C9C9C9;
+    margin: 10px 0px 0px;
+    padding-bottom: 8px;
+}
+.item-view .item-detail .item-more{
+    padding-top: 8px;
+}
+.item-view .item-detail .item-tag{
+    margin-top: 10px;
+    float: left;
+    width: 96%;
+}
+.item-view .item-detail .tag-icon{
+    width: 25px;
+    height:20px;
+    background: url('../images/default_icon.png') -153px -64px no-repeat transparent;
+    float: left;
+}
+
+.item-tag ul{
+    display: inline;
+    margin: 0;
+    padding:0;
+}
+
+.item-tag li {
+    background: none repeat scroll 0 0 #C2C2C2;
+    border: 0.5px solid #C2C2C2;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    padding: 2px 5px !important;
+    margin-left: 5px !important;
+}
+
+/*Override fancybox css*/
+
+.fancybox-close{
+    top: 0px !important;
+    right: 0px !important;
+}
+.fancybox-prev span{
+    left: 0px !important;
+}
+.fancybox-next span{
+    right: 0px !important;
+}
+
+
+.fancybox-close, .fancybox-outer a.fancybox-close:hover{
+    background: url('../images/default_icon.png') 0 0 no-repeat!important;
+}
+
+.custom-f-close{
+    height: 36px!important;
+}
+
+.fancybox-prev span{
+    background: url('../images/default_icon.png') no-repeat -74px 0 transparent;
+}
+.fancybox-next span{
+    background: url('../images/default_icon.png') no-repeat -31px 0 transparent;
+}
+
+.fancybox-overlay{
+    cursor: -webkit-zoom-out; cursor: -moz-zoom-out;
+}
+.fancybox-wrap{
+    cursor:auto;
+}
+
+.fancybox-inner{
+    height: auto!important;
+}
+
+.filter-select.fltrt, .filter-search.fltlft{
+    float: left;
+    margin-right: 10px;
+}
+
+form[name="adminForm"] {
+    display: block !important;
+}
+
+.filter-bar {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 20px 0 10px;
+    line-height:100%;
+}
+.category-information, .filter-bar, .item_fields {
+    float: left;
+    width: 100%;
+}
+
+ul.items_list li {
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px -2px #E9E9E9, -2px -2px 2px -2px #E9E9E9;
+    position: relative;
+}
+
+div.items_list div.img-thumb {
+    cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+    position: relative;
+}
+
+.filter-bar input, .filter-bar input:focus, .filter-bar select, .filter-bar button {
+    border: 1px solid #E1E1E1;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px 2px -2px #E9E9E9, -2px -2px 2px -2px #E9E9E9;
+    margin-bottom: 14px;
+    max-width: 130px;
+}
+.default-keywords {
+    color: #888888;
+}
+
+/*pagination*/
+.pagination{
+    text-align: center;
+}
+
+.pagination ul{
+    float:none!important;
+    display: inline-block;
+}
+
+.pagination .page-count{
+    font-weight: bold;
+}
+.pagination li a{
+    border-radius: 5px;
+    background-color: #BFBFBF;
+    padding: 10px 15px!important;
+    color: #000;
+}
+.pagination li a:hover{
+    background-color: #0097D1!important;
+    color: #fff;
+}
+.pagination li span{
+    border-radius: 5px;
+    background-color: #0097D1;
+    padding: 10px 15px!important;
+    color: #fff;
+}
+.pagination li.pagination-prev a, .pagination li.pagination-prev span, .pagination li.pagination-next a, .pagination li.pagination-next span{
+    text-indent: -999px;
+    display: inline-block;
+    padding: 7px 23px!important;
+}
+.pagination li.pagination-prev a{
+    background:#BFBFBF url('../images/prev_page.png') -176px -46px no-repeat!important;
+}
+.pagination li.pagination-prev a:hover{
+    background:#0097D1 url('../images/prev_page.png') -176px -46px no-repeat!important;
+}
+.pagination li.pagination-prev span{
+    background:#0097D1 url('../images/prev_page.png') -176px -46px no-repeat!important;
+}
+
+.pagination li.pagination-next a{
+    background:#BFBFBF url('../images/next_page.png') -153px -46px no-repeat!important;
+}
+.pagination li.pagination-next a:hover{
+    background:#0097D1 url('../images/next_page.png') -153px -46px no-repeat!important;
+}
+.pagination li.pagination-next span{
+    background:#0097D1 url('../images/next_page.png') -153px -46px no-repeat!important;
+}
+
+.filter-select .btn {
+    height: 15px;
+    margin-top: -17px;
+    line-height: 15px;
+}
+
+.btp-rating-background {
+    background: url("../images/star.png") repeat-x scroll 0 -15px transparent !important;
+    float: left;
+    height: 15px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+
+.btp-rating-background a {
+    display: block;
+    height: 15px;
+    margin-top: -15px;
+    position: absolute;
+}
+.btp-rating-background a:hover {
+    background: url("../images/star.png") repeat-x scroll 0 -30px transparent !important;
+}
+.btp-rating-current {
+    background: url("../images/star.png") repeat-x scroll 0 0 transparent !important;
+    height: 15px;
+}
+
+.item-more-info{
+    float: left;
+    margin-right: 15px;
+}
+
+.fb-comment-right{
+    float: left;
+    margin: 0 0 0 10px;
+    width: 240px;
+}
+
+/* Fix google plus button style**/
+.bt-googleplus-button >div{
+    overflow:hidden;
+}
+
+.cat-des {
+    float: left;
+}
+
+.image-information .items_list div.item{
+    display: inline-block;
+    padding: 5px 5px 0 5px!important;
+    border: solid 1px #E9E9E9;
+    margin: 5px!important;
+    background: #F9F9F9;
+    vertical-align:top;
+}
+
+.item .img-thumb{
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.image-information .items_list div .album-title {
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.image-information .items_list div .item-image{
+    background: #EAEAEA;
+    position: relative;
+}
+
+.album-image{
+    text-align: center;
+    position: absolute;
+}
+
+.img-preview {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -16px;
+}
+
+.is-view{
+    background: #0055BB;
+    border: solid 1px #888888;
+    padding: 5px 5px 3px 5px;
+    color: #ffffff;
+}
+.no-view{
+    cursor: pointer;
+}
+
+.video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    /*padding-top: 30px;*/ 
+    height: 0; overflow: hidden;
+}
+
+.video-wrap iframe,
+.video-wrap object,
+.video-wrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-image{
+    position: relative;
+    text-align:center;
+}
+
+.fancybox-nav{
+    width: 30%;
+    height: 50%;
+    top: 25%;
+}
+
+.btn{
+    font-size: 13px!important;
+    line-height: 18px!important;
+}
+
+.clr {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.acl-allow {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 100;
+}
+
+
+/* Video js style */
+.vjs-default-skin .vjs-big-play-button{
+    top: 50%!important;
+    left: 50%!important;
+    margin: -2em 0 0 -1.3em;
+}
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade">
+	<name>Search Events</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2010 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>	
+	<version>1.6.8</version>
+	<description>Search Module for Event Booking</description>
+	<files>
+		<filename module="mod_eb_search">index.html</filename>
+		<filename module="mod_eb_search">mod_eb_search.php</filename>		
+		<filename module="mod_eb_search">tmpl/default.php</filename>
+		<filename module="mod_eb_search">tmpl/index.html</filename>		
+	</files>			
+	<config>	
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text"
+				label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX">
+				</field>
+				<field name="show_category" type="radio"
+					label="Show Category" description="Choose to show/hide category from down in the search module" default="1">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>				
+				<field name="show_location" type="radio"
+					label="Show Location" description="Choose to show/hide location from dropdown in the search module" default="0">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+                <field name="layout_type" type="list" label="Search Result Layout" description="Choose the layout you want to use to display search result" default="default">
+                    <option value="default">Default Layout</option>
+                    <option value="table">Table Layout</option>
+                </field>
+                <field name="module_layout" type="list" label="Module Layout" description="Choose the layout you want to use to display the module" default="default">
+                    <option value="default">Default Layout</option>
+                    <option value="horizontal">Horizontal Layout</option>
+                </field>
+				<field name="item_id" type="text"
+					label="Itemid" description="Itemid">
+				</field>							
+			</fieldset>
+		</fields>
+	</config>			
+</extension>

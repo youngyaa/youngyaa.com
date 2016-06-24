@@ -1,0 +1,151 @@
+.t3-megamenu .mega-inner {
+  padding: 10px 0;
+}
+.t3-megamenu .row {
+  margin-left: auto;
+  margin-right: auto;
+}
+.t3-megamenu .row + .row {
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+.t3-megamenu > .mega .mega-dropdown-menu {
+  min-width: 220px;
+}
+.t3-megamenu .dropdown-header,
+.t3-megamenu .mega-nav .mega-group > .dropdown-header,
+.t3-megamenu .dropdown-menu .mega-nav .mega-group > .dropdown-header,
+.t3-megamenu .dropdown-menu .active .mega-nav .mega-group > .dropdown-header {
+  margin: 0;
+  padding: 12px 0;
+  background: transparent;
+  color: #333333;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: normal;
+  font-weight: 700;
+  border-bottom: 1px solid #e0e0e0;
+}
+.t3-megamenu .dropdown-header:hover,
+.t3-megamenu .mega-nav .mega-group > .dropdown-header:hover,
+.t3-megamenu .dropdown-menu .mega-nav .mega-group > .dropdown-header:hover,
+.t3-megamenu .dropdown-menu .active .mega-nav .mega-group > .dropdown-header:hover,
+.t3-megamenu .dropdown-header:active,
+.t3-megamenu .mega-nav .mega-group > .dropdown-header:active,
+.t3-megamenu .dropdown-menu .mega-nav .mega-group > .dropdown-header:active,
+.t3-megamenu .dropdown-menu .active .mega-nav .mega-group > .dropdown-header:active,
+.t3-megamenu .dropdown-header:focus,
+.t3-megamenu .mega-nav .mega-group > .dropdown-header:focus,
+.t3-megamenu .dropdown-menu .mega-nav .mega-group > .dropdown-header:focus,
+.t3-megamenu .dropdown-menu .active .mega-nav .mega-group > .dropdown-header:focus {
+  background: inherit;
+  color: #333333;
+}
+.t3-megamenu .mega-group-ct .row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.t3-megamenu .mega-group-ct .mega-dropdown-menu .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.t3-megamenu .mega-nav > li .separator,
+.t3-megamenu .dropdown-menu .mega-nav > li .separator {
+  padding-left: 0;
+  padding-right: 0;
+}
+.t3-megamenu .mega-nav > li a,
+.t3-megamenu .dropdown-menu .mega-nav > li a {
+  color: #777777;
+  padding: 5px 0;
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+.t3-megamenu .mega-nav > li a:hover,
+.t3-megamenu .dropdown-menu .mega-nav > li a:hover,
+.t3-megamenu .mega-nav > li a:focus,
+.t3-megamenu .dropdown-menu .mega-nav > li a:focus {
+  color: #333333;
+  background: transparent;
+  padding-left: 12px;
+}
+.t3-megamenu .mega-nav > li.open > a,
+.t3-megamenu .dropdown-menu .mega-nav > li.open > a {
+  color: #333333;
+  background: transparent;
+  padding-left: 12px;
+}
+.t3-megamenu .mega-nav > li.active > a,
+.t3-megamenu .dropdown-menu .mega-nav > li.active > a {
+  color: #ff0763;
+}
+.t3-megamenu .dropdown-menu .mega-group .mega-nav > li.active > a {
+  color: #ff0763;
+}
+.t3-megamenu .mega-nav .dropdown-submenu > a::after {
+  margin-right: 10px;
+  margin-top: 10px;
+  border-width: 3px 0 3px 3px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.t3-megamenu .t3-module .module-title {
+  margin: 0;
+  padding: 12px 0;
+  background: transparent;
+  color: #333333;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: normal;
+  font-weight: 700;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+.t3-megamenu .t3-module .module-title:hover,
+.t3-megamenu .t3-module .module-title:active,
+.t3-megamenu .t3-module .module-title:focus {
+  background: inherit;
+  color: #333333;
+}
+.t3-megamenu .t3-module ul li,
+.t3-megamenu .t3-module .nav li {
+  list-style: disc;
+  display: list-item;
+  float: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.t3-megamenu .t3-module ul li a,
+.t3-megamenu .t3-module .nav li a {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  background: none;
+  font: inherit;
+  white-space: normal;
+}
+.t3-megamenu .t3-module ul li a:hover,
+.t3-megamenu .t3-module .nav li a:hover,
+.t3-megamenu .t3-module ul li a:focus,
+.t3-megamenu .t3-module .nav li a:focus,
+.t3-megamenu .t3-module ul li a:active,
+.t3-megamenu .t3-module .nav li a:active {
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+.t3-megamenu .mega-caption {
+  color: #999999;
+  font-size: 12px;
+  margin-top: 3px;
+  font-weight: normal;
+}
+.t3-megamenu .nav .input-group-addon [class^="icon-"],
+.t3-megamenu .nav .input-group-addon [class*=" icon-"],
+.t3-megamenu .nav .input-group-addon .fa {
+  margin-right: 0;
+}

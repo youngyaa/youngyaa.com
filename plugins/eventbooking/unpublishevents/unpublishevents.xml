@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5" type="plugin" group="eventbooking" method="upgrade">
+    <name>Events Booking - Unpublish Events</name>
+    <author>Tuan Pham Ngoc</author>
+    <creationDate>Aug 2010</creationDate>
+    <copyright>Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@joomdonation.com</authorEmail>
+    <authorUrl>www.joomdonation.com</authorUrl>
+    <version>2.0.4</version>
+    <description>This plugin is used to unpublish an event when it is full</description>
+    <files>
+        <filename plugin="unpublishevents">unpublishevents.php</filename>
+    </files>
+    <params>
+    </params>
+</extension>

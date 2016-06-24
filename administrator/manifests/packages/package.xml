@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="update">
+    <name>JV Counter</name>
+	<author>Open Source Code Solutions Co</author>
+	<creationDate>November 2012</creationDate>
+	<copyright>Copyright © 2008-2012 joomlavi.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL or later.</license>
+    <authorEmail>info@joomlavi.com</authorEmail>
+    <authorUrl>http://www.joomlavi.com</authorUrl>
+    <packagename>jvcounter</packagename>
+    <version>3.0</version>
+    <url>http://joomlavi.com</url>
+    <packager>JV Counter</packager>
+    <packagerurl>http://joomlavi.com</packagerurl>
+    <description>Joomlavi package install.</description>
+    <files folder="packages">
+        <folder type="plugin" id="jvcounter" group="system">jvcounter</folder>
+        <folder type="module" id="mod_jvcounter">mod_jvcounter</folder>
+    </files>
+</extension>

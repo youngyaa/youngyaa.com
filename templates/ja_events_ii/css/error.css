@@ -1,0 +1,85 @@
+/* MAIN STYLE
+---------------------*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F5F6FA;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 1.625;
+	margin: 0;
+}
+
+/* OutLine */
+#outline {
+	margin-top: 9%;
+	text-align: center;
+}
+
+/* Error Code */
+.error-code {
+	color: #424a4f;
+	font-size: 200px;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+/* Message Error */
+.error-message h2 {
+	color: #424a4f;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+}
+
+#errorboxbody p {
+	color: #707070;
+	display: block;
+	margin: 0 0 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+/* Button Home */
+.button-home {
+	background-color: #ff0763;
+	border: 0;
+	border-radius: 26px;
+	color: #fff;
+	display: inline-block;
+	font-weight: 700;
+	padding: 11px 50px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+	background-color: #d3004e;
+	border-color: #d3004e;
+}
+
+
+@media (max-width: 360px) {
+	/* OutLine */
+	#outline {
+		margin-top: 20%;
+	}
+
+	/* Error Code */
+	.error-code {
+	  font-size: 150px;
+	}
+
+	/* Message Error */
+	.error-message h2 {
+	  font-size: 24px;
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="plugin" group="payment">
+	<name>os_paypal</name>
+	<title>Paypal</title>	
+	<author>Tuan Pham Ngoc</author>
+	<creationDate>09-03-2010</creationDate>
+	<copyright>Copyright 2007-2010 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.0</version>
+	<description>Paypal Payment Plugin For Events Booking Extension</description>	
+	<config>	
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_eventbooking/elements">
+				<field name="paypal_mode" type="list" label="Paypal Mode" description="Set to Test Mode Or Live Mode">
+					<option value="0">Test Mode</option>
+					<option value="1">Live Mode</option>
+				</field>
+				<field name="paypal_id" type="text" size="40" label="Paypal Email" description="Enter your Paypal ID or Paypal Email" default=""></field>	
+				<field name="paypal_currency" type="ebcurrency" label="Paypal Currency" description="Choose Paypal Currency"></field>
+                <field name="payment_fee_amount" type="text" label="Payment Processing Fee ($)" description=""></field>
+                <field name="payment_fee_percent" type="text" label="Payment Processing Fee (%)" description=""></field>
+			</fieldset>			
+		</fields>
+	</config>
+	<files>
+		<filename>os_paypal.php</filename>				
+	</files>
+	<languages>
+		<filename>en-GB.os_paypal.ini</filename>		
+	</languages>
+	<installsql />
+	<installfile />	
+</install>

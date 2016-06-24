@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Pricing Table Style 1</title>
+    <sampledata><![CDATA[
+       {":type":"uber:pricing","pricing":{"jatools-layout-pricing":"style-1","pricing[block-intro]":["We undeniably offer a Huge value for the price offered. You can either choose single theme or join our club."],"pricing[block-extra-class]":[" section-darker"],"pricing[block-bg]":["images/joomlart/uber/slideshow/wall-01.jpg"],"pricing[pricing-style]":["style-dark"],"pricing[data]":{"pricing[data][pricing-col-name]":["Personal","Portfolio","Performance"],"pricing[data][pricing-col-price]":["((sup))$((/sup))34((sup)).99((/sup))","((sup))$((/sup))54((sup)).99((/sup))","((sup))$((/sup))45((sup)).99((/sup))"],"pricing[data][pricing-col-featured]":["0","1","0"],"pricing[data][pricing-col-button]":["Sign Up","Sign Up","Sign Up"],"pricing[data][pricing-col-buttonlink]":["index.php?option=com_users&view=registration&Itemid=551","index.php?option=com_users&view=registration&Itemid=551","index.php?option=com_users&view=registration&Itemid=551"],"data":[["Unlimited bandwidth","b1","b1","b1"],["Unlimited products","b1","b1","b1"],["1 GB File storage","b1","b1","b1"],["Discount code engine","b1","b1","b1"],["2.0% Transaction fee","b1","b1","b1"],["24x7 Phone support","b1","b1","b1"],["Gift cards","b1","b1","b1"],["Abandoned cart recovery","b0","b1","b1"],["Professional reports","b0","b1","b1"],["Real-time carrier shipping","b1","b1","b0"]],"rows":10,"cols":3,"type":"table"}}}
+    ]]></sampledata>
+    <fields name="pricing">
+        <fieldset name="pricing-basic" label="PRICING_BASIC_LABEL" description="PRICINGBASIC_DESC" multiple="0">
+            <field name="block-intro" type="textarea" default="" rows="5" cols="40" label="BLOCK_INTRO_LABEL" description="BLOCK_INTRO_DESC" />
+         	<field name="block-extra-class" type="textarea" default="" rows="5" cols="40" label="BLOCK_EXTRA_CLASS_LABEL" description="BLOCK_EXTRA_CLASS_DESC" />
+        </fieldset>
+
+        <fieldset name="pricing-col" size="50" label="PRICING_COLUMN_LABEL" description="PRICING_COLUMN_DESC">
+            <field name="data" type="jatable">
+                <item name="pricing-col-name" size="50" type="text" default="" label="PRICING_COLNAME_LABEL"
+                      description="PRICING_COLNAME_DESC" required="1"/>
+                <item name="pricing-col-price" size="50" type="text" default="" label="PRICING_COLPRICE_LABEL"
+                      description="PRICING_COLPRICE_DESC"/>
+                <item name="pricing-col-featured" type="radio" default="0" label="PRICING_FEATURED_LABEL"
+                      description="PRICING_FEATURED_DESC">
+                    <option value="0" class="off">JNO</option>
+                    <option value="1" class="on">JYES</option>
+                </item>
+                <item name="pricing-col-button" size="50" type="text" default="" label="PRICING_BUTTON_LABEL"
+                      description="PRICING_BUTTON_DESC"/>
+                <item name="pricing-col-buttonlink" size="50" type="text" default="" label="PRICING_BUTTON_LINK_LABEL"
+                      description="PRICING_BUTTON_LINK_DESC"/>
+            </field>
+        </fieldset>
+
+    </fields>
+</form>

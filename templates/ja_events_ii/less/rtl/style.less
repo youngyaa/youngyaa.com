@@ -1,0 +1,155 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// RTL STYLES
+// ------------------------------------------------------
+
+// Article Images
+// --------------
+article img[align=left],
+.img_caption.left,
+.pull-left.item-image { 
+}
+
+article img[align=right],
+.img_caption.right,
+.pull-right.item-image {
+}
+
+.languageswitcherload {
+  ul {
+    float: left;
+  }
+}
+
+// Module ACM
+.t3-slideshow::after {
+	background-size: 100% 390px;
+}
+.acm-slideshow,
+.mostevent,
+.mod_events_latest_table,
+.jevlocations.owl-carousel,
+.jticketing-events.owl-carousel {
+	direction: ltr;
+}
+
+.acm-slideshow .owl-carousel .item .slider-content,
+.mostevent .event-info,
+.mod_events_latest_table .mod_events_latest,
+.jevlocations .mod-jevloc-item,
+.jticketing-events.owl-carousel .owl-item {
+	direction: rtl;
+}
+
+.owl-carousel .owl-controls .owl-buttons div {
+  float: right;
+}
+
+
+
+// ------------------------
+// EVENTS BOOKING RTL
+// ------------------------
+
+// CATEGORIES
+
+#eb-categories-page {
+  .eb-page-heading {
+    text-align: right;
+  }
+}
+
+#eb-categories {
+  direction: ltr;
+
+  .eb-category {
+    direction: rtl;
+    text-align: right;
+  }
+}
+
+.eb-events-timeline {
+  .eb-event-container {
+    background-position: 91% 85px;
+
+    @media (min-width: @screen-md) {
+      background-position: 94% 85px;
+    }
+
+    @media (min-width: @screen-lg) {
+      background-position: 95% 85px;
+    }
+  }
+}
+
+#eb-event-page #eb-event-details .sharing > div {
+  float: right !important;
+}
+
+
+
+// ------------------------
+// JEVENTS RTL
+// ------------------------
+div.ev_adminpanel .nav_bar_cell {
+  text-align: right;
+}
+
+.jevbootstrap .action_dialogJQ .modal-body,
+.jevbootstrap .action_dialogJQ .modal-header {
+  text-align: right;
+}
+.jevbootstrap .action_dialogJQ #publish_reccur img,
+.jevbootstrap .action_dialogJQ #edit_reccur img,
+.jevbootstrap .action_dialogJQ #edit_event img,
+.jevbootstrap .action_dialogJQ #edit_eventcopy img,
+.jevbootstrap .action_dialogJQ #delete_repeat img,
+.jevbootstrap .action_dialogJQ #delete_eventfuture img,
+.jevbootstrap .action_dialogJQ #delete_event img {
+  margin-right: 0;
+  margin-left: 1em;
+}
+
+// Icon RTL 
+.fa.fa-angle-double-left:before {
+  content: "\f101";
+}
+
+.fa.fa-angle-double-right:before {
+  content: "\f100";
+}
+
+.fa.fa-angle-left:before {
+  content:  "\f105";
+}
+
+.fa.fa-angle-right:before {
+  content:  "\f104";
+}
+
+// Tooltips
+// ---------------------------------------------------------
+.tip-wrap {
+  right: auto;
+}
+
+// Jevent 
+// ---------------------------------------------------------
+
+.jev_evdt .jev_evdt_icons {
+    float: left;
+ }
+
+ .jevbootstrap div.modal {
+  left: auto!important;
+  right: 50%;
+ }
+
+ // Map footer home
+ // ---------------------------------------------------------
+ html[dir="rtl"] .uber-contact-info.style-1 .info.top-right {
+  left: inherit!important;  
+  right: 20px!important;
+ }

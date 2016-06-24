@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="eventbooking" method="upgrade">
+    <name>Event Booking - Joomla Groups plugin</name>
+    <author>Tuan Pham Ngoc</author>
+    <creationDate>Apirl 2012</creationDate>
+    <copyright>Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@joomdonation.com</authorEmail>
+    <authorUrl>www.joomdonation.com</authorUrl>
+    <version>2.0.4</version>
+    <description>This plugin is used to assign users to Joomla Groups when they subscribe to a Event in Event Booking
+    </description>
+    <files>
+        <filename plugin="joomlagroups">joomlagroups.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_eventbooking_joomlagroups.ini</language>
+    </languages>
+    <params/>
+    <config/>
+</extension>

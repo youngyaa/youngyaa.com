@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Teams Style 1</title>
+	<sampledata><![CDATA[	
+		{":type":"ja_rent:teams","teams":{"jatools-layout-teams":"style-1","team_about[number_col]":["4"],"team_about[full-width]":["0"],"team_about[member_info]":{"team_about[member_info][member-image]":["images/joomlart/teams/mem-1.jpg"],"team_about[member_info][member-desc]":["Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed"],"team_about[member_info][member-name]":["John Doe"],"team_about[member_info][member-position]":["CEO"],"rows":1,"cols":5,"type":"list"}}}
+    ]]></sampledata>
+	<fields name="team_about">
+		<fieldset name="basic" label="TEAM_BASIC_LABEL" description="TEAM_BASIC_DESC" >
+			<field name="number_col" type="list" label="TEAM_NUMBER_COL_LABEL" description="TEAM_NUMBER_COL_DESC">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</field>
+			<field name="block-intro" type="textarea" default="" rows="5" cols="40"  label="BLOCK_INTRO_LABEL" description="BLOCK_INTRO_DESC" />
+		</fieldset>
+		
+		<fieldset name="member_info" label="TEAM_MEMBER_INFO_LABEL" description="TEAM_MEMBER_INFO_DESC" multiple="1">
+			<field name="member-image" type="media" default="" label="TEAM_MEMBER_LABEL" description="TEAM_MEMBER_DESC"></field>
+			<field name="member-desc" type="textarea" cols="40" rows="5" default="" label="TEAM_MEMBER_TEXT_LABEL" description="TEAM_MEMBER_TEXT_DESC"></field>
+			<field name="member-name" type="text" size="40" default="" label="TEAM_MEMBER_NAME_LABEL" description="TEAM_MEMBER_NAME_DESC" required="1"></field>
+			<field name="member-position" type="text" size="40" default="" label="TEAM_MEMBER_POSITION_LABEL" description="TEAM_MEMBER_POSITION_DESC"></field>
+      
+			<field name="member-link-icon1" type="text" default="" label="TEAM_MEMBER_LINK_ICON1_LABEL" description="TEAM_MEMBER_LINK_ICON1_DESC"></field>
+			<field name="member-link1" type="text" default="" label="TEAM_MEMBER_LINK1_LABEL" description="TEAM_MEMBER_LINK1_DESC"></field>
+			<field name="member-link-icon2" type="text" default="" label="TEAM_MEMBER_LINK_ICON2_LABEL" description="TEAM_MEMBER_LINK_ICON2_DESC"></field>
+			<field name="member-link2" type="text" default="" label="TEAM_MEMBER_LINK2_LABEL" description="TEAM_MEMBER_LINK2_DESC"></field>
+			<field name="member-link-icon3" type="text" default="" label="TEAM_MEMBER_LINK_ICON3_LABEL" description="TEAM_MEMBER_LINK_ICON3_LABEL"></field>
+			<field name="member-link3" type="text" default="" label="TEAM_MEMBER_LINK3_LABEL" description="TEAM_MEMBER_LINK3_LABEL"></field>
+			<field name="member-link-icon4" type="text" default="" label="TEAM_MEMBER_LINK_ICON4_LABEL" description="TEAM_MEMBER_LINK_ICON4_LABEL"></field>
+			<field name="member-link4" type="text" default="" label="TEAM_MEMBER_LINK4_LABEL" description="TEAM_MEMBER_LINK4_LABEL"></field>
+			<field name="member-link-icon5" type="text" default="" label="TEAM_MEMBER_LINK_ICON5_LABEL" description="TEAM_MEMBER_LINK_ICON5_LABEL"></field>
+			<field name="member-link5" type="text" default="" label="TEAM_MEMBER_LINK5_LABEL" description="TEAM_MEMBER_LINK5_LABEL"></field>
+		</fieldset>
+	</fields>
+</form>

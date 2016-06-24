@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Registrants management">
+		<message>
+			Display list of registrants so that allowed-users can edit the registrant
+		</message>
+	</layout>		
+</metadata>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="osmembership" method="upgrade">
+    <name>OS Membership - Group Membership Plugin</name>
+    <author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.7</version>
+    <description>This plugin is used to handle group membership feature in Membership Pro</description>
+    <files>
+        <filename plugin="groupmembership">groupmembership.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="exclude_group_ids" type="text" size="60" default="7,8" label="Exclude Group Ids" description="By default, group members will have same Joomla user groups with group admin. If you want group memmbers to be excluded from certain groups, enter ID(s) of the group(s) here (comma separated)" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

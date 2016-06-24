@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Manage Group Members">
+		<message>
+			Display List of Group members which the current user manage
+		</message>
+	</layout>		
+</metadata>

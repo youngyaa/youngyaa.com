@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<title>Clients Style 1</title>
+	<sampledata><![CDATA[
+        {":type":"uber:clients","clients":{"jatools-layout-clients":"style-1","clients[block-intro]":["To deliver to you a diverse range of the best services"],"clients[block-extra-class]":[""],"clients[block-bg]":[""],"clients[columns]":["6"],"clients[acm-style]":["style-light"],"clients[full-width]":["0"],"clients[img-gray]":["0"],"clients[img-opacity]":["100"],"clients[client-item]":{"clients[client-item][client-logo]":["images/joomlart/uber/clients/partner-1.png","images/joomlart/uber/clients/partner-2.png","images/joomlart/uber/clients/partner-3.png","images/joomlart/uber/clients/partner-4.png","images/joomlart/uber/clients/partner-5.png","images/joomlart/uber/clients/partner-6.png"],"clients[client-item][client-name]":["Nivea","Biore","Rmi","","",""],"clients[client-item][client-link]":["#","#","#","#","#","#"],"rows":6,"cols":4,"type":"list"}}}
+        ]]>
+	</sampledata>
+    <fields name="clients">
+      <fieldset name="clients-basic" label="CLIENTS_BASIC_LABEL" description="CLIENTS_BASIC_DESC">
+      <field name="columns" type="list" label="ACM_COLUMNS_LABEL" description="ACM_COLUMNS_DESC">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </field>
+      
+    <field name="acm-style" type="list" default="style-light"
+      global="1"
+      label="ACM_STYLE_LABEL"
+      description="ACM_STYLE_DESC">
+      <option value="style-light">LAYOUT_STYLE_LIGHT</option>
+      <option value="style-dark">LAYOUT_STYLE_DARK</option>
+    </field>
+      
+      <field name="img-gray" type="radio" default="1" label="CLIENTS_IMG_GRAY_LABEL" description="CLIENTS_IMG_GRAY_DESC" >
+        <option value="0" class="off">JNO</option>
+        <option value="1" class="on">JYES</option>
+      </field>
+      
+      <field name="img-opacity" size="50"  type="text" default="30" label="CLIENTS_IMG_OPACITY_LABEL" description="CLIENTS_IMG_OPACITY_DESC" />
+      
+    </fieldset>
+
+    <fieldset name="client-items" label="CLIENT_ITEM_LABEL" description="CLIENT_ITEM_DESC">
+      <field name="client-item" type="jalist">
+        <item name="client-logo" type="media" default="" label="CLIENT_ITEM_LOGO_LABEL" description="CLIENT_ITEM_LOGO_DESC" required="1" />
+        <item name="client-name" size="50"  type="text" default="" label="CLIENT_ITEM_NAME_LABEL" description="CLIENT_ITEM_NAME_DESC" />
+        <item name="client-link" size="50" type="text" default="" label="CLIENT_ITEM_LINK_LABEL" description="CLIENT_ITEM_LINK_DESC" />
+      </field>
+    </fieldset>
+
+    </fields>
+</form>

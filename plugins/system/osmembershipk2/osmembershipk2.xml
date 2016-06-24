@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>OS Membership K2 items Restriction</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.7</version>
+	<description>This plugin check to see whether users can access to a k2 item. Only publish it if you use OS Membership K2 Restriction Settings plugin to restrict access for subscribers</description>	
+	<files>
+		<filename plugin="osmembershipk2">osmembershipk2.php</filename>		
+		<folder>sql</folder>
+	</files>	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.osmembershipk2.sql</file>
+		</sql>
+	</install>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">				
+				<field name="redirect_url" label="Redirect URL" type="text" size="70" default="" description="URL of the page users will be redirected to when they are not allowed to access to the k2 item. You should put the url of the subscription plans page on your site into this param"></field>
+			</fieldset>
+		</fields>
+	</config>			
+</extension>

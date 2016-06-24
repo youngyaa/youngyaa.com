@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Video Style 1</title>
+	<sampledata><![CDATA[  {":type":"uber:hero","hero":{"jatools-layout-hero":"style-4","hero-style[block-intro]":[""],"hero-style[block-extra-class]":[" no-padding"],"hero-style[hero-style]":["style-dark"],"hero-style[hero-content-position]":["position-center"],"hero-style[hero-text-align]":["text-center"],"hero-style[hero-screen]":["full-screen"],"hero-style[hero-effect]":[""],"hero-style[hero-heading]":["Create revolutionary products. "],"hero-style[hero-heading-size]":[""],"hero-style[hero-intro]":["((span))Start your ((strong))coding  career((/strong)) and build things we are all ((strong))proud of((/strong)).((span)) \n((/p))"],"hero-style[hero-quote]":[""],"hero-style[hero-img]":[""],"hero-style[hero-btn1-text]":[""],"hero-style[hero-btn1-class]":[""],"hero-style[hero-btn1-link]":[""],"hero-style[hero-btn2-text]":[""],"hero-style[hero-btn2-link]":[""],"hero-style[hero-bg]":[""],"hero-style[hero-video]":["vimeo=94101559"]}}
+    ]]></sampledata>
+  <fields name="video-style">
+    <fieldset name="basic" label="VIDEO_BASIC_LABEL" description="VIDEO_BASIC_DESC" multiple="0"> 
+    
+      <field name="video-style" type="list" default="style-dark"
+          global="1"
+          label="VIDEO_STYLE_LABEL"
+          description="VIDEO_STYLE_DESC">
+        <option value="style-dark">LAYOUT_VIDEO_DARK</option>
+        <option value="style-light">LAYOUT_VIDEO_LIGHT</option>
+      </field>
+      
+      <field name="video-heading" type="textarea" cols="40" rows="5" default="" label="VIDEO_HEADING_LABEL" description="VIDEO_HEADING_DESC"></field>
+      
+      <field name="video-intro" type="textarea" cols="40" rows="5" default="" label="VIDEO_INTRODUCTION_LABEL" description="VIDEO_INTRODUCTION_DESC"></field>
+
+      <field name="button-value" type="text" default="" label="FEATURES_BUTTON_VALUE_LABEL" description="FEATURES_BUTTON_VALUE_LABEL_DESC" ></field>
+      <field name="button-link" type="text" default="" label="FEATURES_LINK_LABEL" description="FEATURES_LINK_LABEL_DESC" ></field>
+      
+      <field name="video-link" type="type" size="50" default="vimeo=" label="VIDEO_VIDEOBACKGROUND_LABEL" description="VIDEO_VIDEOBACKGROUND_DESC"></field>
+    </fieldset>
+  </fields>
+</form>

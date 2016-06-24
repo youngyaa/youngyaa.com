@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="osmplugin" group="payment">
+	<name>os_eway</name>
+	<title>Eway</title>
+    <creationDate>May 2012</creationDate>
+    <author>Tuan Pham Ngoc</author>
+    <authorEmail>tuanpn@joomdonation.com</authorEmail>
+    <authorUrl>http://www.joomdonation.com</authorUrl>
+    <copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.2.1</version>
+	<description>Eway Payment Plugin For Membership Pro Extension</description>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_osmembership/elements">
+				<field name="eway_mode" type="list" label="Eway Mode" description="Set to Test Mode Or Live Mode">
+					<option value="0">Test Mode</option>
+					<option value="1">Live Mode</option>
+				</field>
+				<field name="eway_customer_id" type="text" size="50" label="Customer ID" description="Enter your Eway customer ID" default="87654321"></field>
+				<field name="payment_fee_amount" type="text" label="Payment Processing Fee ($)" description=""></field>
+				<field name="payment_fee_percent" type="text" label="Payment Processing Fee (%)" description=""></field>
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename>os_eway.php</filename>
+	</files>
+	<installsql />
+	<installfile />
+</install>

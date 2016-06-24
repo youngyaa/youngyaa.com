@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="module" method="upgrade">
+	<name>Membership Plans</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.3</version>
+	<description>This module is used to display subscription plans. You can enter 1,3,4,6 or cat-4 or leave the Plan Ids empty to display these plans into article</description>
+	<files>
+		<filename module="mod_membershipplans">mod_membershipplans.php</filename>
+		<filename>index.html</filename>		
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text"
+							label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX">
+				</field>
+				<field name="layout_type" type="list" label="Layout" description="Choose the layout you want to use to display subscription plans">
+					<option value="default">Default Layout</option>					
+					<option value="columns">Columns Layout</option>
+					<option value="pricingtable">Pricing Table Layout</option>
+				</field>						
+				<field name="plan_ids" type="text" size="50" default="" label="Plan Ids" description="Enter Ids of the plans you want to display in the module. Leave it empty to display all plans"/>
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

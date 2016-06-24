@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+	<channel>
+		<title>Joomlapolis News</title>
+		<description>Joomla social networking and Subscription Management software. Community Builder is the top rated, best supported, most complete and reliable community system there is for Joomla!</description>
+		<link>http://www.joomlapolis.com:80/news</link>
+		<lastBuildDate>Mon, 15 Feb 2016 22:39:48 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>en-gb</language>
+		<item>
+			<title>CB Code Field 1.0 Released!</title>
+			<link>http://www.joomlapolis.com:80/news/18536-cb-code-field-10-released</link>
+			<guid>http://www.joomlapolis.com:80/news/18536-cb-code-field-10-released</guid>
+			<description><![CDATA[<p style="text-align: center;">&nbsp;<img src="http://www.joomlapolis.com:80/images/stories/tutorials/code/codedaysold2.png" alt="codedaysold2" width="550" height="248" /></p>
+<p style="text-align: center;"><strong>CB Code Field 1.0.2</strong> has been released for CB 2.0.13+<br />Professional+ members can <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=810">download</a></p>
+<p>By popular community demand, the CB Team has just released the new CB Code Field add-on that lets you execute PHP code as a CB field!</p>
+<p>With this new release you can also create code fields that <strong>dynamically auto-refresh</strong> when other CB fields change.</p>
+<p>Here is a brand new <a href="http://www.joomlapolis.com:80/index.php?option=com_content&amp;view=article&amp;id=18534:calculating-years-months-days-from-birthday-field-using-cb-code-field&amp;catid=107:use-cases&amp;Itemid=129">Age Calculation Tutorial</a> that will help you understand this new functionality.</p>
+<p>The CB Code Field add-on lets you create as many CB fields as you want that provide output based on PHP code you provide.</p>
+<p>Once installed and published you will see 5 new field types available when you create new CB fields:</p>
+<ul>
+<li>Code</li>
+<li>Code&nbsp;Check Box (Multiple)</li>
+<li>Code&nbsp;Drop Down (Multi-select)</li>
+<li>Code&nbsp;Drop Down (Single Select)</li>
+<li>Code&nbsp;Radio Buttons</li>
+</ul>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232789-cb-code-field-10-released">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Tue, 09 Feb 2016 22:29:42 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB Query Field 5.0 released!</title>
+			<link>http://www.joomlapolis.com:80/news/18535-cb-query-field-50-released</link>
+			<guid>http://www.joomlapolis.com:80/news/18535-cb-query-field-50-released</guid>
+			<description><![CDATA[<p style="text-align: center;">&nbsp;<img src="http://www.joomlapolis.com:80/images/stories/tutorials/cbquery/usastatecityzip.jpg" alt="usastatecityzip" width="463" height="199" /></p>
+<p style="text-align: center;"><strong>CB Query Field 5.0.2</strong> has been released for CB 2.0.13+<br />Professional+ members can <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=811">download</a></p>
+<p>With this new release you are now able to create query fields that <strong>dynamically auto-refresh</strong> when other CB fields change (think of chained fields like country, state, city combinations).</p>
+<p>Here is a brand new <a href="http://www.joomlapolis.com:80/index.php?option=com_content&amp;view=article&amp;id=18533:configuring-dynamic-usa-state-city-zip-fields-with-cb-query-field-plugin&amp;catid=107:use-cases&amp;Itemid=129">USA State, City, Zip code tutorial</a> that will help you understand this new functionality.</p>
+<p>The CB Query Field add-on lets you create as many CB fields as you want that take their options from a database query.</p>
+<p>Once installed and published you will see 4 new field types available when you create new CB fields:</p>
+<ul>
+<li>Query</li>
+<li>Query Check Box (Multiple)</li>
+<li>Query Drop Down (Multi-select)</li>
+<li>Query Drop Down (Single Select)</li>
+<li>Query Radio Buttons</li>
+</ul>
+<p>We also have some cool <a href="https://www.youtube.com/playlist?list=PLp0puRITgC7MM9iP9FooKB1qk8f5MLWVp" target="_blank">CB Query field video tutorials</a> that you can watch.</p>
+<p>&nbsp;</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232787-cb-query-field-50-released">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Tue, 09 Feb 2016 22:06:07 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB 2.0.13 ready for Joomla 3.5 and PHP 7.0</title>
+			<link>http://www.joomlapolis.com:80/news/18532-cb-2013-ready-for-joomla-35-and-php-70</link>
+			<guid>http://www.joomlapolis.com:80/news/18532-cb-2013-ready-for-joomla-35-and-php-70</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201602/php7canvas.gif" alt="php7canvas" width="550" height="199" />&nbsp;</p>
+<p style="text-align: center;"><a href="http://www.joomlapolis.com:80/community-builder">Community Builder 2.0.13</a> is here and is ready for upcoming Joomla 3.5<br /><a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=804&amp;Itemid=105">Download it now</a> - it's <strong>free</strong> and <strong>super stable</strong></p>
+<p><strong>Community Builder 2.0.13</strong> is a maintenance release that fixes <strong>21 bugs</strong> and adds <strong>6 new features</strong> (PHP 7 compatibility, Bootstrap and Fontawesome updates - see forum discussion for full changelog) paving the way for the upcoming Joomla 3.5 release.</p>
+<p>CB 2.0+ websites can be upgraded to latest CB 2.0.13 <strong>using the built-in Joomla upgrader</strong> or with a <strong>simple install over</strong> (precautionary backup always recommended) as all previous settings are kept.</p>
+<p>The <a href="http://www.joomlapolis.com:80/component/docman/doc_details/753-cb-20-primer-book-101">CB Primer Book</a> is valid and the <a href="http://www.joomlapolis.com:80/cb-20-addon-status">CB 2.0 Add-on compatibility</a> chart has been updated.</p>
+<p>CB 2.0.13 now supports PHP 5.3.3 to PHP 7. Please note that Joomla 3.5 will be needed for PHP 7 support, as Joomla 3.4 is not PHP 7 compatible.</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232699-cb-2013-ready-for-joomla-35-and-php-70">Discuss this on our forums</a> !</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Tue, 02 Feb 2016 19:00:32 +0000</pubDate>
+		</item>
+		<item>
+			<title>Profile Update Logger 2.1.2 Released</title>
+			<link>http://www.joomlapolis.com:80/news/18530-profile-update-logger-212-released</link>
+			<guid>http://www.joomlapolis.com:80/news/18530-profile-update-logger-212-released</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201601/pul212.gif" alt="pul212" width="557" height="161" /></p>
+<p style="text-align: center;"><strong>Profile Update Logger 2.1.2</strong> has been released for CB 2.0.12+</p>
+<p>The <a href="http://www.joomlapolis.com:80/cb-20-addon-status">CB 2.0.12+ compatible</a> Profile Update Logger add-on lets your authorized users quickly view changes made to user profile fields. It keeps track of when changes were made, old and new values and also which user made each change. The add-on can also be configured to send notification emails on each change.</p>
+<p>Professional members can <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=803">download Profile Update Logger 2.1.2</a> and just install it using the CB Plugin Management installer.</p>
+<p><a href="http://www.joomlapolis.com:80/news/18530-profile-update-logger-212-released">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Mon, 18 Jan 2016 10:45:28 +0000</pubDate>
+		</item>
+		<item>
+			<title>New Free Primer Book Releases</title>
+			<link>http://www.joomlapolis.com:80/news/18529-new-free-primer-book-releases</link>
+			<guid>http://www.joomlapolis.com:80/news/18529-new-free-primer-book-releases</guid>
+			<description><![CDATA[<p style="text-align: center;">&nbsp;<img src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201601/primer-books-update.gif" alt="primer-books-update" width="450" height="319" /></p>
+<p style="text-align: center;">New Primer Book updates released!<br /><a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=801">Download CB Primer</a> - <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=792">Download GroupJive Primer</a></p>
+<p>The <strong>Community Builder&nbsp;</strong> and <strong>GroupJive</strong> <strong>Primer Books</strong> have been updated to be compatible with latest software releases. Both also now contain special sections describing how to upgrade from previous releases.</p>
+<p>These are <strong>highly recommended resources</strong> that you should download and study as - along with the <a href="https://www.youtube.com/user/Joomlapolis/playlists" target="_blank">great video tutorials</a> - they will help you take full advantage of <a href="http://www.joomlapolis.com:80/index.php?option=com_content&amp;view=article&amp;id=12&amp;Itemid=2">Community Builder</a> and <a href="http://www.joomlapolis.com:80/index.php?option=com_content&amp;view=article&amp;id=135&amp;Itemid=99">GroupJive</a>.</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232548-new-free-primer-book-releases">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Mon, 18 Jan 2016 10:25:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Inline editing with new CB Core Ajax 3.0</title>
+			<link>http://www.joomlapolis.com:80/news/18528-inline-editing-with-new-cb-core-ajax-30</link>
+			<guid>http://www.joomlapolis.com:80/news/18528-inline-editing-with-new-cb-core-ajax-30</guid>
+			<description><![CDATA[<p style="text-align: center;"><img src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201601/coreajax_580.gif" alt="coreajax 580" width="550" height="284" /></p>
+<p style="text-align: center;">Paid members can <a href="http://www.joomlapolis.com:80/cb-20-addon-status">download</a> <strong>CB Core Ajax Fields 3.0.0</strong></p>
+<p>Making CB Field editing <strong>easier</strong> and <strong>quicker</strong> is simple with the new <strong>CB Core Ajax Fields 3.0</strong> release that supports <strong>inline editing</strong> on <strong>profile pages</strong> and even on <strong>user lists</strong>!</p>
+<p>Just install, publish it and then configure each CB Field you want for inline editing.</p>
+<p>Once configured, a mouse over on a field will reveal the edit icon that will let you quickly update the specific field value.</p>
+<p>This is a <strong>huge</strong> usability improvement for your users and also a life saver for moderators that need to edit many users directly in user list views.</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232363-inline-editing-with-new-cb-core-ajax-30">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Mon, 04 Jan 2016 08:32:49 +0000</pubDate>
+		</item>
+		<item>
+			<title>Joomla 3.4.7 and patches protect against critical PHP bug</title>
+			<link>http://www.joomlapolis.com:80/news/18527-joomla-347-and-patches-protect-against-critical-php-bug</link>
+			<guid>http://www.joomlapolis.com:80/news/18527-joomla-347-and-patches-protect-against-critical-php-bug</guid>
+			<description><![CDATA[<p><img style="margin-right: 15px; margin-bottom: 5px; float: left;" src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201512/jsecurity.png" alt="jsecurity" width="144" height="160" />"<strong>Security is an ongoing journey: The best way to stay safe is to always stay up-to-date</strong>" says Beat (CB Team and JSST - Joomla Security Strike Team member).</p>
+<p>The previous Joomla 3.4.6 critical security release triggered an in depth security investigation by the JSST Team to better understand the true nature and cause of this vulnerability.</p>
+<p>This "follow the code" process has identified the root cause of this issue down to a specific <a href="https://bugs.php.net/bug.php?id=70219" target="_blank">PHP security bug</a>, already fixed on 4th September 2015 in PHP 5.4.45, 5.5.29 and 5.6.13 (and also in all PHP 7 releases) and also in all major Linux distributions back in September 2015</p>
+<p>In an effort to help secure Joomla against poorly maintained hosting environments, the Joomla project has released Joomla 3.4.7 along with Joomla 2.5 and 1.5 code fixes.</p>
+<p>This means that:</p>
+<ul>
+<li>All Joomla 3.4 websites should be upgraded to <a href="https://www.joomla.org/announcements/release-news/5643-joomla-3-4-7.html" target="_blank">Joomla 3.4.7</a></li>
+<li>All Joomla 2.5/1.5 websites that cannot upgrade to Joomla 3 should apply the <a href="https://docs.joomla.org/Security_hotfixes_for_Joomla_EOL_versions" target="_blank">EOL Security Hotfixes</a></li>
+</ul>
+<p>These actions will protect your Joomla core installation against this specific PHP bug.</p>
+<p>You should make sure that your hoster continuously security-maintains your PHP/LINUX environment to keep it up to date&nbsp;(<a href="http://www.joomlapolis.com:80/hosting">Joomlapolis Hosting</a> does).</p>
+<p>Please note that<strong> Community Builder 2.0.12 runs just fine with Joomla 3.4.7</strong> (no backwards compatibility issues) and Community Builder's sessions management is <strong>not affected</strong> by this PHP secutity bug.</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232269-joomla-347-and-patches-protect-against-critical-php-bug">Discuss this on our forums</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Wed, 23 Dec 2015 10:15:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>GroupJive 3.0.1 and Primer Book Released!</title>
+			<link>http://www.joomlapolis.com:80/news/18524-groupjive-301-and-primer-book-released</link>
+			<guid>http://www.joomlapolis.com:80/news/18524-groupjive-301-and-primer-book-released</guid>
+			<description><![CDATA[<p><a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=794"><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201512/gj301.gif" alt="gj301" width="543" height="667" /></a></p>
+<p style="text-align: center;"><strong>GroupJive 3.0.1</strong> can be <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=794">downloaded</a> by all <a href="http://www.joomlapolis.com:80/index.php?option=com_content&amp;view=article&amp;id=18216&amp;Itemid=135">paid members</a><br /><a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=792">Download the free GroupJive Primer Book</a></p>
+<p><strong>GroupJive 3.0.1</strong> is here and <strong>super-stable</strong> ready to <strong>empower your community members</strong> to create their own <strong>mini-communities</strong> with <strong>media sharing</strong>, <strong>group events</strong> and <strong>private discussions</strong>.</p>
+<p>This is a <strong>maintenance release</strong> addressing six bugs (see discussion for changelog) and it should be used along with latest <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=777">CB Activity</a>, <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=669">CB Auto Actions</a> and <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=640">Community Builder</a> nightly releases.</p>
+<p>The <strong>free GroupJive Primer Book</strong> is also available for <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=792">download</a> and it will help you to quickly unleash this powerful, user empowering mini-community application.</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232211-groupjive-301-and-primer-book-released">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>CB Gallery 1.0.6 Released!</title>
+			<link>http://www.joomlapolis.com:80/news/18525-cb-gallery-106-released</link>
+			<guid>http://www.joomlapolis.com:80/news/18525-cb-gallery-106-released</guid>
+			<description><![CDATA[<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201502/video-gallery.gif" alt="video-gallery" width="500" height="528" /></p>
+<p style="text-align: center;"><a href="http://www.joomlapolis.com:80/index.php?option=com_content&amp;view=article&amp;id=18216&amp;Itemid=135">Paid members</a> can <a href="http://www.joomlapolis.com:80/index.php?option=com_docman&amp;task=doc_details&amp;gid=793">download CB Gallery 1.0.6</a></p>
+<p><strong>CB Gallery 1.0.6</strong> is here with <strong>substantial performance improvements</strong> and ready to empower your users to share their media (<strong>photos</strong>, <strong>videos</strong>, <strong>music</strong> and <strong>files</strong>) on their user profiles.</p>
+<p>This is a <strong>maintenance release</strong> that <strong>fixes 5 bugs</strong> but is also has <strong>3 new performance related features</strong> (see discussion for changelog).</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232210-cb-gallery-106-released">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Critical Joomla Security Releases - Upgrade Now!</title>
+			<link>http://www.joomlapolis.com:80/news/18523-critical-joomla-security-releases-upgrade-now</link>
+			<guid>http://www.joomlapolis.com:80/news/18523-critical-joomla-security-releases-upgrade-now</guid>
+			<description><![CDATA[<p>The Joomla project has just released <a href="https://www.joomla.org/announcements/release-news/5641-joomla-3-4-6-released.html" target="_blank">Joomla 3.4.6</a> to address a <strong>Critical Vulnerability</strong>.</p>
+<p>You <strong>must act immediately</strong> and update or patch all your Joomla 3.x/2.5/1.5. sites to this latest release.</p>
+<p>The vulnerability is also present in discontinued Joomla 2.5 and 1.5 series (Joomla 1.0 is ok). If you still have sites running off these old Joomla versions you must patch them appropriately.</p>
+<p><img style="margin-left: 10px; margin-bottom: 5px; margin-top: 10px; float: right;" src="http://www.joomlapolis.com:80/images/jpnewsletter/jpn201512/jsecurity.png" alt="jsecurity" width="144" height="160" />So to quickly help you act please follow these instructions:</p>
+<ul>
+<li>For all your Joomla 3.x websites<br />you should upgrade now to <a href="https://www.joomla.org/announcements/release-news/5641-joomla-3-4-6-released.html" target="_blank">Joomla 3.4.6 </a></li>
+<li>For all your Joomla 2.5.28 websites you should <br /><a href="https://docs.joomla.org/Security_hotfixes_for_Joomla_EOL_versions" target="_blank">download and apply the Joomla 2.5.28 patch</a></li>
+<li>For all your Joomla 1.5.26 websites you should<br /><a href="https://docs.joomla.org/Security_hotfixes_for_Joomla_EOL_versions" target="_blank">download and apply the Joomla 1.5.26 patch</a></li>
+</ul>
+<p>This is really important! If you are reading this, you should stop what you are doing and start updating/patching all your websites now.</p>
+<p>There is no need to delay. The Joomla 3.4.6 package only addresses the vulnerabilities and will not break anything you have installed upgrading from 3.4.5 to 3.4.6 (including of course Community Builder 2.0.12).</p>
+<p>If your website is not patched and your hosting does not have proper security counter-measures (btw - our <a href="http://www.joomlapolis.com:80/hosting">hosting</a> has already blocked thousands of attackers), you are at risk - protect your websites now !</p>
+<p><a href="http://www.joomlapolis.com:80/forum/6-news-and-publicity/232180-critical-joomla-security-releases-upgrade-now">Discuss this on our forums</a>.</p>]]></description>
+			<author>nant@joomlapolis.com (Nick A.)</author>
+			<category>News</category>
+			<pubDate>Tue, 15 Dec 2015 12:40:02 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

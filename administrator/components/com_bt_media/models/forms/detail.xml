@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_bt_media/models/fields/">
+        
+        <field type="asset" name="asset" path="administrator/components/com_bt_media/assets/" />
+        <field name="cate_id" type="categoryfield" visible="all"
+                
+               label="COM_BT_MEDIA_ITEMS_FORM_LBL_MEDIAINFORMATION_CATE_ID"
+               description="COM_BT_MEDIA_ITEMS_FORM_DESC_MEDIAINFORMATION_CATE_ID" 
+                
+               required="true" 
+               class="media-category inputbox" >
+            <option value="">COM_BT_MEDIA_CATEGORY_SELECT</option>
+        </field> 
+        <field
+            class="bt-ig-ac flickr"
+            type="uploadify"
+            name="files_upload_bt"
+            size = "32"
+            label="MOD_BTIMAGEGALLERY_FIELD_ALBUMCONFIG_FLICKR_USERID_LABEL"
+            description = "MOD_BTIMAGEGALLERY_FIELD_ALBUMCONFIG_FLICKR_USERID_DESC"
+        />
+        
+        <field
+            class="bt-ig-ac flickr"
+            type="folderview"
+            name="image_upload_folder"
+            directory="images"
+            label="MOD_BTIMAGEGALLERY_FIELD_ALBUMCONFIG_FLICKR_USERID_LABEL"
+            description = "MOD_BTIMAGEGALLERY_FIELD_ALBUMCONFIG_FLICKR_USERID_DESC"
+        />
+        
+        <field
+            class="bt-ig-ac flickr"
+            type="folderviewv"
+            name="video_upload_folder"
+            directory="images"
+            label="MOD_BTIMAGEGALLERY_FIELD_ALBUMCONFIG_FLICKR_USERID_LABEL"
+            description = "MOD_BTIMAGEGALLERY_FIELD_ALBUMCONFIG_FLICKR_USERID_DESC"
+        />
+        
+        <!--Field for get image from flickr tab-->
+        <field
+            type="text"
+            name="flickr_username"
+            size = "32"
+            class="inputbox"
+            label="COM_BT_MEDIA_FLICKR_USERNAME_LABEL"
+            description = "COM_BT_MEDIA_FLICKR_USERNAME_DESC"
+        />
+        
+        <field name="flickr_albumid" class="inputbox" type="list" label="COM_BT_MEDIA_FLICKR_ALBUMID_LABEL" description = "COM_BT_MEDIA_FLICKR_ALBUMID_DESC" onchange="comMediaAlbumChangeData('flickr')">
+            <option value="">COM_BT_MEDIA_SELECT_AN_ALBUM</option>
+        </field> 
+        
+        <field
+            type="list"
+            name="flickr_from"
+            label="COM_BT_MEDIA_FLICKR_FROM_LABEL"
+            description = "COM_BT_MEDIA_FLICKR_FROM_DESC"
+        />
+        
+        <field
+            type="list"
+            class="li-inline"
+            name="flickr_to"
+            label="COM_BT_MEDIA_FLICKR_TO_LABEL"
+            description = "COM_BT_MEDIA_FLICKR_TO_DESC"
+        />
+        
+        <field
+            type="flickrfetchimage"
+            name="image_flickr_bt"
+            label="COM_BT_MEDIA_GETIMAGE_BTN_LABEL"
+            description = "COM_BT_MEDIA_GETIMAGE_BTN_DESC"
+        />
+        
+        
+        
+        <!--Field for get image from picasa tab-->
+        <field
+            type="text"
+            name="picasa_username"
+            class = "inputbox"
+            size="32"
+            label="COM_BT_MEDIA_PICASA_USERNAME_LABEL"
+            description = "COM_BT_MEDIA_PICASA_USERNAME_DESC"
+        />
+        
+        <field name="picasa_albumid" type="list" label="COM_BT_MEDIA_PICASA_ALBUMID_LABEL" description = "COM_BT_MEDIA_PICASA_ALBUMID_DESC" onchange="comMediaAlbumChangeData('picasa')">
+            <option value="">COM_BT_MEDIA_SELECT_AN_ALBUM</option>
+        </field>
+        
+        <field
+            type="list"
+            name="picasa_from"
+            label="COM_BT_MEDIA_PICASA_FROM_LABEL"
+            description = "COM_BT_MEDIA_PICASA_FROM_DESC"
+        />
+        
+        <field
+            type="list"
+            class="li-inline"
+            name="picasa_to"
+            label="COM_BT_MEDIA_PICASA_TO_LABEL"
+            description = "COM_BT_MEDIA_PICASA_TO_DESC"
+        />
+        
+        <field
+            type="picasafetchimage"
+            name="image_picasa_bt"
+            size = "32"
+            label="COM_BT_MEDIA_GETIMAGE_BTN_LABEL"
+            description = "COM_BT_MEDIA_GETIMAGE_BTN_DESC"
+        />
+        
+        
+        <!--Get video from youtube-->                
+        <field
+            type="youtubegetby"
+            name="youtube_get_by"
+            class="inputbox"
+            label="COM_BT_MEDIA_YOUTUBE_GET_BY_LABEL"
+            description = "COM_BT_MEDIA_YOUTUBE_GET_BY_DESC"
+        />   
+             
+        <field
+            type="text"
+            name="youtube_url"
+            class="inputbox"
+            size = "32"
+            label="COM_BT_MEDIA_YOUTUBE_URL_LABEL"
+            description = "COM_BT_MEDIA_YOUTUBE_URL_DESC"
+        />
+             
+        <field
+            type="youtubeusername"
+            name="youtube_username"
+            class="inputbox"
+            size = "32"
+            label="COM_BT_MEDIA_YOUTUBE_USERNAME_LABEL"
+            description = "COM_BT_MEDIA_YOUTUBE_USERNAME_DESC"
+        />
+             
+        <field name="youtube_playlists" type="list" label="COM_BT_MEDIA_YOUTUBE_PLAYLISTS_LABEL" description = "COM_BT_MEDIA_YOUTUBE_PLAYLISTS_DESC" onchange="comMediaAlbumChangeData('youtube')">
+            <option value="">COM_BT_MEDIA_YOUTUBE_SELECT_AN_PLAYLIST</option>
+        </field>
+        
+        <field
+            type="list"
+            name="youtube_from"
+            label="COM_BT_MEDIA_YOUTUBE_FROM_LABEL"
+            description = "COM_BT_MEDIA_YOUTUBE_FROM_DESC"
+        />
+        
+        <field
+            type="list"
+            name="youtube_to"
+            label="COM_BT_MEDIA_YOUTUBE_TO_LABEL"
+            description = "COM_BT_MEDIA_YOUTUBE_TO_DESC"
+        />
+        
+        <field
+            type="hidden"
+            name="youtube_data"
+            label="COM_BT_MEDIA_YOUTUBE_DATA_LABEL"
+            description = "COM_BT_MEDIA_YOUTUBE_DATA_DESC"
+        />
+                
+        <field
+            type="youtubegetvideo"
+            name="video_youtube_bt"
+            size = "32"
+            label="COM_BT_MEDIA_GETVIDEO_BTN_LABEL"
+            description = "COM_BT_MEDIA_GETVIDEO_BTN_DESC"
+        />
+              
+        <!--Get video from Vimeo-->                
+        <field
+            type="vimeogetby"
+            name="vimeo_get_by"
+            class="inputbox"
+            label="COM_BT_MEDIA_VIMEO_GET_BY_LABEL"
+            description = "COM_BT_MEDIA_VIMEO_GET_BY_DESC"
+        />   
+             
+        <field
+            type="text"
+            name="vimeo_url"
+            class="inputbox"
+            size = "32"
+            label="COM_BT_MEDIA_VIMEO_URL_LABEL"
+            description = "COM_BT_MEDIA_VIMEO_URL_DESC"
+        />
+             
+        <field
+            type="vimeousername"
+            name="vimeo_username"
+            class="inputbox"
+            size = "32"
+            label="COM_BT_MEDIA_VIMEO_USERNAME_LABEL"
+            description = "COM_BT_MEDIA_VIMEO_USERNAME_DESC"
+        />
+             
+        <field name="vimeo_playlists" type="list" label="COM_BT_MEDIA_VIMEO_PLAYLISTS_LABEL" description = "COM_BT_MEDIA_VIMEO_PLAYLISTS_DESC" onchange="comMediaAlbumChangeData('vimeo')">
+            <option value="">COM_BT_MEDIA_VIMEO_SELECT_AN_ALBUM</option>
+        </field>
+        
+        <field
+            type="list"
+            name="vimeo_from"
+            label="COM_BT_MEDIA_VIMEO_FROM_LABEL"
+            description = "COM_BT_MEDIA_VIMEO_FROM_DESC"
+        />
+        
+        <field
+            type="list"
+            name="vimeo_to"
+            label="COM_BT_MEDIA_VIMEO_TO_LABEL"
+            description = "COM_BT_MEDIA_VIMEO_TO_DESC"
+        />
+        
+        <field
+            type="hidden"
+            name="vimeo_data"
+            label="COM_BT_MEDIA_VIMEO_DATA_LABEL"
+            description = "COM_BT_MEDIA_VIMEO_DATA_DESC"
+        />
+                
+        <field
+            type="vimeogetvideo"
+            name="video_vimeo_bt"
+            size = "32"
+            label="COM_BT_MEDIA_GETVIDEO_BTN_LABEL"
+            description = "COM_BT_MEDIA_GETVIDEO_BTN_DESC"
+        />
+              
+                
+        <!--        Nochange-->
+        <field name="id" type="text" default="0" label="COM_BT_MEDIA_ITEMS_FORM_LBL_MEDIAINFORMATION_ID"
+               readonly="true" class="readonly"
+               description="JGLOBAL_FIELD_ID_DESC" /> 
+
+        <field name="name" type="text"
+               label="COM_BT_MEDIA_ITEMS_FORM_LBL_MEDIAINFORMATION_NAME"
+               description="COM_BT_MEDIA_ITEMS_FORM_DESC_MEDIAINFORMATION_NAME" 
+               class="inputbox"
+               size="55"
+        />
+        
+        <field name="alias" type="text"
+               label="COM_BT_MEDIA_ITEMS_ALIAS_LABEL"
+               description="COM_BT_MEDIA_ITEMS_ALIAS_DESC" 
+               class="inputbox"
+               size="55"
+        />
+        
+        <field name="source_of_media" type="text" 
+               label="COM_BT_MEDIA_SOURCE_OF_MEDIA"
+               description="COM_BT_MEDIA_ITEMS_SOURCE_OF_MEDIA_DESC" 
+               readonly="true" class="inputbox" size="55" />
+        
+        <field name="description" type="editor"
+               label="COM_BT_MEDIA_ITEMS_DESCRIPTION_LABEL"
+               description="COM_BT_MEDIA_ITEMS_DESCRIPTION_DESC" 
+               filter="safehtml" buttons="true"/>
+         
+        <field name="tags" type="tags"
+               label="COM_BT_MEDIA_TAGS_LABEL"
+               description="COM_BT_MEDIA_TAGS_DESC" 
+               filter="safehtml" />
+        
+        <field name="datafrom" type="datafrom" label="COM_BT_MEDIA_GET_DATA_FROM_LABEL"
+                      description="COM_BT_MEDIA_GET_DATA_FROM_DESC"/>
+        
+        <field name="dataurl" type="dataurl" label="COM_BT_MEDIA_GET_DATA_URL_LABEL"
+                      description="COM_BT_MEDIA_GET_DATA_URL_DESC"/>
+         
+        <field name="new_video_url" type="text"
+               label="COM_BT_MEDIA_NEW_VIDEO_URL_LABEL"
+               description="COM_BT_MEDIA_NEW_VIDEO_URL_DESC" 
+               class="inputbox" size="55" /> 
+        
+        <field name="hits" type="text" label="JGLOBAL_HITS"
+               description="COM_BT_MEDIA_ITEMS_HITS_DESC" class="readonly" size="6"
+               readonly="true" filter="unset" />
+        
+        <field name="created_date" type="calendar" label="COM_BT_MEDIA_ITEMS_CREATED_LABEL"
+               description="COM_BT_MEDIA_ITEMS_CREATED_DESC" class="inputbox" size="22"
+               format="%Y-%m-%d" filter="user_utc" />
+        
+        <field name="language" type="contentlanguage"
+               label="JFIELD_LANGUAGE_LABEL"
+               description="COM_BT_MEDIA_ITEMS_LANGUAGE_DESC" 
+               filter="raw"
+               client="false" >
+            <option value="*">JALL</option>
+        </field> 
+
+        <field name="access" type="accesslevel"
+               label="JFIELD_ACCESS_LABEL"
+               description="JFIELD_ACCESS_DESC" 
+               filter="raw" /> 
+        
+        <field name="featured" type="list"
+               label="JFEATURED"
+               description="COM_BT_MEDIA_ITEMS_FEATURED_DESC"
+               default="0"
+        >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+        
+        <field name="image_path" type="hidden"
+               label="COM_BT_MEDIA_ITEMS_FORM_LBL_MEDIAINFORMATION_NAME"
+               description="COM_BT_MEDIA_ITEMS_FORM_DESC_MEDIAINFORMATION_NAME" 
+               class="media-name"
+               size="55"
+        />
+        <field name="video_path" type="hidden"
+               label="COM_BT_MEDIA_ITEMS_FORM_LBL_MEDIAINFORMATION_NAME"
+               description="COM_BT_MEDIA_ITEMS_FORM_DESC_MEDIAINFORMATION_NAME" 
+               class="media-name"
+               size="55"
+        />
+        <field name="media_type" type="hidden"
+               label="COM_BT_MEDIA_MEDIA_TYPE_LABEL"
+               description="COM_BT_MEDIA_MEDIA_TYPE_DESC" 
+               class="media-name"
+               size="55"
+        />
+         
+        <field name="media_upload" type="imagevideoupload"
+               label="COM_BT_MEDIA_IMAGE_UPLOAD_LABEL"
+               description="COM_BT_MEDIA_IMAGE_UPLOAD_DESC" 
+               class="media-name"
+               size="55"
+        /> 
+
+
+        <field name="created_by" type="createdby" default="" 
+               class="inputbox"
+               label="COM_BT_MEDIA_ITEMS_FORM_LBL_MEDIAINFORMATION_CREATED_BY"
+               description="COM_BT_MEDIA_ITEMS_FORM_DESC_MEDIAINFORMATION_CREATED_BY"  /> 
+
+
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field> 
+
+        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+        
+    </fieldset>
+    <fieldset name="accesscontrol">
+        <field name="asset_id" type="hidden" filter="unset" />
+        <field
+            name="rules"
+            type="rules"
+            label="JFIELD_RULES_LABEL"
+            filter="rules"
+            validate="rules"
+            component="com_bt_media"
+            section="media" />
+    </fieldset>
+    <fields name="params">
+			
+        <fieldset name="metadata">
+            <field name="page_title" type="text"
+                   label="Meta Title" description="Title of page" size="32"
+                   class="inputbox" />
+            <field name="metakey" type="textarea"
+                   label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+                   class="inputbox" rows="3" cols="32" />
+
+            <field name="metadesc" type="textarea"
+                   label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+                   class="inputbox" rows="3" cols="32" />
+            <field name="robots"
+                   type="list"
+                   label="JFIELD_METADATA_ROBOTS_LABEL"
+                   description="JFIELD_METADATA_ROBOTS_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+                <option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+                <option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+                <option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+            </field>
+
+
+        </fieldset>
+        
+        <fieldset name="options">
+            <field name="show_name" type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_TITLE_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_TITLE_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field name="show_description" type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_DESCRIPTION_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_DESCRIPTION_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field name="show_category" type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_CATEGORY_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_CATEGORY_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field name="show_created_by" type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_CREATE_BY_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_CREATE_BY_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            
+            <field name="show_hits" type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_HITS_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_HITS_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="show_tags" type="list"
+                   label="COM_BT_MEDIA_OPTION_SHOW_TAGS_LABEL" description="COM_BT_MEDIA_OPTION_SHOW_TAGS_DESC"
+            >
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fieldset>
+    </fields>
+
+</form>

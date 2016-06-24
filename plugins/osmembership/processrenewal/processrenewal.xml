@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="osmembership" method="upgrade">
+	<name>OS Membership - Simlizing Renewal[Warning - Read description carefully before enable this plugin]</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.7</version>
+	<description>By default, when subscriber renew his subscription, Membership Pro will create a new subscription record for him. If you enable this plugin, It will just extend subscription end date of the original record without creating records. It might make managing subscribers easier. Please think about it carefully before enable this plugin. Ask me any question about this plugin if needed.</description>
+	<files>
+		<filename plugin="processrenewal">processrenewal.php</filename>
+	</files>
+</extension>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="eventbooking" method="upgrade">
+	<name>Eventbooking - Acymailing plugin</name>
+	<author>Tuan Pham Ngoc</author>
+	<creationDate>October 2012</creationDate>
+	<copyright>Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>services@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>2.0.4</version>
+	<description>This plugin is used to add registrants to Acymailing when they register for an event.</description>
+	<files>
+		<filename plugin="acymailing">acymailing.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_eventbooking_acymailing.ini</language>		
+	</languages>
+	<params />
+	<config />		
+</extension>

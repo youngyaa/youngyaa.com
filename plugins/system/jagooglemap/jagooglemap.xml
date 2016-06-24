@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+
+	<name>System - JA Google Map</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Sep 2015</creationDate>
+	<copyright>J.O.O.M Solutions Co., Ltd.</copyright>
+	<license>GNU/GPL V3	</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>2.6.2</version>
+	<description>
+		<![CDATA[
+		<div style='font-weight:normal; text-align: left;'>
+			<span style="color: #008000;">
+				<strong>Google Maps Plugin for Joomla 2.5 and Joomla 3.4</strong>
+			</span>
+			<br />
+			<p><img src="http://joomlart.s3.amazonaws.com/images/mis/coming_up_teaser/ja_map_logo.jpg" /></p>
+			<p>
+				<span style="color: #ff6600;">
+					<strong>Features:</strong>
+				</span>
+			</p>
+			<ol>
+				<li>Easy to use. Change configuration values, check the checkboxes to include the values in the code, copy the code and paste into your article.</li>
+				<li>Tooltips added to all config options, with description and help text. Hover your mouse over the configuration options and read the tips.</li>
+			</ol>
+			<p>
+				<strong>
+					<span style="color: #ff6600;">Requirements:</span>
+				</strong>
+			</p>
+			<ol>
+				<li> Google Map API Key is required to validate requests from your site to Google Maps, sign up for a Google Map API Key <a target="_blank" href="http://code.google.com/apis/maps/signup.html">HERE</a> .</li>
+				<li>If you plan to use Latitude &amp; Longitude for your target location. Get co-ordinates from <a target="_blank" href="http://www.satsig.net/maps/lat-long-finder.htm">HERE</a>. Pick the co-ordinates as shown in the screenshot below.</li>
+			</ol>
+			<img src="http://joomlart.s3.amazonaws.com/images/mis/Latitude_Longitude_picker.png" />
+			<p style="clear:both;"><br />
+				<span style="color: #008000;">
+					<strong>Watch the Video</strong>
+				</span>
+			</p>
+			<p>
+				<object data="http://www.youtube.com/v/4YHh4JGpTig&amp;hl=en&amp;fs=1&amp;rel=0" type="application/x-shockwave-flash" height="385" width="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/4YHh4JGpTig&amp;hl=en&amp;fs=1&amp;rel=0" /></object>
+			</p>
+			<p>Right click on the video and Click "Open in Youtube" to view full screen.</p>
+			<p>
+				<strong>
+					<span style="color: #ff0000;">Important Instruction:</span>
+					<br />
+				</strong>
+			</p>
+			<ol>
+				<li>Use the Code generator to generate codes. However do not save the plugin settings when done. Always Hit the Close Button.</li>
+				<li><span style="color: #ff0000;">DO NOT</span> save settings each time you generate the map, the default configured maps will be affected. This is true incase your earlier maps CODE do not have the override values in them. Hit the Cancel button to preserve your default settings.</li>
+				<li>If your map is not seen in the article, then SwitchOver to HTML Source Edit view, while inserting the code into the desired location</li>
+			</ol>
+			<p>
+				<span style="color: #008000;">
+					<strong>Links:</strong>
+				</span>
+			</p>
+			<p>
+				<a target="_blank" href="http://www.joomlart.com/forums/forumdisplay.php?f=172">JA Google Map Forum</a><p> <a target="_blank" href="http://pm.joomlart.com/browse/JAECPLGGMAPJIVI">Found a Bug? / Have a Wishlist? Report here</a></p><p>Copyright 2012 <a href="http://www.joomlart.com/" title="Visit Joomlart.com!">JoomlArt.com</a>.
+			</p>
+		</div>
+		]]>
+	</description>
+
+	<files>
+		<filename plugin="jagooglemap">jagooglemap.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>layouts</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_jagooglemap.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/jagooglemap/assets/elements">
+
+				<field name="api_key" type="jamap" function="mapkey" cols="35"
+					rows="4"
+					default="AIzaSyCNIJV_hl5sVimQSQlc7PsP9-Kz0KGGQ1Y"
+					label="API_KEY" description="API_KEY_DESC">
+				</field>
+
+				<field name="disable_map" 
+					type="radio" 
+					class="btn-group"
+					default="0" 
+					label="DISABLE_MAP"
+					description="DISABLE_MAP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field type="spacer" hr="false" label="GENERAL_SETTING" description="GENERAL_SETTING_DESC" />
+				<field name="mode"
+						type="list"
+						default="normal"
+						label="Mode"
+						description="Mode">
+					<option value="normal">Normal</option>
+					<option value="direction">Direction</option>
+				</field>
+
+				<!--<field name="from_location" type="text" default=""
+					   label="FROM_LOCATION" description="FROM_LOCATION_DESC" />
+				<field name="to_location" type="text" default="New York"
+					label="TARGET_LOCATION" description="TARGET_LOCATION_DESC" />
+
+				<field name="target_lat" type="text" default="" label="TARGET_LAT"
+					description="TARGET_LAT_DESC" />
+
+				<field name="target_lon" type="text" default="" label="TARGET_LON"
+					description="TARGET_LON_DESC" />
+
+				<field name="to_location_info" type="textarea" cols="35" rows="4"
+					default="" label="TARGET_LOCATION_INFO" description="TARGET_LOCATION_INFO_DESC" />-->
+
+				<field name="locations"
+					   type="jaitems"
+					   label="Locations"
+					   description="Locations">
+					<item name="location"
+						  type="text"
+						  default="New York"
+						   label="TARGET_LOCATION"
+						  description="TARGET_LOCATION_DESC" />
+
+					<item name="latitude"
+						  type="text"
+						  class="input-short"
+						  default=""
+						  label="TARGET_LAT"
+						   description="TARGET_LAT_DESC" />
+
+					<item name="longitude"
+						  type="text"
+						  class="input-short"
+						  default=""
+						  label="TARGET_LON"
+						   description="TARGET_LON_DESC" />
+
+					<item name="info"
+						  type="textarea"
+						  cols="20"
+						   default=""
+						  label="TARGET_LOCATION_INFO"
+						  description="TARGET_LOCATION_INFO_DESC" />
+				</field>
+
+
+				<field name="zoom" type="list" default="15" label="ZOOM_LEVEL"
+					   description="ZOOM_LEVEL_DESC">
+					<option value="0">SMALLEST</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">LARGEST</option>
+				</field>
+
+				<field name="maptype" type="list" default="normal" label="MAP_TYPE"
+					description="MAP_TYPE_DESC">
+					<option value="normal">ROAD_MAP</option>
+					<option value="satellite">SATELLITE_MAP</option>
+					<option value="hybrid">HYBRID_MAP</option>
+					<option value="physical">PHYSICAL_MAP</option>
+				</field>
+
+				<field name="map_width" type="text" default="500" label="MAP_WIDTH"
+					description="MAP_WIDTH_DESC" class="validate-numeric">
+				</field>
+
+				<field name="map_height" type="text" default="300" label="MAP_HEIGHT"
+					description="MAP_HEIGHT_DESC" class="validate-numeric">
+				</field>
+
+				<field type="spacer" hr="false" label="MAP_TYPE_SETTING" description="MAP_TYPE_SETTING_DESC" />
+				<field name="maptype_control_display" 
+					type="radio" 
+					class="btn-group"
+					default="1"
+					label="DISPLAY_MAPTYPE_CONTROL" 
+					description="DISPLAY_MAPTYPE_CONTROL_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="mapstyles_control_display" 
+					type="radio" 
+					class="btn-group"
+					default="0"
+					label="DISPLAY_MAPSTYLES_CONTROL" 
+					description="DISPLAY_MAPSTYLES_CONTROL_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+                <field
+                     name="map_styles"
+                     type="textarea" cols="35" rows="4"
+                     default=""
+                     label="MAP_STYLES"
+                     description="MAP_STYLES_DESC">
+                </field>
+
+				<field name="maptype_control_style" type="list" default="drop_down"
+					label="MAP_TYPE_CONTROL" description="MAP_TYPE_CONTROL_DESC">
+					<option value="standard">STANDARD</option>
+					<option value="drop_down">DROP_DOWN</option>
+					<option value="hierarchical">HIERARCHICAL</option>
+				</field>
+
+				<field name="maptype_control_position" type="list" default="TR"
+					label="CONTROL_POSITION" description="CONTROL_POSITION_DESC">
+					<option value="TC">POSITION_TOP_CENTER</option>
+					<option value="TL">POSITION_TOP_LEFT</option>
+					<option value="TR">POSITION_TOP_RIGHT</option>
+					<option value="LT">POSITION_LEFT_TOP</option>
+					<option value="RT">POSITION_RIGHT_TOP</option>
+					<option value="LB">POSITION_LEFT_BOTTOM</option>
+					<option value="RB">POSITION_RIGHT_BOTTOM</option>
+					<option value="BC">POSITION_BOTTOM_CENTER</option>
+					<option value="BL">POSITION_BOTTOM_LEFT</option>
+					<option value="BR">POSITION_BOTTOM_RIGHT</option>
+				</field>
+
+				<field type="spacer" hr="false" label="ZOOM_TOOLBAR_SETTING" description="ZOOM_TOOLBAR_SETTING_DESC" />
+				<field name="toolbar_control_display" 
+					type="radio" 
+					class="btn-group"
+					default="1"
+					label="DISPLAY_ZOOM_TOOLBAR" 
+					description="DISPLAY_ZOOM_TOOLBAR_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="toolbar_control_style" type="list" default="small_3d"
+					label="CONTROL_STYLE" description="CONTROL_STYLE_DESC">
+					<option value="default">DEFAULT</option>
+					<option value="small">SMALL</option>
+					<option value="large">LARGE</option>
+				</field>
+
+				<field name="toolbar_control_position" type="list" default="TL"
+					label="CONTROL_POSITION" description="CONTROL_POSITION_DESC">
+					<option value="TC">POSITION_TOP_CENTER</option>
+					<option value="TL">POSITION_TOP_LEFT</option>
+					<option value="TR">POSITION_TOP_RIGHT</option>
+					<option value="LT">POSITION_LEFT_TOP</option>
+					<option value="RT">POSITION_RIGHT_TOP</option>
+					<option value="LB">POSITION_LEFT_BOTTOM</option>
+					<option value="RB">POSITION_RIGHT_BOTTOM</option>
+					<option value="BC">POSITION_BOTTOM_CENTER</option>
+					<option value="BL">POSITION_BOTTOM_LEFT</option>
+					<option value="BR">POSITION_BOTTOM_RIGHT</option>
+				</field>
+
+				<field type="spacer" hr="false" label="OTHERS_SETTING" description="OTHERS_SETTING_DESC" />
+				<field name="disable_scrollwheelzoom"
+					type="radio" 
+					class="btn-group"
+					default="0"
+					label="DISABLE_SCROLL_WHEEL_ZOOM"
+					description="DISABLE_SCROLL_WHEEL_ZOOM_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="display_scale"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="DISPLAY_SCALE"
+					description="DISPLAY_SCALE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="display_overview" 
+					type="radio" 
+					class="btn-group"
+					default="0"
+					label="DISPLAY_OVERVIEW_MAP" 
+					description="DISPLAY_OVERVIEW_MAP_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="sensor" 
+					type="radio" 
+					class="btn-group"
+					default="0"
+					label="DENOTING_SENSOR_USAGE" 
+					description="DENOTING_SENSOR_USAGE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field type="spacer" hr="false" label="GENERATE_CODE" description="GENERATE_CODE_DESC" />
+				<field name="code_container" type="jamap" function="mapcode"
+					cols="80" rows="10" default="{jamap }" label="CODE_CONTAINER"
+					description="CODE_CONTAINER_DESC">
+				</field>
+
+				<field name="list_params" 
+					type="opts"
+					cols="2" 
+					label="LIST_PARAMS"
+					description="LIST_PARAMS_DESC">
+					<option group="1" description="LIST_PARAMS_DESC">GENERAL_SETTING</option>
+					<option value="mode" description="Mode">Mode</option>
+					<option value="locations" description="Locations">Locations</option>
+					<!--<option value="target_lat" description="TARGET_LAT_DESC">TARGET_LAT</option>
+					<option value="target_lon" description="TARGET_LON_DESC">TARGET_LON</option>
+					<option value="to_location" description="TARGET_LOCATION_DESC">TARGET_LOCATION
+					</option>
+					<option value="to_location_info" description="TARGET_LOCATION_INFO_DESC">TARGET_LOCATION_INFO</option>
+					<option value="from_location" description="FROM_LOCATION_DESC">FROM_LOCATION</option>-->
+					<option value="maptype" description="MAP_TYPE_DESC">MAP_TYPE</option>
+					<option value="zoom" description="ZOOM_LEVEL_DESC">ZOOM_LEVEL</option>
+					<option value="map_width" description="MAP_WIDTH_DESC">MAP_WIDTH</option>
+					<option value="map_height" description="MAP_HEIGHT_DESC">MAP_HEIGHT</option>
+					
+					<option group="1" description="MAP_TYPE_SETTING_DESC">MAP_TYPE_SETTING</option>
+					<option value="maptype_control_display"
+						children="maptype_control_style,maptype_control_position"
+						description="DISPLAY_MAPTYPE_CONTROL_DESC">DISPLAY_MAPTYPE_CONTROL</option>
+					<option value="maptype_control_style" description="MAP_TYPE_CONTROL_DESC">MAP_TYPE_CONTROL</option>
+					<option value="maptype_control_position" description="CONTROL_POSITION_DESC">CONTROL_POSITION</option>
+					
+					<option group="1" description="ZOOM_TOOLBAR_SETTING_DESC">ZOOM_TOOLBAR_SETTING</option>
+					<option value="toolbar_control_display"
+						children="toolbar_control_style,toolbar_control_position"
+						description="DISPLAY_ZOOM_TOOLBAR_DESC">DISPLAY_ZOOM_TOOLBAR</option>
+					<option value="toolbar_control_style" description="CONTROL_STYLE_DESC">CONTROL_STYLE</option>
+					<option value="toolbar_control_position" description="CONTROL_POSITION_DESC">CONTROL_POSITION</option>
+					
+					<option group="1" description="OTHERS_SETTING_DESC">OTHERS_SETTING</option>
+					<option value="disable_scrollwheelzoom" description="DISABLE_SCROLL_WHEEL_ZOOM_DESC">DISABLE_SCROLL_WHEEL_ZOOM</option>
+					<option value="display_scale" description="DISPLAY_SCALE_DESC">DISPLAY_SCALE</option>
+					<option value="display_overview" description="DISPLAY_OVERVIEW_MAP_DESC">DISPLAY_OVERVIEW_MAP</option>
+					<option value="sensor" description="DENOTING_SENSOR_USAGE_DESC">DENOTING_SENSOR_USAGE</option>
+					
+				</field>
+				
+				<field 
+					name="group" 
+					hidden="true" 
+					type="japanel"
+					function="depend">
+						<option for="mapstyles_control_display" value="1" hideRow="true">
+							map_styles
+						</option>
+				</field>
+				<field type="japanel" path="/plugins/system/jagooglemap/assets/elements/" />
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

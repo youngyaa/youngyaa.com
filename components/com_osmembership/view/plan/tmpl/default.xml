@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Plan Detail">
+		<message>
+			Display Detail Information of a Plan
+		</message>
+	</layout>	
+	<fields name="request">			
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_osmembership/model/fields">
+			<field name="id" type="osmplan" size="3" default="0" label="Select Plan" description="Select Subscription Plan which you want to link to" />
+		</fieldset>	
+	</fields>
+</metadata>

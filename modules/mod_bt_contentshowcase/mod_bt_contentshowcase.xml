@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>BT Content Showcase</name>
+    <creationDate>June 2012</creationDate>
+    <author>www.bowthemes.com</author>
+    <copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@bowthemes.com</authorEmail>
+    <authorUrl>http://www.bowthemes.com</authorUrl>
+    <version>2.4.5</version>
+    <description>
+	<![CDATA[
+<div class="bt_description">
+	<h3>BT Content Showcase Module Version 2.4.5</h3>
+	<a href="http://bowthemes.com" target="_blank"><img
+		src="../modules/mod_bt_contentshowcase/admin/images/bt-slider.png">
+	</a>
+	<p>Helps to slide your articles from Joomla! categories with cool
+		effects, rich backend configs covering layout, animation control, auto
+		thumbnail creating, images resizing, numbering articles, sorting
+		ect...</p>
+	<br clear="both" />
+	<h3>Features</h3>
+	<ul class="list-style">
+		<li>Compatibility with Joomla  1.6, 1.7, 2.5 and Joomla 3.x</li>
+		<li>Content control display from any section, category or article ID's</li>
+		<li>Support for<a href="http://getk2.org/"> K2 component</a></li>
+		<li>Support for <a href="joomla-extensions/bt-porfolio-component.html" target="_blank" title="Portfolio Joomla component">BT Portfolio component</a></li>
+		<li>Support for <a href="http://bit.ly/1baVxzb">EasyBlog Component</a></li>
+		<li>Scalable size of the module</li>
+		<li>Horizontal and vertical news presentation (columns and rows configuration).</li>
+                <li>Scrolling and fading slide.</li>
+                <li>Powerful with two layouts Slide and Slide - Accordion</li>
+                <li>Control slide with next, back and navigation button</li>
+		<li>Show text, image, author, date, section/category name and button "read more" option, with order customization.</li>
+		<li>Image Cropping & Caching</li>
+		<li>On/Off front page articles display in modules</li>
+		<li>Easy and friendly back-end administration.</li>
+		<li>Used Javascript Framework: Jquery latest version</li>
+		<li>Fully compatible: Firefox, IE7+, Opera 9.5, Safari, Netscape, Google Chrome, Camino, Flock 0.7+.</li>
+        <li>Support Responsive Website</li>
+	</ul>
+	<h3>UPgrade versions</h3>
+	<p>
+		Your current versions is 2.4.5. <a target="_blank" href="http://bowthemes.com/bt-content-showcase.html">Find our latest versions now</a>
+	</p>
+	<h3>Userful links</h3>
+	<ul>
+		<li><a target="_blank" href="http://bowthemes.com/bowthemes.com/bt-content-showcase.html">Video tutorials</a></li>
+		<li><a target="_blank" href="http://bowthemes.com/forums/28-bt-content-showcase/">Report bug</a></li>
+		<li><a target="_blank" href="http://bowthemes.com/forums/28-bt-content-showcase/">Forum support</a></li>
+	</ul>
+	<h3>About bow themes & copyright</h3>
+	<p>Bow Themes is Professional Joomla template provider. We are
+		focused on creating unique, attractive and clean templates without
+		loosing flexibility and simplicity of customization</p>
+	Copyright (C) 2012 BowThemes
+</div>
+	<style>
+.bt_description{
+	text-align: left;
+}
+.bt_description h3 {
+	text-transform: uppercase;
+	margin: 20px 0px 10px 0px;
+}
+
+.bt_description img {
+	float: left;
+	margin: 5px 10px 5px 0px;
+}
+
+.bt_description p,.bt_description li {
+	padding: 5px 5px 5px 30px;
+	list-style: none outside none;
+}
+
+.bt_description ul.list-style li {
+	background: url(../modules/mod_bt_contentshowcase/admin/images/tick.png)
+		0px 6px no-repeat;
+	padding-left: 30px;
+	line-height: 15px;
+}
+</style>
+]]>
+    </description>
+    <files>
+        <filename module="mod_bt_contentshowcase">mod_bt_contentshowcase.php</filename>
+        <filename module="mod_bt_contentshowcase">index.html</filename>
+        <folder module="mod_bt_contentshowcase">images</folder>
+        <folder module="mod_bt_contentshowcase">classes</folder>
+        <folder module="mod_bt_contentshowcase">assets</folder>
+        <folder module="mod_bt_contentshowcase">tmpl</folder>
+        <folder module="mod_bt_contentshowcase">admin</folder>
+        <folder module="mod_bt_contentshowcase">helpers</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_bt_contentshowcase.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="GLOBALSETTING">
+                <field name="moduleclass_sfx" type="text" default=""
+                       label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC" />
+                <field name="content_title" type="text" default=""
+                       label="CONTENT_TITLE" description="CONTENT_TITLE_DESC" />
+                <field name="content_title_link" type="text" default="" label="CONTENT_TITLE_LINK" description="CONTENT_TITLE_LINK_DESC"/>       
+               
+                <field name="layout" class="bt_control" type="layout" default="default" label="MODULE_LAYOUT" description="MODULE_LAYOUT_DESC">        
+                </field>
+                <field type="spacer" name="GRID_SETTING" default="GRID_SETTING" class="layout_default layout_accordion" />
+                
+                <field name="module_width" type="text" default="640" label="MODULE_WIDTH"  class="layout_breakingnews layout_default layout_accordion layout_featuredcarousel" description="MODULE_WIDTH_DESC" />
+				<field class="layout_default layout_accordion" type="text" name="item_height" default="300" label="ITEM_HEIGHT" description = "ITEM_HEIGHT"/>	   
+                <field class="layout_default layout_metro layout_metro_small" name="items_per_cols" type="text" default="1" label="ITEMS_PER_COLS" description="ITEMS_PER_COLS_DESC"/>
+                <field class="layout_default layout_metro layout_metro_small" name="items_per_rows" type="text" default="3" label="ITEMS_PER_ROWS" description="ITEMS_PER_ROWS_DESC"/>
+                <field class="layout_accordion" name="items_per_page" type="text" default="5" label="ITEMS_PER_PAGE" description="ITEMS_PER_PAGE_DESC"/>
+                <field class="layout_accordion btn-group" name="show_arrow" type="radio" default="1" label="SHOW_ARROW" description="SHOW_ARROW_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field class="layout_accordion" name="arrow_position" type="list" default="right" label="ARROW_POSITION" description="ARROW_POSITION_DESC"> 
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                </field>
+                <field class="layout_accordion btn-group" name="activate_first" type="radio" default="1" label="ACTIVATE_FIRST" description="ACTIVATE_FIRST_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field class="layout_default" name="item_min_width" type="text" default="300" label="ITEM_MIN_WIDTH" description="ITEM_MIN_WIDTH_DESC"/>
+				<field class="layout_metro layout_metro_small layout_featuredcarousel" name="item_margin" type="text" default="10" label="ITEM_MARGIN" description="ITEM_MARGIN" />
+				<field class="layout_metro layout_metro_small bt_color" name="back_side_bg" type="text" default="#bb1d48" label="ITEM_BACK_SIDE_BACKGROUND" description="ITEM_BACK_SIDE_BACKGROUND_DESC" />
+				<field class="layout_metro layout_metro_small bt_color" name="bs_text_color" type="text" default="#ffffff" label="ITEM_BACK_SIDE_TEXT_COLOR" description="ITEM_BACK_SIDE_TEXT_COLOR_DESC" />
+                <field type="spacer" name="NAVIGATION_SETTING" default="NAVIGATION_SETTING" class="layout_default   layout_accordion" />
+				
+				<field name="next_prev" default="1" type="radio" label="NEX_BACK_BN" description="NEX_BACK_BN_DESC" class="layout_breakingnews layout_frontpageshow layout_featuredcarousel btn-group">
+					<option value="1">JYES</option>
+                    <option value="0">JNO</option>	
+                </field> 
+                <field name="next_back_position" default="flanks" type="list" label="NEXT_BACK_POSITION" description="NEXT_BACK_POSITION_DESC" class="layout_default  layout_accordion">
+                    <option value="0">NEXT_BACK_POSITION_NONE</option>
+                    <option value="top">NEXT_BACK_POSITION_TOP</option>
+                    <option value="bottom">NEXT_BACK_POSITION_BOTTOM</option>
+                    <option value="flanks">NEXT_BACK_POSITION_FLANKS</option>
+                </field> 
+				
+                <field name="navigation_type" type="list" default="bullet" label="NAVIGATION_TYPE" description="NAVIGATION_TYPE_DESC" class="layout_default  layout_accordion layout_featuredcarousel">
+                    <option value="bullet">NAVIGATION_TYPE_BULLET</option>
+                    <option value="number">NAVIGATION_TYPE_NUMBER</option>
+                </field>
+                <field name="navigation_position" default="top" type="list" label="NAVIGATION_POSITION" description="NAVIGATION_POSITION_DESC" class="layout_default  layout_accordion layout_featuredcarousel">
+                    <option value="0">NAVIGATION_POSITION_NONE</option>
+                    <option value="top">NAVIGATION_POSITION_TOP</option>
+                    <option value="bottom">NAVIGATION_POSITION_BOTTOM</option>
+                </field>
+				<field name="show_extrafields" type="k2extrafields" multiple="true" default=""  label="SHOW_EXTRAFIELDS" description="SHOW_EXTRAFIELDS_DESC"  class="layout_bt_bistro"/>
+				<field name="show_category_image" type="radio" class="btn-group layout_bt_bistro" default="1" label="SHOW_CATEGORY_IMAGE" description="SHOW_CATEGORY_IMAGE_DESC">
+					<option value="1">JYES</option>
+                    <option value="0">JNO</option>
+				</field>
+				<field name="extrafield_price_id" type="text" class="layout_bt_bistro" label="EXTRAFIELD_PRICE_ID" description="EXTRAFIELD_PRICE_ID_DESC"/>
+				<field name="price_unit" type="text" class="layout-bt_bistro" label="PRICE_UNIT" description="PRICE_UNIT_DESC"/>
+				
+            </fieldset>
+            <fieldset name="source_setting" label="SOURCE_SETTING">
+                <field name="source" type="list" default="category" label="SOURCE_FROM"
+                       description="SOURCE_FROM_DESC" class="bt_control">
+                    <option value="category">CATEGORY</option>
+                    <option value="article_ids">ARTICLES_IDS</option>
+					<option value="joomla_tags">JOOMLA_TAGS</option>
+                    <option value="k2_category">K2_CATEGORY</option>
+                    <option value="k2_article_ids">K2_ARTICLES_IDS</option>
+					<option value="k2_tags">K2_TAGS</option>
+                    <option value="btportfolio_category">BT_PORTFOLIO_CATEGORY</option>
+                    <option value="btportfolio_article_ids">BT_PORTFOLIO_ARTICLE</option>
+					<option value="easyblog_category">EASYBLOG_CATEGORY</option>
+                    <option value="easyblog_article_ids">EASYBLOG_ARTICLE</option>
+                </field>
+                <field name="article_ids" type="text" default="" label="ARTICLES_IDS" class="source_article_ids"
+                       description="ARTICLES_IDS_DESC" />
+                <field name="k2_article_ids" type="text" default="" class="source_k2_article_ids"
+                       label="K2_ARTICLES_IDS" description="K2_ARTICLES_IDS_DESC" />
+                <field name="btportfolio_article_ids" type="text" default="" class="source_btportfolio_article_ids"
+                       label="BT_PORTFOLIO_ARTICLE" />
+                <field name="category" show_root="true" type="category" class="source_category"
+                       extension="com_content" multiple="true" size="10" label="CONTENT_CATEGORY"
+                       description="CONTENT_CATEGORY_DESC" />                 
+                <field name="k2_category" type="k2multicategories" extension="k2multicategories" class="source_k2_category"
+                       default="" size="10" multiple="multiple" label="K2_CATEGORIES"
+                       description="K2CATEGORIES_DESC" />
+                <field name="btportfolio_category" type="portfoliocategory" class="source_btportfolio_category"
+                       default="" size="10" multiple="multiple" label="BT_PORTFOLIO_CATEGORY" />
+				<field name="easyblog_article_ids" type="text" default="" class="source_easyblog_article_ids" label="EASYBLOG_ARTICLE" />
+                <field name="easyblog_category" type="easyblogcategories" class="source_easyblog_category"
+                        multiple="true" size="10" label="EASYBLOG_CATEGORY"
+                       description="EASYBLOG_CATEGORY_DESC" />    	   
+				<field name="joomla_tags" type="joomlatags" class="source_joomla_tags"  default="" multiple="true" mode="nested" label="JOOMLA_TAGS" description="JOOMLA_TAGS_DESC"/>
+				<field name="k2_tags" type="k2tags" class="source_k2_tags" default="" multiple="true" label="K2_TAGS" description="K2_TAGS" />
+				<field name="auto_category" class="source_category source_k2_category source_btportfolio_category source_easyblog_category btn-group" type="radio" default="0" label="AUTO_CATEGORY"
+					description="AUTO_CATEGORY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>	
+				</field>
+				<field name="sub_categories" type="radio" class="source_category source_k2_category source_btportfolio_category source_easyblog_category btn-group" default="0" label="SUB_CATEGORIES" description="SUB_CATEGORIES_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="exclude_categories" type="text" class="source_category source_k2_category source_btportfolio_category source_easyblog_category " label="EXCLUDE_CATEGORIES" description="EXCLUDE_CATEGORIES_DESC"/>
+                <field name="limit_items" type="text" default="12" label="LIMIT_ITEMS"
+                       description="LIMIT_ITEMS_DESC" />
+                <field name="limit_items_for_each" type="radio" class="btn-group" default="0" label="LIMIT_ITEMS_FOR_EACH" description="LIMIT_ITEMS_FOR_EACH_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                
+                <field name="user_id" type="list" default="0" label="USER_FILTER"
+                       description="USER_FILTER_DESC" class="layout_default  layout_accordion">
+                    <option value="0">USER_ANYONE</option>
+                    <option value="by_me">USER_ADDED_BY_ME</option>
+                    <option value="not_me">USER_NOTADDED_BY_ME</option>
+                </field>
+                <field name="show_featured" type="list" default="1"
+                       label="SHOW_FEATURED" description="SHOW_FEATURED_DESC">
+                    <option value="1">JSHOW</option>
+                    <option value="2">JHIDE</option>
+                    <option value="3">ONLY_SHOW_FEATURED</option>
+                </field>
+                <field name="ordering" type="list" default="created-asc"
+                       label="ARTCILES_SORTED_BY" description="ARTCILES_SORTED_BY_DESC">
+                    <option value="id-asc">ID_ASCENDING</option>
+					<option value="id-desc">ID_DESCENDING</option>
+					<option value="ordering-asc">ORDERING_ASCENDING</option>
+					<option value="ordering-desc">ORDERING_DESCENDING</option>
+					<option value="hits-asc">HIT_ASCENDING</option>
+					<option value="hits-desc">HIT_DESCENDING</option>
+					<option value="created-asc">DATE_ASCENDING</option>
+					<option value="created-desc">DATE_DESCENDING</option>
+					<option value="publish_up-asc">PUBLISHED_DATE_ASCENDING</option>
+					<option value="publish_up-desc">PUBLISHED_DATE_DESCENDING</option>
+					<option value="featured-">FEATURED_ORDERING</option>
+					<option value="rand-">RANDOM</option>
+                </field>
+                <field name="content_plugin" type="radio" class="btn-group" default="0" label="CONTENT_PLUGIN" description="CONTENT_PLUGIN_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+				<field type="spacer" name="images_links_option" label="IMAGES_LINKS_OPTION" description="IMAGES_LINKS_OPTION_DESC" />
+				<field name="use_introimg" type="radio" default="1" class="btn-group"
+					label="USE_INTROIMG" description="USE_INTROIMG_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="use_caption" type="radio" default="0" class="btn-group"
+					label="USE_CAPTION" description="USE_CAPTION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="use_linka" type="radio" default="0" class="btn-group"
+					label="USE_LINKA" description="USE_LINKA_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+            </fieldset>
+            <fieldset name="itemlayoutsetting" label="Item Layout Setting">
+                <field type="spacer" name="title_option" default="TITLE_OPTION" />
+                
+                <field name="show_title" type="radio" default="1" class="btn-group"
+                       label="SHOW_TITLE" description="SHOW_TITLE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="limit_title_by" type="list" default="word"
+                       label="LIMIT_TITLE_BY" description="LIMIT_TITLE_BY_DESC">
+                    <option value="word">WORD</option>
+                    <option value="char">CHARACTER</option>
+                </field>
+                <field name="title_max_chars" type="text" default="8"
+                       label="TITLE_MAX_CHARS" description="TITLE_MAX_CHARS_DESC" />
+                <field type="spacer" name="intro_text_option" default="INTRO_TEXT_OPTION" />
+                <field name="show_intro" type="radio" default="1" class="btn-group"
+                       label="SHOW_INTRO" description="SHOW_INTRO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="limit_description_by" type="list" default="char" class="btn-group"
+                       label="LIMIT_DESCRIPTION_BY" description="LIMIT_DESCRIPTION_BY_DESC">
+                    <option value="word">WORD</option>
+                    <option value="char">CHARACTER</option>
+                </field>
+                <field name="description_max_chars" type="text" default="100"
+                       label="DESCRIPTION_MAX_CHARS" description="DESCRIPTION_MAX_CHARS_DESC" />
+                <field name="show_category_name" type="radio" default="1" class="btn-group"
+                       label="SHOW_CATEGORY_NAME" description="SHOW_CATEGORY_NAME_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_category_name_as_link" class="btn-group" type="radio" default="1" label="SHOW_CATEGORY_NAME_AS_LINK" description="SHOW_CATEGORY_NAME_AS_LINK_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_readmore" type="radio" default="1" class="btn-group"
+                       label="SHOW_READ_MORE" description="SHOW_READ_MORE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_date" type="radio" default="0" class="btn-group"
+                       label="SHOW_DATE" description="SHOW_DATE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_author" type="radio" default="0" class="btn-group"
+                       label="SHOW_AUTHOR" description="SHOW_AUTHOR_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="spacer" name="image_option" default="IMAGE_OPTION" />
+                <field name="show_image" type="radio" default="1" class="btn-group"
+                       label="SHOW_IMAGE" description="SHOW_IMAGE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+				<field name="checkimg_fulltext" type="radio" default="0" class="btn-group"
+					label="CHECKIMG_FULLTEXT" description="CHECKIMG_FULLTEXT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+                <field name="check_image_exist" type="radio" default="0" class="btn-group"
+                       label="CHECK_IMAGE_EXIST" description="CHECK_IMAGE_EXIST_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="image_align" type="list" default="center" label="IMAGE_ALIGN" class="btn-group layout_default  layout_accordion layout_simple_list"
+                       description="IMAGE_ALIGN_DESC" >
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="center">Center</option>
+                </field>
+                <field name="image_thumb" type="radio" default="1" class="btn-group"
+                       label="IMAGE_THUMB" description="IMAGE_THUMB_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="thumbnail_width" type="text" default="180"
+                       label="THUMBNAIL_WIDTH" description="THUMBNAIL_WIDTH_DESC" />
+                <field name="thumbnail_height" type="text" default="120"
+                       label="THUMBNAIL_HEIGHT" description="THUMBNAIL_HEIGHT_DESC" />
+				<field name="image_quality"	type="text" default="80" label = "IMAGE_QUALITY" description="IMAGE_QUALITY_DESC"/>
+				<field class="layout_featuredcarousel" name="thumbnail_small_width" type="text" default="135" label="THUMBNAIL_SMALL_WIDTH" description="THUMBNAIL_SMALL_WIDTH_DESC"/>
+                <field name="default_thumb" type="radio" default="1" class="btn-group"
+                       label="DEFAULT_THUMB" description="DEFAULT_THUMB_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+					
+            </fieldset>
+            <fieldset name="effectsetting" label="Effect Setting">
+				 <field name="touchscreen" type="radio" default="0" class="btn-group layout_default layout_accordion layout_frontpageshow layout_featuredcarousel"
+                       label="TOUCH_SCREEN_LABEL" description="TOUCH_SCREEN_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+				<field class="layout_breakingnews bt_control" name="bn_effect" type="list" default="slide" label="BN_EFFECT" description="BN_EFFECT_DESC">
+					<option value="slidenews">Slide</option>
+					<option value="scrollnews">Marquee</option>
+				</field>
+                <field name="hovereffect" type="radio" default="1" class="btn-group layout_default  layout_accordion layout_metro layout_metro_small layout_simple_list layout_highlight"
+                       label="IMAGE_THUMB_EFFECT" description="IMAGE_THUMB_EFFECT_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+				<field name="modalbox" type="radio" default="0" class="btn-group layout_default  layout_accordion layout_metro_small layout_simple_list layout_featuredcarousel"
+					label="MODALBOX_EFFECT" description="MODALBOX_EFFECT_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+                <field name="slide_effect" type="list" label="SLIDE_EFFECT" description="SLIDE_EFFECT_DESC" default="scroll" class="layout_default layout_accordion layout_highlight">
+                    <option value="scroll">SLIDE_EFFECT_SCROLL</option>
+                    <option value="fade">SLIDE_EFFECT_FADE</option>
+                </field>
+				<field name="mouse_event" type="list" label="MOUSE_EVENT" description="MOUSE_EVENT_DESC" default="hover" class="layout_highlight">
+                    <option value="hover">MOUSE_EVENT_HOVER</option>
+                    <option value="click">MOUSE_EVENT_CLICK</option>
+                </field>
+				<field name="metro_effect" type="list" label="SLIDE_EFFECT" description="SLIDE_EFFECT_DESC" default="slide" class="layout_metro layout_metro_small">
+                    <option value="slide">SLIDE_EFFECT_SLIDE</option>
+                    <option value="flip">SLIDE_EFFECT_FLIP</option>
+                </field>
+                <field name="slide_direction" type="list" default="horizontal" label="SLIDE_DIRECTION" description="SLIDE_DIRECTION_DESC" class="layout_breakingnews bn_effect_slidenews layout_accordion">
+                    <option value="horizontal">HORIZONTAL</option>
+                    <option value="vertical">VERTICAL</option>
+                </field>
+				
+				<field name="fpshow_effect" type="list" default="slide" label="FPSHOW_EFFECT" description="FPSHOW_EFFECT_DESC" class="layout_frontpageshow">
+                    <option value="slide">Slide</option>
+                    <option value="fade">Fade</option>
+                </field>
+				<field name="scroll_amount" type="text" default="5" label="SCROLL_AMOUNT" description="SCROLL_AMOUNT_DESC" class="layout_breakingnews bn_effect_scrollnews" />
+                <field name="scroll_direction" type="list" default="1" label="SCROLL_DIRECTION" description="SCROLL_DIRECTION_DESC" class="layout_breakingnews bn_effect_scrollnews layout_metro layout_metro_small">
+                    <option value="0">Left to Right</option>
+                    <option value="1">Right to Left</option>
+					<option value="2">Top to bottom</option>
+					<option value="3">Bottom to top</option>
+                </field>				
+                
+                <field name="slide_item_per_time" type="text" default="1" label="SLIDE_ITEM_PER_TIME" description="SLIDE_ITEM_PER_TIME_DESC"
+					class="layout_default  layout_accordion" />
+                <field name="pause_hover" type="radio" class="btn-group layout_default layout_frontpageshow layout_breakingnews layout_accordion layout_metro layout_metro_small layout_highlight layout_featuredcarousel"
+                       default="1" label="PAUSE_HOVER_LABEL" description="PAUSE_HOVER_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <field name="duration" type="text" default="600" class="layout_default layout_frontpageshow layout_breakingnews layout_accordion bn_effect_slidenews layout_metro layout_metro_small layout_highlight layout_featuredcarousel"
+                       label="ANIMATION_DURATION" description="ANIMATION_DURATION_DESC" />
+				 <field name="captionSpeed" type="text" default="500" class="layout_frontpageshow" 
+                       label="CAPTION_SPEED" description="CAPTION_SPEED_DESC" />
+                
+                <field name="auto_start" type="radio" class="btn-group layout_default layout_frontpageshow layout_breakingnews layout_accordion bn_effect_slidenews layout_metro layout_metro_small layout_highlight layout_featuredcarousel"
+                       default="1" label="AUTO_START" description="AUTO_START_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="interval" type="text" default="5" label="INTERVAL" class="layout_default layout_frontpageshow layout_breakingnews layout_accordion bn_effect_slidenews layout_metro layout_metro_small layout_highlight layout_featuredcarousel"
+                       description="INTERVAL_DESC" />
+				<field name="easing" type="list" default="easeInQuad" class="layout_frontpageshow layout_highlight" 
+					label="PAGE_ANIMATION_TRANSITION" description="PAGE_ANIMATION_TRANSITION_DESC">
+					<option value="jswing">jswing</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeInSine">easeInSine</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeInOutSine">easeInOutSine</option>
+					<option value="easeInExpo">easeInExpo</option>
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeInOutExpo">easeInOutExpo</option>
+					<option value="easeInCirc">easeInCirc</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeInOutCirc">easeInOutCirc</option>
+					<option value="easeInElastic">easeInElastic</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeInOutElastic">easeInOutElastic</option>
+					<option value="easeInBack">easeInBack</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+			</fieldset>
+            <fieldset name="advanced">
+                <field class="btn-group" name="auto_strip_tags" type="radio"
+                       default="1" label="STRIP_TAGS" description="STRIP_TAGS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="allow_tags" type="list" default="" multiple="multiple"
+                       label="ALLOW_TAGS" description="ALLOW_TAGS_DESC">
+                    <option value="a">Link</option>
+                    <option value="img">Image</option>
+                    <option value="b">Bold</option>
+                    <option value="i">Italic</option>
+                    <option value="font">Font</option>
+                    <option value="br">Newline</option>					
+                </field>
+                <field name="open_target" type="list" default="_parent"
+                       label="CLICK_LINK_OPEN_IN" description="CLICK_LINK_OPEN_IN_DESC">
+                    <option value="_blank">New window</option>
+                    <option value="_parent">Parent window</option>
+                </field>
+                <field name="loadJquery" type="list" default="auto" label="BT_LOADJQUERY"
+                       description="BT_LOADJQUERY_DESC">
+                    <option value="auto">Auto</option>
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field addfieldpath="/modules/mod_bt_contentshowcase/admin/formfield" type="asset" name="asset" path="modules/mod_bt_contentshowcase/admin/" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

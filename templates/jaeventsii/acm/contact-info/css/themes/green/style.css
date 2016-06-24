@@ -1,0 +1,75 @@
+.uber-contact-info {
+  position: relative;
+}
+.uber-contact-info .info-bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.uber-contact-info .info-bg img {
+  width: auto;
+}
+@media (min-width: 1200px) {
+  .uber-contact-info .info-bg img {
+    width: 100%;
+  }
+}
+.uber-contact-info .info-bg .map-container {
+  margin: 0;
+}
+.uber-contact-info .info-list {
+  margin-bottom: 0;
+}
+.uber-contact-info .info-list dt i {
+  margin-right: 8px;
+  margin-top: 5px;
+  float: left;
+}
+.uber-contact-info .info-list dd {
+  margin-bottom: 12px;
+}
+.uber-contact-info .info-list dd:last-child {
+  margin-bottom: 0;
+}
+.uber-contact-info .info-list dd a {
+  border-bottom: 1px dotted #2cd664;
+}
+.uber-contact-info.style-dark {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
+}
+.uber-contact-info.style-1 .container {
+  position: relative;
+}
+.uber-contact-info.style-1 .info {
+  position: absolute;
+  width: auto;
+  background-color: #ffffff;
+  padding: 24px;
+  color: #333333;
+}
+@media (max-width: 1600px) {
+  .uber-contact-info.style-1 .info.top-left {
+    left: 20px !important;
+  }
+}
+@media (max-width: 1600px) {
+  .uber-contact-info.style-1 .info.bottom-right {
+    right: 20px !important;
+  }
+}
+@media (max-width: 1600px) {
+  .uber-contact-info.style-1 .info.bottom-left {
+    left: 20px !important;
+  }
+}
+@media (max-width: 1600px) {
+  .uber-contact-info.style-1 .info.top-right {
+    right: 20px !important;
+  }
+}
+.uber-contact-info.style-1 .info-list dd a {
+  color: #2cd664;
+  border-bottom: 1px dotted #ffffff;
+}

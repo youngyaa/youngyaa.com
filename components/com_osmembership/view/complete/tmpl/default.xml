@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Subscription Complete">
+		<message>
+			Display subscription complete page to subscribers. You should only create a menu item to link to this view if you want to use auto return feature of Paypal
+		</message>
+	</layout>
+	<state>
+		<name>Subscription Complete</name>
+		<description>Display subscription complete page to subscribers. You should only create a menu item to link to this view if you want to use auto return feature of Paypal</description>
+	</state>
+</metadata>

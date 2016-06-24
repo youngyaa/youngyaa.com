@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Calendar Weeky Layout">
+		<message>
+			Display Calendar Weeky Layout in Event Booking
+		</message>
+	</layout>
+	<state>
+		<name>Calendar Weeky Layout</name>
+		<description>Display Calendar Weeky Layout in Event Booking</description>							
+	</state>
+</metadata>

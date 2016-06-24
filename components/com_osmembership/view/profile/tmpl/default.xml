@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="User Profile">
+		<message>
+			Display page allow users to see and change his profile data
+		</message>
+	</layout>				
+</metadata>

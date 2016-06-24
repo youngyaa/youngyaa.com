@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="content" method="upgrade">
+	<name>Content - Membership Pro Article Restriction</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>tuanpn@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Sep 2015</creationDate>
+	<version>2.2.1</version>
+	<description>This plugin is used to restrict access to fulltext of the articles you want for subscribers only</description>
+	<files>
+		<filename plugin="articlerestriction">articlerestriction.php</filename>
+		<filename plugin="articlerestriction">index.html</filename>
+	</files>		
+</extension>

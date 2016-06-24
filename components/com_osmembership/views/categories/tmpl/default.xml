@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Categories List">
+		<message>
+			Displays a list of subscription categories
+		</message>
+	</layout>
+	<state>
+		<name>Categories List</name>
+		<description>Displays a list of subscription categories</description>							
+	</state>
+</metadata>

@@ -1,0 +1,64 @@
+@import 'font.css';
+ul.eventsmall {
+    margin:0;
+    padding: 0;
+}
+
+body ul.eventsmall p {
+    margin:0 0 5px;
+}
+body ul.eventsmall p.date {
+    margin: 1px 0 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul.eventsmall li {
+    list-style: none;
+    padding: 7px 0;
+}
+ul.eventsmall li:first-child {
+    border-top: none;
+}
+span.event-dateSmall {
+}
+ul.eventsmall span.event-date {
+	width: 40px;
+	display: block;
+}
+span.event-date {
+    text-align: center;
+}
+span.event-date span {
+    display: block;
+}
+span.event-date span.month, span.event-date span.day {
+    padding: 3px;
+}
+span.event-date span.month {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+span.event-date span.day {
+    background: #fff;
+    border-top: none;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 1px;
+}
+
+small.category, small.location {
+	padding: 4px;
+}
+
+small.category [class^="icon-"], [class*=" icon-"],
+small.location [class^="icon-"], [class*=" icon-"]{
+	font-size: 18px;
+    position: relative;
+    top: 3px;
+}

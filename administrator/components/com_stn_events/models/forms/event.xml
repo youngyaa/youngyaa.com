@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="myhidden"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_TITLE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_TITLE" required="true"  /> 
+       	<field name="starttime" type="timeType"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_TITLE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_TITLE" required="true"  /> 
+       	<field name="endtime" type="timeType"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_DESRIPTION"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_DESRIPTION"  required="true"  />
+	   	<field name="prize" type="mytext"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_DESRIPTION"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_DESRIPTION"  required="true"  /> 
+       	<field name="prizeimage" type="myfile"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_EVENTIMAGE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_EVENTIMAGE"  required="true" 
+            upload_directory="images/stnevents"/>
+		<field name="prizeimage1234567" type="media"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_EVENTIMAGE"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_EVENTIMAGE"  required="true" 
+            upload_directory="images/stnevents" directory="images/stnevents"/> 
+		<field name="prizeprovider" type="mytext"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_DESRIPTION"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_DESRIPTION"  required="true"  /> 
+		<field name="prizedescription" type="mytextarea"                
+            label="COM_STN_EVENTS_FORM_LBL_EVENT_DESRIPTION"
+            description="COM_STN_EVENTS_FORM_DESC_EVENT_DESRIPTION"  required="true"  /> 
+	</fieldset>
+
+</form>

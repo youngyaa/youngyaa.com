@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	 <html prefix="og: http://ogp.me/ns#" class="isIe isIE7" lang="en-gb" dir="ltr">	 <![endif]-->
+<!--[if IE 8]>	 <html prefix="og: http://ogp.me/ns#" class="isIe isIE8" lang="en-gb" dir="ltr">	 <![endif]-->
+<!--[if IE 9]>	 <html prefix="og: http://ogp.me/ns#" class="isIe isIE9" lang="en-gb" dir="ltr">	 <![endif]-->
+<!--[if gt IE 9]><!--> <html prefix="og: http://ogp.me/ns#" lang="en-gb" dir="ltr"><!--<![endif]-->
+	<head>
+		  <meta charset="utf-8" />
+  <base href="http://www.joomlaworks.net/dashboard" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="imagetoolbar" content="false" />
+  <meta name="keywords" content="joomla, joomlaworks, joomla works, templateworks, extensions, components, modules, plugins, k2, allvideos, simple image gallery, frontpage slideshow, superblogger, k2mart, tabs, slides, disqus, ucd, simple rss feed reader, extended cache, cdn" />
+  <meta name="rights" content="JoomlaWorks Ltd." />
+  <meta name="distribution" content="global" />
+  <meta name="copyright" content="Copyright (c) 2006 - 2016 JoomlaWorks Ltd." />
+  <meta name="designer" content="Nuevvo - http://nuevvo.com" />
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <meta name="verify-v1" content="B1MM3OGxVSyhL6zzvbEqAKc3PfDKxrdv0qd4a7/UsW4=" />
+  <meta name="msvalidate.01" content="A1196D312B43777788085EE08DE97028" />
+  <meta name="alexaVerifyID" content="Mhqen__e6c_IF1QJdnYGbfTanbo" />
+  <meta name="description" content="JoomlaWorks is developing and supporting some of the most respected and popular extensions in the Joomla! community, including the groundbreaking K2, AllVideos, Simple Image Gallery and Frontpage Slideshow. Since 2006 we have developed more than 26 extensions for the Joomla! CMS, all of which have been used in hundreds of thousands of Joomla! sites across the world. Late 2010, our extensions had been downloaded more that 4 million times, out of which AllVideos and Simple Image Gallery had more than 1.5 million downloads each and K2 more than 350,000! Innovation and the open source philosophy are the two things that motivate us!" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Subscriber Dashboard</title>
+  <link href="http://feeds.feedburner.com/joomlaworks" rel="alternate" type="application/rss+xml" title="JoomlaWorks | Extension Updates" />
+  <link href="http://feeds.feedburner.com/joomlaworks/blog" rel="alternate" type="application/rss+xml" title="JoomlaWorks | Blog" />
+  <link href="http://feeds.feedburner.com/joomlaworks/forum" rel="alternate" type="application/rss+xml" title="JoomlaWorks | Community Forum Updates" />
+  <link href="http://feeds.feedburner.com/joomlaworks/videos" rel="alternate" type="application/rss+xml" title="JoomlaWorks | Videos" />
+  <link href="http://feeds.feedburner.com/joomlaworks/presentations" rel="alternate" type="application/rss+xml" title="JoomlaWorks | Presentations" />
+  <link href="/templates/joomlaworks/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link href="http://www.joomlaworks.net/component/search/?Itemid=234&amp;format=opensearch" rel="search" title="Search JoomlaWorks" type="application/opensearchdescription+xml" />
+  <link rel="stylesheet" href="/media/k2/assets/css/k2.fonts.css?v2.7.0" />
+  <link rel="stylesheet" href="/templates/joomlaworks/css/k2.css?v2.7.0" />
+  <link rel="stylesheet" href="/media/system/css/modal.css" />
+  <link rel="stylesheet" href="/templates/system/css/general.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:400,700|PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:400,700" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"" />
+  <link rel="stylesheet" href="/templates/joomlaworks/css/template.css?t=20160308_1410" />
+  <link rel="stylesheet" href="/templates/joomlaworks/html/mod_socialconnect/default/css/style.css?v=1.8.0" />
+  <script src="/media/jui/js/jquery.min.js"></script>
+  <script src="/media/jui/js/jquery-noconflict.js"></script>
+  <script src="/media/jui/js/jquery-migrate.min.js"></script>
+  <script src="/media/k2/assets/js/k2.frontend.js?v2.7.0&amp;sitepath=/"></script>
+  <script src="/media/system/js/mootools-core.js"></script>
+  <script src="/media/system/js/core.js"></script>
+  <script src="/media/system/js/mootools-more.js"></script>
+  <script src="/media/system/js/modal.js"></script>
+  <script src="/components/com_revnu/scripts/revnu.js?v=20150406_2015"></script>
+  <script src="/templates/joomlaworks/js/libs.js?t=20150406_2015"></script>
+  <script src="/templates/joomlaworks/js/behaviour.js?t=20150406_2015"></script>
+  <script src="/components/com_socialconnect/js/socialconnect.js?v=1.8.0"></script>
+  <script type="text/javascript">
+window.setInterval(function(){var r;try{r=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}if(r){r.open("GET","/index.php?option=com_ajax&format=json",true);r.send(null)}},3600000);
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+		function jModalClose() {
+			SqueezeBox.close();
+		}jQuery(function($) {
+			 $('.hasTip').each(function() {
+				var title = $(this).attr('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					var mtelement = document.id(this);
+					mtelement.store('tip:title', parts[0]);
+					mtelement.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+		});
+  </script>
+
+
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="apple-touch-icon" href="/templates/joomlaworks/images/ios/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/templates/joomlaworks/images/ios/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/templates/joomlaworks/images/ios/apple-touch-icon-114x114.png">
+
+		
+		<!-- Google+ -->
+		<link href="https://plus.google.com/102410295850675232530" rel="publisher" />
+
+		<!-- Mint -->
+		<script type="text/javascript" src="http://mint.joomlaworks.net/mint/?js"></script>
+
+				<!-- Google Analytics -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-18811387-9']);
+						_gaq.push(['_setDomainName', '.joomlaworks.net']);
+						_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+			</head>
+	<body id="com_revnu" class="innerPage viewIsDashboard itemIdIs234">
+		<div id="page">
+			<header id="mainHeader">
+				<div class="wrap">
+
+					<h1 id="logo">
+						<a href="/" title="link to our Homepage">JoomlaWorks</a>
+					</h1>
+
+					
+										<div id="k2ModuleBox159" class="k2SearchBlock search">
+	<form action="/dashboard" method="post" class="form-inline">
+		<input name="searchword" id="mod-search-searchword" maxlength="200"  class="inputbox isFontArvo search-query" type="text" size="20" value="Search ..."  onblur="if (this.value=='') this.value='Search ...';" onfocus="if (this.value=='Search ...') this.value='';" /> <button class="button btn btn-primary isFontArvo" onclick="this.form.searchword.focus();">Go!</button>		<input type="hidden" name="task" value="search" />
+		<input type="hidden" name="option" value="com_search" />
+		<input type="hidden" name="Itemid" value="234" />
+	</form>
+</div>
+
+					
+										
+<div class="floatRight handleDISABLED isFontArvo blueShadow">
+	<span><a href="/members">Member Dashboard</a></span>
+</div>
+
+					
+										<nav class="mainNavigation">
+						
+<ul class="sfNavigation menu isFontArvo">
+<li class="item-101"><a href="/" >Home</a></li><li class="item-132 has-sub has-sub-3 deeper parent"><a class="has-sub has-sub-3" href="/extensions" >Extensions</a><ul><li class="item-133  deeper parent"><a href="/extensions/commercial" >Commercial</a><ul><li class="item-134"><a href="/extensions/commercial/frontpage-slideshow" >Frontpage Slideshow</a></li><li class="item-774"><a href="/extensions/commercial/k2-plugin-for-sh404sef" >K2 Plugin for sh404SEF</a></li><li class="item-135"><a href="/extensions/commercial/simple-image-gallery-pro" >Simple Image Gallery Pro</a></li><li class="item-323"><a href="/extensions/commercial/socialconnect" >SocialConnect</a></li></ul></li><li class="item-138  deeper parent"><a href="/extensions/free" >Free</a><ul><li class="item-261"><a href="/extensions/free/k2" >K2</a></li><li class="item-140"><a href="/extensions/free/allvideos" >AllVideos</a></li><li class="item-172"><a href="/extensions/free/disqus-comments-for-joomla" >DISQUS Comments for Joomla!</a></li><li class="item-139"><a href="/extensions/free/simple-image-gallery" >Simple Image Gallery</a></li><li class="item-142"><a href="/extensions/free/simple-rss-feed-reader" >Simple RSS Feed Reader</a></li><li class="item-171"><a href="/extensions/free/tabs-sliders-for-articles-plugin" >Tabs &amp; Sliders [for articles] (plugin)</a></li><li class="item-170"><a href="/extensions/free/tabs-sliders-module" >Tabs &amp; Sliders (module)</a></li></ul></li><li class="item-533  deeper parent"><a href="#" >Free On Github</a><ul><li class="item-530"><a href="https://github.com/joomlaworks/akismet-for-kunena" >Akismet for Kunena</a></li><li class="item-529"><a href="https://github.com/getk2/k2-iaki" >IAKI (Import As K2 Image)</a></li><li class="item-534"><a href="https://github.com/getk2/k2-example-plugin" >K2 Example Plugin</a></li><li class="item-531"><a href="https://github.com/getk2/k2-links-for-jce" >K2 Links for JCE</a></li><li class="item-176"><a href="https://github.com/joomlaworks/tinyletter-subscribe-for-joomla" >TinyLetter Subscribe</a></li><li class="item-177"><a href="https://github.com/getk2/user-extended-fields-for-k2" >User Extended Fields for K2</a></li><li class="item-751"><a href="https://github.com/joomlaworks/fill-it-up-for-wordpress" target="_blank" >Fill It Up (for WordPress)</a></li></ul></li></ul></li><li class="item-625  deeper parent"><a href="/joomla-templates" >Templates</a><ul><li class="item-565  deeper parent"><a href="/joomla-templates/commercial-templates" >Commercial Templates</a><ul><li class="item-647"><a href="/joomla-templates/commercial-templates/janaro" >Janaro</a></li><li class="item-566"><a href="/joomla-templates/commercial-templates/tamashi" >Tamashi</a></li><li class="item-567"><a href="/joomla-templates/commercial-templates/anagram" >Anagram</a></li><li class="item-571"><a href="/joomla-templates/commercial-templates/matchbox" >Matchbox</a></li><li class="item-572"><a href="/joomla-templates/commercial-templates/kiji" >Kiji</a></li><li class="item-573"><a href="/joomla-templates/commercial-templates/ibento" >Ibento</a></li><li class="item-574"><a href="/joomla-templates/commercial-templates/radiowave" >RadioWave</a></li><li class="item-575"><a href="/joomla-templates/commercial-templates/archetype" >Archetype</a></li><li class="item-576"><a href="/joomla-templates/commercial-templates/the-conversationalist" >The Conversationalist</a></li><li class="item-577"><a href="/joomla-templates/commercial-templates/toreda" >Toreda</a></li><li class="item-578"><a href="/joomla-templates/commercial-templates/nokkori" >Nokkori</a></li><li class="item-579"><a href="/joomla-templates/commercial-templates/newsworth" >NewsWorth</a></li><li class="item-580"><a href="/joomla-templates/commercial-templates/businessone" >BusinessOne</a></li><li class="item-581"><a href="/joomla-templates/commercial-templates/numuzik" >nuMuzik</a></li></ul></li><li class="item-568  deeper parent"><a href="/joomla-templates/free-templates" >Free Templates</a><ul><li class="item-570"><a href="/joomla-templates/free-templates/takai" >Takai</a></li><li class="item-569"><a href="/joomla-templates/free-templates/numodusversus" >nuModusVersus</a></li></ul></li></ul></li><li class="item-251  deeper parent"><a href="http://demo.joomlaworks.net/" target="_blank" >Demos</a><ul><li class="item-632"><a href="http://demo.joomlaworks.net/" target="_blank" >Joomla Extension Demos</a></li><li class="item-633"><a href="http://demo.nuevvo.com/" target="_blank" >Joomla Template Demos</a></li><li class="item-750"><a href="http://demo.joomlaworks.net/wp/" target="_blank" >WordPress Plugin Demos</a></li></ul></li><li class="item-640 has-sub has-sub-2 deeper parent"><a class="has-sub has-sub-2" href="#labs" >Labs</a><ul><li class="item-641  deeper parent"><a href="#webapps" >Web Apps</a><ul><li class="item-642"><a href="http://joomlareader.com/" target="_blank" >JoomlaReader</a></li><li class="item-646"><a href="http://json2jsonp.com/" target="_blank" >JSON 2 JSONP</a></li><li class="item-643"><a href="http://webplatformtools.org/" target="_blank" >Web Platform Tools</a></li></ul></li><li class="item-644  deeper parent"><a href="#javascript-projects" >JavaScript Projects</a><ul><li class="item-657"><a href="#comingsoon" >Coming Soon...</a></li></ul></li></ul></li><li class="item-509  deeper parent"><a href="#" >Support</a><ul><li class="item-324  deeper parent"><a href="/support/docs" >Documentation for Joomla Extensions</a><ul><li class="item-325"><a href="/support/docs/allvideos" >AllVideos</a></li><li class="item-326"><a href="/support/docs/frontpage-slideshow" >Frontpage Slideshow</a></li><li class="item-329"><a href="/support/docs/simple-image-gallery" >Simple Image Gallery</a></li><li class="item-330"><a href="/support/docs/simple-image-gallery-pro" >Simple Image Gallery Pro</a></li><li class="item-365"><a href="/support/docs/socialconnect" >SocialConnect</a></li></ul></li><li class="item-564  deeper parent"><a href="/support/templates" >Documentation for Joomla Templates</a><ul><li class="item-626  deeper parent"><a href="/support/templates/general-resources" >General Resources</a><ul><li class="item-627"><a href="/support/templates/general-resources/installation" >Installation</a></li><li class="item-628"><a href="/support/templates/general-resources/content" >Content</a></li><li class="item-629"><a href="/support/templates/general-resources/customization" >Customization</a></li></ul></li><li class="item-630"><a href="/support/templates/commercial-templates" >Commercial Templates</a></li><li class="item-631"><a href="/support/templates/free-templates" >Free Templates</a></li></ul></li><li class="item-485  deeper parent"><a href="/forum" >Community Forum</a><ul><li class="item-511"><a href="/members" >Create a free account</a></li><li class="item-649"><a href="/forum" >Community Forum (Categories)</a></li><li class="item-650"><a href="/forum/recent" >Community Forum (Recent Topics)</a></li></ul></li><li class="item-510"><a href="/dashboard/helpdesk" >Help Desk</a></li><li class="item-152"><a href="/support/contact" >Contact</a></li></ul></li><li class="item-131  deeper parent"><a href="/about" >About</a><ul><li class="item-624"><a href="/blog" >Blog</a></li><li class="item-250"><a href="/about" >Company</a></li><li class="item-190"><a href="/about/tos" >License &amp; Terms of Service</a></li><li class="item-603"><a href="/about/privacy-policy" >Privacy Policy</a></li></ul></li><li class="item-520"><a href="/members" >My Account</a></li></ul>
+
+					</nav>
+					
+					
+				</div>
+			</header>
+
+			<div class="clr"></div>
+
+			
+			
+			<section class="content wrap " role="main">
+
+				
+				
+				<div class="full gridBlock">
+
+										<div id="system-message-container">
+	</div>
+
+					<div class="clr"></div>
+
+					
+					<div id="revnuContainer" class="revnuViewDashboard revnuPage">
+
+	
+
+<!-- User is getting a subscription -->
+<div class="mainHeader isFontArvo">
+	<h1 class="revnuHeading">
+				Subscriber Dashboard			</h1>
+</div>
+
+
+	<div class="clr"></div>
+
+	<div class="revBody">
+
+        <div class="revnuDashboardTextArea">
+    	<h2 class="dashboardTitle isFontArvo">Welcome</h2>
+<!-- Item text -->
+<div class="itemDashboardText">
+<h3>Welcome to the JoomlaWorks Member Dashboard</h3>
+<p>Since March 2014, JoomlaWorks offers a unified login for both paid subscribers and forum members (previously broken into 2 different sites). The "JoomlaWorks Member Dashboard", as we like to call it, allows you to control all aspects of your account, including tasks like:</p>
+<ul>
+<li>post new topics or replies to our public forum</li>
+<li>manage your paid subscriptions (print invoices/receipts, renew subscriptions, see all your past transaction history)</li>
+<li>download product updates or re-download products for your purchased subscriptions (requires active membership)</li>
+<li>access the JoomlaWorks Help Desk and request technical support (requires active membership)</li>
+<li>keep your personal/business contact details up to date, so we can notify you for important stuff</li>
+</ul>
+</div>    </div>
+    
+        <div class="revnuDashboardLoginArea">
+    	<h2 class="isFontArvo">Please login first</h2>
+    	<div class="revnuLoginWrap">
+			<form action="/dashboard" id="revnuLoginForm" name="revnuLoginForm" method="post">
+			  <fieldset>
+			    <p>
+			      <label for="revnuEmail" class="isFontArvo">Email</label>
+			      <input type="text" name="username" id="revnuEmail" class="inputbox">
+			    </p>
+			    <p>
+			      <label for="revnuPassword" class="isFontArvo">Password</label>
+			      <input type="password" name="password" id="revnuPassword" class="inputbox">
+			    </p>
+			    <p>
+			      <span class="isFontArvo">Remember me</span>
+			      <input type="checkbox" value="yes" name="remember" id="revnuRememberMe">
+			    </p>
+			    <input type="submit" class="isFontArvo" value="Login" name="Submit">
+				  <ul class="isFontArvo">
+				    <li><a href="/reset-password">Forgot your password?</a></li>
+				  </ul>
+			  </fieldset>
+			  <input type="hidden" value="com_users" name="option">
+			  <input type="hidden" value="user.login" name="task">
+			  <input type="hidden" value="aHR0cDovL3d3dy5qb29tbGF3b3Jrcy5uZXQvZGFzaGJvYXJk" name="return">
+			  <input type="hidden" name="2c988f07af934ce55fc75d05f259cf09" value="1" />			  </form>
+    	</div>
+	  </div>
+
+    
+    <div class="clr"></div>
+	</div>
+
+	<div class="revnuDashboardFooter"></div></div>
+
+					
+				</div>
+
+				
+								<div class="topLeftGearInner"></div>
+				<div class="topRightGearInner"></div>
+							</section>
+
+			
+			<div class="clr"></div>
+
+			<footer>
+				<div class="topRow"></div>
+
+				<div class="wrap topWrap">
+
+					
+										<div class="nslForm footerBlock innerPageBlock">
+						<h3 class="moduleTitle narrow"><span class="isFontArvo">Join Our</span> Newsletter</h3>
+						
+
+<!-- JoomlaWorks "TinyLetter Subscribe" Module (v1.0) starts here -->
+
+<div id="jwTinyLetterInstance123" class="jwTinyLetterContainer">
+		<div class="jwTinyLetterPretext">
+		Enter your e-mail address to subscribe to our new or updated product notifications. We send combined newsletters, so we won't spam you every week :)	</div>
+		<form class="jwTinyLetterForm" action="https://tinyletter.com/joomlaworks" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/joomlaworks', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true;">
+		<input class="inputbox" type="text" name="email" id="tlemail" value="Enter your email address" onfocus="if(this.value=='Enter your email address') this.value='';" onblur="if(this.value=='') this.value='Enter your email address';" />
+
+		<input class="button isFontArvo" type="submit" value="Subscribe" />
+		<input type="hidden" value="1" name="embed" />
+	</form>
+</div>
+<div class="clr"></div>
+
+<!-- JoomlaWorks "TinyLetter Subscribe" Module (v1.0) ends here -->
+
+
+					</div>
+					
+										<div class="socialWrap footerBlock innerPageBlock">
+						<h3 class="moduleTitle narrow"><span class="isFontArvo">Get</span> Social</h3>
+						
+<ul class="sfNavigation menu socialMenu  isFontArvo">
+<li class="item-153 twitter"><a class="twitter" href="https://twitter.com/joomlaworks" target="_blank" >Twitter</a></li><li class="item-451 github"><a class="github" href="https://github.com/joomlaworks" target="_blank" >GitHub</a></li><li class="item-156 facebook"><a class="facebook" href="https://www.facebook.com/joomlaworks" target="_blank" >Facebook</a></li><li class="item-749 github"><a class="github" href="https://github.com/getk2" target="_blank" >GitHub (K2)</a></li><li class="item-155 googleplus"><a class="googleplus" href="https://plus.google.com/+JoomlaworksNet" target="_blank" >Google+</a></li><li class="item-161 speakerdeck"><a class="speakerdeck" href="https://speakerdeck.com/joomlaworks" target="_blank" >Speaker Deck</a></li><li class="item-157 youtube"><a class="youtube" href="https://www.youtube.com/joomlaworks" target="_blank" >YouTube</a></li></ul>
+
+					</div>
+					
+										<div class="feedsWrap footerBlock innerPageBlock">
+						<h3 class="moduleTitle narrow"><span class="isFontArvo">Grab Our</span> Feeds</h3>
+						
+<ul class="sfNavigation menu socialMenu isFontArvo">
+<li class="item-163 rss"><a class="rss" href="http://feeds.feedburner.com/joomlaworks" target="_blank" >Extension Updates</a></li><li class="item-164 rss"><a class="rss" href="http://feeds.feedburner.com/joomlaworks/blog" target="_blank" >Blog</a></li><li class="item-165 rss"><a class="rss" href="http://feeds.feedburner.com/joomlaworks/videos" target="_blank" >Videos</a></li><li class="item-166 rss"><a class="rss" href="http://feeds.feedburner.com/joomlaworks/presentations" target="_blank" >Presentations</a></li></ul>
+
+					</div>
+					
+					
+					<div class="bottomLeftGear"></div>
+					<div class="bottomRightGear"></div>
+				</div>
+
+				<div class="clr"></div>
+
+				<div class="crdsArea">
+					<div class="topRow"></div>
+
+					<div class="wrap">
+						<div id="copyrights">
+							<small>
+								Copyright &copy; 2006 - 2016 JoomlaWorks Ltd.								<br />
+								Joomla! is a registered trademark of Open Source Matters, Inc. JoomlaWorks Ltd. is not affiliated with or endorsed by Open Source Matters or the Joomla! Project.
+							</small>
+						</div>
+
+						<div id="credits">
+							<small>designed by <a target="_blank" href="http://nuevvo.com" title="designed by Nuevvo">Nuevvo</a></small>
+						</div>
+					</div>
+				</div>
+
+			</footer>
+		</div>
+
+		
+	</body>
+</html>
+<!-- 20160311 -->
+
+<!-- URL Normalizer (by JoomlaWorks): Executed onAfterRender -->

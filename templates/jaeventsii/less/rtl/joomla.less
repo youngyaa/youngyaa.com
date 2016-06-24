@@ -1,0 +1,53 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// ---------------------------------------------------------
+// SMART SEARCH
+// ---------------------------------------------------------
+.off-canvas-left.off-canvas-effect-4.t3-off-canvas {
+  transform: translate3d(0, 0px, 0px);
+  -moz-transform: translate3d(0, 0px, 0px);
+  -webkit-transform: translate3d(0, 0px, 0px);
+}
+
+
+.off-canvas body > .autocompleter-choices {
+  width: 0px;
+  left: auto;
+}
+
+.article-intro,
+.article-content {
+
+  // Add proper margin
+  img[align=left],
+  .img_caption.left,
+  .pull-left.item-image {
+    margin: 0 @t3-global-margin*1.5 @t3-global-margin 0;
+  }  
+
+  img[align=right],
+  .img_caption.right,
+  .pull-right.item-image {
+    margin: 0 0 @t3-global-margin @t3-global-margin*1.5 ;
+  }
+
+}
+
+// Login 
+// Desktop view
+@media (min-width: @screen-sm-min) {
+  .login-wrap form .control-label label {
+    min-width: 140px;
+  }
+
+  .login-wrap form .form-group input[type="text"],
+  .login-wrap form .form-group input[type="password"] {
+    padding-right: 150px;
+  }
+}
+
+div#ja-user-login ul {
+  text-align: right!important;
+}

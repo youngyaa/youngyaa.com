@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/libraries/regularlabs/fields">
+	<fieldset name="default" label="AMM_DEFAULT_SETTINGS">
+		<field name="@loadlanguage" type="rl_loadlanguage" extension="com_modules" />
+		<field name="list_title" type="list" default="0" label="AMM_LIST_TITLE" description="AMM_LIST_TITLE_DESC">
+			<option value="0">AMM_ADVANCED_MODULE_MANAGER</option>
+			<option value="1">COM_MODULES_MANAGER_MODULES</option>
+		</field>
+		<field name="default_ordering" type="list" default="a.title ASC" label="RL_DEFAULT_ORDERING" description="RL_DEFAULT_ORDERING_DESC">
+			<option value="ordering ASC">RL_HEADING_ORDERING_ASC</option>
+			<option value="ordering DESC">RL_HEADING_ORDERING_DESC</option>
+			<option value="a.published ASC">RL_HEADING_STATUS_ASC</option>
+			<option value="a.published DESC">RL_HEADING_STATUS_DESC</option>
+			<option value="color ASC">RL_HEADING_COLOR_ASC</option>
+			<option value="color DESC">RL_HEADING_COLOR_DESC</option>
+			<option value="a.title ASC">RL_HEADING_TITLE_ASC</option>
+			<option value="a.title DESC">RL_HEADING_TITLE_DESC</option>
+			<option value="position ASC">RL_HEADING_POSITION_ASC</option>
+			<option value="position DESC">RL_HEADING_POSITION_DESC</option>
+			<option value="name ASC">RL_HEADING_TYPE_ASC</option>
+			<option value="name DESC">RL_HEADING_TYPE_DESC</option>
+			<option value="pages ASC">RL_HEADING_PAGES_ASC</option>
+			<option value="pages DESC">RL_HEADING_PAGES_DESC</option>
+			<option value="a.access ASC">RL_HEADING_ACCESS_ASC</option>
+			<option value="a.access DESC">RL_HEADING_ACCESS_DESC</option>
+			<option value="language ASC">RL_HEADING_LANGUAGE_ASC</option>
+			<option value="language DESC">RL_HEADING_LANGUAGE_DESC</option>
+			<option value="a.id ASC">RL_HEADING_ID_ASC</option>
+			<option value="a.id DESC">RL_HEADING_ID_DESC</option>
+		</field>
+		<field name="default_state" type="list" class="chzn-color-state" default="1" label="AMM_DEFAULT_STATE" description="AMM_DEFAULT_STATE_DESC">
+			<option value="0">JUNPUBLISHED</option>
+			<option value="1">JPUBLISHED</option>
+		</field>
+		<field name="default_menu_assignment" type="radio" class="btn-group btn-group-yesno btn-group-yesno-reverse" default="0"
+			   label="AMM_DEFAULT_MENU_ASSIGNMENT" description="AMM_DEFAULT_MENU_ASSIGNMENT_DESC">
+			<option value="1">JNONE</option>
+			<option value="0">JALL</option>
+		</field>
+		<field name="show_color" type="radio" class="btn-group btn-group-yesno" default="1" label="AMM_SHOW_COLOR" description="AMM_SHOW_COLOR_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@toggler_default_a" type="rl_toggler" param="show_color" value="1" />
+		<field name="main_colors" type="textarea" rows="4"
+			   default="none,#049cdb,#46a546,#9d261d,#ffc40d,#f89406,#c3325f,#7a43b6,#ffffff,#999999,#555555,#000000" label="AMM_COLORS"
+			   description="AMM_COLORS_DESC" />
+		<field name="@toggler_default_b" type="rl_toggler" />
+		<field name="show_hideempty" type="radio" class="btn-group btn-group-yesno" default="1" label="AMM_SHOW_HIDE_IF_EMPTY"
+			   description="AMM_SHOW_HIDE_IF_EMPTY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_note" type="list" default="2" label="AMM_SHOW_NOTE" description="AMM_SHOW_NOTE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">RL_TOOLTIP</option>
+			<option value="2">AMM_NAME_COLUMN</option>
+			<option value="3">AMM_EXTRA_COLUMN</option>
+		</field>
+		<field name="show_switch" type="radio" class="btn-group btn-group-yesno" default="0" label="AMM_SHOW_SWITCH" description="AMM_SHOW_SWITCH_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@notice_show_extra" type="rl_plaintext" label="AMM_SHOW_EXTRA_FIELDS" description="AMM_SHOW_EXTRA_FIELDS_DESC"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		<field name="use_admin_from_frontend" type="radio" class="btn-group btn-group-yesno" default="0" label="AMM_USE_ADMIN_FROM_FRONTEND"
+			   description="AMM_USE_ADMIN_FROM_FRONTEND_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="initialise_event" type="radio" class="btn-group btn-group-yesno" default="onAfterInitialise" label="RL_INITIALISE_EVENT"
+			   description="RL_INITIALISE_EVENT_DESC">
+			<option value="onAfterInitialise">onAfterInitialise</option>
+			<option value="onAfterRoute">onAfterRoute</option>
+		</field>
+		<field name="show_update_notification" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_SHOW_UPDATE_NOTIFICATION"
+			   description="RL_SHOW_UPDATE_NOTIFICATION_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@notice_show_copyright" type="rl_plaintext" label="RL_SHOW_COPYRIGHT" description="RL_SHOW_COPYRIGHT_DESC"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+	</fieldset>
+
+	<fieldset name="extra" label="RL_SHOW_ASSIGNMENTS">
+		<field name="@show_assignto_menuitems" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_MENU_ITEMS" description="JOPTION_REQUIRED">
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_homepage" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_HOME_PAGE"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_date" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_DATE_TIME"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_usergrouplevels" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_USER_GROUP_LEVELS"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@notice_show_assignto_users" type="rl_plaintext" label="RL_USERS" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		<field name="show_assignto_languages" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_LANGUAGES"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@notice_show_assignto_ips" type="rl_plaintext" label="RL_IPS" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_geo" type="rl_plaintext" label="RL_GEO" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		<field name="show_assignto_templates" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_TEMPLATES"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_urls" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_URL" description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_os" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_OS" description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_browsers" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_BROWSERS"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_components" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_COMPONENTS"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_tags" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_TAGS" description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_assignto_content" type="radio" class="btn-group btn-group-yesno" default="1" label="RL_JCONTENT"
+			   description="AMM_SHOW_PUBLISHING_OPTION">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@notice_show_assignto_easyblog" type="rl_plaintext" label="RL_EASYBLOG" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_flexicontent" type="rl_plaintext" label="RL_FLEXICONTENT" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_form2content" type="rl_plaintext" label="RL_FORM2CONTENT" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_k2" type="rl_plaintext" label="RL_K2" description="AMM_SHOW_PUBLISHING_OPTION" default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_zoo" type="rl_plaintext" label="RL_ZOO" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_akeebasubs" type="rl_plaintext" label="RL_AKEEBASUBS" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_hikashop" type="rl_plaintext" label="RL_HIKASHOP" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_mijoshop" type="rl_plaintext" label="RL_MIJOSHOP" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_redshop" type="rl_plaintext" label="RL_REDSHOP" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_virtuemart" type="rl_plaintext" label="RL_VIRTUEMART" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_cookieconfirm" type="rl_plaintext" label="RL_COOKIECONFIRM" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+		
+		<field name="@notice_show_assignto_php" type="rl_plaintext" label="RL_PHP" description="AMM_SHOW_PUBLISHING_OPTION"
+			   default="RL_ONLY_AVAILABLE_IN_PRO" />
+	</fieldset>
+
+	<fieldset name="notice_permissions" label="JCONFIG_PERMISSIONS_LABEL">
+		<field name="@notice_rules" type="note" class="alert alert-info" description="AMM_USE_CORE_RULES" />
+	</fieldset>
+</config>

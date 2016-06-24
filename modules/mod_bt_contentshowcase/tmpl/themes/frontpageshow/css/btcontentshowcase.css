@@ -1,0 +1,132 @@
+.fpshow,.fpshow  .bt-sliders{
+	position:relative;
+	overflow:hidden;
+}
+.fpshow .bt-window{
+	position:relative;
+	width:300%;
+	left:-100%;
+}
+.fpshow .bt-header h3{
+	margin:0px;
+	padding:8px 10px;
+	background:darkred;
+}
+.fpshow .bt-header h3 span{
+	text-transform:uppercase;
+	color:#fff;
+}
+.fpshow .bt-slide{
+	position:absolute;
+	width:33.34%;
+	left:33.33%;
+	overflow:hidden;
+	z-index:0;
+}
+.fpshow .bt-item{
+	position:relative;
+}
+.fpshow  .bt-mainimg{
+	width:100%;
+	box-shadow:0 0 0 #000;
+}
+.fpshow .bt-caption{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display:none;
+	z-index:6;
+	left:0;
+}
+.fpshow .bt-caption-content{
+	color:#fff;
+	padding:10px;
+}
+.fpshow .bt-caption-content a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.fpshow .bt-title a{
+	text-transform:uppercase;
+	color:#fff;
+	margin:8px 0;
+	font-size:150%;
+	display:inline-block;
+}
+
+.fpshow .bt-caption-bg{
+	background:#000;
+	opacity:0.5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 
+	filter: alpha(opacity=50);
+	height:100%;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	z-index:-1;
+}
+.fpshow .bt-handles{
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:7;
+	background:#000;
+	opacity:0.8;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+	filter: alpha(opacity=80);
+}
+.fpshow .bt-handles div{
+	width:9px;
+	height:17px;
+	float:left;
+	cursor:pointer;
+	margin:7px;
+}
+.fpshow .bt-handles div.next{
+	background: url("../images/bg-showcase-top-next.png") no-repeat scroll center top transparent;
+}
+.fpshow .bt-handles div.next:hover{
+	background: url("../images/bg-showcase-top-next.png") no-repeat scroll center -17px transparent;
+}
+.fpshow .bt-handles div.prev{
+	background: url("../images/bg-showcase-top-back.png") no-repeat scroll center top transparent;
+}
+.fpshow .bt-handles div.prev:hover{
+	background: url("../images/bg-showcase-top-back.png") no-repeat scroll center -17px transparent;
+}
+
+/* footer nav */
+.fpshow .bt-footernav{
+	background:#111111;
+	overflow:hidden;
+	color:#aeaeae;
+	line-height:150%;
+}
+.fpshow .bt-footernav .active{
+	color:#e4e4e4;
+	background:#000;
+}
+.fpshow .bt-footernav .bt-title{
+	font-weight:bold;
+}
+.fpshow .bt-footernav .bt-date{
+	color:#727272;
+}
+.fpshow .bt-footernav .active .bt-date{
+	color:red;
+}
+
+.fpshow .bt-nav{
+	float:left;
+	width:200px;
+	cursor:pointer;
+	padding:10px;
+	border-right:1px solid #424242;
+}
+.fpshow .bt-nav-last{
+	border-right:1px solid #000;
+}
+.fpshow .bt-navpipe{
+	position:absolute;
+}

@@ -1,0 +1,101 @@
+.themeswitcher {
+	position: fixed;
+	left: -140px;
+	top: 110px;
+	background: #383838;
+	width: 180px;
+	height: 44px;
+	z-index: 1;
+	border-radius: 0 5px 5px 0;
+	color: #fff;
+}
+
+.themeswitcher .toggle {
+	float: right;
+	font-size: 1.7em;
+	margin: 5px 10px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.themeswitcher.open {
+	left: 0;
+	height: 254px;
+}
+
+.themeswitcher .fonts {
+	margin: 18px 10px 10px;
+	display: none;
+}
+
+.themeswitcher.open .fonts {
+	display: block;
+}
+
+.themeswitcher .font {
+	background: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+
+.themeswitcher .font .head {
+	font-size: 17px;
+	display: block;
+}
+
+.themeswitcher .font .body {
+	font-size: 13px;
+	display: block;
+}
+
+/* Fonts */
+.themeswitcher .font.open-sans .head {
+	font-family: 'Open Sans', sans-serif;
+}
+.themeswitcher .font.open-sans .body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.themeswitcher .font.pt-sans .head {
+	font-family: 'PT Sans', sans-serif;
+}
+.themeswitcher .font.pt-sans .body {
+	font-family: 'PT Serif', serif;
+}
+
+
+
+
+
+
+
+.themeswitcher .styles {
+	margin: 18px 10px 10px;
+	display: none;
+}
+.themeswitcher.open .styles {
+	display: block;
+}
+
+.themeswitcher .styles .style {
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.themeswitcher .style.light {
+	display: inline-block;
+	background: #fff;
+	background-image: -webkit-linear-gradient( -45deg, #DDDDDD 0%, #DDDDDD 50%, #FFFFFF 50%, #FFFFFF 50%);
+  	background-image: linear-gradient( -45deg, #DDDDDD 0%, #DDDDDD 50%, #FFFFFF 50%, #FFFFFF 50%);
+}
+
+.themeswitcher .style.dark {
+	display: inline-block;
+	background: #000;
+	background-image: -webkit-linear-gradient( -45deg, #000000 0%, #000000 50%, #282828 50%, #282828 50%);
+  	background-image: linear-gradient( -45deg, #000000 0%, #000000 50%, #282828 50%, #282828 50%);
+}

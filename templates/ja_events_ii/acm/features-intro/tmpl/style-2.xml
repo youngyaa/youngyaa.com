@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Features Intro Style 2</title>
+	<sampledata><![CDATA[
+        {":type":"ja_events_ii:features-intro","features-intro":{"jatools-layout-features-intro":"style-2","features-intro[features-style]":["style-light"],"features-intro[columns]":["3"],"features-intro[data]":{"features-intro[data][font-icon]":["pe-7s-cup","pe-7s-micro","pe-7s-wine"],"features-intro[data][button-value]":["Learn more","Get Tickets Now","More Detail"],"features-intro[data][link]":["#","#","#"],"features-intro[data][title]":["Workshops","Conference","Festival"],"features-intro[data][description]":["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci eros, sagittis nec quam at, cursus tempus lorem. ","In nec condimentum nisi, eget varius turpis. Integer convallis, nulla nec malesuada pretium, lectus ligula elementum neque","Fusce gravida, odio nec facilisis dictum, metus neque rutrum sem, sit amet faucibus tellus turpis quis sapien."],"rows":3,"cols":6,"type":"list"}}}
+    ]]></sampledata>
+	<fields name="features-intro">
+		<fieldset name="basic" label="FEATURES_BASIC_LABEL" description="FEATURES_BASIC_DESC">
+			<field name="features-style" type="list" default="style-light"
+			  global="1"
+			  label="FEATURES_STYLE_LABEL"
+			  description="FEATURES_STYLE_DESC">
+				<option value="style-light">LAYOUT_FEATURES_LIGHT</option>
+				<option value="style-dark">LAYOUT_FEATURES_DARK</option>
+			</field>
+			
+			<field name="columns" type="list" label="FEATURES_COLUMNS_LABEL" description="FEATURES_COLUMNS_DESC" >
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="6">6</option>
+			</field>
+		</fieldset>
+	
+		<fieldset name="section-features" label="FEATURES_SECTION_LABEL" description="FEATURES_SECTION_DESC">
+			<field name="data" type="jalist" >
+				<item name="font-icon" type="text" default="" label="FEATURES_FONT_AWESOME_LABEL" description="FEATURES_FONT_AWESOME_DESC" />
+				<item name="button-value" type="text" default="" label="FEATURES_BUTTON_VALUE_LABEL" description="FEATURES_BUTTON_VALUE_LABEL_DESC"  />
+				<item name="link" type="text" default="" label="FEATURES_LINK_LABEL" description="FEATURES_LINK_LABEL_DESC"  />
+				<item name="title" type="text" default="" size="40" label="FEATURES_TITLE_LABEL" description="FEATURES_TITLE_DESC" />
+				<item name="description" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" rows="5" cols="40" />
+			</field>
+
+		</fieldset>
+		
+  </fields>
+</form>

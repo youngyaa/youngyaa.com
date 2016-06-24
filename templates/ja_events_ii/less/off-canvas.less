@@ -1,0 +1,297 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t3/base-bs3/less/off-canvas.less";
+
+
+
+//
+// OFF-CANVAS
+// -------------------------------------
+.t3-wrapper {
+  background: @gray-light-lv2;
+}
+
+// Toggle Button
+// -------------------
+.off-canvas-toggle {
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  margin-top: @t3-global-margin/2;
+  width: @input-height-base - 4px;
+  height: @input-height-base;
+  line-height: @input-height-base;
+  background: none;
+  
+  &:focus,
+  &:hover,
+  &:active {
+    background: none;
+    outline: none;
+  }
+
+  .patty {
+    background-color: @white;
+    height: 2px;
+    margin: 0 6px;
+    width: 20px;
+    display: block;
+    position: relative;
+
+    &:before,
+    &:after {
+      background: @white;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      width: 20px;
+      .transition(all 0.3s ease 0s);
+    }
+
+    &:after {
+      top: 8px;
+    }
+
+    &:before {
+      top: -8px;
+    }
+
+    &:hover {
+      background-color: @brand-primary;
+
+      &:after {
+        top: 7px;
+        background-color: @brand-primary;
+      }
+
+      &:before {
+        top: -7px;
+        background-color: @brand-primary;
+      }
+    }
+  }
+}
+
+.off-canvas-open .off-canvas-toggle {
+  .patty {
+    background-color: transparent;
+
+    &:before,
+    &:after {
+      background: @white;
+    }
+
+    &:after {
+      top: 0;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    &:before {
+      top: 0;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    &:hover {
+      &:after {
+        top: 0;
+      }
+
+      &:before {
+        top: 0;
+      }
+    }
+  }
+}
+
+
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+.t3-off-canvas {
+
+  // Generic
+  // -----------------------------------
+  background: @t3-off-canvas-background;
+  color: @t3-off-canvas-text-color;
+
+
+  // Header
+  // -----------------------------------
+  .t3-off-canvas-header {
+    background: @t3-off-canvas-header-background;
+    color: @t3-off-canvas-header-text-color;
+    padding: 0 0 0 @padding-base-horizontal;
+    height: 35px;
+
+    // Title
+    h2 {
+      margin: 0;
+      line-height: 35px;
+      font-size: @font-size-base;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  }
+
+  // Close Button
+  .close {
+    margin: 0;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    background: darken(@t3-off-canvas-header-background, 20%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: @t3-off-canvas-text-color;
+    .opacity(1);
+    .box-shadow(none);
+  }
+
+
+  // Body
+  // -----------------------------------
+  .t3-off-canvas-body {
+
+    padding: (@padding-base-vertical * 4)  @padding-base-horizontal;
+
+    // Links
+    // ------------
+    a {
+      color: @t3-off-canvas-link-color;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: @t3-off-canvas-link-hover-color;
+        text-decoration: none;
+      }
+
+      &:focus {
+        .tab-focus();
+      }
+    }
+
+    .dropdown-menu .active a {
+      background: transparent;
+    }
+
+
+    // Navigations
+    // ------------
+    .nav {
+      > li {
+        > a,
+        > .separator {
+          padding-left: 0;
+          padding-right: 0;
+          text-transform: uppercase;
+          color: @t3-off-canvas-link-color;
+          .opacity(0.4);
+        }
+
+        &.open > a,
+        > a:hover,
+        > a:focus,
+        > a:active {
+          background: none;
+          color: @t3-off-canvas-link-color;
+          .opacity(1);
+        }
+
+        &.active > a {
+          background: none;
+          color: @t3-off-canvas-link-hover-color;
+          .opacity(1);
+        }
+      }
+
+      .caret {
+        display: none;
+      }
+    }
+
+    // Dropdown Menu
+    .dropdown-menu {
+      background: none;
+      padding-left: @t3-global-padding;
+
+      > li {
+        > a,
+        > .nav-header {
+          padding: 5px 0;
+          color: @t3-off-canvas-link-color;
+          display: inline-block;
+          .opacity(0.4);
+        }
+
+        &.open > a,
+        > a:hover,
+        > a:focus,
+        > a:active {
+          background: none;
+          color: @t3-off-canvas-link-color;
+          .opacity(1);
+        }
+
+        &.active > a {
+          background: none;
+          color: @t3-off-canvas-link-hover-color;
+          .opacity(1);
+        }
+      }
+
+      .caret {
+        display: none;
+      }
+    }
+
+    // Dropdown SubMenu
+    .dropdown-submenu {
+      > a,
+      > .nav-header {
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+
+    // Modules
+    // ------------
+    .t3-module {
+      background: none;
+      margin-bottom: @line-height-computed;
+
+      .module-inner {
+        padding: 0;
+      }
+    }
+
+    .module-ct {
+      background: none;
+    }
+
+    .module-title  {
+      margin-bottom: @line-height-computed / 2;
+    }
+
+  // End Off-Canvas Body
+  }
+
+// End Off-Canvas Content Styles
+}

@@ -1,0 +1,16 @@
+{
+  "site": {
+    "default_controller_class": "EventbookingController",
+    "default_view": "dashboard",
+    "class_prefix": "Eventbooking",
+    "language_prefix": "EB",
+    "table_prefix": "#__eb_"
+  },
+  "admin": {
+    "default_controller_class": "EventbookingController",
+    "default_view": "dashboard",
+    "class_prefix": "Eventbooking",
+    "language_prefix": "EB",
+    "table_prefix": "#__eb_"
+  }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>Ultimate User Package</name>
+	<author>Stéphane Bouey</author>
+	<creationDate>January 2016</creationDate>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+ 	<packagename>Ultimate User</packagename>
+	 <version>1.5.2</version>
+	 <url>http://www.faboba.com</url>
+	 <packager>Stéphane Bouey</packager>
+	 <packagerurl>http://www.faboba.com</packagerurl>
+	 <description>Ultimate User Installer Package.</description>
+	 <files folder="packages">
+		 <file type="component" id="com_uu" >com_uu_1.5.2.zip</file>
+		 <file type="plugin" id="uuredirect" group="system">plg_uuredirect_1.5.2.zip</file>
+		 <file type="plugin" id="ultimateuser" group="user">plg_ultimateuser_1.5.2.zip</file>
+	 </files>
+</extension>

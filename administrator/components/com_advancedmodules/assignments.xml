@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/libraries/regularlabs/fields">
+	<fieldset name="hideempty">
+		<field name="hideempty" type="radio" class="btn-group btn-group-yesno" default="0" label="AMM_HIDE_IF_EMPTY" description="AMM_HIDE_IF_EMPTY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+
+
+	<fieldset name="assignments">
+		<field name="@block_assignments" type="note" class="well well-small" description="RL_ASSIGNMENTS_DESC,AMM_MODULE" />
+	</fieldset>
+
+	<fieldset name="mirror_module">
+		<field name="mirror_module" type="radio" class="btn-group" default="0" label="AMM_MIRROR_MODULE" description="AMM_MIRROR_MODULE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="2">AMM_OPPOSITE</option>
+		</field>
+		<field name="@toggler_mirror_a" type="rl_toggler" param="mirror_module" value="1,2" />
+		<field name="mirror_moduleid" type="rl_modules" showid="1" showtype="1" default="" label="AMM_MODULE" description="AMM_MODULE_DESC" />
+		<field name="@toggler_mirror_b" type="rl_toggler" />
+	</fieldset>
+
+	<fieldset name="match_method">
+		<field name="match_method" type="radio" class="btn-group" default="and" label="RL_MATCHING_METHOD" description="RL_MATCHING_METHOD_DESC">
+			<option value="and">RL_AND</option>
+			<option value="or">RL_OR</option>
+		</field>
+		<field name="@toggler_match_1a" type="rl_toggler" param="match_method" value="and" />
+		<field name="@block_and" type="note" class="alert alert-info" description="RL_AND_DESC" />
+		<field name="@toggler_match_1b" type="rl_toggler" />
+		<field name="@toggler_match_2a" type="rl_toggler" param="match_method" value="or" />
+		<field name="@block_or" type="note" class="alert alert-info" description="RL_OR_DESC" />
+		<field name="@toggler_match_2b" type="rl_toggler" />
+	</fieldset>
+
+	<fieldset name="show_assignments">
+		<field name="show_assignments" type="radio" class="btn-group" default="1" label="RL_SHOW_ASSIGNMENTS" description="RL_SHOW_ASSIGNMENTS_DESC">
+			<option value="1">RL_ALL</option>
+			<option value="2">RL_SELECTED</option>
+		</field>
+		<field name="@toggler_show_assignments_1a" type="rl_toggler" param="show_assignments" value="2" />
+		<field name="@block_show_assignments" type="note" class="alert alert-info" description="RL_SHOW_ASSIGNMENTS_SELECTED_DESC" />
+		<field name="@toggler_show_assignments_1b" type="rl_toggler" />
+	</fieldset>
+
+	<fieldset name="assignto_menuitems">
+		<field name="assignto_menuitems" type="rl_assignmentselection" label="RL_MENU_ITEMS" />
+		<field name="assignto_menuitems_selection" type="rl_menuitems" multiple="true" default="" label="RL_SELECTION" description="RL_MENU_ITEMS_DESC" />
+		<field name="assignto_menuitems_inc_children" type="radio" class="btn-group btn-group-yesno" default="0" label="RL_ALSO_ON_CHILD_ITEMS"
+			   description="RL_ALSO_ON_CHILD_ITEMS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="2">RL_ONLY</option>
+		</field>
+		<field name="assignto_menuitems_inc_noitemid" type="radio" class="btn-group btn-group-yesno" default="0" label="RL_INCLUDE_NO_ITEMID"
+			   description="RL_INCLUDE_NO_ITEMID_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@assignto_menuitems" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_homepage">
+		<field name="assignto_homepage" type="rl_assignmentselection" showclose="1" label="RL_HOME_PAGE" />
+		<field name="@text_homepage" type="note" description="RL_HOME_PAGE_DESC" />
+		<field name="@assignto_homepage" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_date">
+		<field name="@toggler_group_date_a" type="rl_toggler"
+			   param="show_assignments|assignto_date|assignto_seasons|assignto_months|assignto_days|assignto_time" value="1|1,2|1,2|1,2|1,2|1,2" />
+		<field name="@block_group_date_a" type="rl_block" start="1" showclose="1" label="RL_DATE_TIME" />
+
+		<field name="assignto_date" type="rl_assignmentselection" label="RL_DATE" />
+		<field name="assignto_date_publish_up" type="calendar" filter="user_utc" format="%Y-%m-%d %H:%M" default="0000-00-00 00:00" label="RL_START_PUBLISHING"
+			   description="RL_START_PUBLISHING_DESC" />
+		<field name="assignto_date_publish_down" type="calendar" filter="user_utc" format="%Y-%m-%d %H:%M" default="0000-00-00 00:00"
+			   label="RL_FINISH_PUBLISHING" description="RL_FINISH_PUBLISHING_DESC" />
+		<field name="assignto_date_recurring" type="radio" class="btn-group btn-group-yesno" default="0" label="RL_DATE_RECURRING"
+			   description="RL_DATE_RECURRING_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@text_assignto_date_1" type="note" description="RL_DATE_TIME_DESC" />
+		<field name="@text_assignto_date_2" type="rl_datetime" format="Y-m-d H:i" label="RL_CURRENT_DATE" />
+		<field name="@assignto_date" type="rl_assignmentselection" />
+
+
+		<field name="@block_group_date_b" type="rl_block" end="1" />
+		<field name="@toggler_group_date_b" type="rl_toggler" />
+	</fieldset>
+
+	<fieldset name="assignto_groupusers">
+		<field name="@toggler_group_users_a" type="rl_toggler" param="show_assignments|assignto_usergrouplevels|assignto_users" value="1|1,2|1,2" />
+		<field name="@block_group_users_a" type="rl_block" start="1" showclose="1" label="RL_USERS" />
+
+		<field name="@toggler_usergrouplevels_a" type="rl_toggler" param="show_usergrouplevels" value="1" />
+		<field name="assignto_usergrouplevels" type="rl_assignmentselection" label="RL_USER_GROUP_LEVELS" />
+		<field name="assignto_usergrouplevels_selection" type="rl_grouplevel" multiple="true" notregistered="1" default="" label="RL_SELECTION"
+			   description="RL_USER_GROUPS_DESC" />
+		<field name="@assignto_usergrouplevels" type="rl_assignmentselection" />
+		<field name="@toggler_usergrouplevels_b" type="rl_toggler" />
+
+
+		<field name="@block_group_users_b" type="rl_block" end="1" />
+		<field name="@toggler_group_users_b" type="rl_toggler" />
+	</fieldset>
+
+	<fieldset name="assignto_languages">
+		<field name="assignto_languages" type="rl_assignmentselection" showclose="1" label="RL_LANGUAGES" />
+		<field name="assignto_languages_selection" type="rl_languages" multiple="true" default="" label="RL_SELECTION" description="RL_LANGUAGES_DESC" />
+		<field name="@assignto_languages" type="rl_assignmentselection" />
+	</fieldset>
+
+
+	<fieldset name="assignto_templates">
+		<field name="assignto_templates" type="rl_assignmentselection" showclose="1" label="RL_TEMPLATES" />
+		<field name="assignto_templates_selection" type="rl_templates" multiple="true" default="" label="RL_SELECTION" description="RL_TEMPLATES_DESC" />
+		<field name="@assignto_templates" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_urls">
+		<field name="assignto_urls" type="rl_assignmentselection" showclose="1" label="RL_URL" />
+		<field name="assignto_urls_selection" type="rl_textareaplus" texttype="regex" default="" label="RL_URL_PARTS" description="RL_URL_PARTS_DESC" />
+		<field name="@text_urls" type="note" description="RL_URL_PARTS_DESC" />
+		<field name="assignto_urls_regex" type="radio" class="btn-group btn-group-yesno" default="0" label="RL_REGULAR_EXPRESSIONS"
+			   description="RL_REGULAR_EXPRESSIONS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="@toggler_urls_regex_a" type="rl_toggler" param="assignto_urls_regex" value="1" />
+		<field name="@block_urls_regex" type="note" class="alert alert-danger" description="RL_URL_PARTS_REGEX" />
+		<field name="@toggler_urls_regex_b" type="rl_toggler" />
+		<field name="@assignto_urls" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_os">
+		<field name="assignto_os" type="rl_assignmentselection" showclose="1" label="RL_OS" />
+		<field name="@text_os" type="note" description="RL_OS_DESC" />
+		<field name="assignto_os_selection" type="rl_agents" group="os" multiple="true" default="" label="RL_SELECTION" description="RL_OS_DESC" />
+		<field name="@assignto_os" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_browsers">
+		<field name="assignto_browsers" type="rl_assignmentselection" showclose="1" label="RL_BROWSERS" />
+		<field name="@text_browsers" type="note" description="RL_BROWSERS_DESC" />
+		<field name="assignto_browsers_selection" type="rl_agents" group="browsers" multiple="true" default="" label="RL_BROWSERS"
+			   description="RL_BROWSERS_DESC" />
+		<field name="assignto_mobile_selection" type="rl_agents" group="mobile" multiple="true" default="" label="RL_MOBILE_BROWSERS"
+			   description="RL_BROWSERS_DESC" />
+		<field name="@assignto_browsers" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_components">
+		<field name="assignto_components" type="rl_assignmentselection" showclose="1" label="RL_COMPONENTS" />
+		<field name="assignto_components_selection" type="rl_components" multiple="true" admin="0" show_content="1" default="" label="RL_SELECTION"
+			   description="RL_COMPONENTS_DESC" />
+		<field name="@assignto_components" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_tags">
+		<field name="assignto_tags" type="rl_assignmentselection" showclose="1" label="RL_TAGS" />
+		<field name="assignto_tags_selection" type="rl_tags" multiple="true" default="" label="RL_SELECTION" description="RL_TAGS_DESC" />
+		<field name="assignto_tags_inc_children" type="radio" class="btn-group btn-group-yesno" default="0" label="RL_ALSO_ON_CHILD_ITEMS"
+			   description="RL_ALSO_ON_CHILD_ITEMS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="2">RL_ONLY</option>
+		</field>
+		<field name="@assignto_tags" type="rl_assignmentselection" />
+	</fieldset>
+
+	<fieldset name="assignto_content">
+		<field name="@loadlanguage_content" type="rl_loadlanguage" extension="com_content.sys" />
+
+		<field name="@toggler_content_a" type="rl_toggler" param="show_assignments|assignto_contentpagetypes|assignto_cats|assignto_articles"
+			   value="1|1,2|1,2|1,2" />
+		<field name="@block_content_a" type="rl_block" start="1" showclose="1" label="RL_JCONTENT" />
+
+		<field name="assignto_contentpagetypes" type="rl_assignmentselection" label="RL_PAGE_TYPES" />
+		<field name="assignto_contentpagetypes_selection" type="rl_list" multiple="true" default="" label="RL_SELECTION" description="RL_PAGE_TYPES_DESC">
+			<option value="archive">COM_CONTENT_ARCHIVE_VIEW_DEFAULT_TITLE</option>
+			<option value="article">COM_CONTENT_ARTICLE_VIEW_DEFAULT_TITLE</option>
+			<option value="categories">COM_CONTENT_CATEGORIES_VIEW_DEFAULT_TITLE</option>
+			<option value="categoryblog">COM_CONTENT_CATEGORY_VIEW_BLOG_TITLE</option>
+			<option value="category">COM_CONTENT_CATEGORY_VIEW_DEFAULT_TITLE</option>
+			<option value="featured">COM_CONTENT_FEATURED_VIEW_DEFAULT_TITLE</option>
+			<option value="form">COM_CONTENT_FORM_VIEW_DEFAULT_TITLE</option>
+		</field>
+		<field name="@assignto_contentpagetypes" type="rl_assignmentselection" />
+
+		<field name="assignto_cats" type="rl_assignmentselection" label="RL_CATEGORIES" />
+		<field name="assignto_cats_selection" type="rl_content" group="categories" multiple="true" default="" label="RL_SELECTION"
+			   description="RL_CATEGORIES_DESC" />
+		<field name="assignto_cats_inc_children" type="radio" class="btn-group btn-group-yesno" default="0" label="RL_ALSO_ON_CHILD_ITEMS"
+			   description="RL_ALSO_ON_CHILD_ITEMS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="2">RL_ONLY</option>
+		</field>
+		<field name="assignto_cats_inc" type="rl_checkbox" default="inc_cats,inc_arts" label="RL_PAGE_TYPES" description="RL_PAGE_TYPES_DESC">
+			<option value="inc_cats">RL_CATEGORIES</option>
+			<option value="inc_arts">RL_ARTICLES</option>
+			<option value="inc_others">RL_OTHERS</option>
+		</field>
+		<field name="@assignto_cats" type="rl_assignmentselection" />
+
+		<field name="assignto_articles" type="rl_assignmentselection" label="RL_ARTICLES" />
+		<field name="assignto_articles_selection" type="rl_content" group="items" multiple="true" default="" label="RL_SELECTION"
+			   description="RL_ARTICLES_DESC" />
+		<field name="assignto_articles_content_keywords" type="rl_textareaplus" height="40" default="" label="RL_CONTENT_KEYWORDS"
+			   description="RL_CONTENT_KEYWORDS_DESC" />
+		<field name="assignto_articles_keywords" type="rl_textareaplus" height="40" default="" label="RL_META_KEYWORDS" description="RL_META_KEYWORDS_DESC" />
+		<field name="assignto_articles_authors" type="rl_users" multiple="true" default="" label="RL_ARTICLE_AUTHORS" description="RL_ARTICLE_AUTHORS_DESC" />
+		<field name="@assignto_articles" type="rl_assignmentselection" />
+
+		<field name="@block_content_b" type="rl_block" end="1" />
+		<field name="@toggler_content_b" type="rl_toggler" />
+	</fieldset>
+
+</config>

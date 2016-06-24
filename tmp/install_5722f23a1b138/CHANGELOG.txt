@@ -1,0 +1,383 @@
+/**
+ * Changelog
+ *
+ * @package         Better Preview
+ *
+ * @author          Peter van Westen <info@regularlabs.com>
+ * @link            https://www.regularlabs.com
+ * @copyright       Copyright © 2016 Regular Labs - All Rights Reserved
+ * @license         http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+
+/**
+ * + Addition
+ * ! Removal
+ * ^ Change
+ * # Fix
+ */
+
+22-Apr-2016 : v5.0.1
+ # Fixes issue with errors about duplicate entries
+
+16-Apr-2016 : v5.0.0
+ ^ Moves from NoNumber to Regular Labs branding
+
+30-Mar-2016 : v4.1.4
+ ^ Adds version number to own css/js files
+ ^ Updates some HTML syntax
+ ^ Updates translations: hu-HU
+ # Fixes issue with single quotes being displayed as \' on some setups
+
+28-Jan-2016 : v4.1.3
+ ^ Updates translations: pl-PL
+ # Fixes issues with Joomla 3.5 and php7 compatibility
+
+19-Dec-2015 : v4.1.2
+ # Fixes issue with wrong language being used on some multilingual setups
+
+03-Nov-2015 : v4.1.1
+ # Fixes issue with fatal error about undefined function utf8_strtolower
+
+31-Oct-2015 : v4.1.0
+ + Adds ability to purge the components cache before rendering the preview
+ ^ Updates translations: ja-JP, uk-UA
+
+14-Aug-2015 : v4.0.3
+ # Fixes issue with pages breaking when querying extra urls
+
+07-Aug-2015 : v4.0.2
+ # Fixes issue with uninstallation getting into a loop
+ # Fixes issue with upgrading not working
+
+01-Aug-2015 : v4.0.1
+ # Fixes issue with necessary tables not being created on installation
+
+31-Jul-2015 : v4.0.0
+ ! [J2.5] Removes Joomla 2.5 support
+ ^ Changes minimum requirement to Joomla version 3.4.1
+ ^ Recodes the installer
+ # Fixes issue with articles without a (parent) menu item using home Itemid
+ # [PRO] Fixes issue with error about creating default object from empty value on Zoo item previews
+
+08-Jun-2015 : v3.4.3
+ ^ Updates translations: uk-UA
+ # [PRO] Fixes issue with previews in zoo items/categories giving 404s
+
+03-Apr-2015 : v3.4.2
+ ^ Updates translations: el-GR
+ # Fixes issue with error about undefined property $home
+ # [J2] Fixes issue with errors after upgrade to Joomla 3
+ # [J3] Fixes issue with wrong positioning of Better Preview dropdown menu
+
+03-Mar-2015 : v3.4.1
+ # [J3.4] Fixes issue with editor plugin showing in Extension Manager > Discover
+
+23-Feb-2015 : v3.4.0
+ + [J3][PRO] Adds support for Form2Content (article)
+ ^ [J3] Changes purge SEF URLs button to work with ajax
+ # [PRO] Fixes issue with fatal error on Zoo item preview if there is a corresponding menu item
+
+08-Jan-2015 : v3.3.3
+ ! Removes compatibility for php versions under 5.3.13
+ ! [J3] Removes compatibility for Joomla 3 versions under 3.3.0
+ ^ Updates translations: pl-PL
+ # Fixes issue with Free version being able to be installed over the Pro version
+ # Fixes issue with error about nnFile on installation on some setups
+ # [PRO] Fixes issues with duplicate rows in update_sites table
+
+01-Oct-2014 : v3.3.2
+ # Fixes issue with errors on jDownloads file manager view
+
+26-Aug-2014 : v3.3.1
+ ^ Refactores more code
+ # Fixes issue with certain menu item edit pages breaking
+ # Fixes issue with links and preview being broken when using non-default languages
+ # Fixes issue with links not being taken from menu for general not specifically supported components
+ # Fixes issue with preview button not showing correct page in some cases
+
+15-Aug-2014 : v3.3.0
+ + Adds ability to select whether to add the default menu item id to the url
+ ! [J3] Removes compatibility for Joomla 3 versions under 3.2.2
+ ^ Refactores code
+ ^ Updates translations: id-ID, lt-LT, pt-BR
+ # [J2] Fixes issue with errors after upgrade to Joomla 3
+ # [J3] Fixes issue with editor button not showing on some setups
+
+14-May-2014 : v3.2.3
+ + Adds translations: id-ID
+ # [PRO] Fixes issue with links to language specific Zoo pages (using ZOOlingual) not showing correct data
+
+05-Apr-2014 : v3.2.2
+ # [PRO] Fixes issue with previews in zoo items/categories giving 404s
+ # [J3] Fixes issue with undefined variable $text in editor button
+
+27-Feb-2014 : v3.2.1
+ + Adds translations: hu-HU
+ # Fixes issue with button text 'Preview' not being translated
+ # Fixes issue with category preview not working
+ # Fixes issue with links and preview being broken when using non-default languages
+
+24-Jan-2014 : v3.2.0
+ + [PRO] Adds support for Zoo (item, category)
+ ^ Cleans up some code (syntax)
+ # Fixes article hits incrementing on preview
+ # Fixes issue with 404 on items with publish up date in future
+ # Fixes issue with purge SEF URL index not working
+ # Fixes issue with sef urls of special access items not being correct
+ # [PRO] Fixes issue with preview of unpublished K2 items not working
+
+21-Jan-2014 : v3.1.5
+ # Fixes issue with 404 on some unpublished items
+
+17-Jan-2014 : v3.1.4
+ # Fixes issue with invalid tokens when there are more than 1 user sessions in the database
+ # Fixes issue with some missing language strings in some occasions
+ # [J2] Fixes issue with submenu not hiding on touchscreens
+
+21-Nov-2013 : v3.1.3
+ # Fixes issue with home icon showing on some non-home view site links
+ # [J3.1] Fixes issue with error about undefined method JHtml::tooltipText
+
+18-Nov-2013 : v3.1.2
+ # Fixes issue with editor button on frontend showing and causing issues
+
+17-Nov-2013 : v3.1.1
+ # Fixes issue with SEF urls not being generated
+ # Fixes issue with view site links not being correct on some setups
+ # [J3] Fixes issue with SEF URL index timeout not working
+
+16-Nov-2013 : v3.1.0
+ + Adds option to purge SEF URL index via system plugin settings
+ + Adds option to set SEF URL index timeout
+ # Fixes installation error about duplicate entry on some MySQL 5.6 setups
+ # Fixes issue with view site links pointing to admin side on some setups
+ # [J3.2] Fixes Joomla 3.2 compatibility issues
+
+07-Nov-2013 : v3.0.2
+ + Adds translations: nl-NL
+ # [J3.2] Fixes Joomla 3.2 compatibility issues
+
+03-Nov-2013 : v3.0.1
+ # Fixes issue with icons not working
+
+31-Oct-2013 : v3.0.0
+ + Adds translations: es-ES
+ + [J3] Adds Joomla 3 support
+ ! [J1.5] Removes Joomla 1.5 support
+ ^ Completely recoded with new and different functionality and features
+
+24-Apr-2013 : v2.2.3
+ + [J2] Adds less files for generating css files
+ ! [J1.5] LAST VERSION COMPATIBLE WITH JOOMLA 1.5
+ ^ Cleans up some code (syntax)
+ ^ Updates translations: fa-IR, pl-PL
+ ^ [J2] Minifies css and js files
+ # [J2] Fixes issue with errors on edit pages of categoriew that have no menu item
+
+02-Jan-2013 : v2.2.2
+ # [J2] Fixes issue with clipboard script not loading
+
+29-Dec-2012 : v2.2.1
+ ^ Updates translations: pl-PL
+ # [J2] Fixes error about XML setup file on first install
+
+22-Dec-2012 : v2.2.0
+ ^ [J2] Cleans up code
+ ^ [J2] Moves media files to Joomla media folder
+ # [J2] Fixes issue with menu of article category not being found for Itemid match
+
+20-Sep-2012 : v2.1.5
+ + Adds translations: da-DK
+ ^ Updates ZeroClipboard script to v1.0.8
+ # [J1.5] Fixes issue with database error during installation
+
+06-Aug-2012 : v2.1.4
+ ! Removes ability to install on Joomla 1.6 and 1.7
+ ! Removes ability to install on setups with php 5.2 or lower
+ ^ Cleans a lot of code
+ ^ Updates translations: nl-NL
+
+09-May-2012 : v2.1.3
+ # Fixes issue with installation failing (conflicted-copy)
+
+09-May-2012 : v2.1.2
+ # [J1.5] Fixes issue with javascript error on large preview button for certain languages
+
+07-May-2012 : v2.1.1
+ # [FREE] Fixes issue with PHP notice about undefined property show_copy_icon
+
+01-May-2012 : v2.1.0
+ + Adds translations: et-EE, zh-TW
+ ^ Increases page load speed by changing how xml files are loaded
+
+10-Apr-2012 : v2.0.1
+ # SECURITY FIX: Fixes URL injection vulnerability in NoNumber Framework
+
+07-Apr-2012 : v2.0.0
+ + Adds translations: cs-CZ
+ ^ Changes some language strings
+ ^ Cleans up code syntax
+ ^ Now available as Pro and Free version
+ # Fixes issue with installer not removing the folder/zip from the tmp
+
+23-Dec-2011 : v1.11.3
+ # Fixes issue with assignment options not showing on mootools 1.2+ setups
+
+21-Dec-2011 : v1.11.2
+ ^ Updates translations: fr-FR
+ # Fixes issue with styling of the admin status module
+
+05-Dec-2011 : v1.11.1
+ ^ Removes core View Site link
+ # Fixes issue with core search pages not working because of NoNumber Framework
+ # [J1.7] Fixes issue with missing system plugin
+
+02-Dec-2011 : v1.11.0
+ + Joomla 1.7 compatible!
+ ^ Cleans code syntax (no longer guaranteed support for php 5.2.x and lower)
+ # Fixes issue with php warning about open_as_list
+ # [J1.5] Fixes issue with article preview button not being changed to Better Preview
+
+17-Oct-2011 : v1.10.1
+ + Adds translations: pl-PL
+ # Fixes security issue in NoNumber Framework plugin
+
+08-Oct-2011 : v1.10.0
+ ^ Cleans up some code (like no more use of DS)
+ ^ Improves installer
+ ^ Moves translation language files to main package (no more language packs)
+ # Fixes issue with JEventHandler error on some setups
+ # Fixes issue with non-translated strings showing on non-English setups
+
+16-Sep-2011 : v1.9.0
+ ^ Changes NoNumber Elements plugin to NoNumber Framework
+ ^ Moves common language strings to NoNumber Framework files
+ # Fixes some minor styling issues
+
+29-Mar-2011 : v1.8.3
+ ^ Changes language files to be J1.6 ready
+ # Fixes some issues with tooltips
+
+10-Feb-2011 : v1.8.2
+ ^ Changes extension icon / logo
+
+11-Dec-2010 : v1.8.1
+ # Cleans up some code
+ # Fixes issues with document being called to early
+ # Fixes some issues with loading of language strings
+
+25-Nov-2010 : v1.8.0
+ + Adds checks to see if NoNumber Elements plugin is installed/enabled
+ ^ Fixes and updated all language strings
+
+16-Nov-2010 : v1.7.1
+ # Fixes issue with links to categories not working properly
+
+24-Jul-2010 : v1.7.0
+ ^ A lot of code cleaning
+ ^ Changes way version and license information are displayed (now via ajax)
+ ^ Changes way versions and licenses are checked (no more base64)
+ ^ Improves article preview
+ ^ Moves main functionality to admin module (instead of plugin)
+ # Fixes issue with special characters
+
+23-Jun-2010 : v1.6.2
+ # Fixes issue with code looping, causing page timeouts
+
+22-Jun-2010 : v1.6.1
+ + Adds popup message when content preview is opened in new tab
+ ^ Improves article preview for all editors
+ ^ Improves code (=faster)
+
+17-Feb-2009 : v1.6.0
+ + Adds AdminPraise 2 support
+ + Adds JoomFish support (for menu items/articles/categories/sections)
+ + Adds option to open sections/categories by list or blog by default
+ # Fixes issue with error about redeclaring clone function on php 4
+ # Fixes issue with tooltip not displaying properly on all pages
+
+10-Feb-2009 : v1.5.2
+ + Changes the big article preview link to handle plugins over content
+ # Fixes issue with errors about registry for php 5.0.5
+
+09-Feb-2009 : v1.5.1
+ ^ Changes the License Code check (now controlled by the License Manager)
+ # Fixes issue with deprecated syntax for php 5.3+
+ # Fixes location of Joomla! DTD files
+
+19-Jan-2010 : v1.5.0
+ + Adds Commercial License Code support
+ ^ Moves elements to seperate global plugin (also used by other extensions)
+
+17-Dec-2009 : v1.4.2
+ + Adds support for APLite admin template
+
+21-Nov-2009 : v1.4.1
+ # Fixes issue with link not opening in new window
+
+20-Nov-2009 : v1.4.0
+ + Adds option to hide link text
+ ^ Changes file encoding to UTF-8
+ ^ Changes name from 'BetterPreview' to 'Better Preview' (space)
+ ^ Moves classes to helper file
+ # Fixes issue with titles with quotes messing up the tooltip
+
+05-Aug-2009 : v1.3.3
+ + Adds option to set the homepage file
+ ^ Enhances feature when no components are selected
+
+13-Jul-2009 : v1.3.2
+ ^ Changes sliding toggle option (in admin settings) to work better in IE8
+ # Fixes issues with php4 incompatibility (MBCS warning)
+
+03-Jul-2009 : v1.3.1
+ + Adds 'preview' when no components are selected
+ ^ Changes description in tooltip (added page title, etc)
+ # Fixes issue with invalid query for categories
+ # Fixes issue with minor error in version check
+ # Fixes issue with undefined function error on disabled components
+
+26-May-2009 : v1.3.0
+ + Adds option to turn of the BetterPreview icon
+ + Adds support for JoomSuite Resource Content items
+ ^ Made the note a little easier to understand
+ ^ Recodes some stuff to make it more logical and lighter
+
+17-May-2009 : v1.2.2
+ # Fixes issue with components element conflicting with other extensions (Sourcerer)
+ # Fixes issue with frontend hanging in IE7
+
+07-May-2009 : v1.2.1
+ # Fixes issue with mootools javascript error
+ # Fixes issue with tooltip jumping (resizing)
+
+02-May-2009 : v1.2.0
+ + Adds Copy to Clipboard icon (and option to turn it off)
+ + Adds Tooltip with extra link info (and option to turn it off)
+ ^ Changes components list to show all the components available in both admin and frontend
+ # Fixes issue with cached selected categories/sections in list view
+ # Fixes issue with unpublished articles/categories/sections
+
+20-Apr-2009 : v1.1.0
+ ! Removes update icon in administrator toolbar
+ ^ Changes code a bit to make it lighter
+ ^ Changes different administrator elements
+ ^ Changes installation procedure (automatic installer/updater)
+ ^ Changes preview icon in toolbar
+ ^ Changes update check
+ # Fixes typo in html output of component list
+ # Made url xhtml compatible (attribute-encoded)
+
+10-Dec-2008 : v1.0.3
+ # Fixes issue with Fatal error: Class 'BetterPreviewVersionCheck' not found
+
+08-Nov-2008 : v1.0.2
+ ^ Changes update check
+ # Fixes issue with article links not always matching correctly
+
+26-Sep-2008 : v1.0.1
+ ! Removes redundant checks for components
+ ^ Changes update check
+
+17-Sep-2008 : v1.0.0
+ + First release

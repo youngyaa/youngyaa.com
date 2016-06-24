@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Category Calendar Layout">
+		<message>
+			Displays a list of events from a category in a calendar
+		</message>
+	</layout>
+	<state>
+		<name>Calendar Layout</name>
+		<description>Displays a list of events from a category in a calendar</description>		
+		<fields name="request">			
+			<fieldset name="request"
+				addfieldpath="/administrator/components/com_eventbooking/elements">
+				<field name="id" type="ebcategory" size="3" default="0" label="Select Category" description="Choose the category which you want to display events" />				
+				<field name="default_month" type="list" default="0" label="Default Month" description="Choose the month you want to display events from. If you don't choose any month, the current month will be used">
+					<option value="0">Current Month</option>
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</field>
+				<field name="default_year" type="text" label="Default Year" size="5" description="Enter the year you want to display events from. If you leave this empty, the current year will be used"></field>				
+			</fieldset>	
+		</fields>	
+	</state>
+</metadata>

@@ -1,0 +1,230 @@
+.breakingLayout-wrap .slideshow{
+ position: relative;	
+ width: 100%;
+ height: 100%;
+}
+.breakingLayout-wrap .next ,.breakingLayout-wrap .prev{
+	z-index: 6;
+} 
+.breakingLayout-wrap ul.horizontal{
+width: 300%;
+height: 100%;
+position: absolute;
+left:-100%;
+padding:0;
+margin:0;
+}
+.breakingLayout-wrap ul.vertical{
+width: 100%;
+height: 300%;
+position: absolute;
+top:-100%;
+padding:0;
+margin:0;
+}
+.breakingLayout-wrap{
+	position: relative;
+	}
+.breakingLayout-wrap a{
+	text-decoration:none;
+}
+.breakingLayout-wrap a:hover,.breakingLayout-wrap a:active,.breakingLayout-wrap a:focus{
+	background:none;
+}
+.breakingLayout-wrap a span:hover ,.breakingLayout-wrap a span:active ,.breakingLayout-wrap a span:focus {
+	color: #D67900;
+}
+ .breakingLayout-wrap  a span{
+ 	color: #123F6E !important;
+ }
+ 
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+/* btcontentshowcase wrap -----------*/
+
+
+/* slide Breaking News style --------*/
+
+.breaking-content > div{
+	padding: 0 30px 0 5px;
+}
+
+.bn-date{
+	font-size:10px;
+}
+.bn-author{
+	font-size:12px;
+	font-weight:bold;
+}
+
+.breakingLayout-wrap marquee{
+	margin:0;
+	padding:0;
+	height:25px;
+}
+.breakingLayout-wrap ul{
+	padding:0;
+	margin:0;
+}
+.breakingLayout-wrap li{
+	list-style:none;
+	overflow:hidden;
+	z-index: 0;
+	padding:0;
+	margin:0;
+	line-height: 25px;
+}
+
+.breakingLayout-wrap .next-horizontal {
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    width: 10px;
+    height: 15px;
+    cursor: pointer;
+    background: transparent url(../images/re-right.png) no-repeat 0 0;
+}
+.breakingLayout-wrap .next-horizontal:hover,
+.breakingLayout-wrap .next-horizontal:focus {
+    background: transparent url(../images/re-right-hover.png) no-repeat 0 0;
+}
+.breakingLayout-wrap  .prev-horizontal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 10px;
+    height: 15px;
+    cursor: pointer;
+    background: transparent url(../images/re-left.png) no-repeat 0 0;
+}
+
+.breakingLayout-wrap .prev-horizontal:hover,
+.breakingLayout-wrap .prev-horizontal:focus {
+    background: transparent url(../images/re-left-hover.png) no-repeat 0 0;
+}
+
+.breakingLayout-wrap .prev-vertical {
+    position: absolute;
+    bottom: 13px;
+    right: 2px;
+    width: 15px;
+    height: 10px;
+    cursor: pointer;
+    background: transparent url(../images/re-up.png) no-repeat 0 0;
+}
+
+.breakingLayout-wrap .prev-vertical:hover,
+.breakingLayout-wrap .prev-vertical:focus {
+    background: transparent url(../images/re-up-hover.png) no-repeat 0 0;
+}
+
+.breakingLayout-wrap .next-vertical {
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+    width: 15px;
+    height: 10px;
+    cursor: pointer;
+    background: transparent url(../images/re-down.png) no-repeat 0 0;
+}
+
+.breakingLayout-wrap .next-vertical:hover,
+.breakingLayout-wrap .next-vertical:focus {
+    background: transparent url(../images/re-down-hover.png) no-repeat 0 0;
+}
+/* title*/
+.title-breakingnews{
+background-color: #D67900;
+color: white;
+font-weight: bold;
+font-size: 13px;
+width: 110px;
+position: absolute;
+height: 25px;
+line-height: 25px;
+z-index: 6;
+padding-left: 5px;
+}
+
+
+/* scroll style */
+
+.scrollHorizontal li{
+	float:left;
+	margin-right:30px;
+}
+.scrollShowcase span{
+	line-height:25px;
+}
+.scrollShowcase marquee{
+	padding-left: 5px;
+}
+
+/* Tooltips */
+.tip-wrap{
+    z-index: 10000;
+}
+.tip {
+	color: #000;
+
+	z-index: 13000;
+	border:none;
+}
+ 
+.tip-title {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+	color: #3E4F14;
+	padding: 8px 8px 4px;
+	background: #C3DF7D;
+	border-bottom: 1px solid #B5CF74;
+	text-align:center;
+}
+ 
+.tip-text {
+	font-size: 11px;
+	padding: 4px 8px 8px;
+	background: #CFDFA7;
+}
+.breaking-title,.breaking-content{
+	display:inline-block;
+}
+
+.breaking-title{
+	float:left;
+	text-align:center;
+	background:#D67901;
+	margin:0;
+	border-right:1px solid #CCC;
+	padding :0 10px;
+}
+.breaking-title h3{
+	margin:0;
+	color:#FFF;
+}
+.breaking-title h3 a{
+	color:#FFF;
+}
+.breaking-title h3 a:hover{
+	color:#FFF
+}

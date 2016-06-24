@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="module" method="upgrade">
+	<name>Membership Pro View</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.3</version>
+	<description>This module is used to display any views in Membership Pro extension.</description>
+	<files>
+		<filename module="mod_membershippro_view">mod_membershippro_view.php</filename>
+		<filename>index.html</filename>		
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text"
+							label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX">
+				</field>
+				<field name="view" type="list" label="View" description="Choose the view you want to display">
+					<option value="categories">Categories</option>					
+					<option value="plans">Subscription Plans</option>
+					<option value="register">Subscription Form</option>
+					<option value="profile">Membership Profile</option>
+					<option value="members">Members List</option>
+					<option value="subscriptions">Subscription History</option>
+					<option value="renewmembership">Renew Membership</option>
+					<option value="upgrademembership">Upgrade Membership</option>					
+				</field>						
+				<field name="query_string" type="text" class="input-xxlarge" default="" label="Query String" description="Query string which will ba passed to the view."/>
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

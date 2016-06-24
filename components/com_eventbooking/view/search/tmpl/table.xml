@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Search result Table Layout">
+		<message>
+            Display search result based on the search critical which users entered on search module in table layout
+		</message>
+	</layout>
+	<state>
+		<name>Search result Table Layout</name>
+		<description>Display search result based on the search critical which users entered on search module in table layout</description>
+	</state>
+</metadata>

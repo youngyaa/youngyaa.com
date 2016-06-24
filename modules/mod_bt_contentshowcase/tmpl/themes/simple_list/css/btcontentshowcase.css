@@ -1,0 +1,111 @@
+/*======= BT CONTENT SHOWCASE ========*/
+
+.simpleLayout .bt-contentshowcase {
+    position: relative;
+    border: none;
+}
+
+.simpleLayout .slides_container {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.simpleLayout .bt-contentshowcase h3 {
+    color: #d67901;
+    line-height: 37px;
+    text-indent: 15px;
+    text-transform: uppercase;
+    background: url(../images/bg-header.png) repeat-x;
+    height: 37px;
+    border: 1px solid #cfcfcf;
+    margin: 0 !important;
+}
+.simpleLayout .bt-contentshowcase h3 a{
+    color: #d67901;
+}
+
+.simpleLayout p.bt-readmore {
+    text-align: left;
+    clear:both;
+}
+
+.simpleLayout p.bt-readmore a {
+    color: #d67900;
+}
+
+.simpleLayout .borderWrap{
+	border:1px solid #CFCFCF;
+}
+.simpleLayout .borderWrap .bt-row  {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+.simpleLayout .bt-row {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 0px 8px 0;
+}
+/*** CSS STYLE FOR ITEM ****/
+.simpleLayout .bt-row{
+    position: relative;
+	border-bottom:1px solid #CFCFCF;
+}
+.simpleLayout .bt-row:last-child {
+   border-bottom:none;
+}
+.simpleLayout .bt-inner a {
+    text-decoration: none;
+}
+
+.simpleLayout .bt-inner img {
+    outline: 1px solid #b5b5b5;
+    border: 2px solid #fff;
+	max-width:98%;
+	margin:0 5px;
+}
+
+.simpleLayout .bt-inner .bt-title {
+    display: block !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.simpleLayout .bt-inner .bt-category {
+
+    color: #4a4a4a;
+    margin: 0 0px 10px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.simpleLayout .bt-inner .bt-introtext {
+
+    margin: 5px 0px 5px 0px;
+    display: block;
+    font-weight: normal;
+}
+.simpleLayout .bt-inner .bt-introtext img {
+    margin: 5px 0px;
+
+}
+.simpleLayout .bt-extra {
+
+    margin-top: 5px;
+}
+
+.simpleLayout .bt-date,.simpleLayout .bt-author {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.simpleLayout .bt-row-separate {
+    clear: both;
+    height: 1px;
+    border-bottom: 1px dotted #959595;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="1.6" method="upgrade" client="site">
+    <name><![CDATA[admintools - zh-CN]]></name>
+    <author><![CDATA[AkeebaBackup.com]]></author>
+    <authorurl>http://www.akeebabackup.com</authorurl>
+	<copyright>Copyright (C)2016 AkeebaBackup.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>/Users/nikosdion/Projects/akeeba/jadmintools/build/..</version>
+    <creationDate>08 Feb 2016</creationDate>
+    <description><![CDATA[Chinese (Simplified) translation file for Admin Tools]]></description>
+	<fileset>
+		<files folder="backend" target="administrator/language/zh-CN">
+			<filename>zh-CN.plg_system_oneclickaction.ini</filename>
+			<filename>zh-CN.plg_system_oneclickaction.sys.ini</filename>
+		</files>
+	</fileset>
+</extension>

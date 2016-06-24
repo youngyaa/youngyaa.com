@@ -1,0 +1,101 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+
+// -------------------------------
+// TEAMS STYLE
+// -------------------------------
+.acm-teams {
+  .team-items {
+    .clearfix();
+
+    .item {
+      float: left;
+
+      // Control screen mobile
+      @media screen and (max-width: @screen-xs-max) {
+        width: 100%!important;
+      }
+
+      // Top
+      .img-intro {
+        position: relative;
+        overflow: hidden;
+
+        p {
+          bottom: 0;
+          background-color: rgba(33, 91, 166, 0.7);
+          color: @white;
+          font-size: @font-size-large;
+          left: 0;
+          margin-bottom: 0;
+          position: absolute;
+          padding: @t3-global-padding;
+          transform: translateY(100%);
+            -webkit-transform: translateY(100%);
+          .transition(600ms);
+
+          // Control screen medium
+          @media screen and (max-width: @screen-md-max) {
+            font-size: @font-size-base;
+          }
+
+          // Control screen mobile
+          @media screen and (max-width: @screen-sm) {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        .img-intro p {
+          transform: translateY(0);
+            -webkit-transform: translateY(0);
+        }
+      }
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+
+    // Bottom
+    .info {
+      color: @white;
+      padding: @t3-global-padding 0;
+      text-align: center;
+
+      h4 {
+        color: @white;
+        font-size: @t3-font-size-smaller;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: @t3-global-margin / 6;
+
+        // Control screen tablet/desktop
+        @media screen and (min-width: @screen-xs-min) {
+          font-size: @font-size-base;
+        }
+      }
+
+      p {
+        font-size: @t3-font-size-smaller;
+        font-weight: @font-weight-light;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+// Import Style Less
+// --------------------------
+@import "style-1.less"; // Import file style-1.less
+@import "style-2.less"; // Import file style-1.less

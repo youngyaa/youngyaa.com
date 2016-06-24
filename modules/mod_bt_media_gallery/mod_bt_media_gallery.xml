@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>BT Media Gallery</name>
+    <author>BowThemes</author>
+    <creationDate>March 2013</creationDate>
+    <copyright>Copyright (C) 2012 Bowthemes. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@bowthems.com</authorEmail>
+    <authorUrl>http://bowthemes.com</authorUrl>
+    <version>1.0.3</version>
+    <description>MOD_BT_MEDIA_ITEMS_GALLERY_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_bt_media_gallery">mod_bt_media_gallery.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_bt_media_gallery.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_bt_media_gallery.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset addfieldpath="/administrator/components/com_bt_media/models/fields"
+                      name="basic">
+                <field name="catid" type="categoryfield" class="inputbox"
+                       default="" label="MOD_BT_MEDIA_ITEMS_GALLERY_CATEGORY_LABEL"
+                       description="MOD_BT_MEDIA_ITEMS_GALLERY_CATEGORY_DESC"
+                       multiple="true">
+                    <option value="">MOD_BT_MEDIA_CATEGORY_ALL</option>
+                </field>
+				
+                <field name="show_limit_items" type="text" default="10"
+                       label="MOD_BT_MEDIA_ITEMS_GALLERY_SHOW_LIMIT_ITEMS_LABEL" 
+                       description="MOD_BT_MEDIA_ITEMS_GALLERY_SHOW_LIMIT_ITEMS_DESC">
+                </field>
+				
+                <field name="item_type" type="list" default=""
+                       label="MOD_BT_MEDIA_ITEMS_GALLERY_ITEM_TYPE_LABEL" 
+                       description="MOD_BT_MEDIA_ITEMS_GALLERY_ITEM_TYPE_DESC">
+                    <option value="">All</option>
+                    <option value="image">Image</option>
+                    <option value="video">Video</option>
+                </field>
+				
+                <field name="item_sort" type="list" default="ordering"
+                       label="MOD_BT_MEDIA_ITEMS_GALLERY_ITEM_SORT_LABEL" 
+                       description="MOD_BT_MEDIA_ITEMS_GALLERY_ITEM_SORT_DESC">
+                    <option value="ordering">Ordering</option>
+                    <option value="random">Random</option>
+                    <option value="name">Title</option>
+                    <option value="created_date">Created Date</option>
+                </field>
+				
+                <field name="item_featured" type="list" default="0"
+                       label="MOD_BT_MEDIA_ITEMS_GALLERY_FEATURED_LABEL" 
+                       description="MOD_BT_MEDIA_ITEMS_GALLERY_FEATURED_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+				
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field name="cache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static" />
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

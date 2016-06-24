@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Slideshow Style 1</title>
+  <sampledata><![CDATA[ 
+	{":type":"uber:slideshow"}
+   ]]>
+ </sampledata>
+  <fields name="slideshow">
+		
+		<fieldset name="basic2" label="SLIDESHOW_BASIC_2_LABEL" description="SLIDESHOW_BASIC_2_DESC">
+			<field name="data" type="jalist">
+				<item name="title" type="text" 
+					description="SLIDESHOW_TITLE_DES"
+					label="SLIDESHOW_TITLE"
+					default=""
+					/>
+					
+				<item name="description" type="textarea" 
+					description="SLIDESHOW_DESCRIPTIONS_DES"
+					label="SLIDESHOW_DESCRIPTIONS_TITLE"
+					default=""
+					/>
+				<item name="image" type="media" 
+					description="SLIDESHOW_IMG_DES"
+					label="SLIDESHOW_IMG_TITLE"
+					default=""
+					/>
+
+				<item name="location" type="text" 
+					description="SLIDESHOW_LOCATION_DES"
+					label="SLIDESHOW_LOCATION_TITLE"
+					default=""
+					/>
+
+				<item name="slideshow-link" type="text" 
+					description="SLIDESHOW_SL_LINK_DES"
+					label="SLIDESHOW_SL_LINK_TITLE"
+					default=""
+					/>
+			</field>
+			
+			
+		</fieldset>
+  </fields>
+</form>

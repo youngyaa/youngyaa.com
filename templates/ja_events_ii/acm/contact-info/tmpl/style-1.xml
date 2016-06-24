@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Contact Info Style 1</title>
+    <sampledata><![CDATA[
+	{":type":"uber:contact-info","contact-info":{"jatools-layout-contact-info":"style-2","contact-info[block-intro]":["Visit our store to experience the digital lifestyle with our latest product versions. "],"contact-info[block-extra-class]":[" section-lighter no-padding-bottom"],"contact-info[acm-style]":["style-light"],"contact-info[contact-info-googlemap]":["{jamap}"],"contact-info[contact-info-image]":[""],"contact-info[contact-info-position]":["top-right"],"contact-info[full-width]":["1"],"contact-info[contact-info-item]":{"contact-info[contact-info-item][contact-info-icon]":["fa-home","fa-phone","fa-envelope-o","fa-globe"],"contact-info[contact-info-item][contact-info-name]":["Address","Phone","Mail","Web"],"contact-info[contact-info-item][contact-info-value]":["1600 Amphitheatre Parkway, Mountain View, CA, 94043","00 1 650-253-0000","webmaster@joomlart.com","((a href=\"http://www.joomlart.com\" title=\"Joomlart\"))http://www.joomlart.com((/a))"],"rows":4,"cols":4,"type":"list"}}}
+	]]></sampledata>
+    <fields name="contact-info">
+        <fieldset name="contact-info-basic" label="CONTACT_INFO_BASIC_LABEL" description="CONTACT_INFO_BASIC_DESC">
+            <field name="acm-style" type="list" default="style-light"
+                   global="1"
+                   label="CONTACT_STYLE_LABEL"
+                   description="CONTACT_STYLE_DESC">
+                <option value="style-dark">CONTACT_STYLE_DARK</option>
+                <option value="style-light">CONTACT_STYLE_LIGHT</option>
+            </field>
+            <field name="contact-info-googlemap" type="textarea" rows="5" cols="40" default="" label="CONTACT_INFO_MAP_LABEL" description="CONTACT_INFO_MAP_DESC"></field>
+            <field name="contact-info-image" type="media" default="" label="CONTACT_INFO_IMAGE_LABEL" description="CONTACT_INFO_IMAGE_DESC"></field>
+            <field name="contact-info-position" type="list" default="top-left" label="CONTACT_INFO_ITEM_POSITION_LABEL" description="CONTACT_INFO_ITEM_POSITION_DESC" layouts="style-2">
+                <option value="top-left">Top Left</option>
+                <option value="bottom-left">Bottom Left</option>
+                <option value="top-right">Top Right</option>
+                <option value="bottom-right">Bottom Right</option>
+            </field>
+            <field name="full-width" type="radio" default="1" label="CONTACT_FULL_WIDTH_LABEL" description="CONTACT_FULL_WIDTH_DESC" >
+                <option value="0" class="off">JNO</option>
+                <option value="1" class="on">JYES</option>
+            </field>
+        </fieldset>
+
+        <fieldset name="contact-info-items" label="CONTACT_INFO_ITEM_LABEL" description="CONTACT_INFO_ITEM_DESC">
+            <field name="contact-info-item" type="jalist">
+                <item name="contact-info-icon" size="50" type="text" default="" label="CONTACT_FONT_AWESOME_LABEL" description="CONTACT_FONT_AWESOME_DESC" />
+                <item name="contact-info-name" type="textarea" default="" label="CONTACT_LOCALTION_NAME_LABEL" description="CONTACT_LOCALTION_NAME_DESC" requires="1" />
+                <item name="contact-info-value" type="textarea" default="" label="CONTACT_LOCALTION_VALUE_LABEL" description="CONTACT_LOCALTION_VALUE_DESC" />
+            </field>
+        </fieldset>
+
+    </fields>
+</form>

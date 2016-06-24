@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>JA Events II</name>
+	<version>1.0.2</version>
+	<creationDate>15 April 2016</creationDate>
+	<author>JoomlArt.com</author>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>http://www.t3-framework.org</authorUrl>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<t3>
+		<base>base-bs3</base>
+	</t3>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<h4><a href="http://ja-events-ii.demo.joomlart.com/" title="">Demo</a> | <a href="http://www.joomlart.com/documentation/joomla-templates/ja-events-ii" title="">Document</a> | <a href="http://pm.joomlart.com/browse/JATCEVENT2" title="">Changelog</a></h4>
+				<p> </p>
+				<span style="color:#FF0000">Note: JA Events II requires T3 plugin to be installed and enabled.</span><p></p>
+				<p>Copyright 2004 - 2016 <a href='http://www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>thememagic.xml</filename>
+		<filename>templateInfo.php</filename>
+		<filename>templateHook.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>acm</folder>
+		<folder>etc</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+		<folder>tpls</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_events_ii.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_events_ii.sys.ini</language>
+	</languages>
+
+	<positions>
+		<position>languageswitcherload</position>
+		<position>head-search</position>
+		<position>head-btn</position>
+		<position>mainnav</position>
+		<position>navhelper</position>
+		<position>breadcrumbs</position>
+		<position>off-canvas</position>
+		<position>sidebar-1</position>
+		<position>sidebar-2</position>
+		<position>footer</position>
+		<position>section</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+		<position>footer-0</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>footer-5</position>
+		<position>footer-6</position>
+		<position>footer-7</position>
+		<position>footer-8</position>
+		<position>footer-9</position>
+		<position>footer-10</position>
+		<position>debug</position>
+		<position>masthead</position>
+		<position>slideshow</position>
+		<position>tabs</position>
+	</positions>
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/t3/includes/depend">
+
+			<fieldset name="theme_params" label="T3_THEME_LABEL" description="T3_THEME_DESC">
+	        <field name="theme_params_default" type="t3depend" function="@group">
+    				<option for="bodybackground" value="image">
+    					bodybackgroundimage
+    				</option>
+    				<option for="logotype" value="image">
+    					logoimage, logoimage_sm, enable_logoimage_sm
+    				</option>
+    				<option for="enable_logoimage_sm" value="1">
+    					logoimage_sm
+    				</option>
+    			</field>
+    			<field name="bodybackground" type="list" default="color"
+          						 label="T3_THEME_BODY_BACKGROUND_LABEL"
+          						 description="T3_THEME_BODY_BACKGROUND_DESC">
+          				<option value="color">T3_THEME_BODY_BACKGROUND_COLOR</option>
+          				<option value="image">T3_THEME_BODY_BACKGROUND_IMAGE</option>
+          			</field>   
+          <field name="bodybackgroundcolor" type="color" default="#d7d9db"
+					 label="T3_THEME_BODY_BACKGROUND_COLOR_LABLE"
+					 description="T3_THEME_BODY_BACKGROUND_COLOR_DESC"/> 
+
+          <field name="bodybackgroundimage" type="t3media" default=""
+					 label="T3_THEME_BODY_BACKGROUND_IMAGE_LABLE"
+					 description="T3_THEME_BODY_BACKGROUND_IMAGE_DESC"/> 
+	    </fieldset>
+			
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="collection">http://update.joomlart.com/service/tracking/list.xml</server>
+	</updateservers>
+
+</extension>

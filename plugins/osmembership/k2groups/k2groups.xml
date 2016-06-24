@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="osmembership" method="upgrade">
+	<name>OS Membership - K2 Groups plugin</name>
+	<author>Tuan Pham Ngoc</author>
+	<creationDate>Apirl 2012</creationDate>
+	<copyright>Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.0</version>
+	<description>This plugin is used to assign users to K2 Groups when they subscribe to a Subscription Plan in OS Membership</description>
+	<files>
+		<filename plugin="k2groups">k2groups.php</filename>
+	</files>
+	<config />
+</extension>

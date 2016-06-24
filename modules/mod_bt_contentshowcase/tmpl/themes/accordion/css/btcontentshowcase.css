@@ -1,0 +1,292 @@
+/*======= BT CONTENT SHOWCASE ========*/
+
+.accordionLayout .bt-contentshowcase {
+    position: relative;
+    border: none;
+
+}
+
+.accordionLayout .bt-contentshowcase a:hover {
+    background-color: #fff;
+    color: #363636;
+}
+
+.accordionLayout .slides_container {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+
+.accordionLayout .bt-contentshowcase h3 {
+    color: #d67901;
+    line-height: 37px;
+    text-indent: 15px;
+    text-transform: uppercase;
+    background: url(../images/bg-header.png) repeat-x;
+    height: 37px;
+    border: 1px solid #cfcfcf;
+    margin: 0 !important;
+}
+.accordionLayout .bt-contentshowcase h3 a{
+    color: #d67901;
+}
+/*
+        Next/prev buttons
+*/
+.accordionLayout .next,.accordionLayout .prev {
+    display: block;
+    width: 10px;
+    height: 15px;
+}
+
+.accordionLayout .bt_handles {
+    border: 1px solid red;
+    position: absolute !important;
+    margin:  0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    z-index:999;
+}
+
+
+
+
+
+.accordionLayout p.bt-readmore {
+    text-align: left;
+    clear:both;
+}
+
+.accordionLayout p.bt-readmore a {
+    color: #d67900;
+}
+
+.accordionLayout p.bt-readmore a:hover,.accordionLayout p.bt-readmore a:active {
+    background: #ffffff;
+}
+
+
+/*
+        Handle
+*/
+.accordionLayout .bt_handles li {
+    float: left;
+    margin: 0 1px;
+    list-style: none;
+    padding:0px;
+}
+
+.accordionLayout .bt_handles li a {
+    display: block !important;
+    width: 12px;
+    height: 0;
+    padding-top: 12px;
+    background-image: url(../images/pagination.png);
+    background-position: 0 0;
+    float: left;
+    padding: 12px 0 0 0 !important;
+    overflow: hidden;
+}
+
+.accordionLayout .bt_handles li a:active,.accordionLayout .bt_handles li a:focus,.accordionLayout .bt_handles li a:hover {
+    background-color: transparent !important;
+}
+
+.accordionLayout .bt_handles li.current a {
+    background-position: 0 -12px;
+}
+
+.accordionLayout .bt-container {
+    position: relative;
+}
+
+
+
+/* main flash */
+.accordionLayout .bt-main-wapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.accordionLayout .bt-main-wapper .bt-main-item {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.accordionLayout .bt-row {
+    position: relative;
+    overflow: hidden;
+    padding: 0px!important;
+}
+/*** CSS STYLE FOR ITEM ****/
+.accordionLayout .bt-inner {
+    margin-left: 10px;
+    position: relative;
+    border-bottom: 1px dotted #a3a3a3;
+    padding: 8px 0px;
+    overflow: hidden;
+}
+.accordionLayout .bt-row-last .bt-inner{
+    border-bottom: none;
+    
+}
+.accordionLayout .bt-inner a {
+    text-decoration: none;
+}
+
+.accordionLayout .bt-inner img {
+    max-width:98%;
+}
+
+.accordionLayout .bt-inner .bt-title {
+
+    padding: 0px !important;
+    display: block !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+.accordionLayout .bt-inner .bt-title-nointro {
+
+    padding: 0 0px 10px 0px;
+    color: #d67900;
+    font-weight: bold;
+}
+
+.accordionLayout .bt-inner .bt-category {
+
+    color: #4a4a4a;
+    margin: 0 0px 10px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.accordionLayout .bt-inner .bt-introtext {
+
+    margin: 5px 0px 5px 0px;
+    display: block;
+    font-weight: normal;
+}
+.accordionLayout .bt-inner .bt-introtext img {
+    margin: 5px 0px;
+
+}
+.accordionLayout .bt-extra {
+    margin-top: 0px !important;
+}
+
+.accordionLayout .bt-date,.accordionLayout .bt-author {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.accordionLayout .bt-row-separate {
+    clear: both;
+    height: 1px;
+    border-bottom: 1px dotted #959595;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+
+.accordionLayout .bt-contentshowcase ul li{
+    
+    display: block;
+}
+
+.accordionLayout .btcontentshowcase-prev {
+    background: url(../images/re-left.png) !important;
+    _text-indent: -9999px;
+    margin:0 3px;
+    padding:0;
+    width: 10px; height: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.accordionLayout .btcontentshowcase-prev:hover{
+    background: url(../images/re-left-hover.png) scroll 0 0 transparent
+        !important;
+}
+.accordionLayout .btcontentshowcase-next {
+    background: url(../images/re-right.png) !important;
+    _text-indent: -9999px;
+    margin:0 3px;
+    padding:0;
+    width: 10px; height: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.accordionLayout .btcontentshowcase-next:hover{
+    background: url(../images/re-right-hover.png) scroll 0 0 transparent
+        !important;
+}
+.accordionLayout  #btcontentshowcase-control{
+    margin: 5px 0px;
+    width: 100%;
+}
+.accordionLayout .btcontentshowcase-navigation{
+    float: right;
+    margin: 1px 3px;
+}
+.accordionLayout .btcontentshowcase-navigation .bullet{
+    background-image: url("../images/bullet.png");
+    background-position: 0 0;
+    display: block !important;
+    float: left;
+    height: 12px;
+    overflow: hidden;
+    width: 12px;
+    text-indent: 9999px;
+    margin: 0px 1px;
+}
+.accordionLayout .btcontentshowcase-navigation .bullet:hover,
+.accordionLayout .btcontentshowcase-navigation .bullet.current{
+    background-position: 0 12px;
+}
+.accordionLayout .btcontentshowcase-navigation a{
+    text-decoration: none !important;
+}
+
+.accordionLayout .btcontentshowcase-navigation .number{
+    background-image: url("../images/number.png"); background-position: 0 14px;
+    display: block !important;
+    float: left;
+    width: 14px; height: 14px; line-height: 13px;
+    margin: 0 1px;
+    overflow: hidden;
+    text-align: center;
+    color: #ffffff; font-weight: bold; font-size: 10px;
+}
+.accordionLayout .btcontentshowcase-navigation .number:hover,
+.accordionLayout .btcontentshowcase-navigation .number.current{
+    background-position: 0 0;
+}
+
+/*** CSS STYLE FOR ITEM ****/
+.accordionLayout .bt-inner .bt-title img{
+    border: none !important;
+}
+
+.accordionLayout .bt-inner.actived a {
+    color: #d67900;
+}
+.accordionLayout .bt-inner .bt-inner-wrapper{
+    margin-top: 5px;
+    display: none;
+}
+.accordionLayout .bt-row-first .bt-inner-wrapper{
+    display: block;
+}
+
+
+.accordionLayout .bt-inner .bt-inner-wrapper img {
+    outline: none !important;
+    border: 1px solid #b5b5b5;
+    padding: 2px;
+}

@@ -1,0 +1,237 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.section-title {
+  text-align: center;
+
+  span {
+    display: inline-block;
+    font-size: @font-size-large * 3;
+    margin-bottom: @t3-global-margin;
+  }
+
+  .section-intro {
+    font-size: @font-size-large;
+    line-height: 1.6;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+.section-inner {
+  background-size: cover;
+  background-position: center center;
+}
+
+.acm-pricing {
+	section {
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: cover;
+	}
+
+	.pricing-title {
+		color: @white;
+	  font-size: @font-size-h1;
+	  font-weight: @font-weight-normal;
+	  line-height: 1;
+	  margin: 0 0 @t3-global-margin;
+	  text-align: center;
+	}
+
+	.blockline:after, .blockline:before {
+		background-color: @white;
+	}
+
+	.pricing-caption {
+		color: @white;
+		text-transform: uppercase;
+		font-weight: @font-weight-thin;
+		display: inline-block;
+    font-size: @font-size-base;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+	}
+
+	.pricing-desc {
+		color: @white;
+    font-size: @font-size-large;
+		margin-bottom: 0;
+		.opacity(0.8);
+	}
+
+	&.style-light {
+		.pricing-title,
+		.pricing-caption,
+		.pricing-desc {
+			color: @gray-dark;
+		}
+
+		.blockline:after, .blockline:before {
+			background-color: @gray-dark;
+		}
+	}
+}
+
+
+// PRICING TABLE
+// ---------------------------------------
+.pricing-table {
+  padding-top: @t3-global-padding * 2;
+  padding-bottom: @t3-global-padding * 2;
+  color: @text-color;
+
+  > .row {
+    margin: 0;
+  }
+
+  .col {
+    margin-bottom: @t3-global-margin * 2;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 0;
+    }
+
+    // Remove padding of the column
+    // ----------------------------
+    &.no-padding {
+      @media (min-width: 768px) {
+        padding: 0;
+      }      
+    }
+
+    &.shadow {
+    	.col-header {
+    		border: 0;
+    	}
+
+      @media (min-width: 768px) {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+
+    // Typography's Pricing table
+    // --------------------------
+    .big-number {
+      display: inline-block;
+      font-size: @font-size-h1;
+
+      sup {
+        font-size: @font-size-base * 1.5;
+        top: -1em;
+      }
+    }
+
+    .btn {
+      font-size: @font-size-large;
+      font-weight: @font-weight-medium;
+      padding: (@t3-global-padding / 2) @t3-global-padding * 1.5;
+
+      &.btn-rounded {
+        border-radius: 25px;        
+      }
+
+      &.btn-default {
+        border-width: 2px;
+      }
+    }
+
+
+    // Header of column
+    // ----------------
+    .col-header {
+      background: @gray-lighter;
+      background: rgba(255,255,255,0.8);
+      border-radius: 0;
+      border: 1px solid @t3-border-color;
+      border-bottom: 0;
+      color: @text-color;
+      padding: (@t3-global-padding / 2) @t3-global-padding;
+
+      h2, .h2 {
+      	font-size: @font-size-h3;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+
+    // Body of column
+    // --------------
+    ul {
+      border: 1px solid @gray-lighter;
+      border-bottom: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        border-bottom: 1px solid @gray-lighter;
+        font-size: @font-size-base + 2;
+        padding: ((@t3-global-padding / 2) + 2) @t3-global-padding;
+        text-align: center;
+        background-color: @white;
+
+        &.row1 {
+          background: @gray-lightest;
+        }
+
+        i {
+          color: @green;
+          font-size: @font-size-base + 4;
+        }
+
+        &.no i {
+          color: @red;
+        }
+
+
+        &.no {
+          color: @gray-light;
+          text-decoration: line-through;
+        }
+      }
+    }
+
+
+    // Footer of column
+    // ----------------
+    .col-footer {
+      background: @gray-lighter;
+      border: 1px solid darken(@gray-lighter, 10%);
+      padding: (@t3-global-padding * 1.5) @t3-global-padding;
+    }
+
+  }
+
+  
+  // Feature column
+  // --------------
+  .col-featured {
+    z-index: 1;
+
+    // Larger margin on Tablet / Desktop
+    @media screen and (min-width: @screen-md) {
+      margin-top: -@t3-global-margin;
+    }   
+
+    .col-header {
+      background: @brand-secondary;
+      color: @white;
+      color: rgba(255, 255, 255, 0.8);
+      padding: ((@t3-global-padding / 2) + (@t3-global-margin / 2)) @t3-global-padding;
+    }
+
+    .col-footer {
+      padding-bottom: @t3-global-padding * 2.5;
+    }
+  }
+}

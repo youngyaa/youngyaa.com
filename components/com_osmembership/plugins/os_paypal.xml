@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="osmplugin" group="payment">
+	<name>os_paypal</name>
+	<title>Paypal</title>
+    <creationDate>May 2012</creationDate>
+    <author>Tuan Pham Ngoc</author>
+    <authorEmail>tuanpn@joomdonation.com</authorEmail>
+    <authorUrl>http://www.joomdonation.com</authorUrl>
+    <copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.2.1</version>
+	<description>Paypal Payment Plugin For Membership Pro Extension</description>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_osmembership/elements">
+				<field name="paypal_mode" type="list" label="Paypal Mode" description="Set to Test Mode Or Live Mode">
+					<option value="0">Test Mode</option>
+					<option value="1">Live Mode</option>
+				</field>
+				<field name="paypal_id" type="text" size="40" label="Paypal Email" description="Enter your Paypal ID or Paypal Email" default=""></field>
+				<field name="payment_fee_amount" type="text" label="Payment Processing Fee ($)" description=""></field>
+				<field name="payment_fee_percent" type="text" label="Payment Processing Fee (%)" description=""></field>
+				<field name="ipn_log" type="list" label="Log IPN messages" description="This is only used for debug purpose when requested. Please set it to No unless requested by our support team" default="0">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename>os_paypal.php</filename>
+	</files>
+	<installsql />
+	<installfile />
+</install>

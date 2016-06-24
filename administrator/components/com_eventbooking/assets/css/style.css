@@ -1,0 +1,266 @@
+.icon-32-export {
+	background-image:url("../icons/export.png");
+}
+#adminForm .table .order {
+    text-align: right;
+}
+#adminForm .table .order .input-mini {
+	width: 15px;
+}
+/* icons */
+.icon-uparrow_disabled:before {
+	content: "\e005";
+}
+.icon-downarrow_disabled:before {
+	content: "\e007";
+}
+/* // icons */
+table.admintable td label {
+	clear: none ;
+	min-width: 40px;
+	margin : 3px 2px ;
+}
+
+table.admintable td.key {
+	font-weight: bold ;
+}
+
+form#adminForm fieldset.adminform {
+	background-color: white ;
+	margin: 0;
+}
+
+.form-horizontal .tab-content .controls {
+	margin: 0;
+}
+
+table.admintable {
+	background-color: white ;	
+}
+div.current fieldset.eb_recurring_setting input, div.current fieldset.eb_recurring_setting img{
+	float: none ;
+}
+.img_preview {
+	max-width: 65px ;
+	max-height: 65px;
+	float: left ;
+	margin-left: 20px ;
+	vertical-align: top;  
+}
+table.admintable td label {
+	clear: none ;
+	min-width: 40px;
+	margin : 3px 2px ;
+	display: inline-block; 
+}
+fieldset.adminform {
+	border: none ;	
+}
+.form-horizontal label.control-label {
+	text-align: left;
+}
+
+.form-horizontal div.controls label {	
+	clear: none ;
+	min-width: 40px;
+	display: inline-block; 
+}
+.clearfloat {
+	float: none ;
+}
+#recurring_end_date_img {
+	float: right ;
+}
+#recurring_end_date {
+	float: none ;
+}
+table.adminlist td.text_center, table.adminlist th.text_center {
+	text-align: center ;
+}
+table.adminlist td.text_left, table.adminlist th.text_left {
+	text-align: left ;
+}
+table.adminlist td.text_right, table.adminlist th.text_right {
+	text-align: right ;
+}
+
+.eb-left-align
+{
+    text-align: left;
+}
+
+.eb-right-align
+{
+    text-align: right;
+}
+
+/* -- PANE SLIDER STYLES ----------------------------- */
+.pane-sliders {
+ margin: 18px 0 0 0;
+ position:relative;
+}
+.pane-sliders .title {
+ margin: 0;
+ padding: 2px 2px 2px 5px;
+ color: #666;
+ cursor: pointer;
+}
+
+#content-pane {
+ margin: 8px 10px 15px 15px;
+}
+
+.pane-sliders .panel {
+ margin-bottom: 3px;
+ border:solid 1px #ccc;
+}
+
+.pane-sliders .panel h3 {
+ background: #fafafa;
+ color: #666;
+ font-size: 1.182em;
+}
+
+.pane-sliders .content {
+ background: #fff;
+}
+
+.pane-sliders .adminlist {
+ border: 0 none;
+ font-size: 1em;
+}
+
+.pane-sliders .adminlist td {
+ border: 0 none;
+}
+
+.pane-toggler span {
+ background: transparent url(../icons/j_arrow.png) 5px 50% no-repeat;
+ padding-left: 20px;
+}
+
+.pane-toggler-down span {
+ background: transparent url(../icons/j_arrow_down.png) 5px 50% no-repeat;
+ padding-left: 20px;
+}
+
+.pane-toggler-down {
+ border-bottom: 1px solid #ccc;
+}
+
+h3.pane-toggler-down a:hover,
+h3.pane-toggler a:hover {
+ text-decoration: none;
+ font-size: 1.182em;
+}
+
+.pane-slider.pane-hide {
+ display: none;
+}
+
+.pane-slider ol li {
+ list-style: none;
+ margin-left: -25px;
+ margin-top: 10px;
+}
+/* -- CONTROL PANEL STYLES ----------------------------- */
+.cpanel div.icon, #cpanel div.icon {
+	text-align: center;
+	margin-right: 15px;
+	float: left;
+	margin-bottom: 15px;
+
+}
+.cpanel div.icon a, #cpanel div.icon a {
+	background-color: #fff;
+	background-position: -30px;
+	display: block;
+	float: left;
+	height: 105px;
+	width: 118px !important;
+	color: #565656;
+	vertical-align: middle;
+	text-decoration: none;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition-property:
+		background-position,
+		-webkit-border-bottom-left-radius,
+		-webkit-box-shadow;
+	-moz-transition-property:
+		background-position,
+		-moz-border-radius-bottomleft,
+		-moz-box-shadow;
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+}
+
+#cpanel div.icon a:hover,
+#cpanel div.icon a:focus,
+#cpanel div.icon a:active,
+.cpanel div.icon a:hover,
+.cpanel div.icon a:focus,
+.cpanel div.icon a:active {
+	background-position: 0;
+	-webkit-border-bottom-left-radius: 50% 20px;
+	-moz-border-radius-bottomleft: 50% 20px;
+	border-bottom-left-radius: 50% 20px;
+	-webkit-box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+	box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+	position: relative;
+	z-index: 10;
+}
+
+#cpanel img,
+.cpanel img {
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+#cpanel span,
+.cpanel span {
+	display: block;
+	text-align: center;
+}
+
+div.cpanel-left {
+	width: 54%;
+	float: left;
+}
+
+div.cpanel-right {
+	width: 45%;
+	float: right;
+}
+
+#submenu-box {
+    margin-bottom: 10px;
+}
+
+.submenu-box, #submenu-box div.m {
+    padding: 6px 8px;
+}
+.submenu-box, div.m {
+    background-color: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0 8px;
+}
+.nav-tabs, .nav-pills {
+    padding:0 0 0 5px;
+}
+
+.nav-tabs > li > a, .nav-pills > li > a {
+    font-size: 14px;
+}
+
+.nav-pills .dropdown-menu li > a {
+    font-size: 12px;
+}
+#eb-dropdown-menu .dropdown .dropdown-menu li.active a 
+{
+	color: #fff !important;
+} 

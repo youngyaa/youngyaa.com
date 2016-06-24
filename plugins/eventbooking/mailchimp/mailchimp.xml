@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="eventbooking" method="upgrade">
+	<name>Events Booking - Mailchimp plugin</name>
+	<author>Tuan Pham Ngoc</author>
+	<creationDate>01-24-2014</creationDate>
+	<copyright>Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>2.0.4</version>
+	<description>This plugin is used to add registrants to Mailchimp when they register for an event in Events Booking extension.</description>
+	<files>
+		<filename plugin="mailchimp">mailchimp.php</filename>
+		<folder>api</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_eventbooking_mailchimp.ini</language>		
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="api_key" type="text" size="60" default="" label="API Key" description="Your Mailchimp API Key" />                
+            </fieldset>
+        </fields>
+    </config>
+</extension>

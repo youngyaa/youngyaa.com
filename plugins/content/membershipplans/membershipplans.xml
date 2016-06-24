@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="content" method="upgrade">
+    <name>Membership Plans content plugin</name>
+    <author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2016 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.0.3</version>
+    <description>This plugin is used to display subscription plans which you created in Membership Pro in a Joomla
+        article.
+    </description>
+    <files>
+        <filename plugin="membershipplans">membershipplans.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="layout_type" type="list" label="Layout"
+                       description="Choose the layout you want to use to display subscription plans">
+                    <option value="default">Default Layout</option>
+                    <option value="columns">Columns Layout</option>
+					<option value="pricingtable">Pricing Table</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

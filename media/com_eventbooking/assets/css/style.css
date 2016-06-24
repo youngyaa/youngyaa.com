@@ -1,0 +1,1062 @@
+/*--------Global style-------------*/
+.title_cell {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.field_cell {
+
+}
+
+#extcalendar .tablea {
+    background-color: #F9F9F9;
+    border-top: 1px solid #FFFFFF;
+    color: #999;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+
+.eb-container {
+    text-align: left;
+}
+
+.eb-container img {
+    border: 0 none;
+}
+
+.eb-container h1, .eb-container h2, .eb-container h3 {
+    width: auto !important;
+    margin: 5px 0 5px 0 !important;
+    padding: 0 !important;
+}
+
+h1.eb-page-heading {
+
+}
+
+h2.eb-page-heading {
+
+}
+
+h3.eb-page-heading {
+
+}
+
+.eb_description {
+    padding: 0 5px 0 0;
+    margin: 0;
+}
+
+img.eb-thumb-left {
+    margin: 0 15px 0 0 !important;
+    float: left !important;
+}
+
+img.eb-thumb-right {
+    margin: 0 0 0 15px !important;
+    float: right !important;
+}
+
+form#adminForm label.control-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* ---------- Categories styles ------------------------------------- */
+body .eb-topmenu-calendar ul li {
+    margin: 0;
+    float: right;
+}
+
+#eb-categories h2.eb-category-title {
+    margin: 14px 0 !important;
+}
+
+#eb-categories h3.eb-category-title {
+}
+
+#eb-categories .eb-category, #eb-events .eb-event {
+    margin: 0 0 20px;
+}
+
+#eb-categories .eb-box-heading, #eb-events .eb-box-heading, #eb-event-page .eb-box-heading {
+    border-radius: 7px 7px 0 0;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 8px 10px 7px;
+    margin: 0;
+}
+
+#eb-categories .eb-box-heading h3, #eb-events .eb-box-heading h3, #eb-event-page .eb-box-heading h3 {
+    margin: 0;
+}
+
+.eb-box-heading .dropdown-menu [class^="icon-"]:before, .eb-box-heading .dropdown-menu [class*=" icon-"]:before {
+    position: relative;
+    left: -5px;
+}
+
+#eb-event-properties-heading, #eb-event-group-rates-heading, #eb-share-text {
+
+}
+
+#eb-categories .eb-description, #eb-events .eb-description, #eb-event-page .eb-description {
+    background: #fff;
+    border-radius: 0 0 7px 7px;
+    margin: 0;
+    padding: 10px;
+}
+
+#eb-categories .eb-category img {
+    margin: 0 10px 0 0 !important;
+    padding: 0 !important;
+}
+
+/* Mini Calendar */
+
+.eb_minicalendar_monthyear {
+    color: #F0F0F0;
+    cursor: pointer;
+    font-weight: bold;
+    height: 21px !important;
+    line-height: 21px;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+a.mod_eb_minicalendar_link:link {
+    color: white;
+}
+
+a.mod_eb_minicalendar_link:hover {
+    color: yellow;
+}
+
+.eb_minicalendar_monthyear a.mod_eb_minicalendar_link {
+    color: #F0F0F0;
+    font-weight: bold !important;
+    text-decoration: none;
+}
+
+.mod_eb_mincalendar_table {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 0.25em;
+    text-align: center;
+    text-decoration: none;
+    width: 100% !important;
+}
+
+.mod_eb_mincalendar_dayname {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mod_eb_mincalendar_td_dayname {
+    color: #F0F0F0;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center !important;
+    padding: 5px;
+}
+
+.mod_eb_mincalendar_td_dayname .sunday {
+    color: #99AAAA;
+}
+
+.mod_eb_mincalendar_td_dayname .saturday {
+    color: #99AAAA;
+}
+
+td.mod_eb_mincalendar_today {
+    color: #000000;
+    padding: 0 !important;
+}
+
+td.mod_eb_mincalendar_not_today, td.mod_eb_mincalendar_no_event a {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 3px 2px;
+    color: #fff;
+}
+
+a.eb_minical_link:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+a.eb_minical_link SPAN.sunday {
+    color: #99AAAA;
+}
+
+a.eb_minical_link SPAN.saturday {
+    color: #99AAAA;
+}
+
+td.mod_eb_mincalendar_event a, td.mod_eb_mincalendar_event a.eb_minical_link span.sunday, td.mod_eb_mincalendar_event a.eb_minical_link SPAN.saturday {
+    color: #fff;
+}
+
+.extcal_minical .extcal_navbar {
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #B4B4B6;
+}
+
+.extcal_navbar td {
+    padding: 5px;
+}
+
+.extcal_minical .extcal_month_label a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* ---------- Category styles --------------------------------------- */
+#eb-category {
+    padding: 10px 0;
+}
+
+#eb-category h1.eb-page-heading {
+    margin: 0 0 10px 0 !important;
+}
+
+.eb-event .eb-event-properties {
+    width: 290px;
+    background: #ECF4FB;
+    padding: 5px 5px 5px 10px;
+    margin: 0 5px 5px;
+    float: right;
+}
+
+td.eb-event-property-label {
+    width: 110px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/**Events table stype**/
+.date-col {
+    width: 20%;
+}
+
+.eb-image-col {
+
+}
+
+.location-col {
+
+}
+
+.capacity-col {
+    width: 8%;
+}
+
+.registered-col {
+    width: 8%;
+}
+
+.price-col {
+    width: 10%;
+    text-align: right;
+}
+
+/* ---------- Events styles -------------------------------------- */
+#eb-events h3.eb-event-title {
+}
+
+#eb-events h3.eb-event-title img {
+    float: left !important;
+    margin: 0 10px 0 0;
+}
+
+#eb-events .eb-event {
+}
+
+/* ---------- Taskbar styles ---------------------------------------- */
+.eb-taskbar {    
+    margin: 0;
+    list-style: none;
+}
+
+.eb-event-detail-container:last-child .eb-taskbar {
+    border-bottom: none;
+}
+
+.eb-taskbar ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.eb-taskbar li {
+    float: left !important;
+    list-style-type: none !important;
+    background-image: none !important;
+    padding: 0 5px 0 0 !important;
+    margin: 0.5em 0 2px 0 !important;
+}
+
+.eb-taskbar li a:link, .eb-taskbar li a:visited, .eb-taskbar li a:hover {
+    text-decoration: none;
+}
+
+.eb-taskbar li a:hover {
+}
+
+/**Event detail style**/
+#eb-event {
+    padding: 0 15px 15px 15px;
+}
+
+#eb-event-details {
+    padding: 10px 0;
+}
+
+#eb-event-page h1.eb-page-heading {
+    margin: 0 0 10px 0 !important;
+}
+
+#fb-share-button {
+    display: inline;
+}
+
+#eb-share-text {
+    float: left;
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 150%;
+}
+
+#eb-event-info {
+    margin-top: 15px;
+}
+
+#eb-event-info table {
+    margin-top: 10px;
+}
+
+.eb-notice-message
+{
+	font-size: 130%;
+	font-weight: bold;
+	margin-top: 8px;
+}
+/**Registration Form style**/
+
+form.form-horizontal .control-label, form.form-horizontal .control-label label {
+    text-align: left;
+    font-weight: bold;
+	padding: 0px;
+}
+
+/**Form CSSS**/
+.eb-form-heading {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DBDEE1;
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.eb-form-heading a {
+    float: right;
+    font-weight: normal;
+    margin-top: 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.eb-form-content {
+    display: none;
+    padding: 0 0 15px;
+}
+
+.eb-form-content .left {
+    float: left;
+    width: 48%;
+}
+
+.eb-form-content .right {
+    float: right;
+    width: 48%;
+}
+
+.eb-form-content .buttons {
+    clear: both;
+}
+
+form.form-horizontal ul, form.form-horizontal ul {
+    list-style: none;
+}
+
+form.form-horizontal ul li label, form.form-horizontal ul li label {
+    display: inline;
+}
+
+.star {
+    color: red;
+}
+
+span.required {
+    color: red;
+    padding-left: 5px;
+}
+
+.eb-container label.control-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.eb-right-align {
+    text-align: right !important;
+}
+
+.eb-left-align {
+    text-align: left !important;
+}
+
+.price_col {
+    width: 10%;
+    text-align: right;
+}
+
+.order_col {
+    width: 13%;
+    text-align: center;
+}
+
+table.item_list {
+    margin-top: 10px;
+}
+
+table.doc_list {
+
+}
+
+.no_col {
+    width: 5%;
+}
+
+.date_col {
+    width: 20%;
+}
+
+.capacity_col {
+    width: 8%;
+}
+
+.registered_col {
+    width: 8%;
+}
+
+/*Registrant list style*/
+.list_first_name {
+    width: 15%;
+}
+
+.list_last_name {
+    width: 9%;
+}
+
+.list_event {
+
+}
+
+.list_event_date {
+    width: 10%;
+}
+
+.list_email {
+    width: 10%;
+}
+
+.list_registrant_number {
+    width: 8%;
+}
+
+.list_amount {
+    text-align: right;
+    width: 6%;
+}
+
+.list_id {
+    text-align: center;
+    width: 15%;
+}
+
+/**CSS for cart page**/
+.col_no {
+    width: 5%;
+}
+
+.col_action {
+    width: 10%;
+    text-align: center !important;
+}
+
+.col_quantity {
+    width: 14%;
+    text-align: center !important;
+}
+
+.col_price {
+    text-align: right !important;
+    width: 10%;
+}
+
+.quantity_box {
+    text-align: center !important;
+}
+
+span.total_amount {
+    font-weight: bold;
+}
+
+.col_subtotal {
+    width: 12%;
+    text-align: right !important;
+}
+
+.qty_title, .eb_rate {
+    font-weight: bold;
+}
+
+span.error {
+    color: red;
+    font-size: 150%;
+}
+
+.col_event_date {
+    width: 17%;
+    text-align: center;
+}
+
+span.view_list {
+    font-weight: bold;
+}
+
+.eb_form_header {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.invalid {
+    color: red;
+}
+
+.eb-calendar ul.eb-month-browser li a {
+    color: #fff;
+}
+
+.bubble li {
+    list-style-type: none;
+    background-image: none;
+    line-height: 18px;
+    margin-left: 2px;
+    font-size: 13px;
+}
+
+.bubble .location_name {
+    font-weight: bold;
+}
+
+li.getdirection a {
+    font-weight: bold;
+}
+
+.eb-container .input-append .add-on, .eb-container .input-prepend .add-on 
+{    
+  height: auto !important;  
+}
+
+/**CSS for supporting responsive calendar*/
+
+@media only screen and (max-width: 1024px) {
+    .navbar-static .navbar-inner {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.eb-topmenu-calendar .eb-menu-calendar {
+    float: right;
+    width: auto;
+}
+
+.eb-container .nav {
+    width: 100%;
+}
+
+.eb-calendar ul.eb-month-browser li {
+    width: 30%;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+    height: auto;
+    margin: 5px 0;
+}
+
+.eb-calendar ul.eb-month-browser li.eb-calendar-nav {
+    margin: 13px 0 0;
+}
+
+.eb-calendar ul.eb-month-browser li#eb-current-month {
+    margin: 8px 0 0;
+    width: 40%;
+}
+
+#eb-current-month #month, #eb-current-month #year {
+    margin: 0 !important;
+    float: left;
+}
+
+#eb-current-month #month {
+    margin-right: 5px;
+}
+
+.eb-calendar ul.eb-month-browser li .input-medium,
+.eb-calendar ul.eb-month-browser li .input-small {
+    margin: 0;
+}
+
+.eb-calendar {
+    width: 100%;
+}
+
+.eb-calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100%;
+}
+
+.eb-calendar ul.eb-weekdays {
+    height: 40px;
+}
+
+.eb-calendar ul.eb-weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+body .eb-calendar li {
+    background-image: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px !important;
+    margin: 0 !important;
+    display: block;
+    float: left;
+    overflow: visible !important;
+    width: 14.2823%;
+}
+
+.eb-calendar .eb-days:last-child li {
+    margin-bottom: 0px !important;
+}
+
+.eb-calendar li .day, .eb-calendar li .month {
+    display: none;
+}
+
+.eb-calendar .eb-date {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block !important;
+}
+
+.left_calendar strong, .left_calendar .input-append, .left_calendar .btn {
+    float: left;
+}
+
+.left_calendar #date_img.btn {
+    float: none;
+}
+
+.left_calendar strong, .left_calendar .input-append {
+    margin: 0 5px 0 0;
+}
+
+.show-info {
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height: 14px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+}
+
+.show-info:hover .venue {
+    display: block;
+}
+
+.show-info .show-name {
+    text-decoration: underline;
+}
+
+.show-info .show-time, .venue {
+    color: #666;
+    margin-top: 2px;
+    text-decoration: none;
+}
+
+.eb-calendar .no-shows {
+    display: none;
+}
+
+.eb-calendar .venue {
+    display: none;
+}
+
+.eb-calendar li.out_of_range {
+    background-color: #F5F5F5;
+    color: #666;
+}
+
+#extcalendar .eventdesc .cat-name, #extcalendar .eventdesc .location-name {
+    margin: 0 0 5px;
+    line-height: normal;
+    font-size: 13px;
+}
+
+#extcalendar .today {
+    padding: 15px;
+}
+
+#extcalendar .eventdesc .location-name {
+    padding: 3px 0 3px 25px;
+}
+
+#extcalendar .eventdesc .cat-name {
+    background: url(../images/cat.png) no-repeat left center;
+    padding: 3px 0 3px 25px;
+}
+
+.admintable label {
+    display: inline-block;
+}
+
+.tab-content {
+    text-align: left;
+}
+
+.form-horizontal .admintable .controls {
+    margin: 0;
+}
+
+#eb-calendar-legend ul {
+    margin: 20px 0 0 0;
+}
+
+#eb-calendar-legend ul li {
+    float: left;
+    width: auto;
+}
+
+#eb-calendar-legend span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#eb-calendar-legend a {
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+}
+
+#eb-calendar-legend ul li {
+    list-style: none;
+    content: "";
+}
+
+.eb-taskbar .dropdown-menu li {
+	margin: 0!important;
+	padding: 0!important;
+	float: none!important;
+}
+
+.eb-taskbar .dropdown-menu li a {
+	padding-left: 25px;
+	position: relative;
+}
+
+.eb-taskbar .dropdown-menu li a.google, .eb-taskbar .dropdown-menu li a.yahoo {
+	background-position: 8px 8px;
+	background-repeat: no-repeat;
+}
+
+.eb-taskbar .dropdown-menu li a.google {
+	background-image: url(../images/google.png);
+}
+.eb-taskbar .dropdown-menu li a.yahoo {
+	background-image: url(../images/yahoo.png);
+}
+.eb-taskbar .dropdown-menu li a.download i {
+	left: 8px;
+    position: absolute;
+    top: 5px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    body .eb-calendar ul.eb-month-browser li {
+        font-size: 12px;
+        width: auto;
+        float: none;
+    }
+
+    body .eb-calendar ul.eb-month-browser li#eb-current-month {
+        width: auto;
+    }
+
+    body .eb-calendar ul {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    body .eb-calendar .eb-weekdays {
+        display: none;
+    }
+
+    body .eb-calendar li {
+        display: block;
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+
+    body .eb-calendar li .day, .eb-calendar li .month {
+        display: inline;
+    }
+
+    body .eb-calendar .no-shows {
+        display: block;
+        color: #ccc;
+        text-align: center;
+    }
+
+    body .eb-calendar .eb-date {
+        text-align: center;
+    }
+
+    .show-info .show-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .show-info .venue, .show-info .show-time, .show-info:hover .venue, .show-info:hover .show-time {
+        display: inline;
+    }
+
+    .eb-calendar li.out_of_range {
+        display: none;
+    }
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    .show-info .venue, .show-info .show-time, .show-info:hover .venue, .show-info:hover .show-time {
+        display: inline;
+    }
+}
+/**Timeline layout**/
+
+.eb-events-timeline .eb-taskbar {
+    padding: 25px 0;
+    border-bottom: 1px dotted #a5a5a5;
+    margin: 0;
+    list-style: none;
+}
+
+.eb-event-container {
+    background-image: url("../images/dot-ver.png");
+    background-position: 42px 85px;
+    background-repeat: repeat-y;
+    margin-top: 0;
+    padding: 0 0 0 100px;
+}
+
+.eb-event-date-container {
+    background: #fff;
+    border: 1px #eee solid;
+    margin: 0 15px 0 -100px;
+    padding: 5px;
+    width: auto;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.eb-event-date {
+    background-image: none !important;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    font-family: inherit;
+    height: 60px;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+.eb-event-date-day {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-top: 4px;
+}
+
+.eb-event-date-month {
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.eb-event-date-year {
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.eb-even-title-container {
+    line-height: normal;
+    margin: 0;
+}
+
+.eb-event-information {
+    padding: 0 0 10px;
+    margin-bottom: 12px;
+}
+
+.eb-event-date-info {
+    font-size: 130%;
+    line-height: 150%;
+    display: inline-block;
+}
+
+.eb-event-start-end-date {
+    margin: 0 8px 0 0;
+}
+
+.eb-event-price-container {
+    display: inline-block;
+    float: right;
+    font-size: 140%;
+    background-image: none !important;
+}
+
+.eb-event-price-container .eb-individual-price {
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+
+span.eb-time
+{
+    padding-left: 5px;
+}
+.eb-container .form-group .radio, .eb-container .form-group .checkbox {
+    min-height: 1px !important;
+}
+
+.eb-container .form-group input.radio, .eb-container .form-group input.checkbox, .eb-container .form-group select {
+    display: inline-block !important;
+}
+
+.eb-container .form-group select,
+.eb-container .form-group textarea,
+.eb-container .form-group input[type="text"],
+.eb-container .form-group input[type="password"],
+.eb-container .form-group input[type="datetime"],
+.eb-container .form-group input[type="datetime-local"],
+.eb-container .form-group input[type="date"],
+.eb-container .form-group input[type="month"],
+.eb-container .form-group input[type="time"],
+.eb-container .form-group input[type="week"],
+.eb-container .form-group input[type="number"],
+.eb-container .form-group input[type="email"],
+.eb-container .form-group input[type="url"],
+.eb-container .form-group input[type="search"],
+.eb-container .form-group input[type="tel"],
+.eb-container .form-group input[type="color"]
+{
+	width: 210px !important;
+}
+
+.eb-container .form-group input[type="text"].input-mini,
+.eb-container .form-group select.input-mini,
+.eb-container .form-group textarea.input-mini {
+    width: 60px !important;
+}
+
+.eb-container .form-group input[type="text"].input-small,
+.eb-container .form-group select.input-small,
+.eb-container .form-group textarea.input-small {
+    width: 90px !important;
+}
+
+.eb-container .form-group input[type="text"].input-medium,
+.eb-container .form-group select.input-medium,
+.eb-container .form-group textarea.input-medium
+{
+    width: 150px !important;
+}
+
+.eb-container .form-group input[type="text"].input-large,
+.eb-container .form-group select.input-large,
+.eb-container .form-group textarea.input-large
+{
+    width: 210px !important;
+}
+
+.eb-container .form-group input[type="text"].input-xlarge,
+.eb-container .form-group select.input-xlarge,
+.eb-container .form-group textarea.input-xlarge
+{
+    width: 270px !important;
+}
+
+.eb-container .form-group input[type="text"].input-xxlarge,
+.eb-container .form-group select.input-xxlarge,
+.eb-container .form-group textarea.input-xxlarge
+{
+    width: 530px !important;
+}

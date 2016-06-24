@@ -1,0 +1,928 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// VARIABLES & MIXINS
+// ------------------
+@import "../vars.less"; // Modify this for custom colors, font-sizes, etc
+
+// BOOTSTRAP
+// ------------
+.techjoomla-bootstrap {
+  [class*=" icon-"], 
+  [class^="icon-"] {
+    background-image: none;
+  }
+
+  .row-fluid {
+    .make-row();
+    .clearfix();
+  }
+
+  .row-fluid > .row-fluid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.btn {
+  .icon-unpublish,
+  .icon-publish {
+    display: none;
+  }
+}
+
+.componentheading {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: 0 0 @line-height-computed;
+  border-bottom: 1px solid @page-header-border-color;
+}
+
+// PAGES
+// -----------
+.com_jticketing {
+
+  .row .chzn-container {
+    margin-bottom: 0;
+
+    @media (max-width: @screen-sm-max) {
+      width: 100% !important;
+    }
+  }
+
+  // Events List
+  .jticketing-filter {
+    .clearfix();
+    background: @white;
+    padding: @t3-global-padding;
+    border: 1px solid @t3-border-color;
+    margin-bottom: @t3-global-margin*2;
+
+    @media (max-width: @screen-xs-max) {
+      #search {
+        margin-bottom: @t3-global-margin;
+      }
+    }
+  }
+
+  #all.row-fluid .jticketing-filter .btn-group {
+    margin-bottom: 0;
+  }
+
+  #jticket_pc_es_app_my_products {
+    .make-row();
+    @media (min-width: @screen-sm-min) {
+      height: auto !important;
+    }
+
+    .jticket_pin_item_jticket_pc_es_app_my_products {
+      margin: 0 0 @grid-gutter-width !important;
+      padding-left: @grid-gutter-width/2 !important;
+      padding-right: @grid-gutter-width/2 !important;
+      position: static !important;
+      float: left;
+      width: 100% !important;
+
+      @media (min-width: @screen-sm-min) {
+        width: 50% !important;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        width: 33.333% !important;
+      }
+      
+    }
+
+    .jticketing_pin_layout_element {
+      background: @white;
+      border: 0;
+      box-shadow: 0 -2px 0 @gray-lighter inset;
+      padding: @t3-global-padding;
+    }
+
+    .jticketing_pin_layout_image {
+      margin: -@t3-global-margin -@t3-global-margin @t3-global-margin;
+    }
+
+    .jticketing_pin_layout_desc {
+      margin: 0;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.3;
+      }
+    }
+
+    .jticketing_pin_layout_btns {
+      margin-top: @t3-global-margin;
+
+      .btn {
+        border: 0;
+        border-radius: 25px;
+        height: 33px;
+        line-height: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .jticketing_place {
+      color: @gray-dark-lv1;
+    }
+
+    dl {
+      margin: @t3-global-margin -(@t3-global-padding) 0;
+      color: @gray-dark-lv1;
+
+      dd {
+        border-bottom: 1px solid lighten(@gray-lighter, 5%);
+        margin-bottom: (@t3-global-margin / 4);
+        padding: 0 @t3-global-padding (@t3-global-padding / 4);
+
+        &:first-child {
+          border-top: 1px solid lighten(@gray-lighter, 5%);
+          padding-top: @t3-global-padding / 4;
+        }
+      }
+
+      strong {
+        display: block;
+        font-weight: 500;
+
+        i {
+          color: @gray-light;
+          margin-right: 5px;
+        }
+      }
+
+      span {
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+
+    h4 a {
+      color: @gray-dark-lv3;
+
+      &:hover, &:focus, &:active {
+        color: @link-hover-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .jticketing-sidebar {
+
+    .jticketing-sidebar-block {
+      background: @white;
+      padding: @t3-global-padding;
+      margin-bottom: @t3-global-margin*2;
+
+      h3 {
+        background: @t3-module-title-bg;
+        color: @t3-module-title-color;
+        font-size: @font-size-base;
+        font-weight: @font-weight-medium;
+        letter-spacing: 1px;
+        margin: 0 0 (@line-height-computed / 2) 0;
+        padding: @t3-module-title-padding;
+        padding-bottom: 0;
+        text-transform: uppercase;
+        position: relative;
+
+        // Larger margin on Tablet / Desktop
+        @media screen and (min-width: @screen-sm) {
+          margin-bottom: @line-height-computed;
+        }
+      }
+
+      .chzn-container {
+        margin-bottom: @t3-global-margin/2;
+      }
+    }
+  }
+
+  .com_jticketing_list_style_none {
+    padding: 0;
+
+    li {
+      border-bottom: 1px dotted @t3-border-color;
+      padding: 0 0 10px;
+      font-weight: @font-weight-normal;
+      background: none !important;
+
+      a:before {
+        display: inline-block;
+        content: "\f274";
+        color: @gray-light;
+        font-family: FontAwesome;
+        margin-right: 5px;
+        font-weight: @font-weight-normal;
+        .transition(all 300ms);
+      }
+
+      a, a:hover, a:focus, a:active {
+        border: 0;
+        padding: 0;
+        background: none;
+        color: @text-color !important;
+        text-decoration: none;
+        font-size: @font-size-base;
+        .transition(all 300ms);
+      }
+
+      a:hover, a:focus, a:active {
+        color: @link-hover-color !important;
+
+        &:before {
+          color: @link-hover-color;
+        }
+      }
+
+      + li {
+        margin-top: @t3-global-margin/2;
+      }
+    }
+  }
+
+  // Event Detail
+  #eventform1,
+  .jticketing-event-detail {
+    .nav-tabs {
+      margin-top: @t3-global-margin;
+    }
+
+    .tab-content {
+      background: @white;
+      padding-bottom: 0;
+    }
+
+    .accordion-heading {
+      padding: @t3-global-padding/2 @t3-global-padding;
+      border-bottom: 1px solid @t3-border-color;
+      margin: 0 -@t3-global-margin;
+    }
+
+    .accordion-body {
+      padding: @t3-global-padding 0;
+    }
+
+    #jticketing-event-map {
+      .row-fluid {
+        margin: @t3-global-margin 0 0;
+      }
+    }
+
+    .well {
+      .table-responsive {
+        td {
+          border: 0;
+        }
+      }
+
+      dl {
+        margin-bottom: 0;
+
+        dd {
+          margin-bottom: @t3-global-margin/2;
+        }
+      }
+    }
+
+    .jticketing-event-image {
+      margin: 0 0 @t3-global-margin;
+
+      img {
+        max-width: 100%;
+        border: 0;
+      }
+    }
+
+    #jform_image + .alert {
+      margin-top: @t3-global-margin;
+    }
+
+    .jticketing_container {
+      padding-right: @grid-gutter-width/2;
+      padding-left: @grid-gutter-width/2;
+    }
+
+    #details {
+      @media (max-width: @screen-sm-max) {
+        .row > .span8,
+        .row > .span4 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Tickets Form
+  .jticketing-form {
+    padding-right: @grid-gutter-width/2;
+    padding-left: @grid-gutter-width/2;
+
+    .tab-content {
+      background: @white;
+    }
+
+    #event-info-tab {
+      .table-responsive {
+        clear: both;
+        margin: 0;
+        padding: 0 @grid-gutter-width/2;
+      }
+    }
+
+    .jticketing_steps_parent {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .jticketing_steps_parent .jticketing-steps-ol {
+      .badge {
+        background: @brand-primary;
+      }
+
+      .active {
+        color: @brand-primary;
+
+        .badge {
+          background: @brand-primary;
+        }
+      }
+
+      .complete {
+        color: @gray-light;
+
+        .badge {
+          background: @gray-light;
+        }
+      }
+    }
+
+    #step_payment_info {
+      .clearfix();
+    }
+
+    #payment-info > .row-fluid {
+      margin: 0;
+    }
+
+    #payment-info label.radio, #payment-info label.radiobtn {
+      padding-left: 30px;
+    }
+  }
+
+  // Order Page
+  // -----------
+  &.view-orders.layout-order {
+    .row-fluid {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    [class*="span"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .alert.span12,
+    .span12.well {
+      padding-left: @grid-gutter-width/2;
+      padding-right: @grid-gutter-width/2;
+    }
+
+    #printDiv {
+      .span8 > .span4 {
+        padding-left: 0;
+      }
+
+      .span8 + div {
+        .make-md-column(4);
+      }
+
+      .img-polaroid.com_jticketing_image_w98pc {
+        padding-right: @grid-gutter-width;
+        border: 0;
+        max-width: 100%;
+        margin-bottom: @t3-global-margin;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  // All Orders
+  #all.row-fluid {
+
+    .table-responsive.order {
+      margin: @t3-global-margin 0 0;
+      clear: both;
+    }
+
+    .table.table-striped.table-hover  {
+      background: @white;
+    }
+
+    .btn-group,
+    .btn-toolbar {
+      margin-bottom: @t3-global-margin;
+    }
+
+    .form-actions {
+      background: none;
+      padding: 0;
+    }
+  }
+
+  &.view-orders.layout-my {
+    .techjoomla-bootstrap #all.row-fluid {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // My Events
+  // ---------
+  #jticketing_events {
+    background-color: @white;
+    padding-top: @t3-global-padding;
+    .clearfix();
+
+    .table-striped.table-bordered.table-hover {
+      background: @white;
+    }
+
+    .hr-condensed {
+      display: none;
+    }
+
+    table {
+      tr {
+        background-color: transparent;
+      }
+
+      th {
+        background-color: @gray-dark;
+        border: 1px solid lighten(@gray-dark, 5%);
+        border-bottom: 0;
+        font-size: @font-size-small;
+        padding: @t3-global-padding / 2;
+        text-transform: uppercase;
+
+        a {
+          color: @white;
+
+          &:hover, &:focus, &:active {
+            color: @link-hover-color;
+          }
+        }
+      }
+
+      tbody {
+        td {
+          padding: @t3-global-padding / 2;
+
+          &.small {
+            font-size: @font-size-base;
+          }
+
+          a {
+            &:hover, &:focus, &:active {
+              color: @link-hover-color;
+            }
+          }
+        }
+      }
+
+    }
+
+    // Pagination
+    .pagination {
+      margin-top: 0;
+
+      .counter {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  // My Tickets
+  &.view-mytickets {
+    .techjoomla-bootstrap #all.row-fluid {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // My Payouts
+  &.view-mypayouts {
+    .techjoomla-bootstrap #all.row-fluid {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // Attendee List
+  .jticketing-form-actions {
+    @media (max-width: @screen-sm-max) {
+      .chzn-container {
+        margin-bottom: @t3-global-margin/2;
+      }
+    }
+  }
+
+  .form-actions {
+    @media (max-width: @screen-xs-max) {
+      .btn {
+        margin-bottom: @t3-global-margin/2;
+      }
+    }
+  }
+
+  // Reset
+  // -----
+  .chzn-container-single .chzn-single {
+    background: transparent;
+    border: 1px solid @t3-border-color;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .chzn-container .chzn-drop {
+    border-radius: 0;
+    border-color: @t3-border-color;
+  }
+}
+
+// My Tickets Bought 
+// -----------------
+.t3-content div.techjoomla-bootstrap {
+  background-color: @white;
+  padding: @t3-global-padding;
+
+  #all {
+
+    .table-responsive {
+      margin-bottom: 0;
+
+      th, td {
+        border: 1px solid @t3-border-color;
+        padding: @t3-global-padding / 2;
+
+        &:first-child {
+          width: 20%;
+        }
+      }
+
+      th {
+        background-color: @gray-dark;
+        border: 1px solid lighten(@gray-dark, 5%);
+        border-bottom: 0;
+        color: @gray-light;
+        font-weight: normal;
+        vertical-align: middle;
+        text-transform: uppercase;
+
+        a {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  .alert.span6 {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+
+// MODULES
+// -------------
+
+// Events List
+.jticketing-events {
+  &.owl-carousel {
+    padding: 0;
+    width: auto;
+    margin: 0 -@grid-gutter-width/2;
+
+    .owl-wrapper-outer {
+      padding-bottom: @t3-global-padding*4;
+      padding-top: 4px;
+
+      @media (max-width: @screen-xs-max) {
+        padding-bottom: @t3-global-padding;
+      }
+    }
+
+    .owl-controls {
+      position: absolute;
+      right: @grid-gutter-width/2;
+      top: -50px;
+      margin-top: 0;
+
+      .owl-buttons {
+        div {
+          background: none;
+          border: 2px solid @text-color;
+          padding: 0;
+          font-size: 18px;
+          color: @text-color;
+          text-align: center;
+          padding: 0;
+          width: @input-height-base;
+          height: @input-height-base;
+          line-height: @input-height-base - 4px;
+        }
+      }
+    }
+  }
+
+  .item {
+    height: auto;
+    border: 0;
+    padding-left: @grid-gutter-width/2;
+    padding-right: @grid-gutter-width/2;
+
+    .inner {
+      color: @gray-dark-lv1;
+      background: @white;
+      padding: @t3-global-padding;
+      border-bottom: 1px solid @t3-border-color;
+      transition-delay: 0s;
+      transition-duration: 0.15s;
+      transition-property: transform, box-shadow;
+      transition-timing-function: ease-in-out;
+
+      -webkit-transition-delay: 0s;
+      -webkit-transition-duration: 0.15s;
+      -webkit-transition-property: transform, box-shadow;
+      -webkit-transition-timing-function: ease-in-out;
+
+      &:hover {
+        .box-shadow(0 5px 20px rgba(0, 0, 0, 0.15));
+        transform: translateY(-4px);
+        -webkit-transform: translateY(-4px);
+      }
+
+      .jticketing-event-image {
+        margin: -@t3-global-margin -@t3-global-margin @t3-global-margin !important;
+        float: none !important;
+        display: block;
+
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      .ticket-table {
+        margin: @t3-global-margin/2 0;
+
+        table {
+          margin-bottom: 0;
+        }
+      }
+
+      dl {
+        margin-bottom: 0;
+
+        dd {
+          margin-bottom: @t3-global-margin/2;
+        }
+
+        strong {
+          display: block;
+        }
+      }
+
+      h4 a {
+        color: @gray-dark-lv3;
+
+        &:hover, &:focus, &:active {
+          color: @link-hover-color;
+          text-decoration: none;
+        }
+      }
+
+      span {
+        display: inline-block;
+        margin-bottom: @t3-global-margin/2;
+
+        &[class^="icon-"], 
+        &[class*=" icon-"] {
+          margin-right: @t3-global-margin/2;
+        }
+      }
+
+      .mod_events_latest_content {
+        font-size: @font-size-h4;
+        margin-bottom: @t3-global-margin;
+      }
+    }
+
+    &.mod_events_latest_firstrow_lg {
+      clear: both;
+    }
+  }
+}
+
+.bg-dark.pt-x2.pb-0 {
+  .jticketing-events.owl-carousel {
+    padding: (@t3-global-padding*2 - 4px) 0 0;
+    margin-bottom: -@t3-global-margin*8;
+    width: auto;
+    .make-row();
+
+    @media (min-width: @screen-lg-min) {
+      padding: (@t3-global-padding*4 - 4px) 0 0;
+    }
+
+    .owl-wrapper-outer {
+      padding-bottom: @t3-global-padding*4;
+      padding-top: 4px;
+    }
+
+    .owl-item {
+    }
+
+    .owl-controls {
+      position: absolute;
+      top: 0;
+      right: @grid-gutter-width/2;
+      margin-top: 0;
+
+      .owl-buttons {
+        div {
+          background: none;
+          border: 2px solid @white;
+          color: @white;
+          font-size: 18px;
+          text-align: center;
+          padding: 0;
+          width: @input-height-base;
+          height: @input-height-base;
+          line-height: @input-height-base - 4px;
+        }
+      }
+    }
+  }
+}
+
+// Events Calendar
+.com_jticketing {
+  .jtcalendarForm .cal-month-box, 
+  .jtcalendarForm .cal-year-box, 
+  .jtcalendarForm .cal-week-box {
+    border-right: 0;
+  }
+
+  .jtcalendarForm {
+    .btn-group {
+      display: block;
+    }
+
+    .input-group-btn {
+      width: 100%;
+    }
+
+    #month_button {
+      width: auto;
+      font-size: 11px;
+    }
+
+    .input-group-btn {
+      background-color: @gray-lightest !important;
+      border: 0;
+    }
+
+    .cal-row-head {
+      font-size: @font-size-small;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    .cal-events-num {
+      border-radius: 0;
+      margin: 0 1px 1px 0;
+    }
+
+    .cal-month-day {
+      height: 42px;
+    }
+
+    .cal-month-box [class*="cal-cell"] {
+      min-height: 1px;
+    }
+
+  }
+
+}
+
+// Events Menu
+.tj-list-group {
+  padding: 0 @grid-gutter-width/2;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    border: none;
+    padding: 0;
+    font-weight: @font-weight-normal;
+    background: none !important;
+
+    a:before {
+      display: inline-block;
+      content: "\f274";
+      color: @gray-light;
+      font-family: FontAwesome;
+      margin-right: 5px;
+      font-weight: @font-weight-normal;
+      .transition(all 300ms);
+    }
+
+    a, a:hover, a:focus, a:active {
+      border: 0;
+      padding: 0;
+      background: none;
+      color: @text-color !important;
+      text-decoration: none;
+      font-size: @font-size-base;
+      .transition(all 300ms);
+    }
+
+    a:hover, a:focus, a:active {
+      color: @link-hover-color !important;
+
+      &:before {
+        color: @link-hover-color;
+      }
+    }
+
+    + li {
+      margin-top: @t3-global-margin/2;
+    }
+  }
+}
+
+// Buy Tickets 
+.cModule.cEvent-Extra {
+  .app-box-header {
+    display: none;
+  }
+
+  .hr-condensed {
+    margin: @t3-global-margin/2 0;
+  }
+}
+
+
+// MISC
+// --------------
+.jt-offset {
+  padding-left: @t3-global-padding/2;
+  padding-right: 0;
+}
+
+// My Order 
+// --------------
+.JTICKETING_WRAPPER_CLASS {
+
+  #all{
+    margin: 0;
+
+    .btn-toolbar.pull-right {
+      display: block;
+      margin: 0;
+      padding: 0 0 @t3-global-padding 0;      
+      width: 100%;
+
+      .col-lg-3 {
+        float: right;
+        display: inline-block;
+        padding: 0;
+        width: auto;
+      }
+    }
+  }
+
+  #no-more-tables {
+    a.modal {
+      z-index: 2;
+    }
+  }
+}
+
+.jticketing-wrapper .btn-toolbar.pull-right {
+  padding: 0 0 @t3-global-padding 0;
+}
+

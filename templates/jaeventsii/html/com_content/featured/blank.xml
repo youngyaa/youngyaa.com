@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Special page: Blank Content" option="Empty content page - to display modules only">
+		<message>
+			<![CDATA[COM_CONTENT_CATEGORY_VIEW_BLOG_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="menu-options" label="COM_MENUS_LINKTYPE_OPTIONS_LABEL">
+			<field name="layout_type" type="hidden" default="blog" />		
+			<field name="num_leading_articles" type="hidden" default="0" value="0" />
+			<field name="num_intro_articles" type="hidden" default="0" value="0" />
+			<field name="num_columns" type="hidden" default="0" value="0" />
+			<field name="num_links" type="hidden" default="0" value="0" />
+		</fieldset>
+	</fields>
+</metadata>

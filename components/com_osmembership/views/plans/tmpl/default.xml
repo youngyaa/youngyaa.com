@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Plans List Default Layout">
+		<message>
+			Displays a list of subscription plans in default Layout
+		</message>
+	</layout>			
+	<fields name="request">			
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_osmembership/model/fields">
+			<field name="id" type="osmcategory" size="3" default="0" label="Select Category" description="Select category which you want to display subscription plans" />
+		</fieldset>	
+	</fields>
+</metadata>

@@ -1,0 +1,114 @@
+﻿/*  */
+.metro-layout .wrapper{
+  width: auto;
+  overflow: hidden;
+  margin: auto;
+}
+.metro{
+  width: auto;
+  height: auto;
+  position: relative;
+} 
+.metro-slider{
+	position: relative;
+}
+.metro-slide{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute; top: 0px; left: 0px;
+}
+.metro-item{
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.metro-item .mi-front,
+.metro-item .mi-back{
+  width: 100%; height: 100%;
+  position: absolute;
+  z-index: 20;
+}
+.metro-item.flip .mi-front{
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+}
+
+.metro-item.flipped .mi-front{
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.metro-item .mi-back{
+	background-color: #bb1d48;
+	color: #ffffff;
+	z-index: 10;
+	font-family: "Open Sans", Tahoma, Arial;
+}
+.metro-item .mi-back-container{
+	padding: 10px;
+}
+.metro-item .mi-back .top{
+	margin: auto;
+	height: 70px;
+	margin-bottom: 5px;
+	width: auto;
+	
+}
+.metro-item .mi-back .top h5 a{
+	width:auto;
+	height:auto;
+}
+.metro-item .mi-back .top a{
+	display: block;
+	width: 42px; height: 42px;
+	float: left;
+}
+.metro-item .mi-back .top a.maginfier{
+	background: url("../images/magnifier.png") no-repeat 0px -42px;
+	margin-right: 5px;
+	margin-left:5px;
+}
+.metro-item .mi-back .top a.maginfier:hover{
+	background: url("../images/magnifier.png") no-repeat 0px 0px;
+	margin-right: 5px;
+}
+.metro-item .mi-back .top a.readmore{
+	background: url("../images/details.png") no-repeat 0px -42px;
+}
+.metro-item .mi-back .top a.readmore:hover{
+	background: url("../images/details.png") no-repeat 0px 0px;
+}
+
+.metro-item .mi-back .bottom{
+	height: 24px;
+	font-size: 12px;
+	line-height: 34px;
+}
+.metro-item .mi-back .bottom span,
+.metro-item .mi-back .bottom  a{
+	background: url("../images/category.png") no-repeat left center;
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 25px;
+}
+.metro-item.flip .mi-back{
+	
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-moz-transform: rotateY(-180deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+}
+.metro-item.flipped .mi-back {
+	z-index: 30;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+}

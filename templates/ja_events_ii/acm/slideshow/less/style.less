@@ -1,0 +1,222 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "../../../less/vars.less"; // Modify this for custom colors, font-sizes, etc
+
+// ------------------------------------------------
+// SLIDESHOW STYLE OWL
+// ------------------------------------------------
+.acm-slideshow .owl-carousel {
+  cursor: move;
+  padding: 0;
+  overflow: hidden;
+  background: @gray-dark-max;
+
+  .owl-wrapper-outer {
+    z-index: 0;
+  }
+
+  .owl-controls {
+    margin-top: 0;
+    position: absolute;
+    bottom: auto;
+    top: 250px;
+    left: auto;
+    right: @grid-gutter-width/2;
+    z-index: 1;
+    width: 36px;
+
+    @media (min-width: @screen-lg-min) {
+      top: 300px;
+      right: @grid-gutter-width/2;
+    }
+
+    @media (min-width: (@screen-lg-min + @main-container-spacing*2)) {
+      top: 540px;
+      right: @main-container-spacing;
+    }
+
+    .owl-buttons {
+      @media (max-width: @screen-sm-max) {
+        display: none;
+      }
+
+      div {
+        background: none;
+        border: 2px solid @white;
+        padding: 0;
+        width: @input-height-base;
+        height: @input-height-base;
+        line-height: @input-height-base - 4px;
+        font-size: 18px;
+
+        &.owl-next {
+          top: @input-height-base + 10px;
+        }
+      }
+    }
+  }
+
+  .owl-dots {
+    bottom: (@t3-global-margin + @input-height-base/2) + @t3-global-margin;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+
+    .owl-dot {
+      cursor: pointer;
+      display: inline-block;
+
+      span {
+        background: @white;
+        border-radius: 20px;
+        display: block;
+        height: 12px;
+        margin: 5px 7px;
+        width: 12px;
+        .opacity(0.5);
+      }
+
+      &:hover,&.active {
+        span {
+          .opacity(1);
+        }
+      }
+    }
+
+    @media (max-width: @screen-sm-max) {
+      display: none !important;
+    }
+  }
+
+  .item {
+    position: relative;
+    max-height: 1320px;
+    
+    &:before {
+      background: rgba(0,0,0,0.25);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+
+    .slider-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .slider-content {
+      position: absolute;
+      z-index: 2;
+      color: @white;
+      padding: 0 @t3-global-padding;
+      text-align: left;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      display: block;
+
+      @media (min-width: 480px) {
+        top: 56px;
+      }
+
+      @media (min-width: @screen-sm-min) {
+        height: 430px;
+        display: table;
+        top: 56px;
+      }
+
+      @media (min-width: @screen-md-min) {
+        height: 580px;
+        display: table;
+        top: @navbar-height + @t3-global-padding;
+      }
+
+      @media (min-width: @screen-lg-min) {
+        height: 420px;
+        display: table;
+        top: @navbar-height + @t3-global-padding;
+      }
+
+      @media (min-width: (@screen-lg-min + @main-container-spacing*2)) {
+        height: 595px;
+        display: table;
+        top: @navbar-height + @t3-global-padding;
+      }
+
+      .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+
+        @media (max-width: @screen-xs-max) {
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+        }
+      }
+
+      .item-desc {
+        color: @white;
+        font-size: @font-size-large + 2;
+        font-weight: @font-weight-lighter;
+        margin: 0;
+        width: 50%;
+
+        // Tablet/mobile view
+        @media (max-width: @screen-sm-max) {
+          display: none;
+        }
+      }
+
+      .item-title {
+        font-family: @headings-font-family;
+        font-size: @font-size-h1 * 2;
+        font-weight: @font-weight-bold;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: @t3-global-padding;
+        color: @white;
+        letter-spacing: -1px;
+        width: 50%;
+
+        @media screen and (max-width: @screen-md-max) {
+          width: 60%;
+        }
+
+        @media screen and (max-width: @screen-sm-max) {
+          width: 80%;
+        }
+
+        @media screen and (max-width: @screen-xs-max) {
+          margin-bottom: @t3-global-margin / 2;
+          width: 100%;
+          font-size: @font-size-h2;
+        }
+      }
+
+    }
+
+    .slider-btn {
+      margin-top: @t3-global-margin;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+
+      i {
+        margin-right: @grid-gutter-width/4;
+      }
+    }
+  }
+}

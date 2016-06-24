@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/plugins/content/membership/form" name="plan_ids" label="Membership Restriction">
+		<field name="plan_ids" type="membershipplan" label="Plans" description=""/>
+	</fieldset>
+</form>
+
