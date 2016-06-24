@@ -69,8 +69,8 @@
 			</dd>			
 										<dd class="hits">
 					<span class="icon-eye-open"></span>
-					<meta itemprop="interactionCount" content="UserPageVisits:600" />
-					Hits: 600			</dd>						</dl>
+					<meta itemprop="interactionCount" content="UserPageVisits:601" />
+					Hits: 601			</dd>						</dl>
     
     
 <div class="icons">
